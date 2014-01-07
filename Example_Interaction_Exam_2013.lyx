@@ -1,0 +1,758 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[noanswer]{exercise}
+\usepackage{mhchem}
+\renewcommand{\ExerciseListHeader}{\textbf{\ExerciseHeaderNB) \ExerciseHeaderTitle \ExerciseHeaderOrigin}}
+\renewcommand{\AnswerListHeader}{\textbf{Answer of \ExerciseName \ExerciseHeaderNB\  -- }}
+\renewcommand{\ExePartListHeader}{\ExePartHeaderNB)}
+\@ifpackagewith{exercise}{noanswer}{%
+  \setlength{\Exesep}{4 cm}}{%
+  \setlength{\Exetopsep}{1 em}}
+\setlength{\Exepartopsep}{1 em}
+
+\renewenvironment{Exercise}{\begin{minipage}{\pagewidth}}{\end{minipage}}
+\renewcommand{\theExePart}{\alph{ExePart}}
+\renewcommand{\ExePartListHeader}{\emph{\ExePartHeaderDifficulty\ExePartHeaderNB)}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Example Interactions Exam 2013
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ExerciseList}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+interlinepenalty=10000
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Exercise[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  year={2013},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  exam={QE-I},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  label={wavelength-energy-conversion},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  title={Conversion from Wavelength to Energy},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  difficulty={4},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  origin={
+\backslash
+cite[p.
+ 56, prob.
+ 2.27]{Cember2012a}}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExeText
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is the wavelength of 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExePart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+an electron whose kinetic energy is 
+\begin_inset Formula $1000\, eV$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExePart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\strikeout on
+a 
+\begin_inset Formula $10^{-8}\, kg$
+\end_inset
+
+ oil droplet falling at the rate of 
+\begin_inset Formula $0.01\,\frac{m}{s}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExePart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a 
+\begin_inset Formula $1\, MeV$
+\end_inset
+
+ neutron?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Answer[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  ref={wavelength-energy-conversion}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+something
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Exercise[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  year={2013},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  exam={QE-I},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  label={positron-electron-pair},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  title={Annihilation of Positron-Electron Pair},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  difficulty={4},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  origin={unfound}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset Formula $5\, MeV$
+\end_inset
+
+ electron interacts with a positron at rest.
+ What interaction will occur? What will the resulting types and energies
+ of the two resulting particles be?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Answer[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  ref={positron-electron-pair}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+something
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Exercise[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  year={2013},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  exam={QE-I},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  label={radioactive-decay-99mo-99tc},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  title={Radioactive Decay and Production},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  difficulty={4},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  origin={
+\backslash
+cite[p.
+ 137]{Cember2012a}}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $37\, MBq$
+\end_inset
+
+ (
+\begin_inset Formula $1\, mCi$
+\end_inset
+
+) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99m}Tc}
+\end_layout
+
+\end_inset
+
+ are 
+\begin_inset Quotes eld
+\end_inset
+
+milked
+\begin_inset Quotes erd
+\end_inset
+
+ from a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99}Mo}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+cow.
+\begin_inset Quotes erd
+\end_inset
+
+ What will be the activity of the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99m}Tc}
+\end_layout
+
+\end_inset
+
+ daughter, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99}Tc}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $1\, yr$
+\end_inset
+
+ after the milking 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cember2012a"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Half Lives from 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KoreaAtomicEnergyResearchInstitute2000"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{\frac{1}{2}^{99m}Tc}=6.01\, hr,\; T_{\frac{1}{2},^{99}Mo}=65.94\, hr,\; T_{\frac{1}{2}^{99}Tc}=2.11\times10^{5}\, yr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Exercise[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  year={2013},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  exam={QE-I},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  label={alpha-particles-on-detector-geometry},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  title={Alpha Particle Beam onto Specified Detector Geometry},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  difficulty={7},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  origin={
+\backslash
+cite[p.
+ 198, prob.
+ 5.23]{Cember2012a}}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X-rays are generated as bremstrahlung by causing high speed electrons to
+ be stopped by a high-atomic-numbered target, as shown in the figure below.
+ If the electrons are accelerated by a constant high voltage of 
+\begin_inset Formula $250\, kV$
+\end_inset
+
+ and if the electron beam current is 
+\begin_inset Formula $10\, mA$
+\end_inset
+
+, calculate the X-ray energy flux at a distance of 
+\begin_inset Formula $1\, m$
+\end_inset
+
+ from the tungsten target.
+ Neglect absporption by the glass tube and assume that the bremsstrahlung
+ is emitted isotropically 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cember2012a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Exercise[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  year={2013},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  exam={QE-I},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  label={stopping-power-deuteron-proton-alpha},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  title={Calculation of the Stopping Power of a Particle},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  difficulty={4},%
+\end_layout
+
+\begin_layout Plain Layout
+
+  origin={
+\backslash
+cite[p.
+ 64, prob 2.12]{Knoll2000}}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A beam of 
+\begin_inset Formula $1\, MeV$
+\end_inset
+
+ electrons strikes a thick target.
+ For a beam current of 
+\begin_inset Formula $100\,\mu A$
+\end_inset
+
+, find the power dissipated in the target 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Knoll2000"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Stopping Power is given as 
+\begin_inset Formula 
+\[
+\frac{DE}{Dx}=C\left(\frac{Z}{v}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Answer[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  ref={stopping-power-deuteron-proton-alpha}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+something
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ExerciseList}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibs/Qualifying Exam 2013"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
