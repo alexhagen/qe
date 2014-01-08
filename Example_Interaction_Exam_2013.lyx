@@ -6,8 +6,9 @@
 \begin_preamble
 \usepackage{exercise}
 \usepackage{mhchem}
-\usepackage{graphics}
+\usepackage{graphicx}
 \usepackage{color}
+\usepackage{transparent}
 \renewcommand{\ExerciseListHeader}{\textbf{\ExerciseHeaderNB) \ExerciseHeaderTitle \ExerciseHeaderOrigin}}
 \renewcommand{\AnswerListHeader}{\textbf{Answer of \ExerciseName \ExerciseHeaderNB\  -- }}
 \renewcommand{\ExePartListHeader}{\ExePartHeaderNB)}
@@ -397,7 +398,7 @@ The neutron in this case is not relativistic (
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\lambda=\frac{hc}{\sqrt{E_{total}^{2}-E_{rest}^{2}}}=\frac{1240\, eV\cdot nm}{\sqrt{\left(1\, MeV+938\, MeV\right)-\left(938\, MeV\right)^{2}}}=8.72\times10^{-13}\, nm
+\lambda=\frac{hc}{\sqrt{E_{total}^{2}-E_{rest}^{2}}}=\frac{1240\, eV\cdot nm}{\sqrt{\left(1\, MeV+938\, MeV\right)-\left(938\, MeV\right)^{2}}}=2.86\times10^{-14}\, nm
 \]
 
 \end_inset
@@ -507,6 +508,12 @@ status open
 
 
 \backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{10 cm} 
+\backslash
 input{annihilation_diagram.pdf_tex}
 \end_layout
 
@@ -530,6 +537,146 @@ Annihilation of Energetic Electron onto Resting Positron
 \begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, we can start an energy balance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{e^{-}}+E_{e^{+}}=E_{\gamma1}+E_{\gamma2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(5\, MeV+0.511\, MeV\right)+0.511\, MeV=E_{\gamma1}+E_{\gamma2}\;\therefore\; E_{\gamma1}+E_{\gamma2}=6.022\, MeV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that the two 
+\begin_inset Formula $\gamma$
+\end_inset
+
+'s will head off in opposite directions, so we can do a momentum balance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{e^{-}}+p_{e^{+}}=p_{\gamma1}-p_{\gamma2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the definition for momentum of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+'s:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+p_{e^{-}}+p_{e^{+}}=\frac{E_{\gamma1}}{c}-\frac{E_{\gamma2}}{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and using the definition for relativistic particle momentum, and that the
+ stationary positron has no momentum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{e^{-}}\cdot c=E_{\gamma1}-E_{\gamma2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{1}{c}\sqrt{E_{total}^{2}-E_{rest}^{2}}\right)\cdot c=E_{\gamma1}-E_{\gamma2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{\left(5\, MeV\right)^{2}-\left(0.511\, MeV\right)^{2}}=E_{\gamma1}-E_{\gamma2}\;\therefore\; E_{\gamma1}-E_{\gamma2}=5.49\, MeV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with two above definitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\gamma1}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\gamma2}=
+\]
 
 \end_inset
 
@@ -690,6 +837,172 @@ key "KoreaAtomicEnergyResearchInstitute2000"
 \begin_inset Formula 
 \[
 T_{\frac{1}{2}^{99m}Tc}=6.01\, hr,\; T_{\frac{1}{2},^{99}Mo}=65.94\, hr,\; T_{\frac{1}{2}^{99}Tc}=2.11\times10^{5}\, yr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Answer[%
+\end_layout
+
+\begin_layout Plain Layout
+
+  ref={radioactive-decay-99mo-99tc}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we must assume that the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99m}Tc}
+\end_layout
+
+\end_inset
+
+ is removed from the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99}Mo}
+\end_layout
+
+\end_inset
+
+ at 
+\begin_inset Formula $t=0$
+\end_inset
+
+, so all we have is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99m}Tc}
+\end_layout
+
+\end_inset
+
+ decaying to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99}Tc}
+\end_layout
+
+\end_inset
+
+.
+ In this case, we can write two differential equations.
+ The first has to do with the amount of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99m}Tc}
+\end_layout
+
+\end_inset
+
+ atoms over time
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dN_{1}}{dt}=-\lambda_{1}N_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can easily be solved to show
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{1}(t)=N_{1}(0)\cdot\exp\left(-\lambda_{1}t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we have a second differential equation for the amount of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{99}Tc}
+\end_layout
+
+\end_inset
+
+ atoms over time
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dN_{2}}{dt}=-\lambda_{2}N_{2}+\lambda_{1}N_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+by solving this and subsituting in the solution to the first differential
+ equation, we get {lamarsh 26}
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{2}=N_{2}(0)\exp\left(-\lambda_{2}t\right)+\frac{N_{1}(0)\lambda_{2}}{\lambda_{2}-\lambda_{1}}\left(\exp\left(-\lambda_{1}t\right)-\exp\left(-\lambda_{2}t\right)\right)
 \]
 
 \end_inset
