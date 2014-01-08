@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\usepackage{exercise}
+\usepackage[noanswer]{exercise}
 \usepackage{mhchem}
 \usepackage{graphicx}
 \usepackage{color}
@@ -312,8 +312,15 @@ We must convert first the energy to (relativistic) momentum, which for mass
 \begin_inset Formula $\lambda=h\nu$
 \end_inset
 
- {lamarsh, p.
- 14}.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 14"
+key "Lamarsh2001"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -339,8 +346,15 @@ The electron in this case is relativistic.
 \end_inset
 
 .
- We use the equation {lamarsh p.
- 15} 
+ We use the equation 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 15"
+key "Lamarsh2001"
+
+\end_inset
+
+ 
 \begin_inset Formula 
 \[
 \lambda=\frac{hc}{\sqrt{E_{total}^{2}-E_{rest}^{2}}}=\frac{1240\, eV\cdot nm}{\sqrt{\left(1\, MeV+0.511\, MeV\right)-\left(0.511\, MeV\right)^{2}}}=8.72\times10^{-13}\, nm
@@ -1048,11 +1062,7 @@ Exercise[%
 
 \begin_layout Plain Layout
 
-  origin={
-\backslash
-cite[p.
- 198, prob.
- 5.23]{Cember2012a}}]
+  origin={unfound}]
 \end_layout
 
 \end_inset
@@ -1061,30 +1071,7 @@ cite[p.
 \end_layout
 
 \begin_layout Standard
-X-rays are generated as bremstrahlung by causing high speed electrons to
- be stopped by a high-atomic-numbered target, as shown in the figure below.
- If the electrons are accelerated by a constant high voltage of 
-\begin_inset Formula $250\, kV$
-\end_inset
-
- and if the electron beam current is 
-\begin_inset Formula $10\, mA$
-\end_inset
-
-, calculate the X-ray energy flux at a distance of 
-\begin_inset Formula $1\, m$
-\end_inset
-
- from the tungsten target.
- Neglect absporption by the glass tube and assume that the bremsstrahlung
- is emitted isotropically 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cember2012a"
-
-\end_inset
-
-.
+We cannot find an appropriate exercise similar to this problem.
 \end_layout
 
 \begin_layout Standard
@@ -1157,18 +1144,6 @@ key "Knoll2000"
 \end_layout
 
 \begin_layout Standard
-Stopping Power is given as 
-\begin_inset Formula 
-\[
-\frac{DE}{Dx}=C\left(\frac{Z}{v}\right)^{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1190,7 +1165,37 @@ Answer[%
 \end_layout
 
 \begin_layout Standard
-something
+The intensity can be found by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=100\times10^{-6}\,\frac{C}{s}\cdot\frac{1\, e^{-}}{1.6\times10^{-19}\, C}=6.25\times10^{14}\,\frac{e^{-}}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and, assuming that the entirity of the 
+\begin_inset Formula $1\, MeV$
+\end_inset
+
+ is dissipated in the target on each collision, the power dissipated is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=\frac{1\, MeV}{e^{-}}\cdot\frac{6.25\times10^{14}\, e^{-}}{s}=6.25\times10^{14}\,\frac{MeV}{s}=100.1\, W
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1219,7 +1224,7 @@ end{ExerciseList}
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "bibs/Qualifying Exam 2013"
+bibfiles "/home/ahagen/bibs/QE"
 options "plainnat"
 
 \end_inset
