@@ -4,8 +4,10 @@
 \begin_header
 \textclass article
 \begin_preamble
-\usepackage[noanswer]{exercise}
+\usepackage{exercise}
 \usepackage{mhchem}
+\usepackage{graphics}
+\usepackage{color}
 \renewcommand{\ExerciseListHeader}{\textbf{\ExerciseHeaderNB) \ExerciseHeaderTitle \ExerciseHeaderOrigin}}
 \renewcommand{\AnswerListHeader}{\textbf{Answer of \ExerciseName \ExerciseHeaderNB\  -- }}
 \renewcommand{\ExePartListHeader}{\ExePartHeaderNB)}
@@ -185,11 +187,7 @@ ExeText
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-What is the wavelength of 
+ What is the wavelength of 
 \end_layout
 
 \begin_layout Standard
@@ -205,15 +203,23 @@ ExePart
 
 \end_inset
 
+ 
+\begin_inset space \quad{}
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
 an electron whose kinetic energy is 
+\strikeout on
+
 \begin_inset Formula $1000\, eV$
 \end_inset
 
-?
+
+\strikeout default
+? (
+\begin_inset Formula $1\, MeV$
+\end_inset
+
+ - changed by A.Hagen, January 2014)
 \end_layout
 
 \begin_layout Standard
@@ -229,10 +235,10 @@ ExePart
 
 \end_inset
 
+ 
+\begin_inset space \quad{}
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
 
 \strikeout on
 a 
@@ -259,10 +265,10 @@ ExePart
 
 \end_inset
 
+ 
+\begin_inset space \quad{}
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
 a 
 \begin_inset Formula $1\, MeV$
 \end_inset
@@ -292,7 +298,111 @@ Answer[%
 \end_layout
 
 \begin_layout Standard
-something
+We must convert first the energy to (relativistic) momentum, which for mass
+ bearing particles is related to 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ by 
+\begin_inset Formula $\lambda=\frac{h}{p}$
+\end_inset
+
+ and for non-mass bearing particles 
+\begin_inset Formula $\lambda=h\nu$
+\end_inset
+
+ {lamarsh, p.
+ 14}.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExePart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+\end_inset
+
+The electron in this case is relativistic.
+ The rest mass of a neutron is 
+\begin_inset Formula $0.511\, MeV$
+\end_inset
+
+.
+ We use the equation {lamarsh p.
+ 15} 
+\begin_inset Formula 
+\[
+\lambda=\frac{hc}{\sqrt{E_{total}^{2}-E_{rest}^{2}}}=\frac{1240\, eV\cdot nm}{\sqrt{\left(1\, MeV+0.511\, MeV\right)-\left(0.511\, MeV\right)^{2}}}=8.72\times10^{-13}\, nm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExePart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+\end_inset
+
+We do not solve this part since it won't be asked on the exam.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExePart
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+\end_inset
+
+The neutron in this case is not relativistic (
+\begin_inset Formula $1\, MeV<0.2\cdot m_{rest}=20\, MeV$
+\end_inset
+
+), nevertheless we use the same equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda=\frac{hc}{\sqrt{E_{total}^{2}-E_{rest}^{2}}}=\frac{1240\, eV\cdot nm}{\sqrt{\left(1\, MeV+938\, MeV\right)-\left(938\, MeV\right)^{2}}}=8.72\times10^{-13}\, nm
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -373,7 +483,57 @@ Answer[%
 \end_layout
 
 \begin_layout Standard
-something
+First we must determine what kind of interaction will happen, which in this
+ case is 
+\series bold
+annihilation
+\series default
+.
+ This will interact as the diagram given below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{annihilation_diagram.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Annihilation of Energetic Electron onto Resting Positron
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
