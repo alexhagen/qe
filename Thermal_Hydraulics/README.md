@@ -145,9 +145,7 @@ The difficulty becomes decyphering which of the years of each class the material
 
 > 11. Prandtl Number Effect on Temperature Profile in Turbulent Flow
 > 12. One Dimensional Formulation and Closure Relations
-
-* Control Volume Analysis for LOCA, LOFA, SCRAM, etc. from NUCL 551, NUCL 402
-
+Control Volume Analysis for LOCA, LOFA, SCRAM, etc. from NUCL 551, NUCL 402
 > 13. Forced Convection Transient Flow Analysis using Integral Momentum Equation
 > 14. Natural Circulation Flow Analysis using Integral Momentum Equation
 
