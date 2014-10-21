@@ -4,7 +4,8 @@ By Alex Hagen
 ## Contents
 1. Introduction
 2. Material Links
-3. To Do List / Study Plan
+3. Cross Referenced Course Topics List
+4. To Do List / Study Plan
 
 ## 1. Introduction
 
@@ -103,7 +104,71 @@ The difficulty becomes decyphering which of the years of each class the material
 * [2013]()
 * [2014]()
 
-## To Do / Study Plan:
+## 3. Cross References Topics List
+
+> 1. Introduction to Nuclear Thermal-hydraulics Systems
+
+* NUCL RXR Diagrams in NUCL 551, NUCL 402
+
+> 2. General Balance Equation
+
+* GBE Memorization and derivation from NUCL 551
+
+> 3. Single-Phase Flow Conservation Equations and Constitutive Relations
+
+* NUCL 551 *expand this*
+
+> 4. Non-dimensional Analysis and Scaling Parameters
+
+* Memorization of non-dimensional numbers from NUCL 350, NUCL 351, NUCL 551
+* Buckingham Pi Theorem
+
+> 5. Heat Conduction in Solid
+
+* Heat equation and conduction from NUCL 351
+* Sudden heating from NUCL 551
+
+> 6. Viscous Stress and Laminar Flow Velocity Profile
+
+* Derivation of Laminar and turbulent flow from NUCL 350 and NUCL 551
+
+> 7. Transient Diffusion Problem for Momentum and Energy and Penetration Depth Concept
+
+* Sudden heating/motion/diffusion from NUCL 551
+
+> 8. Turbulent Flow Formulation and Reynolds Stress
+> 9. Viscous and Turbulent Stress Distribution in Pipe Flow
+> 10. Prandtl Mixing Length Model and Universal Velocity Profile for Turbulent Flow
+
+
+* Prandtl Mixing Length from NUCL 551
+
+> 11. Prandtl Number Effect on Temperature Profile in Turbulent Flow
+> 12. One Dimensional Formulation and Closure Relations
+
+* Control Volume Analysis for LOCA, LOFA, SCRAM, etc. from NUCL 551, NUCL 402
+
+> 13. Forced Convection Transient Flow Analysis using Integral Momentum Equation
+> 14. Natural Circulation Flow Analysis using Integral Momentum Equation
+
+* Bussinesque Assumption from NUCL 551
+
+> 15. Control Volume Analysis for Nuclear Reactor System and Application to Various Accident Analyses
+
+* Control Volume Analysis for LOCA, LOFA, SCRAM, etc. from NUCL 551, NUCL 402
+
+> 16. Two-phase Flow Regimes and Boiling Flow Regimes in Terms of Heat Transfer
+
+* Pipe flow regimes (vertical, horizontal are different) from NUCL 355, NUCL 551
+
+> 17. Local Instant Formulation of Two-phase Flow Based on Single-Phase Flow Formulation and Jump Conditions
+> 18. Basic Concept and Parameters in Two-phase Flow such as Void Fraction
+> 19. Derivation of Two-phase Flow Equations Based on Averaging 
+> 20. Closure Relations and Correlations for Two-phase Flow
+
+* Two Phase flow materials from NUCL 551 (NUCL 552?) *likely not included*
+
+## 4. To Do / Study Plan:
 
 * [ ] Combine notes and develop solutions (by 11/15/14)
 	* [ ] NUCL 350
