@@ -106,64 +106,67 @@ The difficulty becomes decyphering which of the years of each class the material
 
 ## 3. Cross References Topics List
 
-> Introduction to Nuclear Thermal-hydraulics Systems
+> * Introduction to Nuclear Thermal-hydraulics Systems
 
 * NUCL RXR Diagrams in NUCL 551, NUCL 402
 
-> General Balance Equation
+> * General Balance Equation
 
 * GBE Memorization and derivation from NUCL 551
 
-> Single-Phase Flow Conservation Equations and Constitutive Relations
+> * Single-Phase Flow Conservation Equations and Constitutive Relations
 
 * NUCL 551 *expand this*
 
-> Non-dimensional Analysis and Scaling Parameters
+> * Non-dimensional Analysis and Scaling Parameters
 
 * Memorization of non-dimensional numbers from NUCL 350, NUCL 351, NUCL 551
 * Buckingham Pi Theorem
 
-> Heat Conduction in Solid
+> * Heat Conduction in Solid
 
 * Heat equation and conduction from NUCL 351
 * Sudden heating from NUCL 551
 
-> Viscous Stress and Laminar Flow Velocity Profile
+> * Viscous Stress and Laminar Flow Velocity Profile
 
 * Derivation of Laminar and turbulent flow from NUCL 350 and NUCL 551
 
-> Transient Diffusion Problem for Momentum and Energy and Penetration Depth Concept
+> * Transient Diffusion Problem for Momentum and Energy and Penetration Depth Concept
 
 * Sudden heating/motion/diffusion from NUCL 551
 
-> Turbulent Flow Formulation and Reynolds Stress
-> Viscous and Turbulent Stress Distribution in Pipe Flow
-> Prandtl Mixing Length Model and Universal Velocity Profile for Turbulent Flow
+> * Turbulent Flow Formulation and Reynolds Stress
+> * Viscous and Turbulent Stress Distribution in Pipe Flow
+> * Prandtl Mixing Length Model and Universal Velocity Profile for Turbulent Flow
 
 * Prandtl Mixing Length from NUCL 551
 
-> Prandtl Number Effect on Temperature Profile in Turbulent Flow
-> One Dimensional Formulation and Closure Relations
+> * Prandtl Number Effect on Temperature Profile in Turbulent Flow
+> * One Dimensional Formulation and Closure Relations
 
 * Control Volume Analysis for LOCA, LOFA, SCRAM, etc. from NUCL 551, NUCL 402
 
-> Forced Convection Transient Flow Analysis using Integral Momentum Equation
-> Natural Circulation Flow Analysis using Integral Momentum Equation
+> * Forced Convection Transient Flow Analysis using Integral Momentum Equation
+
+* Integral Momentum Equation from NUCL 551
+
+> * Natural Circulation Flow Analysis using Integral Momentum Equation
 
 * Bussinesque Assumption from NUCL 551
 
-> Control Volume Analysis for Nuclear Reactor System and Application to Various Accident Analyses
+> * Control Volume Analysis for Nuclear Reactor System and Application to Various Accident Analyses
 
 * Control Volume Analysis for LOCA, LOFA, SCRAM, etc. from NUCL 551, NUCL 402
 
-> Two-phase Flow Regimes and Boiling Flow Regimes in Terms of Heat Transfer
+> * Two-phase Flow Regimes and Boiling Flow Regimes in Terms of Heat Transfer
 
 * Pipe flow regimes (vertical, horizontal are different) from NUCL 355, NUCL 551
 
-> Local Instant Formulation of Two-phase Flow Based on Single-Phase Flow Formulation and Jump Conditions
-> Basic Concept and Parameters in Two-phase Flow such as Void Fraction
-> Derivation of Two-phase Flow Equations Based on Averaging 
-> Closure Relations and Correlations for Two-phase Flow
+> * Local Instant Formulation of Two-phase Flow Based on Single-Phase Flow Formulation and Jump Conditions
+> * Basic Concept and Parameters in Two-phase Flow such as Void Fraction
+> * Derivation of Two-phase Flow Equations Based on Averaging 
+> * Closure Relations and Correlations for Two-phase Flow
 
 * Two Phase flow materials from NUCL 551 (NUCL 552?) *likely not included*
 
