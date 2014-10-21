@@ -2,10 +2,10 @@
 By Alex Hagen
 
 ## Contents
-1. Introduction
-2. Material Links
-3. Cross Referenced Course Topics List
-4. To Do List / Study Plan
+1. [Introduction](#1-introduction)
+2. [Material Links](#2-material-links)
+3. [Cross Referenced Course Topics List](#3-cross-referenced-topics-list)
+4. [To Do List / Study Plan](#4-to-do--study-plan)
 
 ## 1. Introduction
 
@@ -104,7 +104,7 @@ The difficulty becomes decyphering which of the years of each class the material
 * [2013]()
 * [2014]()
 
-## 3. Cross References Topics List
+## 3. Cross Referenced Topics List
 
 > * Introduction to Nuclear Thermal-hydraulics Systems
 
