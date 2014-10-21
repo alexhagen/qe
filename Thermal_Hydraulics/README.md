@@ -9,7 +9,7 @@ By Alex Hagen
 
 ## 1. Introduction
 
-The thermal hydraulics exam is often considered the hardest exam.  The department lists the topics of this exam to be ([Purdue Nuclear Engineering, 2014](https://engineering.purdue.edu/NE/Academics/Graduate/Qualifying%20Exam/Qualifying%20Exam%20Briefing%20(2014).pdf)):
+The thermal hydraulics exam is often considered the hardest exam.  The department lists the topics of this exam to be ([Purdue Nuclear Engineering, 2014][1]):
 
 > 1. Introduction to Nuclear Thermal-hydraulics Systems
 > 2. General Balance Equation
@@ -140,7 +140,6 @@ The difficulty becomes decyphering which of the years of each class the material
 > * Viscous and Turbulent Stress Distribution in Pipe Flow
 > * Prandtl Mixing Length Model and Universal Velocity Profile for Turbulent Flow
 
-
 * Prandtl Mixing Length from NUCL 551
 
 > * Prandtl Number Effect on Temperature Profile in Turbulent Flow
@@ -191,3 +190,7 @@ The difficulty becomes decyphering which of the years of each class the material
 * [ ] Take practice exam 2nd time (on 1/31/14)
 * [ ] Last minute studying (by 2/2/14)
 * [ ] Take exam (on 2/3/14)
+
+## References
+
+[1]: https://engineering.purdue.edu/NE/Academics/Graduate/Qualifying%20Exam/Qualifying%20Exam%20Briefing%20(2014).pdf
