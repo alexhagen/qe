@@ -37,18 +37,26 @@ The difficulty becomes decyphering which of the years of each class the material
 
 ## 2. Material Links
 
-* NUCL 350:
-	* Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35000)): 
-	* > The first of an integrated two-course sequence introducing the concepts of nuclear reactor thermal transport and associated hydraulics with applications to design and safety. Macroscopic balances, dimensional analysis, and flow measurement. Fluid behavior, momentum transfer, and applications to reactor systems and design.
-* NUCL 351:
-	* Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35100)): 
-	* > Emphasis is given to the fluid transport of heat from reactor fuel elements. Heat transfer in fluids, analogies, and applications to reactor coolant channel analysis. Two-phase flow and convective boiling. Radiative heat transfer. Applications to safety analysis and reactor design.
-* NUCL 355:
-	* Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35500)): 
-	* > Laboratory course corresponding to NUCL 35000 and NUCL 35100. Various fluid flow and heat transfer phenomena applied to nuclear reactor systems and design.
-* NUCL 551:
-	* Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201410&subj_code_in=NUCL&crse_numb_in=55100): 
-	* > Formulations for analyzing complicated thermal-hydraulic phenomena in energy systems. Derivation of two-phase flow field equations and constitutive relations. Thermal-hydraulic modeling of nuclear reactor systems. Analyses of nuclear reactor safety related phenomena based on conservation principles.
-	* Course Textbook(s):
-		* [Transport Phenomena, Bird, ]():
-		* 
+### NUCL 350:
+#### Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35000)): 
+
+> The first of an integrated two-course sequence introducing the concepts of nuclear reactor thermal transport and associated hydraulics with applications to design and safety. Macroscopic balances, dimensional analysis, and flow measurement. Fluid behavior, momentum transfer, and applications to reactor systems and design.
+
+### NUCL 351:
+#### Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35100)): 
+
+> Emphasis is given to the fluid transport of heat from reactor fuel elements. Heat transfer in fluids, analogies, and applications to reactor coolant channel analysis. Two-phase flow and convective boiling. Radiative heat transfer. Applications to safety analysis and reactor design.
+
+### NUCL 355:
+#### Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35500)): 
+
+> Laboratory course corresponding to NUCL 35000 and NUCL 35100. Various fluid flow and heat transfer phenomena applied to nuclear reactor systems and design.
+
+### NUCL 551:
+#### Course Description ([Purdue Detailed Course Information, 2012](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201410&subj_code_in=NUCL&crse_numb_in=55100): 
+
+> Formulations for analyzing complicated thermal-hydraulic phenomena in energy systems. Derivation of two-phase flow field equations and constitutive relations. Thermal-hydraulic modeling of nuclear reactor systems. Analyses of nuclear reactor safety related phenomena based on conservation principles.
+
+### Course Textbook(s):
+* [Transport Phenomena, Bird, ]():
+* 
