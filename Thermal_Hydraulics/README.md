@@ -1,13 +1,12 @@
 # Purdue Nuclear Engineering Thermal Hydraulics Qualification Exam
 By Alex Hagen
 
-Contents
---------
+## Contents
 1. Introduction
 2. Material Links
 3. To Do List / Study Plan
 
-## Introduction
+## 1. Introduction
 
 The thermal hydraulics exam is often considered the hardest exam.  The department lists the topics of this exam to be ([Purdue Nuclear Engineering, 2014](https://engineering.purdue.edu/NE/Academics/Graduate/Qualifying%20Exam/Qualifying%20Exam%20Briefing%20(2014).pdf)):
 
@@ -33,3 +32,11 @@ The thermal hydraulics exam is often considered the hardest exam.  The departmen
 > 20. Closure Relations and Correlations for Two-phase Flow
 
 These topics come from the classes NUCL 350, NUCL 351, NUCL 355, NUCL 402, and NUCL 551, with **NUCL 551** being the largest amount of material.
+
+The difficulty becomes decyphering which of the years of each class the material will come from.  Likely, NUCL 350 and NUCL 351 material will come from when Dr. Hibiki taught the class, NUCL 355 and NUCL 402 material will come from when Dr. Revankar taught the class, and NUCL 551 material will come from when Dr. Ishii taught the class.
+
+## 2. Material Links
+
+* NUCL 350:
+	* something
+	* something
