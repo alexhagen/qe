@@ -1,6 +1,14 @@
 # Purdue Nuclear Engineering Thermal Hydraulics Qualification Exam
 By Alex Hagen
 
+Contents
+--------
+1. Introduction
+2. Material Links
+3. To Do List / Study Plan
+
+## Introduction
+
 The thermal hydraulics exam is often considered the hardest exam.  The department lists the topics of this exam to be ([Purdue Nuclear Engineering, 2014](https://engineering.purdue.edu/NE/Academics/Graduate/Qualifying%20Exam/Qualifying%20Exam%20Briefing%20(2014).pdf)):
 
 > 1. Introduction to Nuclear Thermal-hydraulics Systems
