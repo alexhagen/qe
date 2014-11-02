@@ -71,11 +71,22 @@ The difficulty becomes decyphering which of the years of each class the material
 
 > Laboratory course corresponding to NUCL 35000 and NUCL 35100. Various fluid flow and heat transfer phenomena applied to nuclear reactor systems and design.
 
+#### Course Note(s):
+* [Laboratory Reports, Alex Hagen, 2011](./NUCL_355/)
+
+#### Exam/Homework Question(s) with Solution(s):
+* []()
+
+### NUCL 402:
+#### Course Description ([Purdue Detailed Course Information, 2011][9]): 
+
+> Principles and practice of power plant systems with design applications; thermal cycles, heat transport, mechanical designs, control, safety analysis, shielding analysis, fuel cycles; resources, optimization, options, waste management. Fusion and alternate energy sources. Typically offered Fall. 
+
 #### Course Textbook(s):
-* [x]()
+* [Nuclear Systems I Thermal Hydraulic Fundamentals, Todreas, 1990](http://www.amazon.com/Nuclear-Systems-Volume-Hydraulic-Fundamentals/dp/1560320516)
 
 #### Course Note(s):
-* [Alex Hagen Notes Packet, 2011]()
+* [Course Lectures, Shripad Revankar, 2011](./NUCL_402/Lectures/)
 
 #### Exam/Homework Question(s) with Solution(s):
 * []()
@@ -204,3 +215,4 @@ The difficulty becomes decyphering which of the years of each class the material
 [6]: http://www.icheh.com/Files/Posts/Portal1/transport%20phenomena%20(bird)2ed-part-1.pdf
 [7]: https://drive.google.com/file/d/0B9JtpWUzKcwkRFRBQldJUXlRVjA/edit
 [8]: http://www.slideshare.net/SPEEDBEAR69/fundamentals-of-heat-and-mass-transfer-frank-p-incropera
+[9]: https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201210&subj_code_in=NUCL&crse_numb_in=40200
