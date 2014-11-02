@@ -44,7 +44,7 @@ The difficulty becomes decyphering which of the years of each class the material
 > The first of an integrated two-course sequence introducing the concepts of nuclear reactor thermal transport and associated hydraulics with applications to design and safety. Macroscopic balances, dimensional analysis, and flow measurement. Fluid behavior, momentum transfer, and applications to reactor systems and design.
 
 #### Course Textbook(s):
-* [x]()
+* [Fundamentals of Fluid Mechanics, Munson, 2009][7]
 
 #### Course Note(s):
 * [Alex Hagen Notes Packet, 2011]()
@@ -58,7 +58,7 @@ The difficulty becomes decyphering which of the years of each class the material
 > Emphasis is given to the fluid transport of heat from reactor fuel elements. Heat transfer in fluids, analogies, and applications to reactor coolant channel analysis. Two-phase flow and convective boiling. Radiative heat transfer. Applications to safety analysis and reactor design.
 
 #### Course Textbook(s):
-* [x]()
+* [Fundamentals of Heat and Mass Transfer, Incropera, 2007][8]
 
 #### Course Note(s):
 * [Alex Hagen Notes Packet, 2011]()
@@ -202,3 +202,5 @@ The difficulty becomes decyphering which of the years of each class the material
 [4]: https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201310&subj_code_in=NUCL&crse_numb_in=35500
 [5]: https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201410&subj_code_in=NUCL&crse_numb_in=55100
 [6]: http://www.icheh.com/Files/Posts/Portal1/transport%20phenomena%20(bird)2ed-part-1.pdf
+[7]: https://drive.google.com/file/d/0B9JtpWUzKcwkRFRBQldJUXlRVjA/edit
+[8]: http://www.slideshare.net/SPEEDBEAR69/fundamentals-of-heat-and-mass-transfer-frank-p-incropera
