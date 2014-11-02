@@ -132,7 +132,7 @@ The difficulty becomes decyphering which of the years of each class the material
 ##### Non-dimensional Analysis and Scaling Parameters
 
 * Memorization of non-dimensional numbers from NUCL 350, NUCL 351, NUCL 551
-* Buckingham Pi Theorem
+* ~~Buckingham Pi Theorem~~
 
 ##### Heat Conduction in Solid
 
