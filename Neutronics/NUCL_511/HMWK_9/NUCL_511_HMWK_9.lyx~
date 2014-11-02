@@ -1,0 +1,538 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{mhchem}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{listings}
+\renewcommand\theparagraph{\arabic{paragraph}}
+\renewcommand\thesubparagraph{(\arabic{subparagraph})}
+
+\usepackage{savesym}
+\usepackage{amsmath}
+\savesymbol{iint}
+\usepackage{txfonts}
+\restoresymbol{TXF}{iint}
+
+% \renewcommand{\algorithmname}{Source Code}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 0
+\use_mhchem 2
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 5
+\tocdepth 5
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+NUCL 511 HMWK 9
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+4/15/14
+\end_layout
+
+\begin_layout Paragraph
+Find the numerical value of 
+\begin_inset Formula $p^{00}$
+\end_inset
+
+, the flux after a prompt jump for which the increase due to delayed neutrons
+ is just compensated by Doppler feedback, for an LWR from the typical 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma/\beta$
+\end_inset
+
+ values given in the text.
+ Discuss why 
+\begin_inset Formula $p^{00}$
+\end_inset
+
+ is different from the value for the SEFOR reactor.
+\end_layout
+
+\begin_layout Standard
+Using the condition for which 
+\begin_inset Formula $p^{'}=0$
+\end_inset
+
+, or, physically, that the increase from prompt jump is just compenstated
+ for by Doppler feedback (i.e.
+ the power change is zero), we can find that this point is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{0}=\frac{\bar{\lambda}\beta}{-\gamma}\equiv p^{00}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\emph on
+For LWR:
+\end_layout
+
+\begin_layout Standard
+The literature gives a typical 
+\begin_inset Formula $\bar{\lambda}$
+\end_inset
+
+ value of 
+\begin_inset Formula $0.43\,\mathrm{s}^{-1}$
+\end_inset
+
+ [Lecture 2], 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ of 
+\begin_inset Formula $-0.8\,\mathrm{\$/fp\cdot s}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 240"
+key "Ott1985"
+
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ of 
+\begin_inset Formula $0.0065$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $1\,\mathrm{\$}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{00}=\frac{\bar{\lambda}\beta}{-\gamma}=-\frac{\bar{\lambda}\beta}{\gamma}=-\frac{\left(0.43\,\mathrm{s^{-1}}\right)\left(1\mathrm{\$}\right)}{\left(-0.8\,\mathrm{\$/fp\cdot s}\right)}=0.54\,\mathrm{fp}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\emph on
+For SEFOR:
+\end_layout
+
+\begin_layout Standard
+The literature gives a typical 
+\begin_inset Formula $\bar{\lambda}$
+\end_inset
+
+ value of 
+\begin_inset Formula $0.40\,\mathrm{s^{-1}}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 244"
+key "Ott1985"
+
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ of 
+\begin_inset Formula $-0.022\,\mathrm{\$/fp\cdot s}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 245"
+key "Ott1985"
+
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ of 
+\begin_inset Formula $0.0065$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $1\,\mathrm{\$}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{00}=\frac{\bar{\lambda}\beta}{-\gamma}=-\frac{\bar{\lambda}\beta}{\gamma}=-\frac{\left(0.40\,\mathrm{s^{-1}}\right)\left(1\mathrm{\$}\right)}{\left(-0.022\,\mathrm{\$/fp\cdot s}\right)}=18.8\,\mathrm{fp}
+\]
+
+\end_inset
+
+While SEFOR was designed to mimic the properties of a large power reactor,
+ the power excursion of a typical LWR should not be the same as SEFOR.
+ It used 
+\begin_inset Formula $\ce{BeO}$
+\end_inset
+
+ rods to soften the spectrum (since SEFOR was very small compared to a LWR),
+ and the fuel rods were also fabricated almost 3 times smaller than that
+ of an LWR to mimic the high fuel temperature.
+ While the kinetics of SEFOR may be similar, the power inertia of the LWR
+ system means that it will only increase a small amount compared to what
+ SEFOR will increase 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 246"
+key "Ott1985"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Consider the reactivity-step-induced transient with an adiabatic boundary
+ condition for the incremental heat, as considered in Sec.
+ 10-2B.
+ List the asymptotic results derived in the text and apply them to estimate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\left[s_{d}\left(t^{'}\right)-s_{d0}\right]dt=?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Present the physical arguments as to why the integral of the additional
+ delayed neutron source must be finite although 
+\begin_inset Formula $s_{das}=s_{d0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the text, the solution for the asymptotic flux is provided as 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "eq. 10.60"
+key "Ott1985"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{as}=p_{0}-\rho_{1}\frac{\lambda_{H}}{\gamma}>p_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This result, along with 
+\begin_inset Formula 
+\[
+p_{0}=\frac{s_{d0}}{\beta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+p=\frac{s_{d}}{\beta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+means we can put the integral in the following form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\left[s_{d}\left(t^{'}\right)-s_{d0}\right]dt=\beta\int_{0}^{\infty}\left[p\left(t^{'}\right)-p_{0}\right]dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and understanding that 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "eq. 10.56"
+key "Ott1985"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\left[p\left(t^{'}\right)-p_{0}\right]dt=-\frac{\rho_{1}}{\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we conclude that
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\left[s_{d}\left(t^{'}\right)-s_{d0}\right]dt=-\frac{\beta\rho_{1}}{\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As stated by Ott, 
+\begin_inset Quotes eld
+\end_inset
+
+the asymptotic state is a stationary state and therefore the flux level
+ is independent of the precursor decay constants altogether
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "pp. 248-249"
+key "Ott1985"
+
+\end_inset
+
+.
+ This provides the mathematical argument to the contradiction of a constantly
+ 
+\begin_inset Quotes eld
+\end_inset
+
+loaded
+\begin_inset Quotes erd
+\end_inset
+
+ delayed source (which would result in an infitie delayed source).
+ This mathematical argument is compounded by the physical arguments that
+ the PJA is non physical, so the delayed source would really not being at
+ it's asymptotic level.
+ Also, the kinetics are only taking into account one energy group.
+ If more energy groups were considered, the delayed neutron source would
+ emit a soft spectrum, and not all of the neutrons would compound (so it
+ would not compound infinitely).
+ Finally, there is no consideration of heat transfer in the current model,
+ and heat transfer would change cross sections and adjust the delayed neutron
+ source, keeping it finite.
+\end_layout
+
+\begin_layout Paragraph
+Calculate the burst width in a superprompt-critical transient with the linear
+ energy feedback model from the formula derived in the text.
+ Use LWR data: 
+\begin_inset Formula $\beta=0.0075$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda=10^{-5}\, s$
+\end_inset
+
+; let 
+\begin_inset Formula $\rho_{1}=1.1\$$
+\end_inset
+
+.
+ Also find the energy release
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q\left(t_{2}\right)=\int_{0}^{t_{2}}P\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Estimate the magnitude of the effects of the following two approximations:
+\end_layout
+
+\begin_layout Subparagraph
+The neglect of the heat release (i.e., the assumption of 
+\begin_inset Formula $\lambda_{H}=0$
+\end_inset
+
+).
+ Consider an oxide fuel rod of 
+\begin_inset Formula $0.6\, cm$
+\end_inset
+
+ in diameter.
+\end_layout
+
+\begin_layout Subparagraph
+Neglect of 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ under the feedback integral, i.e., the integral of 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ over the burst width with 
+\begin_inset Formula $Q\left(t_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "X:/INOK_User_Files/ahagen/Papers/Bibliographies/NUCL 612"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

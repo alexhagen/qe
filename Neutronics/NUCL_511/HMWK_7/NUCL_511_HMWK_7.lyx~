@@ -1,0 +1,1343 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{mhchem}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{listings}
+\renewcommand\theparagraph{\arabic{paragraph}}
+\renewcommand\thesubparagraph{(\arabic{subparagraph})}
+
+\usepackage{savesym}
+\usepackage{amsmath}
+\savesymbol{iint}
+\usepackage{txfonts}
+\restoresymbol{TXF}{iint}
+
+% \renewcommand{\algorithmname}{Source Code}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 0
+\use_mhchem 2
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 5
+\tocdepth 5
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+NUCL 511 HMWK 7
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+3/13/14
+\end_layout
+
+\begin_layout Paragraph
+
+\emph on
+Transients with Constant Reactivity
+\emph default
+.
+ Find numerically (with a suitable code) the solution of the point kinetics
+ equations for the following reactivity insertions in a critical reactor
+ and plot the results (in all cases, use 
+\begin_inset Formula $\Lambda=10^{-4}$
+\end_inset
+
+, 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+, and 
+\begin_inset Formula $10^{-6}\, s$
+\end_inset
+
+).
+ Use one group of delayed neutrons with 
+\begin_inset Formula $\beta=0.007$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{\lambda}=0.1\, s^{-1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+The general solution of the one-group delayed neutron point kinetics equation
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(t\right)=\frac{p_{0}}{1-\rho_{1\$}}\exp\left(\alpha_{1}t\right)-\frac{\rho_{1\$}p_{0}}{1-\rho_{1\$}}\exp\left(\alpha_{P}t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we assume that 
+\begin_inset Formula $p_{0}=1$
+\end_inset
+
+.
+ Now we simply need to find 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{P}$
+\end_inset
+
+.
+ When the reactivity is less than one dollar (
+\begin_inset Formula $\rho_{1\$}<1\$$
+\end_inset
+
+), the roots of the characteristic equation can be found with 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{1}=\frac{\rho_{1\$}}{1-\rho_{1\$}}\cdot\overline{\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+\alpha_{P}=\frac{\rho_{1}-\beta}{\Lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means the following gives the power level as a function of time with
+ respect to a constant activity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(t\right)=\frac{1}{1-\rho_{1\$}}\exp\left(\frac{\rho_{1\$}}{1-\rho_{1\$}}\cdot\overline{\lambda}\cdot t\right)-\frac{\rho_{1\$}}{1-\rho_{1\$}}\exp\left(\frac{\rho_{1}-\beta}{\Lambda}\cdot t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This can be plotted easily.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Short-Time-Phenomena"
+
+\end_inset
+
+ shows the short time phenomena for the reactivities 
+\begin_inset Formula $0.75\$$
+\end_inset
+
+, 
+\begin_inset Formula $-1.0\$$
+\end_inset
+
+, and 
+\begin_inset Formula $-3.0\$$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{0.75
+\backslash
+columnwidth} 
+\backslash
+import{img/}{NUCL_511_HWMK_7_PROB_1_1.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Positive Reactivity Insertion
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Positive-Reactivity-Insertion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{0.75
+\backslash
+columnwidth} 
+\backslash
+import{img/}{NUCL_511_HWMK_7_PROB_1_2.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Negative Reactivity Insertion
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Negative-Reactivity-Insertion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{0.75
+\backslash
+columnwidth} 
+\backslash
+import{img/}{NUCL_511_HWMK_7_PROB_1_3.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Largely Negative Reactivity Insertion
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Largely-Negative-Reactivity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Short Time Phenomena of Different Reactivity Insertions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Short-Time-Phenomena"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Estimate first the length of time you want to run the transient; present
+ the rationale of your estimate.
+\end_layout
+
+\begin_layout Standard
+For each transient, I would run them until they reached their asymptotic
+ level (after the short time behavior had been removed).
+ Notice that for the negative reactivities, times of 
+\begin_inset Formula $0.04\, s$
+\end_inset
+
+ and 
+\begin_inset Formula $0.02\, s$
+\end_inset
+
+ would place any of the systems into a reduced power level at steady state.
+ For the positive reactivity, a time of 
+\begin_inset Formula $0.35\, s$
+\end_inset
+
+ would place any system into a positive reactor period, and thus the power
+ level would increase over time.
+ For each of these cases, a decreased 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ requires decreased time to reach that stable period.
+\end_layout
+
+\begin_layout Subparagraph
+Discuss the transient results, in particular the short-time behavior, asymptotic
+ behavior, and 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ dependence of both.
+\end_layout
+
+\begin_layout Standard
+The short time behavior of the positive and negative reactivity insertions
+ is similar.
+ Starting at 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+, the power level changes drastically before slowing down to reach the next
+ stable period (the asymptotic solution).
+ For smaller 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+, the faster the change is made.
+ For example, the decrease in a reactivity insertion of 
+\begin_inset Formula $-1.0\$$
+\end_inset
+
+ happens in about 
+\begin_inset Formula $0.04\, s$
+\end_inset
+
+ with 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ of 
+\begin_inset Formula $10^{-4}\, s^{-1}$
+\end_inset
+
+, whereas it takes much less than 
+\begin_inset Formula $0.005\, s$
+\end_inset
+
+ when 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is 
+\begin_inset Formula $10^{-6}\, s^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The asymptotic solutions of the reactivity insertions are different.
+ For positive reactivity, the asymptotic solution is a linearly increasing
+ power level.
+ This power level is independent of 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ This is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Positive-Reactivity-Insertion"
+
+\end_inset
+
+, as the power level linearly increases towards the end of the time window.
+ For negative reactivity solutions, the asymptotic solution is a constant
+ power level, and the amount of the reactivity insertion determines that
+ power level.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Negative-Reactivity-Insertion"
+
+\end_inset
+
+, a 
+\begin_inset Formula $-1.0\$$
+\end_inset
+
+ reactivity insertion has an asymptotic power level of 
+\begin_inset Formula $0.5$
+\end_inset
+
+, whereas in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Largely-Negative-Reactivity"
+
+\end_inset
+
+, a 
+\begin_inset Formula $-3.0\$$
+\end_inset
+
+ reactivity insertion has an asymptotic power level of 
+\begin_inset Formula $\sim0.25$
+\end_inset
+
+.
+ For negative reactivities, 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ does not alter the asymptotic power level, but instead changes how quickly
+ the power drops to that constant level, as described earlier.
+\end_layout
+
+\begin_layout Paragraph
+Find numerically the transient that follows a 
+\begin_inset Formula $\rho$
+\end_inset
+
+ jump from 
+\begin_inset Formula $\rho_{0}=-1\$$
+\end_inset
+
+ to 
+\begin_inset Formula $\rho_{1}=0$
+\end_inset
+
+, with a source 
+\begin_inset Formula $s_{0}=\beta p_{0}$
+\end_inset
+
+ present during the transient.
+ Again use the three 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ values of problem 5.
+ Use one group of delayed neutrons with 
+\begin_inset Formula $\beta=0.007$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{\lambda}=0.1\, s^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We have the two group point kinetics equations with an independent source
+ as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\Lambda\dot{p}=\left[\rho\left(t\right)-\beta\right]p\left(t\right)+\lambda\zeta\left(t\right)+s\left(t\right) & \,\\
+\dot{\zeta}\left(t\right)=\beta p\left(t\right)-\lambda\zeta\left(t\right) & \,
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+which can be combined into a second order ODE by using the reduced precursor
+ concentration, 
+\begin_inset Formula $\zeta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda\ddot{p}+\left(\lambda\Lambda+\beta-\rho\right)\dot{p}-\left(\lambda\rho+\dot{\rho}\right)p=\lambda s+\dot{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can simplify this expression by knowing several values.
+ First, we know that 
+\begin_inset Formula $\lambda=\overline{\lambda}$
+\end_inset
+
+, since we are using only one group of delayed neutrons.
+ Secondly, we know that the transient includes a jump, which is modeled
+ by the heaviside step function 
+\begin_inset Formula $\rho=\rho_{0}+\left(\rho_{1}-\rho_{0}\right)H\left(t\right)$
+\end_inset
+
+, which will have a derivative of 
+\begin_inset Formula $\dot{\rho}=\begin{cases}
+\infty & t=0\\
+0 & t\neq0
+\end{cases}$
+\end_inset
+
+.
+ Finally, we know the constant source, 
+\begin_inset Formula $s_{0}=\beta p_{0}$
+\end_inset
+
+, which will have a zero derivative.
+ Thus, the ODE we must solve is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ott1985"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda\ddot{p}+\left(\overline{\lambda}\Lambda+\beta-\rho\right)\dot{p}-\left(\overline{\lambda}\rho+\dot{\rho}\right)p=\overline{\lambda}\beta p_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+which, for 
+\begin_inset Formula $t\neq0$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda\ddot{p}+\left(\overline{\lambda}\Lambda+\beta-\rho\right)\dot{p}-\left(\overline{\lambda}\rho\right)p=\overline{\lambda}\beta p_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To solve this ODE, we must first place it in the form 
+\begin_inset Formula $L\left[y\right]=y''+p\left(t\right)y'+q\left(t\right)y=g\left(t\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Boyce2005"
+
+\end_inset
+
+, so we divide by 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ddot{p}+\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}\dot{p}-\frac{\left(\overline{\lambda}\rho+\dot{\rho}\right)}{\Lambda}p=\frac{\overline{\lambda}\beta p_{0}}{\Lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we find the general solution of the corresponding homogenous equation,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ddot{p}+\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}\dot{p}-\frac{\left(\overline{\lambda}\rho+\dot{\rho}\right)}{\Lambda}p=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+which has the general form of
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=c_{1}\exp\left(r_{1}t\right)+c_{2}\exp\left(r_{2}t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+so the characteristic equation is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}+\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}r-\frac{\left(\overline{\lambda}\rho\right)}{\Lambda}p=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when 
+\begin_inset Formula $t>0$
+\end_inset
+
+, 
+\begin_inset Formula $\rho=0$
+\end_inset
+
+, so this becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r\left(r+\frac{\left(\overline{\lambda}\Lambda+\beta\right)}{\Lambda}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{1}=0,\;\; r_{2}=-\frac{\left(\overline{\lambda}\Lambda+\beta\right)}{\Lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To find the particular solution, we can use the method of undetermined coefficie
+nts, where
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\ddot{p}+\frac{\left(\overline{\lambda}\Lambda+\beta\right)}{\Lambda}\dot{p}=\frac{\overline{\lambda}\beta p_{0}}{\Lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we guess a particular solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{P}=c_{3}t,\;\;\dot{Y_{P}}=c_{3},\;\;\ddot{Y_{P}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\left(\overline{\lambda}\Lambda+\beta\right)}{\Lambda}c_{3}=\frac{\overline{\lambda}\beta p_{0}}{\Lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c_{3}=\frac{\overline{\lambda}\beta p_{0}}{\left(\overline{\lambda}\Lambda+\beta\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we need to find 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+, knowing that 
+\begin_inset Formula 
+\[
+p=c_{1}+c_{2}\exp\left(-\frac{\left(\overline{\lambda}\Lambda+\beta\right)}{\Lambda}t\right)+\frac{\overline{\lambda}\beta p_{0}}{\left(\overline{\lambda}\Lambda+\beta\right)}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We must then determine coefficients 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+.
+ We can use time 
+\begin_inset Formula $t=0^{+}$
+\end_inset
+
+ to determine an initial condition, at which we know
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(0^{+}\right)=0=c_{1}+c_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also know that at time 
+\begin_inset Formula $t=\infty$
+\end_inset
+
+, the answer must be finite, because the reactor is never super critical.
+ Because of this state, 
+\begin_inset Formula $c_{3}$
+\end_inset
+
+ becomes incorrect, and instead we must take the trivial solution for 
+\begin_inset Formula $c_{3}$
+\end_inset
+
+.
+ Thus, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(\infty\right)=c_{1}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this way, 
+\begin_inset Formula $c_{2}=-p\left(\infty\right)=-1$
+\end_inset
+
+.
+ Note that depending on our conditions for the asymptotic power and initial
+ power, we could vary the change between these two functions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=1-\exp\left(-\frac{\left(\overline{\lambda}\Lambda+\beta\right)}{\Lambda}t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is plotted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Power-Response-with Step Reactivity Change"
+
+\end_inset
+
+.
+ Notice that while the reactivity is negative, that the flux does increase
+ until it reaches a steady state.
+ Note that again, the decreasing 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ causes a decreased time to reach the asymptotic level.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{
+\backslash
+columnwidth} 
+\backslash
+import{img/}{NUCL_511_HWMK_7_PROB_2.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Power Response with Step Reactivity Change from 
+\begin_inset Formula $\rho_{0}=0$
+\end_inset
+
+ to 
+\begin_inset Formula $\rho_{1}=1$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Power-Response-with Step Reactivity Change"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\emph on
+Interpretation of the Adjoint Flux
+\emph default
+.
+ Prove by application of the point kinetics equations the interpretation
+ of the adjoint flux, 
+\begin_inset Formula $\phi_{0}^{*}\left(\mathbf{r},E\right)$
+\end_inset
+
+, as the asymptotic relative flux rise 
+\begin_inset Formula $\delta p_{as}$
+\end_inset
+
+ (aside from a proportionality constant) that follows a burst-insertion
+ of independent source neutrons in a critical reactor at location 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ with energy 
+\begin_inset Formula $E$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta p_{as}=c\phi_{0}^{*}\left(\mathbf{r},E\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Find the analytical solution for a burst-insertion of independent source
+ neutrons in a critical reactor, 
+\begin_inset Formula $\delta s\left(t\right)=s_{0}\delta\left(t\right)$
+\end_inset
+
+.
+ Use one group of delayed neutrons, 
+\begin_inset Formula $\lambda=\overline{\lambda}$
+\end_inset
+
+.
+ Find 
+\begin_inset Formula $p\left(t\right)$
+\end_inset
+
+, and especially 
+\begin_inset Formula $\delta p_{as}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Again, we start with the point kinetics equations with an independent source,
+ which is shown below
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\Lambda\dot{p}=\left[\rho\left(t\right)-\beta\right]p\left(t\right)+\lambda\zeta\left(t\right)+s\left(t\right) & \,\\
+\dot{\zeta}\left(t\right)=\beta p\left(t\right)-\lambda\zeta\left(t\right) & \,
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+then, we reduce the two first order ODEs into a single second order ODE
+ by using the reduced precursor concentration, 
+\begin_inset Formula $\zeta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda\ddot{p}+\left(\lambda\Lambda+\beta-\rho\right)\dot{p}-\left(\lambda\rho+\dot{\rho}\right)p=\lambda s+\dot{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that 
+\begin_inset Formula $s=s_{0}\delta\left(t\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\delta\left(t\right)$
+\end_inset
+
+ is Dirac's delta function at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Because this has the delta function in it, we can attempt to solve it using
+ the Laplace transform.
+ The reactivity is not changed in the problem, so 
+\begin_inset Formula $\dot{\rho}=0$
+\end_inset
+
+, and 
+\begin_inset Formula $s=s_{0}\delta\left(t\right)$
+\end_inset
+
+, so the equation to be solved is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda\ddot{p}+\left(\overline{\lambda}\Lambda+\beta-\rho\right)\dot{p}-\overline{\lambda}\rho p=\overline{\lambda}s_{0}\delta\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We take the Laplace transform of the equation, obtaining
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda\mathcal{L}\left[\ddot{p}\right]+\left(\overline{\lambda}\Lambda+\beta-\rho\right)\mathcal{L}\left[\dot{p}\right]-\overline{\lambda}\rho\mathcal{L}\left[p\right]=\overline{\lambda}s_{0}\mathcal{L}\left[\delta\left(t\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Lambda t^{2}P\left(t\right)-\Lambda tp\left(0\right)-\Lambda\dot{p}\left(0\right)+\left(\overline{\lambda}\Lambda+\beta-\rho\right)\left[tP\left(t\right)-p\left(0\right)\right]+\overline{\lambda}\rho P\left(t\right)=\overline{\lambda}s_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the initial conditions that 
+\begin_inset Formula $p\left(0\right)=1$
+\end_inset
+
+, and, for lack of a better assumption, 
+\begin_inset Formula $\dot{p}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(t\right)=\frac{\overline{\lambda}s_{0}+\Lambda t+\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda t^{2}+\left(\overline{\lambda}\Lambda+\beta-\rho\right)t+\overline{\lambda}\rho}=\frac{t+\frac{\overline{\lambda}s_{0}+\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}}{t^{2}+\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}t+\frac{\overline{\lambda}}{\Lambda}\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(t\right)=\frac{t}{t^{2}+\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}t+\frac{\overline{\lambda}}{\Lambda}\rho}+\frac{\frac{\overline{\lambda}s_{0}+\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}}{t^{2}+\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}t+\frac{\overline{\lambda}}{\Lambda}\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is of the form 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{s}{\left(s-a\right)^{2}}+c_{1}\frac{a}{(s-a)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\frac{-\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}\pm\sqrt{\left[\frac{\left(\overline{\lambda}\Lambda+\beta-\rho\right)}{\Lambda}\right]^{2}-4\frac{\overline{\lambda}}{\Lambda}\rho}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Why is it sufficient to use a single group of delayed neutrons for determining
+ 
+\begin_inset Formula $\delta p_{as}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For a burst, the better delayed neutron source yields a better power response
+ using an arithmetic mean, as stated in lecture.
+ This means that, while still analytically possible to solve, the single
+ group of delayed neutrons determines the power response well for the power
+ burst.
+\end_layout
+
+\begin_layout Subparagraph
+Relate 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $\phi_{0}^{*}\left(\mathbf{r},E\right)$
+\end_inset
+
+ and present the desired proof.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "X:/INOK_User_Files/ahagen/Papers/Bibliographies/NUCL 612"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

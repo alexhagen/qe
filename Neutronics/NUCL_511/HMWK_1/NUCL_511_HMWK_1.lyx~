@@ -1,0 +1,594 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{mhchem}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+NUCL 511 HMWK 1
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/23/14
+\end_layout
+
+\begin_layout Paragraph
+Using the data given below, determine the I-135 and Xe-135 concentrations
+ and generate their plots for the power history given on slide 20 of the
+ lecture note 1.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+One-group flux at full power 
+\begin_inset Formula $(\#/cm^{2}s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\times10^{14}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Macroscopic fission cross section (
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+) (
+\begin_inset Formula $cm^{-1}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.686$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fission yield of I-135
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.064$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Half-life of I-135 (
+\begin_inset Formula $hr$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fission yield of Xe-135
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.003$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Half-life of Xe-135 (
+\begin_inset Formula $hr$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9.2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Microscopic Absorption cross section of Xe-135 (
+\begin_inset Formula $barn$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.7\times10^{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The power history from Slide 20 of the lecture note 1 is given in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U-235-Fueled-Reactor-Power-History"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{14 cm} 
+\backslash
+import{img/}{power_history.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+U-235 Fueled Reactor Power History - Adapted from Lecture Note 1, Slide
+ 20
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:U-235-Fueled-Reactor-Power-History"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can split the power history into four sections:
+\end_layout
+
+\begin_layout Enumerate
+The section before time 
+\begin_inset Formula $0\, hr$
+\end_inset
+
+ where the concentrations are equal to their equilibrium concentrations.
+\end_layout
+
+\begin_layout Enumerate
+The section between time 
+\begin_inset Formula $0\, hr$
+\end_inset
+
+ and 
+\begin_inset Formula $60\, hr$
+\end_inset
+
+ where the reactor is operating at half flux (
+\begin_inset Formula $\phi=0.5\times10^{15}\,\frac{n}{cm^{2}s}$
+\end_inset
+
+).
+ In this case, the initial conditions will be the equilibrium values from
+ the previous section.
+\end_layout
+
+\begin_layout Enumerate
+The section between time 
+\begin_inset Formula $60\, hr$
+\end_inset
+
+ and 
+\begin_inset Formula $120\, hr$
+\end_inset
+
+ where the reactor is again operating at full flux (
+\begin_inset Formula $\phi=1.0\times10^{15}\,\frac{n}{cm^{2}s}$
+\end_inset
+
+).
+ The initial conditions will be the final concentrations of the previous
+ section, i.e.
+ the concentrations just before time 
+\begin_inset Formula $60\, hr$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Finally, the shutdown section, after 
+\begin_inset Formula $120\, hr$
+\end_inset
+
+ where the flux has dropped to nothing (
+\begin_inset Formula $\phi=0\,\frac{n}{cm^{2}s}$
+\end_inset
+
+).
+ The initial conditions again come from the concentrations at the end of
+ the last section (just before time 
+\begin_inset Formula $120\, hr$
+\end_inset
+
+), but these are also equal to the equilibrium concentrations.
+\end_layout
+
+\begin_layout Standard
+\noindent
+We can use the equilibrium equations from 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 469"
+key "Lamarsh"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{I}^{\infty}=\frac{\gamma_{I}F}{\overline{\lambda_{I}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{Xe}^{\infty}=\frac{\gamma_{Xe}F+\lambda_{I}N_{I}^{\infty}}{\overline{\lambda_{Xe}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+to determine the values for section 1, and for all other sections we can
+ use the equations solved from the rate equations in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "pp. 468 - 469"
+key "Lamarsh"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{I}\left(t\right)=N_{I}^{0}\exp\left(-\overline{\lambda_{I}}t\right)+\frac{\gamma_{I}F}{\overline{\lambda_{I}}}\left(1-\exp\left(-\overline{\lambda_{I}}t\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline}
+N_{Xe}\left(t\right)=N_{Xe}^{0}\exp\left(-\overline{\lambda_{Xe}}t\right)+\frac{\gamma_{Xe}F}{\overline{\lambda_{Xe}}}\left(1-\exp\left(-\overline{\lambda_{Xe}}t\right)\right)+\frac{\gamma_{I}N_{I}^{0}}{\overline{\lambda_{Xe}}-\overline{\lambda_{I}}}\left(\exp\left(-\overline{\lambda_{I}}t\right)-\exp\left(-\overline{\lambda_{Xe}}t\right)\right)\\
++\frac{\lambda_{I}\gamma_{I}F}{\overline{\lambda_{I}}}\left[\frac{1}{\overline{\lambda_{Xe}}}\left(1-\exp\left(-\overline{\lambda_{Xe}}t\right)\right)-\frac{1}{\overline{\lambda_{Xe}}-\overline{\lambda_{I}}}\left(\exp\left(-\overline{\lambda_{I}}t\right)-\exp\left(-\overline{\lambda_{Xe}}t\right)\right)\right]
+\end{multline}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Finally, we can return results very similar to those provided in the slides,
+ shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Xenon and Iodine Concentrations using Power History given by Figure 1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{14 cm} 
+\backslash
+import{img/}{xe_i_concentrations.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Xenon and Iodine Concentrations using Power History given by Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U-235-Fueled-Reactor-Power-History"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Xenon and Iodine Concentrations using Power History given by Figure 1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/ahagen/bibs/NUCL 612"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

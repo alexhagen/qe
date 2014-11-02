@@ -1,0 +1,1192 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{mhchem}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\renewcommand\theparagraph{\arabic{paragraph}}
+\renewcommand\thesubparagraph{(\arabic{subparagraph})}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 5
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+NUCL 511 HMWK 4
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+2/13/14
+\end_layout
+
+\begin_layout Paragraph
+Consider the following 2-group diffusion equation for a one-region slab
+ reactor of thickness 
+\begin_inset Formula $a$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+-D_{1}\frac{d^{2}}{dx^{2}}\phi_{1}(x)+\Sigma_{r1}\phi_{1}(x)=\frac{1}{k}\left[\nu\Sigma_{f1}\phi_{1}(x)+\nu\Sigma_{f2}\phi_{2}(x)\right]\\
+-D_{2}\frac{d^{2}}{dx^{2}}\phi_{2}(x)+\Sigma_{a2}\phi_{2}(x)=\Sigma_{s1\rightarrow2}\phi_{1}(x)
+\end{cases},\,-\frac{a}{2}\leq x\leq\frac{a}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{1}(-a/2)=\phi_{1}(a/2)=0,\;\;\phi_{2}(-a/2)=\phi_{2}(a/2)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Assuming that the neutron flux is separable in its space and energy dependence,
+ i.e., 
+\begin_inset Formula $\phi_{1}(x)=\varphi_{1}\phi(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{2}(x)=\varphi_{2}\phi(x)$
+\end_inset
+
+ with the same spatial flux shape 
+\begin_inset Formula $\phi(x)$
+\end_inset
+
+, determine the fundamental mode solution of this system of equations.
+ Normalize the flux such that the total fission rate, i.e., the integral over
+ energy and space, is unity.
+\end_layout
+
+\begin_layout Standard
+First, we apply the separability
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+-D_{1}\varphi_{1}\frac{d^{2}}{dx^{2}}\phi(x)+\Sigma_{r1}\varphi_{1}\phi(x)=\frac{1}{k}\left[\nu\Sigma_{f1}\varphi_{1}\phi(x)+\nu\Sigma_{f2}\varphi_{2}\phi(x)\right]\\
+-D_{2}\varphi_{2}\frac{d^{2}}{dx^{2}}\phi(x)+\Sigma_{a2}\varphi_{2}\phi(x)=\Sigma_{s1\rightarrow2}\varphi_{1}\phi(x)
+\end{cases},\,-\frac{a}{2}\leq x\leq\frac{a}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we can apply buckling, with the equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-B^{2}=\frac{\frac{d^{2}}{dx^{2}}\phi(x)}{\phi(x)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and divide through, getting
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+D_{1}B^{2}\varphi_{1}+\Sigma_{r1}\varphi_{1}=\frac{1}{k}\left[\nu\Sigma_{f1}\varphi_{1}+\nu\Sigma_{f2}\varphi_{2}\right]\\
+D_{2}B^{2}\varphi_{2}+\Sigma_{a2}\varphi_{2}=\Sigma_{s1\rightarrow2}\varphi_{1}
+\end{cases},\,-\frac{a}{2}\leq x\leq\frac{a}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and put into a matrix form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{cc}
+D_{1}B^{2}+\Sigma_{r1}-\lambda\nu\Sigma_{f1} & -\lambda\nu\Sigma_{f2}\\
+-\Sigma_{s1\rightarrow2} & D_{2}B^{2}+\Sigma_{a2}
+\end{array}\right]\left[\begin{array}{c}
+\varphi_{1}\\
+\varphi_{2}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0
+\end{array}\right]\label{eq:forwardflux}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After we find 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ using the determinant of the above matrix and setting it equal to 
+\begin_inset Formula $0$
+\end_inset
+
+, we can solve this for 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ is the nullspace of 
+\begin_inset Formula $\mathbf{M}-\lambda\mathbf{F}$
+\end_inset
+
+ which is the matrix given above.
+\end_layout
+
+\begin_layout Standard
+To find the fundamental mode of this solution means that we take the fundamental
+ mode solution of the spatial dependent equation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ott1989"
+
+\end_inset
+
+, which is given above
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d^{2}\phi}{dx^{2}}+B^{2}\phi=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving this, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi(x)=C_{1}\cos\left(Bx\right)+C_{2}\sin\left(Bx\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the fact that the maximum of the distribution is at zero (
+\begin_inset Formula $\frac{d\phi}{dx}=0$
+\end_inset
+
+) we get that 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ must be zero.
+ Using the full thickness as the extrapolated thickness, we find that 
+\begin_inset Formula 
+\[
+0=C_{1}\cos\left(B\frac{a}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ cannot be 
+\begin_inset Formula $0$
+\end_inset
+
+ as that would leave the trivial solution.
+ Thus, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Ba}{2}=\phi\left(n-\frac{1}{2}\right)
+\]
+
+\end_inset
+
+, and the fundamental solution means we take the smallest of that (
+\begin_inset Formula $n=1$
+\end_inset
+
+).
+ For higher order solutions (harmonics), we would have to take 
+\begin_inset Formula $n>1$
+\end_inset
+
+.
+ So our fundamental spatial solution is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi(x)=\phi_{0}\cos\left(\frac{\pi x}{a}\right)\label{eq:spatial profile}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To find 
+\begin_inset Formula $\phi_{0}$
+\end_inset
+
+, we must use the condition that the total fission rate over energy and
+ space is unity.
+ This means that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{V}\nu\Sigma_{f1}\varphi_{1}\phi(x)+\nu\Sigma_{f2}\varphi_{2}\phi(x)dV=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-a/2}^{a/2}\nu\Sigma_{f1}\varphi_{1}\phi_{0}\cos\left(\frac{\pi x}{a}\right)+\nu\Sigma_{f2}\varphi_{2}\phi_{0}\cos\left(\frac{\pi x}{a}\right)dx=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{0}\left(\nu\Sigma_{f1}\varphi_{1}+\nu\Sigma_{f2}\varphi_{2}\right)\int_{-a/2}^{a/2}\cos\left(\frac{\pi x}{a}\right)dx=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{0}\left(\nu\Sigma_{f1}\varphi_{1}+\nu\Sigma_{f2}\varphi_{2}\right)\left[\frac{a\sin\left(\frac{\pi x}{a}\right)}{\pi}\right]_{-a/2}^{a/2}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{0}\left(\nu\Sigma_{f1}\varphi_{1}+\nu\Sigma_{f2}\varphi_{2}\right)\frac{2a}{\pi}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi_{0}=\frac{\pi}{2a\left(\nu\Sigma_{f1}\varphi_{1}+\nu\Sigma_{f2}\varphi_{2}\right)}\label{eq:normalization}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Write the adjoint 2-group diffusion equation.
+\end_layout
+
+\begin_layout Standard
+With the above equation in the form 
+\begin_inset Formula 
+\[
+\mathbf{M}\phi(x)=\lambda\mathbf{F}\phi(x)
+\]
+
+\end_inset
+
+ the operators 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{F}$
+\end_inset
+
+ can be used in the adjoint flux by determining the adjoint of those (the
+ adjoint of a real matrix is the transpose).
+ So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{M}^{*}\phi^{*}(x)=\lambda^{*}\mathbf{F}^{*}\phi^{*}(x)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{cc}
+D_{1}B^{2}+\Sigma_{r1} & -\Sigma_{s1\rightarrow2}\\
+0 & D_{2}B^{2}+\Sigma_{a2}
+\end{array}\right]\left[\begin{array}{c}
+\varphi_{1}^{*}\\
+\varphi_{2}^{*}
+\end{array}\right]=\lambda^{*}\left[\begin{array}{cc}
+\nu\Sigma_{f1} & 0\\
+\nu\Sigma_{f2} & 0
+\end{array}\right]\left[\begin{array}{c}
+\varphi_{1}^{*}\\
+\varphi_{2}^{*}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Assuming that the adjoint flux is separable in its space and energy dependence,
+ i.e., 
+\begin_inset Formula $\phi_{1}^{*}(x)=\varphi_{1}^{*}\phi^{*}(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{2}^{*}(x)=\varphi_{2}^{*}\phi^{*}(x)$
+\end_inset
+
+, the fundamental mode adjoint fluxes.
+ Normalize the total adjoint flux, i.e., the integral over energy and space
+ to unity.
+\end_layout
+
+\begin_layout Standard
+To solve the two group diffusion equation as given above, we first must
+ move the fission operator to one side, getting
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{cc}
+D_{1}B^{2}+\Sigma_{r1}-\lambda^{*}\nu\Sigma_{f1} & -\Sigma_{s1\rightarrow2}\\
+-\lambda^{*}\nu\Sigma_{f2} & D_{2}B^{2}+\Sigma_{a2}
+\end{array}\right]\left[\begin{array}{c}
+\varphi_{1}^{*}\\
+\varphi_{2}^{*}
+\end{array}\right]=0\label{eq:adjointflux}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It should be seen that this is exactly the same as equation 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eq:forwardflux"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ott1985"
+
+\end_inset
+
+.
+ There are two equations and three unknowns, as 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ isn't known and neither are the fluxes.
+ After finding 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ by setting the above determinant equal to zero, we can solve where 
+\begin_inset Formula $\varphi^{*}$
+\end_inset
+
+ is the nullspace of the matrix 
+\begin_inset Formula $\mathbf{M^{*}}-\lambda^{*}\mathbf{F^{*}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It should be noted that spatially the adjoint flux is the same, because
+ we have used the same buckling to solve the spatial dependence.
+ To normalize the total flux to unity, we see that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{V}\varphi_{1}^{*}\phi^{*}(x)+\varphi_{2}^{*}\phi^{*}(x)dV=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{0}^{*}\left(\varphi_{1}^{*}+\varphi_{2}^{*}\right)\frac{2a}{\pi}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, the adjoint normalization is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi_{0}^{*}=\frac{\pi}{2a\left(\varphi_{1}^{*}+\varphi_{2}^{*}\right)}\label{eq:Adjoint_Normalization}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Using the following cross sections and 
+\begin_inset Formula $a=100\, cm$
+\end_inset
+
+, plot the forward and adjoint group fluxes.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Group
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Sigma_{a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Sigma_{aF}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu\Sigma_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Sigma_{s1\rightarrow2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.44$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.01$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.01$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.008$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.017$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.366$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.125$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.09$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.169$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the solutions to equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:forwardflux"
+
+\end_inset
+
+ for the forward flux, equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:adjointflux"
+
+\end_inset
+
+ for the adjoint flux, then the normalization for the forward flux and normaliza
+tion for the adjoint flux, and finally using the spatial distribution for
+ both fluxes, we can get the following profiles.
+ Assuming that 
+\begin_inset Formula $\Sigma_{r1}=\Sigma_{a1}+\Sigma_{s1\rightarrow2}$
+\end_inset
+
+ and that 
+\begin_inset Formula $\Sigma_{r2}=\Sigma_{a2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\varphi_{1}\\
+\varphi_{2}
+\end{array}\right]=\left[\begin{array}{c}
+0.9909\\
+0.1344
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{0}=0.5127
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\varphi_{1}^{*}\\
+\varphi_{2}^{*}
+\end{array}\right]=\left[\begin{array}{c}
+0.8951\\
+0.4456
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{0}^{*}=0.0117
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{12 cm} 
+\backslash
+input{NUCL_511_HMWK_4_PROB_1.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Flux Shape for Adjoint and Forward Fluxes using Two Group Diffusion Theory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+For the perturbations of thermal absorption cross section by 
+\begin_inset Formula $1\%$
+\end_inset
+
+, 
+\begin_inset Formula $2\%$
+\end_inset
+
+, 
+\begin_inset Formula $5\%$
+\end_inset
+
+ and 
+\begin_inset Formula $10\%$
+\end_inset
+
+, estimate the reactivity change using the first order perturbation theory
+ formula.
+ Also determine the exact reactivity change by calculating the multiplication
+ factors of the base and perturbed cases and compare the results with those
+ of FOP.
+\end_layout
+
+\begin_layout Standard
+We are assuming this is a one group point model, and thus we can use the
+ first order perturbation equation given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta\rho=-\Delta\lambda=\frac{\left\langle \phi^{*},\left[\lambda\mathbf{F}^{'}-\mathbf{M^{'}}\right]\phi\right\rangle }{\left\langle \phi^{*},\mathbf{F}\phi\right\rangle }=\frac{\Delta\left(\nu\Sigma_{f}\right)-\nu\Sigma_{f}\Delta\Sigma_{a}}{\left(\nu\Sigma_{f}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the fission cross section or yield has not changed (
+\begin_inset Formula $\Delta\nu\Sigma_{f}=0$
+\end_inset
+
+), we can find out the change in reactivity by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta\rho=\frac{\nu\Sigma_{f}\Delta\Sigma_{a}}{\left(\nu\Sigma_{f}\right)^{2}}=\frac{\Delta\Sigma_{a}}{\nu\Sigma_{f}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means that the reactivity changes by for 
+\begin_inset Formula $1\%$
+\end_inset
+
+, 
+\begin_inset Formula $2\%$
+\end_inset
+
+, 
+\begin_inset Formula $5\%$
+\end_inset
+
+, and 
+\begin_inset Formula $10\%$
+\end_inset
+
+ change in absorption cross section by that amount over the fission cross
+ section times the fission yield.
+ Given the value of 
+\begin_inset Formula $\nu\Sigma_{f}$
+\end_inset
+
+, we could then calculate the reactivity differences.
+\end_layout
+
+\begin_layout Standard
+The exact difference is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta\rho_{e}=\frac{\Delta\left(\nu\Sigma_{f}\right)\Sigma_{a}-\nu\Sigma_{f}\Delta\Sigma_{a}}{\nu\Sigma_{f}\left[\nu\Sigma_{f}+\Delta\left(\nu\Sigma_{f}\right)\right]}=\frac{\Delta\Sigma_{a}}{\nu\Sigma_{f}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+showing no change.
+\end_layout
+
+\begin_layout Standard
+We can also determine the change in multiplication factor using the one
+ group point formula 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ott1989"
+
+\end_inset
+
+.
+ For one group,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k=\frac{\nu\Sigma_{f}}{DB^{2}+\Sigma_{a}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho=1-\frac{1}{k}=1-\frac{DB^{2}+\Sigma_{a}}{\nu\Sigma_{f}}=\frac{\nu\Sigma_{f}-DB^{2}-\Sigma_{a}}{\nu\Sigma_{f}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now if we perturb 
+\begin_inset Formula $\Sigma_{a}^{'}=\Sigma_{a}+\delta\Sigma_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k^{'}=\frac{\nu\Sigma_{f}}{DB^{2}+\Sigma_{a}+\delta\Sigma_{a}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho^{'}=1-\frac{1}{k^{'}}=1-\frac{DB^{2}+\Sigma_{a}+\delta\Sigma_{a}}{\nu\Sigma_{f}}=\frac{\nu\Sigma_{f}-DB^{2}-\Sigma_{a}-\delta\Sigma_{a}}{\nu\Sigma_{f}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $\rho^{'}=\rho+\delta\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\rho=\rho^{'}-\rho=\frac{\nu\Sigma_{f}-DB^{2}-\Sigma_{a}-\delta\Sigma_{a}}{\nu\Sigma_{f}}-\frac{\nu\Sigma_{f}-DB^{2}-\Sigma_{a}}{\nu\Sigma_{f}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Simplifying, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\rho=\frac{\delta\Sigma_{a}}{\nu\Sigma_{f}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This result is exactly the same as the first order perturbation theory result,
+ and the reactivity will again change by the amount of absorption perturbation
+ divided by the fission cross section times the fission yield.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "X:/INOK_User_Files/ahagen/Papers/Bibliographies/NUCL 612"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

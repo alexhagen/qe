@@ -1,0 +1,845 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{mhchem}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+NUCL 511 HMWK 3
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+2/5/14
+\end_layout
+
+\begin_layout Paragraph*
+Consider a three-group representation of a thermal reactor spectrum composed
+ of a fission spectrum, a 
+\begin_inset Formula $1/E$
+\end_inset
+
+ spectrum, and a Maxwell spectrum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{1}(E)=A_{1}\frac{2}{\sqrt{\pi}}\frac{\sqrt{E}}{\left(kT_{1}\right)^{3/2}}e^{-E/kT_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+with 
+\begin_inset Formula $kT_{1}=1.4\, MeV$
+\end_inset
+
+ for 
+\begin_inset Formula $E_{1}=820.3\, keV<E<E_{0}=20\, MeV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{2}(E)=\frac{A_{2}}{E}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+for 
+\begin_inset Formula $E_{2}=0.1\, eV<E\leq E_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{3}(E)dE=A_{3}\frac{E}{(kT_{3})^{2}}e^{-E/kT_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+with 
+\begin_inset Formula $kT_{3}=0.0253\, eV$
+\end_inset
+
+ for 
+\begin_inset Formula $E_{3}=0\leq E\leq E_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+Find the normalization constants 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ such that the spectrum is continuous at the group boundaries and the integratio
+n over the whole energy range is unity.
+ Evaluate the group-wise integrals numerically if necessary.
+\end_layout
+
+\begin_layout Standard
+We have one integral equation with three boundary conditions for this problem.
+ To ensure the integration over the whole energy range is unity, we must
+ have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{E_{0}}\varphi(E)dE=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which, because the spectrum is discrete, becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{E_{3}}^{E_{2}}\varphi_{3}(E)dE+\int_{E_{2}}^{E_{1}}\varphi_{2}(E)dE+\int_{E_{1}}^{E_{0}}\varphi_{1}(E)dE=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{0.1\, eV}A_{3}\frac{E}{(kT_{3})^{2}}e^{-E/kT_{3}}dE+\int_{0.1\, eV}^{820.3\, keV}\frac{A_{2}}{E}dE+\int_{820.3\, keV}^{20\, MeV}A_{1}\frac{2}{\sqrt{\pi}}\frac{\sqrt{E}}{\left(kT_{1}\right)^{3/2}}e^{-E/kT_{1}}dE=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To integrate the first term, 
+\begin_inset Formula $\varphi_{3}$
+\end_inset
+
+, we can use integration by parts
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{A_{3}}{\left(kT_{3}\right)^{2}}\int_{E_{3}}^{E_{2}}Ee^{-E/kT_{3}}dE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+u=E,\; v=?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+du=?,\; dv=e^{-E/kT_{3}}dE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we find that 
+\begin_inset Formula $du=dE$
+\end_inset
+
+ and 
+\begin_inset Formula $v=-kT_{3}e^{-E/kT_{3}}$
+\end_inset
+
+, so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int udv=uv-\int vdu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int Ee^{-E/kT_{3}}=-EkT_{3}e^{-E/kT_{3}}-\int-kT_{3}e^{-E/kT_{3}}dE=kT_{3}Ee^{-E/kT_{3}}+kT_{3}\int e^{-E/kT_{3}}dE=kT_{3}Ee^{-E/kT_{3}}-\left(kT_{3}\right)^{2}e^{-E/kT_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so the integral is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{A_{3}}{\left(kT_{3}\right)^{2}}\left[kT_{3}Ee^{-E/kT_{3}}-\left(kT_{3}\right)^{2}e^{-E/kT_{3}}\right]_{E_{3}}^{E_{2}}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second integral is simply done, and is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{2}\left[\ln(E)\right]_{E_{2}}^{E_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And finally, the third integration is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{A_{1}}{\left(kT_{1}\right)^{3/2}}\frac{2}{\sqrt{\pi}}\int_{E_{1}}^{E_{0}}\sqrt{E}e^{-E/kT_{1}}dE=\{\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The numerical integration included in MATLAB's Symbolic Toolbox was used,
+ which utilizes an adaptive Simpson quadrature method 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mathworks2013"
+
+\end_inset
+
+.
+ This method estimates the integral as a series of trapezoids under the
+ curve (called Simpon's Rule), but also calculates the derivative of the
+ function, and increases the amount of trapezoids used in quickly varying
+ regions of the function 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 458, 505-506"
+key "Bradie2006"
+
+\end_inset
+
+.
+ We can determine the integral equation to be equivalent to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(9.173\times10^{-10}\right)A_{1}+\left(15.920\right)A_{2}+\left(0.905\right)A_{3}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also have the continuity conditions, such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{3}(E_{2})=\varphi_{2}(E_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.A_{3}\frac{E}{(kT_{3})^{2}}e^{-E/kT_{3}}\right|_{E_{2}}=\left.\frac{A_{2}}{E}\right|_{E_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(3.000\right)A_{3}=\left(10.0\right)A_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+\varphi_{2}(E_{1})=\varphi_{1}(E_{1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.A_{1}\frac{2}{\sqrt{\pi}}\frac{\sqrt{E}}{\left(kT_{1}\right)^{3/2}}e^{-E/kT_{1}}\right|_{E_{1}}=\left.\frac{A_{2}}{E}\right|_{E_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(4.146\times10^{-16}\right)A_{1}=\left(1.21\times10^{-6}\right)A_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These three equations help us solve for 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+.
+ Reiterating
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(9.173\times10^{-10}\right)A_{1}+\left(15.920\right)A_{2}+\left(0.905\right)A_{3}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(3.000\right)A_{3}=\left(10.0\right)A_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(4.146\times10^{-16}\right)A_{1}=\left(1.21\times10^{-6}\right)A_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This can be written as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+9.173\times10^{-10} & 15.920 & 0.905\\
+0 & 10 & -3\\
+4.146\times10^{-16} & -1.21\times10^{-6} & 0
+\end{array}\right]\left[\begin{array}{c}
+A_{1}\\
+A_{2}\\
+A_{3}
+\end{array}\right]=\left[\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be solved any number of ways, including backdivision.
+ Again, MATLAB's symbolic Toolbox allows us to solve this without explicitly
+ writing a numerical method.
+ The toolbox uses Cholesky Factorization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mathworks2013"
+
+\end_inset
+
+ to invert the matrix and multiply that by the solution vector.
+ The Cholesky factorization decomposes the matrix into a lower triangular
+ matrix and is more efficient than LU decomposition 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 216"
+key "Bradie2006"
+
+\end_inset
+
+.
+ This gives the constants
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+A_{1}\\
+A_{2}\\
+A_{3}
+\end{array}\right]=\left[\begin{array}{c}
+0.1641\\
+0.04623\\
+0.1541
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using these constants, we can plot the spectrum, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Energy Spectrum given by varphi1, varphi2, and varphi3"
+
+\end_inset
+
+.
+ This spectrum shows the typical shape of a fission spectrum, with a fast
+ and thermal hump, and also demonstrates the continuity of the solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+def
+\backslash
+svgwidth{18 cm} 
+\backslash
+input{NUCL_511_HWMK_3_PROB_1.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Energy Spectrum given by 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $\varphi_{3}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Energy Spectrum given by varphi1, varphi2, and varphi3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+Find the average velocities in individual groups (
+\begin_inset Formula $\bar{v_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v_{2}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\bar{v_{3}}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Finding the average energies can be done using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{E}=\frac{\int\varphi(E)EdE}{\int EdE}=\frac{1}{\Delta E}\int E\varphi(E)dE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+from there, the velocity can be found using
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{v}=\sqrt{\frac{2\bar{E}}{m}}=\sqrt{\frac{2c^{2}\bar{E}}{939.5\, MeV}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When calculated for each group, we get the values
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{v}_{1}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{v}_{2}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{v}_{3}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+Find the one-group values of 
+\begin_inset Formula $\bar{v}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{1/v}$
+\end_inset
+
+ using the three-group values 
+\begin_inset Formula $\bar{v_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v_{2}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\bar{v_{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We have the three group velcoities from the three group values above, and
+ when stitched together, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v=\begin{cases}
+\overline{v_{1}} & E_{1}\leq E<E_{0}\\
+\overline{v_{2}} & E_{2}\leq E<E_{1}\\
+\overline{v_{3}} & E<E_{2}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the average one-group velocity is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{v}=\frac{\int EvdE}{\int EdE}=\frac{1}{\Delta E}\int EvdE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+Define a one-group 
+\begin_inset Formula $\nu\Sigma_{f}$
+\end_inset
+
+ based on the three group-values 
+\begin_inset Formula $\nu\Sigma_{f1}=0.017\, cm^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $\nu\Sigma_{f2}=0.015\, cm^{-1}$
+\end_inset
+
+, and 
+\begin_inset Formula $\nu\Sigma_{f3}=0.3\, cm^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph*
+Calculate the generation time 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ with 
+\begin_inset Formula $\bar{v}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{1/v}$
+\end_inset
+
+.
+ Discuss the results.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "X:/INOK_User_Files/ahagen/Papers/Bibliographies/NUCL 612"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
