@@ -103,7 +103,6 @@ The difficulty becomes decyphering which of the years of each class the material
 #### Course Note(s):
 * [Alex Hagen Exam Review, 2012]()
 * [Kevin Fischer Exam Review, 2012]()
-* [Unknown Student Note Packet, 2013]()
 
 #### Exam/Homework Question(s) with Solution(s):
 * []()
@@ -120,6 +119,8 @@ The difficulty becomes decyphering which of the years of each class the material
 ##### Introduction to Nuclear Thermal-hydraulics Systems
 
 * NUCL RXR Diagrams in NUCL 551, NUCL 402
+	* [NUCL 402 Lecture 1 - Pages 7-9](NUCL_402/Lectures/NUCL_402_LECT_1.pdf)
+	* [NUCL 551 Part 1 Notes - Pages 1-4](NUCL_551/NUCL551_part1.pdf)
 
 ##### General Balance Equation
 
