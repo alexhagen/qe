@@ -128,7 +128,8 @@ The difficulty becomes decyphering which of the years of each class the material
 
 ##### Single-Phase Flow Conservation Equations and Constitutive Relations
 
-* [Closure of Balance Equations using Navier Stokes, Gravity, Second Law of Thermodynamics, etc from NUCL 551](NUCL_551/Constitutive_Relations.pdf)
+* Closure of Balance Equations using Navier Stokes, Gravity, Second Law of Thermodynamics, etc
+	*[Powerpoint from Dr. Ishii for NUCL 551](NUCL_551/Constitutive_Relations.pdf)
 
 ##### Non-dimensional Analysis and Scaling Parameters
 
