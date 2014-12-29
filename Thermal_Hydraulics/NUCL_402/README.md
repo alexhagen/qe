@@ -14,5 +14,5 @@ Homeworks 1, 2, and 3 involved the neutron economy of a reactor and not thermal 
 - [ ] critical flow
 - gaussian plumes
 - accident comparison
-- [ ] compare bwr and pwr
+- [x] compare bwr and pwr
 - [x] safety systems
