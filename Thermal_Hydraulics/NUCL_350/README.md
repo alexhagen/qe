@@ -3,7 +3,7 @@ NUCL 350 Solutions
 - 1.1 - Dimensional Analysis
 - 1.38 - Dimensional Analysis
 - 1.94 - gravity head
-- [ ] ~~2.18 - Gravity Head~~
+- ~~[ ] 2.18 - Gravity Head~~
 - 2.29 Multicomponent gravity head
 - [ ] ~~2.113 - slanted gravity head~~
 - 3.2 - Bernoulli's
