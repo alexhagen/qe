@@ -1,4 +1,4 @@
-NUCL 351 Solutions
+# NUCL 351 Solutions
 
 - 1.1 heat flux/conudction
 - 1.24 heat flux/convection

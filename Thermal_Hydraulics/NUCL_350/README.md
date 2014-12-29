@@ -1,4 +1,4 @@
-NUCL 350 Solutions
+# NUCL 350 Solutions
 
 - 1.1 - Dimensional Analysis
 - 1.38 - Dimensional Analysis

@@ -1,4 +1,4 @@
-NUCL 402 Solutions
+# NUCL 402 Solutions
 
 Lamarsh Introduction to Nuclear Engineering
 
