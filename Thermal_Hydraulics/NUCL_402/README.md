@@ -6,7 +6,7 @@ Homeworks 1, 2, and 3 involved the neutron economy of a reactor and not thermal 
 
 - [ ] PWR Power Density
 - Resistance heating model
-- [ ] BWR channel temperature profile
+- [ ] PWR channel temperature profile
 - [ ] heat transfer coefficients in BWR
 - [ ] quality with drift-flux
 - [ ] pressure drop accross chanell
