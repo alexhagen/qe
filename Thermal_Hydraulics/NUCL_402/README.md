@@ -10,9 +10,9 @@ Homeworks 1, 2, and 3 involved the neutron economy of a reactor and not thermal 
 - [ ] heat transfer coefficients in BWR
 - [ ] quality with drift-flux
 - [ ] pressure drop accross chanell
-- [ ] steam explosion scoping
+- [ ] ~~steam explosion scoping~~
 - [ ] critical flow
 - gaussian plumes
 - accident comparison
 - [ ] compare bwr and pwr
-- [ ] safety systems
+- [x] safety systems
