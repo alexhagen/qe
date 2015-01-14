@@ -40,12 +40,15 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     rel_paths="$(find . -name \*.md -print | tr '\n' ' ' | sed 's:\.\/::g' )"
     git checkout gh-pages
     git checkout master -- $rel_paths
+    
+    for file in $FILES
+    do
+        echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
+    done
+
     git add $rel_paths
+    rm temp
     find . -name 'README.md' -exec sh -c 'git mv "$1" "$( echo $1 | sed 's/README/index/g' )"' _ {} \;
-    #for file in "$( find . -name 'README.md' -print0 )"
-    #do
-    #  git mv "$( echo $file | sed 's:\.\/::g' )" "$( echo $file | sed 's/README/index/g' | sed 's:\.\/::g' )"
-    #done
     git commit -am 'updating all of the markdown documentation'
 
     
