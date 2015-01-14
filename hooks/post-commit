@@ -41,7 +41,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     git checkout gh-pages
     git checkout master -- $rel_paths
     
-    for file in $FILES
+    for file in $rel_paths
     do
         echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
     done
