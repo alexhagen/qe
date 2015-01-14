@@ -43,7 +43,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     git add $rel_paths
     for file in "$( find . -name 'README.md' )"
     do
-      git mv "$file" "$(echo $file | sed 's/README/index/g')"
+      git mv "$( echo $file | sed 's:\.\/::g' )" "$( echo $file | sed 's/README/index/g' | sed 's:\.\/::g' )"
     done
     git commit -am 'updating all of the markdown documentation'
 
