@@ -41,7 +41,12 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     git checkout gh-pages
     git checkout master -- $rel_paths
     git add $rel_paths
+    for file in "$( find . -name 'README.md' )"
+    do
+      git mv "$file" "$(echo $file | sed 's/README/index/g')"
+    done
     git commit -am 'updating all of the markdown documentation'
+
     
     # Uncomment the following push if you want to auto push to
     # the gh-pages branch whenever you commit to master locally.
