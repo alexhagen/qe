@@ -1,0 +1,61 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '511_Prototype.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.23623047bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.35246173)%
+    \put(0,0){\includegraphics[width=\unitlength]{511_Prototype.pdf}}%
+    \put(0.1054434,0.08002203){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\parbox[c][2 cm][c]{2.5 cm}{\centering \small Apply Initial Conditions}}}}%
+    \put(0.29395527,0.08002203){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\parbox[c][2 cm][c]{2.5 cm}{\centering \small Apply Drift Flux Model to solve Heat Transfer}}}}%
+    \put(0.48246712,0.08002203){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\parbox[c][2 cm][c]{2.5 cm}{\centering \small Determine Cross Sections \footnotemark}}}}%
+    \put(0.68040459,0.0797648){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\parbox[c][2 cm][c]{2.5 cm}{\centering \small Solve Amplitude Function $\varphi\left( t \right)$ of Exact Point Kinetics}}}}%
+    \put(0.88776769,0.0797648){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\parbox[c][2 cm][c]{3 cm}{\centering \small Solve Shape Function $\phi\left( r,E,t \right)$ of Exact Point Kinetics with 2 group diffusion}}}}%
+    \put(0.55779801,0.31203931){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\scriptsize throughout time range}}}}%
+    \put(0.46922977,0.25519041){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\scriptsize $\times 10$}}}}%
+  \end{picture}%
+\endgroup%

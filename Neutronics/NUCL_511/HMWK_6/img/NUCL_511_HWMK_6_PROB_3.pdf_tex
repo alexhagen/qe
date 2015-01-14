@@ -1,0 +1,99 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'NUCL_511_HWMK_6_PROB_3.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.7504bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.34361207)%
+    \put(0,0){\includegraphics[width=\unitlength]{NUCL_511_HWMK_6_PROB_3.pdf}}%
+    \put(0.51602974,0.89871688){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Reactivity ($\rho$) [ ]}}}%
+    \put(0.0557423,1.09643693){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Inverse Period ($\alpha$) [$s^{-1}$]}}}}%
+    \put(0.51749895,1.25828193){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\Lambda=1\times 10^{-4}$}}}%
+    \put(0.13000009,0.92638597){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-0.1}}}%
+    \put(0.32374952,0.92638597){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-0.05}}}%
+    \put(0.51749895,0.92638597){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.71124994,0.92638597){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.05}}}%
+    \put(0.90499937,0.92638597){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.1}}}%
+    \put(0.11449976,0.94504714){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-0.02}}}%
+    \put(0.11449976,1.01751306){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-0.01}}}%
+    \put(0.11449976,1.08997898){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.11449976,1.16244491){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.01}}}%
+    \put(0.11449976,1.2349124){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.02}}}%
+    \put(0.21463478,1.20254434){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Six Delay Group}}}%
+    \put(0.21463478,1.16877129){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Approximation}}}%
+    \put(0.51602974,0.4961265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Reactivity ($\rho$) [ ]}}}%
+    \put(0.0557423,0.69384812){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Inverse Period ($\alpha$) [$s^{-1}$]}}}}%
+    \put(0.51749895,0.85569312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\Lambda=1\times 10^{-5}$}}}%
+    \put(0.13000009,0.52379716){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-0.1}}}%
+    \put(0.32374952,0.52379716){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-0.05}}}%
+    \put(0.51749895,0.52379716){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.71124994,0.52379716){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.05}}}%
+    \put(0.90499937,0.52379716){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.1}}}%
+    \put(0.11449976,0.54245833){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-0.02}}}%
+    \put(0.11449976,0.61492425){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-0.01}}}%
+    \put(0.11449976,0.68739017){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.11449976,0.7598561){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.01}}}%
+    \put(0.11449976,0.83232202){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.02}}}%
+    \put(0.21463478,0.79872753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Six Delay Group}}}%
+    \put(0.21463478,0.76495291){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Approximation}}}%
+    \put(0.51602974,0.09353769){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Reactivity ($\rho$) [ ]}}}%
+    \put(0.0557423,0.29125931){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Inverse Period ($\alpha$) [$s^{-1}$]}}}}%
+    \put(0.51749895,0.45310275){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\Lambda=4\times 10^{-7}$}}}%
+    \put(0.13000009,0.12120835){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-0.1}}}%
+    \put(0.32374952,0.12120835){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{-0.05}}}%
+    \put(0.51749895,0.12120835){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.71124994,0.12120835){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.05}}}%
+    \put(0.90499937,0.12120835){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.1}}}%
+    \put(0.11449976,0.13986795){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-0.02}}}%
+    \put(0.11449976,0.21233387){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{-0.01}}}%
+    \put(0.11449976,0.28480136){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.11449976,0.35726729){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.01}}}%
+    \put(0.11449976,0.42973321){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.02}}}%
+    \put(0.21463478,0.39490916){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Six Delay Group}}}%
+    \put(0.21463478,0.3611361){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Approximation}}}%
+  \end{picture}%
+\endgroup%

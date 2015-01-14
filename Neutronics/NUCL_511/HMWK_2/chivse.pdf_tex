@@ -1,0 +1,76 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'chivse.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.7504bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.44493436)%
+    \put(0,0){\includegraphics[width=\unitlength]{chivse.pdf}}%
+    \put(0.51602973,0.01036907){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Neutron Emission Spectra ($\ln\left(E\right)$) [$MeV$]}}}%
+    \put(0.06456539,0.24175723){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Fraction Emitted ($\chi$) [ ]}}}}%
+    \put(0.13000009,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{1}$}}}%
+    \put(0.25916689,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{2}$}}}%
+    \put(0.3883337,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{3}$}}}%
+    \put(0.51749894,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{4}$}}}%
+    \put(0.64666574,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{5}$}}}%
+    \put(0.77583255,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{6}$}}}%
+    \put(0.90499935,0.0403156){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$10^{7}$}}}%
+    \put(0.11449976,0.06696032){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.11449976,0.11505739){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.05}}}%
+    \put(0.11449976,0.16315289){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.1}}}%
+    \put(0.11449976,0.21124997){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.15}}}%
+    \put(0.11449976,0.25934547){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.2}}}%
+    \put(0.11449976,0.30744255){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.25}}}%
+    \put(0.11449976,0.35553805){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{0.3}}}%
+    \put(0.21830623,0.37293207){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Total}}}%
+    \put(0.21830623,0.34070654){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Group 1}}}%
+    \put(0.21830623,0.30848102){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Group 2}}}%
+    \put(0.21830623,0.27625549){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Group 3}}}%
+    \put(0.21830623,0.24402997){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Group 4-6}}}%
+    \put(0.21830623,0.21180444){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fast Fission Fraction}}}%
+  \end{picture}%
+\endgroup%
