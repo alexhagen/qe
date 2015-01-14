@@ -41,7 +41,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     git checkout gh-pages
     git checkout master -- $rel_paths
     git add $rel_paths
-    find . -name 'README.md' -exec git mv {} "$( echo {} | sed 's/README/index/g' )"
+    find . -name 'README.md' -exec git mv {} "$( echo {} | sed 's/README/index/g' )" \;
     #for file in "$( find . -name 'README.md' -print0 )"
     #do
     #  git mv "$( echo $file | sed 's:\.\/::g' )" "$( echo $file | sed 's/README/index/g' | sed 's:\.\/::g' )"
