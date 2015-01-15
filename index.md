@@ -8,8 +8,8 @@ By Alex Hagen
 
 The Purdue nuclear engineering department requires that any PhD student first pass a complex qualification exam process. The qualification exams include 4 different written exams, an oral exam, and an examination paper.  The student has 2 tries each to pass these exams.  The written topics are:
 
-* Materials
-* Interactions
+* [Materials](./Materials)
+* [Interactions](./Interactions)
 * [Neutronics](./Neutronics)
 * [Thermal Hydraulics](./Thermal_Hydraulics)
 
