@@ -94,6 +94,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: #fff;
 }
 
 .footer-heading {
@@ -178,6 +179,14 @@
     }
 }
 
+.post-link:visited {
+    color:$brand-color;
+}
+
+.post-link:hover {
+    color:$grey-color-light;
+}
+
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
@@ -185,9 +194,36 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: $base-font-size;
+    color: $brand-color;
 }
 
+/**
+ * Publications
+ */
+
+ .publication-author-list span:before {
+    content: " - ";
+ }
+
+ .publication-author:first-child:before {
+    content: "";
+ }
+
+ .publication-author {
+    font-size: $small-font-size;
+    color: $brand-color;
+ }
+
+ .publication-abstract {
+    font-size: $small-font-size;
+    color: $text-color;
+ }
+
+ .publication-citation {
+    font-size: $small-font-size;
+    color: $grey-color;
+ }
 
 
 /**
