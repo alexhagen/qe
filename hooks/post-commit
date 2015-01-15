@@ -6,7 +6,8 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
 
     # Layout prefix is prepended to each markdown file synced
     ###################################################################
-    LAYOUT_PREFIX='---\r\nlayout: index\r\n---\r\n\r\n'
+    LAYOUT_PREFIX='---\r\nlayout: post-no-feature\r\n---\r\n\r\n'
+    # need to use the new layout
 
     # Switch to gh-pages branch to sync it with master
     ###################################################################
@@ -40,6 +41,12 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     rel_paths="$(find . -name \*.md -print | tr '\n' ' ' | sed 's:\.\/::g' )"
     git checkout gh-pages
     git checkout master -- $rel_paths
+
+    for file in $rel_paths
+    do
+        echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
+    done
+
     git add $rel_paths
     git commit -am 'updating all of the markdown documentation'
     
