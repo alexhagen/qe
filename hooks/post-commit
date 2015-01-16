@@ -48,7 +48,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
 
     for file in $rel_paths
     do
-        python ./rem.py "$file" > temp
+        python hooks/rem.py "$file" > temp
         mv temp "$file"
     done
 
