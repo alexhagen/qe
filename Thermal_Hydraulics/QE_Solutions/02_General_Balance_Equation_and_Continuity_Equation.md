@@ -3,7 +3,6 @@ layout: post-no-feature
 ---
 
 
-@path<span><span>/Users/ahagen/qe/Thermal~H~ydraulics/QE~S~olutions//</span></span>
 
 General Balance Equation
 ========================
