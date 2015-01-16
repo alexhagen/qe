@@ -46,6 +46,12 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
     done
 
+    for file in $rel_paths
+    do
+        python rem.py "$file" > temp
+        mv temp "$file"
+    done
+
     git add $rel_paths
     rm temp
     find . -name 'README.md' -exec sh -c 'git mv -f "$1" "$( echo $1 | sed 's/README/index/g' )"' _ {} \;
