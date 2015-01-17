@@ -1,0 +1,93 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=1cm,headsep=1cm,footskip=1cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{-1}
+\usepackage{float}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{pgf}
+\usepackage{lastpage}
+
+\let\oldmaketitle\maketitle
+
+\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\lhead{Alex Hagen}
+
+
+\chead{QE Studying: Thermal Hydraulics Solutions}
+
+
+\rhead{1/6/15}
+
+
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+
+\title{Friction Factor and Heat Transfer Coefficient \{Todreas\}}
+
+\maketitle
+
+\section{Friction Factor}
+
+The changes in the friction factor are given by the moody chart:
+
+\begin{figure}[H]
+\protect\caption{The Moody Chart}
+
+
+\end{figure}
+
+
+
+\section{Heat Transfer Coefficient}
+
+The heat transfer coefficient can be found from the Nusselt number,
+because $Nu\equiv\frac{hD}{k}$. For laminar flow, this is given as:
+\begin{itemize}
+\item Laminar Flow
+\[
+Nu=4.364
+\]
+\footnote{Assuming constant $q^{''}$ and a circular cross section%
+}
+\item Turbulent Flow - the Dittus-Boelter Correlation
+
+\begin{itemize}
+\item Heating
+\[
+Nu=0.026Re^{0.8}Pr^{0.4}
+\]
+
+\item Cooling
+\[
+Nu=0.026Re^{0.8}Pr^{0.3}
+\]
+
+\end{itemize}
+\end{itemize}
+\begin{figure}[H]
+
+
+\protect\caption{Nusselt Number versus Reynold's Number with Varying Prandtl Numbers}
+
+
+\end{figure}
+
+
+\bibliographystyle{plain}
+\bibliography{th}
+
+\end{document}
