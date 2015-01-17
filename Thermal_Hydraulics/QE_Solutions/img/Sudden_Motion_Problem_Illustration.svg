@@ -327,28 +327,28 @@
     <text
        sodipodi:linespacing="125%"
        id="text5766"
-       y="945.66095"
+       y="941.66095"
        x="42.168678"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
-         y="945.66095"
+         y="941.66095"
          x="42.168678"
          id="tspan5768"
          sodipodi:role="line">$\vec{v}=\vec{v}\left(t,y\right)=\begin{cases}</tspan><tspan
          id="tspan5770"
-         y="965.66095"
+         y="961.66095"
          x="42.168678"
          sodipodi:role="line">0 &amp; t&lt;0\\</tspan><tspan
          id="tspan5772"
-         y="985.66095"
+         y="981.66095"
          x="42.168678"
          sodipodi:role="line">v_{\infty} &amp; x=0,\; t\geq0\\</tspan><tspan
          id="tspan5774"
-         y="1005.6609"
+         y="1001.6609"
          x="42.168678"
          sodipodi:role="line">0 &amp; x=\infty,\; t\geq0</tspan><tspan
          id="tspan5776"
-         y="1025.6609"
+         y="1021.6609"
          x="42.168678"
          sodipodi:role="line">\end{cases}$</tspan></text>
   </g>
