@@ -5,6 +5,8 @@
 \textclass article
 \begin_preamble
 \usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
 \usepackage{lastpage}
 
 \let\oldmaketitle\maketitle
@@ -137,6 +139,16 @@ placement H
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/Moody_Chart.svg
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
