@@ -142,8 +142,15 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename img/Moody_Chart.svg
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Moody_Chart.tex}
+\end_layout
 
 \end_inset
 
