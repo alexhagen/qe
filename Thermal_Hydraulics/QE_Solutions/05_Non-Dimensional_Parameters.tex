@@ -1,0 +1,87 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=1cm,headsep=1cm,footskip=1cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{-1}
+\usepackage{array}
+\usepackage{float}
+\usepackage{amstext}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{pgf}
+\usepackage{lastpage}
+
+\let\oldmaketitle\maketitle
+
+\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\lhead{Alex Hagen}
+
+
+\chead{QE Studying: Thermal Hydraulics Solutions}
+
+
+\rhead{1/12/15}
+
+
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+
+\title{Non-Dimensional Parameters \cite{Bird2007}}
+
+\maketitle
+\begin{center}
+\begin{table}[H]
+\protect\caption{Non-Dimensional Parameters Important in Nuclear Thermal Hydraulics}
+
+
+~
+
+\centering{}%
+\begin{tabular}{ccc>{\centering}p{5cm}}
+\hline 
+Symbol & Name & Formula & Physical Meaning\tabularnewline[0.2cm]
+\hline 
+$Re$ & Reynold's & $\frac{\rho vD}{\mu}$ & $\frac{\text{inertial force}}{\text{viscous force}}$\tabularnewline[0.2cm]
+$Pr$ & Prandtl & $\frac{\nu}{\alpha}=\frac{c_{p}\mu}{k}$ & --\tabularnewline[0.2cm]
+$Gr$ & Grashof & $\frac{g\beta\Delta TD^{3}}{\nu^{2}}$ & --\tabularnewline[0.2cm]
+$Br$ & Brinkman & $\frac{\mu v^{2}}{k\Delta T}$ & $\frac{\text{heat production by viscous dissipation}}{\text{heat transport by conduction}}$\tabularnewline[0.2cm]
+$Pe$ & Peclet & $RePr$ & $\frac{\text{convection heat transport}}{\text{conduction heat transport}}$\tabularnewline[0.2cm]
+$Ra$ & Rayleigh & $GrPr$ & --\tabularnewline[0.2cm]
+$Ec$ & Eckert & $\frac{Br}{Pr}$ & --\tabularnewline[0.2cm]
+$Fr$ & Froude & $\frac{\rho v}{pgD}$ & $\frac{\text{inertial force}}{\text{gravitational force}}$\tabularnewline[0.2cm]
+-- & -- & $\frac{Gr}{Re^{2}}$ & $\frac{\text{buoyant force}}{\text{inertial force}}$\tabularnewline[0.2cm]
+$Ma$ & Mach & $\frac{v}{c}$ & --\tabularnewline[0.2cm]
+$Nu$ & Nusselt & $\frac{hD}{k}$ & $\frac{\text{convection}}{\text{conduction}}$%
+\footnote{from solid to liquid%
+}\tabularnewline[0.2cm]
+$We$ & Weber & $\frac{Dv^{2}\rho}{\sigma}$ & $\frac{\text{inertial force}}{\text{surface tension}}$\tabularnewline[0.2cm]
+$Bi$ & Biot & $\frac{hD}{k}$ & $\frac{\text{convection}}{\text{conduction}}$%
+\footnote{in solid body%
+}\tabularnewline[0.2cm]
+\hline 
+\end{tabular}
+\end{table}
+
+\par\end{center}
+
+\bibliographystyle{plain}
+\bibliography{th}
+
+\end{document}
