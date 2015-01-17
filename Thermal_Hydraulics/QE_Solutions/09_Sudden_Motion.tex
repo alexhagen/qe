@@ -1,0 +1,111 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=1cm,headsep=1cm,footskip=1cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{-1}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+
+\let\oldmaketitle\maketitle
+
+\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\lhead{Alex Hagen}
+
+
+\chead{QE Studying: Thermal Hydraulics Solutions}
+
+
+\rhead{1/10/14}
+
+
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+
+\title{Sudden Motion \{Bird\}}
+
+\maketitle
+
+\subsection{Illustration}
+
+
+\subsection{Assumptions}
+\begin{enumerate}
+\item Adiabatic Isothermal (no Energy Equation)
+\item Two Dimensional ($\frac{\partial}{\partial z}=0$)
+\item Quasi Fully Developed ($\frac{\partial v_{y}}{\partial y}=0$)
+\item Laminar ($\tau=-\mu\frac{\partial v_{y}}{\partial x}$)
+\item Incompressible ($\frac{D\rho}{Dt}=0$)
+\item Uniform Surface Pressure ($\left.p\right\rfloor _{y=0}=p_{\infty}$)
+\end{enumerate}
+
+\subsection{Continuity Equation}
+
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0\;\;\therefore\;\;\cancelto{0}{\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla p}+\rho\nabla\cdot\vec{v}=0
+\]
+
+
+\[
+\frac{\partial v_{x}}{\partial x}+\cancelto{0}{\frac{\partial v_{y}}{\partial y}}=0\;\;\therefore\;\;\frac{\partial v_{x}}{\partial x}=0
+\]
+
+
+\[
+v_{x}=c_{1}\;\;\&\;\;\left.v_{x}\right\rfloor _{0}=0\;\;\therefore\;\; v_{x}=0
+\]
+
+
+
+\subsection{Momentum Equation}
+
+\[
+\frac{\partial\rho\vec{v}}{\partial t}+\nabla\cdot\left(\rho\vec{v}\vec{v}\right)=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}
+\]
+
+
+and applying to the x direction
+
+\begin{multline*}
+\rho\left(\frac{\partial v_{x}}{\partial t}+\cancelto{0}{v_{x}}\frac{\partial v_{y}}{\partial x}+v_{y}\cancelto{0}{\frac{\partial v_{y}}{\partial x}}+v_{x}\cancelto{0}{\frac{\partial v_{y}}{\partial x}}\right)\\
+=-\cancelto{0}{\frac{\partial p}{\partial y}}+\cancelto{0}{\rho g_{y}}+\mu\left(\frac{\partial^{2}v_{y}}{\partial x^{2}}+\cancelto{0}{\frac{\partial^{2}v_{y}}{\partial y^{2}}}+\cancelto{0}{\frac{\partial^{2}v_{y}}{\partial z^{2}}}\right)
+\end{multline*}
+
+
+so
+
+\[
+\frac{\partial v_{y}}{\partial t}=\frac{\mu}{\rho}\frac{\partial^{2}v_{y}}{\partial x^{2}}\;\;\&\;\;\nu\equiv\frac{\mu}{\rho}
+\]
+
+
+\[
+\frac{\partial v_{y}}{\partial t}=\nu\frac{\partial^{2}v_{y}}{\partial x^{2}}
+\]
+
+
+Now use similarity solution to solve this instace of the heat equation
+form.
+
+\bibliographystyle{plain}
+\bibliography{th}
+
+\end{document}
