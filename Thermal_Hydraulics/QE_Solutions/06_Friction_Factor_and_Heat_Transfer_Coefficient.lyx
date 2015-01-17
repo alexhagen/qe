@@ -256,6 +256,19 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Turbulent_Heat_Transfer_Chart.tex}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
