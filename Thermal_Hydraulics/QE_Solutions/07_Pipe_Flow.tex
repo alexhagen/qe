@@ -1,0 +1,133 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=1cm,headsep=1cm,footskip=1cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{-1}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+
+\let\oldmaketitle\maketitle
+
+\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\lhead{Alex Hagen}
+
+
+\chead{QE Studying: Thermal Hydraulics Solutions}
+
+
+\rhead{1/6/15}
+
+
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+
+\title{Pipe Flow \{Munson, Bird\}}
+
+\maketitle
+
+\subsection{Illustration}
+
+
+\subsection{Assumptions}
+\begin{enumerate}
+\item Adiabatic Isothermal (no Energy Equation)
+\item Steady State ($\frac{\partial}{\partial t}=0$)
+\item Axial Symmetric ($\frac{\partial}{\partial\theta}=0$)
+\item Fully Developed ($\frac{\partial v_{z}}{\partial z}=0$)
+\item Laminar ($\tau=-\mu\frac{\partial v_{z}}{\partial x}$)
+\item Incompressible ($\frac{D\rho}{Dt}=0$)
+\item No Slip ($\left.\vec{v}\right\rfloor _{R}=0$)
+\item Axial pressure ($p=p\left(z\right)$)
+\end{enumerate}
+
+\subsection{Continuity Equation}
+
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0\;\;\therefore\;\;\cancelto{0}{\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla p}+\rho\nabla\cdot\vec{v}=0
+\]
+
+
+\[
+\nabla\cdot\vec{v}=0
+\]
+
+
+applying the cylindrical coordinates
+
+\[
+\nabla\cdot\vec{v}=\frac{1}{r}\frac{\partial}{\partial r}\left(rv_{r}\right)=0\;\;\therefore\;\; v_{r}=c_{1}\;\;\&\;\;\left.v_{r}\right\rfloor _{R}=0\;\;\therefore\;\; v_{r}=0
+\]
+
+
+
+\subsection{Momentum Equation}
+
+\[
+\frac{\partial\rho\vec{v}}{\partial t}+\nabla\cdot\left(\rho\vec{v}\vec{v}\right)=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}
+\]
+
+
+and applying cylindrical coordinates
+
+\begin{multline*}
+\rho\left(\cancelto{t}{\frac{\partial v_{z}}{\partial t}}+\cancelto{0}{v_{r}}\frac{\partial v_{z}}{\partial r}+\frac{v_{\theta}}{r}\cancelto{0}{\frac{\partial v_{z}}{\partial\theta}}+v_{z}\cancelto{0}{\frac{\partial v_{z}}{\partial z}}\right)\\
+=-\frac{\partial p}{\partial z}+\rho g_{z}+\left(\frac{1}{r}\frac{\partial}{\partial r}\left(r\tau_{rz}\right)+\frac{1}{r}\cancelto{0}{\frac{\partial\tau_{\theta z}}{\partial\theta}}+\cancelto{0}{\frac{\partial\tau_{zz}}{\partial z}}\right)
+\end{multline*}
+
+
+\[
+\frac{\partial}{\partial r}\left(r\tau_{rz}\right)=\left[\frac{\partial p}{\partial z}-\rho g_{z}\right]r
+\]
+
+
+\[
+r\tau_{rz}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2L}\right]r^{2}
+\]
+\[
+\tau_{rz}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2L}\right]r+\frac{c_{2}}{r}\;\;\&\;\;\left.\tau_{rz}\right\rfloor _{0}=\text{finite}\;\;\therefore\;\; c_{2}=0
+\]
+
+
+\[
+\tau_{rz}=-\mu\frac{\partial v_{z}}{\partial r}
+\]
+
+
+\[
+\frac{\partial v_{z}}{\partial r}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2\mu L}\right]r
+\]
+
+
+\[
+v_{z}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{4\mu L}\right]r^{2}+c_{3}\;\;\&\;\;\left.v_{z}\right\rfloor _{R}=0\;\;\therefore\;\; c_{3}=-\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{4\mu L}\right]R^{2}
+\]
+
+
+\[
+v_{z}=\frac{\left(\mathcal{P}_{L}-\mathcal{P}_{0}\right)R^{2}}{4\mu L}\left[1-\left(\frac{r}{R}\right)^{2}\right]
+\]
+
+
+\bibliographystyle{plain}
+\bibliography{th}
+
+\end{document}
