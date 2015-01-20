@@ -3,7 +3,6 @@ layout: post-no-feature
 ---
 
 
-@path<span><span>/Users/ahagen/qe/Thermal~H~ydraulics/QE~S~olutions//</span></span>
 
 Gradient ($\nabla$)
 ===================
@@ -30,3 +29,4 @@ Laplacian ($\nabla^{2}$)
 </span> cylindrical & $\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$<span>\
 </span> spherical & $\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$<span>\
 </span>
+
