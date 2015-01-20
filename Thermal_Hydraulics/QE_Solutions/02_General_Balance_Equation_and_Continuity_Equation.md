@@ -21,7 +21,7 @@ $$\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of $\ps
 }
 }$$
 
-and by using the Reynold’s Transport Theorem: \(\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV\) and Greene’s Theorem: $\oint_{S_{m}}\boldsymbol{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\boldsymbol{J}dV$, we can write the form of the general balance equations as
+and by using the Reynold’s Transport Theorem: $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$ and Greene’s Theorem: $\oint_{S_{m}}\boldsymbol{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\boldsymbol{J}dV$, we can write the form of the general balance equations as
 
 $$\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\boldsymbol{J}+\dot{\psi_{g}}\right]dV$$
 
