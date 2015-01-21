@@ -17,28 +17,32 @@
 \usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
 
 \makeatother
 
 \usepackage{babel}
 \begin{document}
 
-\lhead{Alex Hagen}
+\title{LWR System Diagrams}
 
 
-\chead{QE Studying: Thermal Hydraulics Solutions}
+\author{Alex Hagen}
 
 
-\rhead{1/19/15}
-
-
-\cfoot{\thepage\ of \pageref{LastPage}}
-
-
-\title{LWR System Diagrams \date{}}
+\date{1/19/15}
 
 \maketitle
 
