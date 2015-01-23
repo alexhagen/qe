@@ -283,6 +283,11 @@ layout: post-no-feature
 ---
 
 
+---
+layout: post-no-feature
+---
+
+
 # NUCL 402 Solutions
 
 Lamarsh Introduction to Nuclear Engineering
@@ -301,6 +306,7 @@ Homeworks 1, 2, and 3 involved the neutron economy of a reactor and not thermal 
 - accident comparison
 - [x] compare bwr and pwr
 - [x] safety systems
+
 
 
 
