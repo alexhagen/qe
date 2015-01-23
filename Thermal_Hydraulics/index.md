@@ -98,6 +98,11 @@ layout: post-no-feature
 ---
 
 
+---
+layout: post-no-feature
+---
+
+
 # Purdue Nuclear Engineering Thermal Hydraulics Qualification Exam
 By Alex Hagen
 
@@ -318,6 +323,7 @@ The difficulty becomes decyphering which of the years of each class the material
 [7]: https://drive.google.com/file/d/0B9JtpWUzKcwkRFRBQldJUXlRVjA/edit
 [8]: http://www.slideshare.net/SPEEDBEAR69/fundamentals-of-heat-and-mass-transfer-frank-p-incropera
 [9]: https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201210&subj_code_in=NUCL&crse_numb_in=40200
+
 
 
 
