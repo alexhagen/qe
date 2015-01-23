@@ -1,3 +1,8 @@
+---
+layout: post-no-feature
+---
+
+
 # Purdue Nuclear Engineering Qualification Exams Study Material
 By Alex Hagen
 
