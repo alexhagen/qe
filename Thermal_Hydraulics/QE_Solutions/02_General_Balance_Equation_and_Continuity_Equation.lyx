@@ -142,15 +142,15 @@ The general balance equation is given by
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of \ensuremath{\psi}}\\
+\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
 \text{per unit time}\\
-\text{in volume \ensuremath{V_{m}}}
+\text{in volume }V_{m}
 }
-}=-\underbrace{\oint_{S_{m}}\boldsymbol{J}\cdot\vec{n}dS}_{\substack{\text{influx of \ensuremath{\psi}across}\\
-\text{surface \ensuremath{S_{m}}}
+}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
+\text{surface }S_{m}
 }
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of \ensuremath{\psi}}\\
-\text{in volume \ensuremath{V_{m}}}
+}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
+\text{in volume }V_{m}
 }
 }
 \]
@@ -166,7 +166,7 @@ and by using the Reynold's Transport Theorem:
 \end_inset
 
  and Greene's Theorem: 
-\begin_inset Formula $\oint_{S_{m}}\boldsymbol{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\boldsymbol{J}dV$
+\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
 \end_inset
 
 , we can write the form of the general balance equations as
@@ -175,7 +175,7 @@ and by using the Reynold's Transport Theorem:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\boldsymbol{J}+\dot{\psi_{g}}\right]dV
+\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
 \]
 
 \end_inset
@@ -190,7 +190,7 @@ and, after differentiating:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of \ensuremath{\psi}}\\
+\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
 \text{per unit time}\\
 \text{per unit volume}
 }
@@ -198,11 +198,11 @@ and, after differentiating:
 \text{material motion}\\
 \text{per unit volume}
 }
-}=-\underbrace{\nabla\cdot\boldsymbol{J}}_{\substack{\text{influx of \ensuremath{\psi}across}\\
-\text{surface \ensuremath{S_{m}}per}\\
+}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
+\text{surface }S_{m}\text{ per}\\
 \text{unit volume}
 }
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of \ensuremath{\psi}}\\
+}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
 \text{per unit volume}
 }
 }
@@ -223,7 +223,7 @@ Applying the the GBE
 \end_inset
 
 , 
-\begin_inset Formula $\boldsymbol{J}=0$
+\begin_inset Formula $\mathbb{J}=0$
 \end_inset
 
 , and 
