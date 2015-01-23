@@ -158,6 +158,11 @@ layout: post-no-feature
 ---
 
 
+---
+layout: post-no-feature
+---
+
+
 # NUCL 350 Solutions
 
 - 1.1 - Dimensional Analysis
@@ -192,6 +197,7 @@ layout: post-no-feature
 - 9.35 D=Cp1/2rho u^2 A
 - 9.39 ""
 - [ ] 9.41 D=Cp 1/2 rho u^2 A
+
 
 
 
