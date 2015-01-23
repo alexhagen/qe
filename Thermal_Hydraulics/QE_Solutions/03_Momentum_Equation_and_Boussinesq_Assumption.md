@@ -268,6 +268,11 @@ layout: post-no-feature
 ---
 
 
+---
+layout: post-no-feature
+---
+
+
 
 Momentum Equation
 =================
@@ -313,6 +318,7 @@ $$dp=-\rho\beta dT\;\;\therefore\;\;\rho-\overline{\rho}=-\overline{\rho}\beta\l
 and putting into the momentum equations
 
 $$\overline{\rho}\frac{D\vec{v}}{Dt}=-\cancelto{\nabla p_{dyn}}{\nabla p}-\nabla\cdot\boldsymbol{\tau}+\left[\cancelto{0}{\overline{\rho}}-\overline{\rho}\beta\left(T-\overline{T}\right)\right]\vec{g}$$
+
 
 
 
