@@ -1,3 +1,8 @@
+---
+layout: post-no-feature
+---
+
+
 # NUCL 351 Solutions
 
 - 1.1 heat flux/conudction

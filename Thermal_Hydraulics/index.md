@@ -1,3 +1,8 @@
+---
+layout: post-no-feature
+---
+
+
 # Purdue Nuclear Engineering Thermal Hydraulics Qualification Exam
 By Alex Hagen
 

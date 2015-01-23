@@ -1,3 +1,8 @@
+---
+layout: post-no-feature
+---
+
+
 # NUCL 350 Solutions
 
 - 1.1 - Dimensional Analysis

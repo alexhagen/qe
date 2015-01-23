@@ -1,3 +1,8 @@
+---
+layout: post-no-feature
+---
+
+
 # NUCL 551 Solutions
 
 - [ ] Prandtl Mixing Length Model

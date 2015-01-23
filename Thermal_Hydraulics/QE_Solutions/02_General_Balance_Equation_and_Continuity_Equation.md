@@ -1,19 +1,23 @@
-@path<span><span>/Users/ahagen/qe/Thermal~H~ydraulics/QE~S~olutions//</span></span>
+---
+layout: post-no-feature
+---
+
+
 
 General Balance Equation
 ========================
 
 The general balance equation is given by
 
-$$\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of \ensuremath{\psi}}\\
+$$\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of $\psi$}\\
 \text{per unit time}\\
-\text{in volume \ensuremath{V_{m}}}
+\text{in volume $V_{m}$}
 }
-}=-\underbrace{\oint_{S_{m}}\boldsymbol{J}\cdot\vec{n}dS}_{\substack{\text{influx of \ensuremath{\psi}across}\\
-\text{surface \ensuremath{S_{m}}}
+}=-\underbrace{\oint_{S_{m}}\boldsymbol{J}\cdot\vec{n}dS}_{\substack{\text{influx of $\psi$across}\\
+\text{surface $S_{m}$}
 }
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of \ensuremath{\psi}}\\
-\text{in volume \ensuremath{V_{m}}}
+}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of $\psi$}\\
+\text{in volume $V_{m}$}
 }
 }$$
 
@@ -23,7 +27,7 @@ $$\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}
 
 and, after differentiating:
 
-$$\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of \ensuremath{\psi}}\\
+$$\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of $\psi$}\\
 \text{per unit time}\\
 \text{per unit volume}
 }
@@ -31,11 +35,11 @@ $$\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of \ensur
 \text{material motion}\\
 \text{per unit volume}
 }
-}=-\underbrace{\nabla\cdot\boldsymbol{J}}_{\substack{\text{influx of \ensuremath{\psi}across}\\
-\text{surface \ensuremath{S_{m}}per}\\
+}=-\underbrace{\nabla\cdot\boldsymbol{J}}_{\substack{\text{influx of $\psi$across}\\
+\text{surface $S_{m}$per}\\
 \text{unit volume}
 }
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of \ensuremath{\psi}}\\
+}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of $\psi$}\\
 \text{per unit volume}
 }
 }$$
@@ -56,3 +60,4 @@ $$\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}$$
 and assuming incompressible: $\frac{D\rho}{Dt}=0$, it is apparent that:
 
 $$\nabla\cdot\vec{v}=0$$
+

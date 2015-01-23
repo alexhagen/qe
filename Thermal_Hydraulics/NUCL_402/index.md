@@ -1,3 +1,8 @@
+---
+layout: post-no-feature
+---
+
+
 # NUCL 402 Solutions
 
 Lamarsh Introduction to Nuclear Engineering
