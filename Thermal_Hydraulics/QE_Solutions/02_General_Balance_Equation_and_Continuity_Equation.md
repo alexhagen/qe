@@ -288,6 +288,11 @@ layout: post-no-feature
 ---
 
 
+---
+layout: post-no-feature
+---
+
+
 
 General Balance Equation
 ========================
@@ -345,6 +350,7 @@ $$\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}$$
 and assuming incompressible: $\frac{D\rho}{Dt}=0$, it is apparent that:
 
 $$\nabla\cdot\vec{v}=0$$
+
 
 
 
