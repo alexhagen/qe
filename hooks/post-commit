@@ -111,4 +111,3 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     # Finally, switch back to the master branch and exit block
     git checkout master
 fi
-
