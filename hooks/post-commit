@@ -7,56 +7,112 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     # Layout prefix is prepended to each markdown file synced
     ###################################################################
     LAYOUT_PREFIX='---\r\nlayout: post-no-feature\r\n---\r\n\r\n'
-    # need to use the new layout
 
     # Switch to gh-pages branch to sync it with master
     ###################################################################
-    git checkout gh-pages
+    #git checkout gh-pages
 
     # Sync the README.md in master to index.md adding jekyll header
     ###################################################################
-    git checkout master -- README.md
-    echo -e $LAYOUT_PREFIX > index.md
-    cat README.md >> index.md
-    rm README.md
-    git add index.md
-    git commit -a -m "Sync README.md in master branch to index.md in gh-pages"
+    #git checkout master -- README.md
+    #echo -e $LAYOUT_PREFIX > index.md
+    #cat README.md >> index.md
+    #rm README.md
+    #git add index.md
+    #git commit -a -m "Sync README.md in master branch to index.md in gh-pages"
 
     # Sync the markdown files in the docs/* directory
     ###################################################################
-    git checkout master -- docs
-    FILES=docs/*
-    for file in $FILES
-    do
-        echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
-    done
+    #git checkout master -- docs
+    #FILES=docs/*
+    #for file in $FILES
+    #do
+    #    echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
+    #done
 
-    git add docs
-    rm temp
-    git commit -a -m "Sync docs from master branch to docs gh-pages directory"
+    #git add docs
+    #rm temp
+    #git commit -a -m "Sync docs from master branch to docs gh-pages directory"
 
-    # Sync relational markdown files throughout directory branch
+    # Sync relational markdown files throughout directory branch and put
+    # into _pages directory
     ####################################################################
-    git checkout master
-    rel_paths="$(find . -name \*.md -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    # get the path of the files ending in *.lyx
+    rel_paths="$(find . -name \*.lyx -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    # find the bibliography
+    bibs="$(find . -name \*.bib -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    # find the images
+    images="$(find . -name \*.tex -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    svgs="$(find . -name \*.svg -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    # then, checkout the pdf branch
+    #git checkout pdf
+    ## clean the pdf branch
+    #git rm -rf *
+    ## then, checkout the files ending in *.lyx
+    #git checkout master -- "$rel_paths"
+    ## checkout the bibs
+    #git checkout master -- "$bibs"
+    #for file in $bibs
+    #do
+    #    git add "$file"
+    #done
+    ##checkout the images
+    #git checkout master -- "$images"
+    #for file in $images
+    #do
+    #    git add "$file"
+    #done
+    ## then, convert the files ending in *.lyx to *.tex
+    #for file in $rel_paths
+    #do
+    #    lyx2.1 --export "latex" "$file"
+    #    git add "${file%.lyx}.tex"
+    #    rm "$file"
+    #    rm "${file%.lyx}.md"
+    #done
+    ## then, commit the pdf generation files
+    #git commit -am 'made the pdf generation files required'
+    # then, checkout the gh-pages branch
     git checkout gh-pages
-    git checkout master -- $rel_paths
-
+    # then, checkout the files ending in *.lyx
+    git checkout master -- "$rel_paths"
+    # checkout all the bib files
+    git checkout master -- "$bibs"
+    for file in $bibs
+    do
+        mkdir -p "_pages/$(dirname $file)"
+        mv "$file" "_pages/$file"
+        git add "_pages/$file"
+    done
+    # checkout all the svgs
+    git checkout master -- "$svgs"
+    for file in $svgs
+    do
+        mkdir -p "_pages/$(dirname $file)"
+        mv "$file" "_pages/$file"
+        git add "_pages/$file"
+    done
+    # then, convert the files from *.lyx to *.md
     for file in $rel_paths
     do
-        echo -e $LAYOUT_PREFIX | cat - "$file" > temp && mv temp "$file"
+        # export to tex
+        lyx2.1 --export "latex" "$file"
+        # export to md
+        pandoc -o "${file%.lyx}.md" "${file%.lyx}.tex"
+        # add yaml header
+        echo -e $LAYOUT_PREFIX | cat - "${file%.lyx}.md" > temp 
+        mkdir -p "_pages/$(dirname $file)"
+        mv temp "_pages/${file%.lyx}.md"
+        git add "_pages/${file%.lyx}.md"
+        rm "${file%.lyx}.tex"
+        rm "$file"
+        rmdir -p "$(dirname $file)"
     done
-
-    git add $rel_paths
-    git commit -am 'updating all of the markdown documentation'
-    
-    # Uncomment the following push if you want to auto push to
-    # the gh-pages branch whenever you commit to master locally.
-    # This is a little extreme. Use with care!
-    ###################################################################
-    # git push origin gh-pages
+    # remove temp file if its there
+    rm temp
+    # then, commit the updated markdown files
+    git commit -am 'added the updated markdown files'
 
     # Finally, switch back to the master branch and exit block
     git checkout master
 fi
-
