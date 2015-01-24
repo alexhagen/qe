@@ -38,16 +38,70 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     # into _pages directory
     ####################################################################
     # first, check out the master
+    git checkout master
     # then, get the path of the files ending in *.lyx
+    rel_paths="$(find . -name \*.lyx -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    # find the bibliography
+    bibs="$(find . -name \*.bib -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    # find the images
+    images="$(find . -name \*.tex -print | tr '\n' ' ' | sed 's:\.\/::g' )"
+    svgs="$(find . -name \*.svg -print | tr '\n' ' ' | sed 's:\.\/::g' )"
     # then, checkout the pdf branch
+    git checkout pdf
     # then, checkout the files ending in *.lyx
+    git checkout master -- $rel_paths
+    # checkout the bibs
+    git checkout master -- $bibs
+    for file in $bibs
+    do
+        git add "$file"
+    done
+    #checkout the images
+    git checkout master -- $images
+    for file in $images
+    do
+        git add "$file"
+    done
     # then, convert the files ending in *.lyx to *.tex
+    for file in $rel_paths
+    do
+        lyx --export "latex" "$file"
+        git add "`basename $file .lyx`.tex"
+    done
     # then, commit the pdf generation files
+    git commit -am 'made the pdf generation files required'
     # then, checkout the gh-pages branch
-    # then, checkout the files ending in *.tex
-    # then, move the folders into collections
-    # then, convert the files ending in *.tex to *.md
+    git checkout gh-pages
+    # then, checkout the files ending in *.lyx
+    git checkout master -- $rel_paths
+    # checkout all the bib files
+    git checkout master -- $bibs
+    for file in $bibs
+    do
+        git add "$file"
+    done
+    # checkout all the svgs
+    git checkout master -- $svgs
+    for file in $svgs
+    do
+        git add "$file"
+    done
+    # then, convert the files from *.lyx to *.md
+    for file in $rel_paths
+    do
+        # define variables
+        mdname = "`basename $file .lyx`.md"
+        texname = "`basename $file .lyx`.tex"
+        # export to tex
+        lyx --export "latex" "$file"
+        # export to md
+        pandoc -o "$mdname" "$texname"
+        # add yaml header
+        echo -e $LAYOUT_PREFIX | cat - "$mdname" > temp && mv temp "_pages/$mdname"
+        git add "_pages/$mdname"
+    done
     # then, commit the updated markdown files
+    git commit -am 'added the updated markdown files'
 
     #git checkout master
     #rel_paths="$(find . -name \*.md -print | tr '\n' ' ' | sed 's:\.\/::g' )"
