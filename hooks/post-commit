@@ -102,6 +102,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         git add "_pages/${file%.lyx}.md"
         rm "${file%.lyx}.tex"
         rm "$file"
+        rmdir -p "$(dirname $file)"
     done
     # remove temp file if its there
     rm temp
