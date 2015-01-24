@@ -74,6 +74,8 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     #git commit -am 'made the pdf generation files required'
     # then, checkout the gh-pages branch
     git checkout gh-pages
+    # first, clean the _pages directory
+    git rm -rf _pages/*
     # then, checkout the files ending in *.lyx
     git checkout master -- "$rel_paths"
     # checkout all the bib files
