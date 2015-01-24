@@ -1,0 +1,77 @@
+%% LyX 2.1.3dev created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=1cm,headsep=1cm,footskip=1cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{-1}
+\usepackage{float}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+
+\makeatletter
+
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{LWR System Diagrams}
+
+
+\author{Alex Hagen}
+
+
+\date{1/19/15}
+
+\maketitle
+
+\section{PWR}
+
+\begin{figure}[H]
+\begin{centering}
+\input{img/PWR_System_Illustration.tex}
+\par\end{centering}
+
+\protect\caption{PWR System Diagram}
+
+
+\end{figure}
+
+
+
+\section{BWR}
+
+\begin{figure}[H]
+\begin{centering}
+\input{img/BWR_System_Illustration.tex}
+\par\end{centering}
+
+\protect\caption{BWR System Diagram}
+\end{figure}
+
+
+\bibliographystyle{plain}
+\bibliography{th}
+
+\end{document}
