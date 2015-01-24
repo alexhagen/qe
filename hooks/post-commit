@@ -89,16 +89,13 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     # then, convert the files from *.lyx to *.md
     for file in $rel_paths
     do
-        # define variables
-        mdname = "`basename $file .lyx`.md"
-        texname = "`basename $file .lyx`.tex"
         # export to tex
         lyx2.1 --export "latex" "$file"
         # export to md
-        pandoc -o "$mdname" "$texname"
+        pandoc -o "$mdname" "`basename $file .lyx`.tex"
         # add yaml header
-        echo -e $LAYOUT_PREFIX | cat - "$mdname" > temp && mv temp "_pages/$mdname"
-        git add "_pages/$mdname"
+        echo -e $LAYOUT_PREFIX | cat - "`basename $file .lyx`.md" > temp && mv temp "_pages/`basename $file .lyx`.md"
+        git add "_pages/`basename $file .lyx`.md"
     done
     # remove temp file if its there
     rm temp
