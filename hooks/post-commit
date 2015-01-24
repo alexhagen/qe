@@ -77,9 +77,9 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     # first, clean the _pages directory
     git rm -rf _pages/*
     # then, checkout the files ending in *.lyx
-    git checkout master -- "$rel_paths"
+    git checkout master -- $rel_paths
     # checkout all the bib files
-    git checkout master -- "$bibs"
+    git checkout master -- $bibs
     for file in $bibs
     do
         mkdir -p "_pages/$(dirname $file)"
@@ -87,7 +87,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         git add "_pages/$file"
     done
     # checkout all the svgs
-    git checkout master -- "$svgs"
+    git checkout master -- $svgs
     for file in $svgs
     do
         mkdir -p "_pages/$(dirname $file)"
