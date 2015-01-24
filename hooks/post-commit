@@ -80,13 +80,17 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     git checkout master -- "$bibs"
     for file in $bibs
     do
-        git add "$file"
+        mkdir -p "_pages/$(dirname $file)"
+        mv "$file" "_pages/$file"
+        git add "_pages/$file"
     done
     # checkout all the svgs
     git checkout master -- "$svgs"
     for file in $svgs
     do
-        git add "$file"
+        mkdir -p "_pages/$(dirname $file)"
+        mv "$file" "_pages/$file"
+        git add "_pages/$file"
     done
     # then, convert the files from *.lyx to *.md
     for file in $rel_paths
