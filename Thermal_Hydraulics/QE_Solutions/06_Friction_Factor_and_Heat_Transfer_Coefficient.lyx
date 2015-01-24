@@ -5,6 +5,8 @@
 \textclass article
 \begin_preamble
 \usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
 \usepackage{lastpage}
 
 \let\oldmaketitle\maketitle
@@ -96,7 +98,7 @@ QE Studying: Thermal Hydraulics Solutions
 \end_layout
 
 \begin_layout Right Header
-1/4/15
+1/6/15
 \end_layout
 
 \begin_layout Center Footer
@@ -120,11 +122,56 @@ pageref{LastPage}
 \end_layout
 
 \begin_layout Title
-General Balance Equations and Continuity Equation 
-\begin_inset CommandInset citation
-LatexCommand cite
-after "pp. 75-78"
-key "Bird2007"
+Friction Factor and Heat Transfer Coefficient {Todreas}
+\end_layout
+
+\begin_layout Section
+Friction Factor
+\end_layout
+
+\begin_layout Standard
+The changes in the friction factor are given by the moody chart:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Moody_Chart.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Moody Chart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -132,27 +179,55 @@ key "Bird2007"
 \end_layout
 
 \begin_layout Section
-General Balance Equation
+Heat Transfer Coefficient
 \end_layout
 
 \begin_layout Standard
-The general balance equation is given by
+The heat transfer coefficient can be found from the Nusselt number, because
+ 
+\begin_inset Formula $Nu\equiv\frac{hD}{k}$
+\end_inset
+
+.
+ For laminar flow, this is given as:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+Laminar Flow
 \begin_inset Formula 
 \[
-\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{in volume }V_{m}
-}
-}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
-\text{surface }S_{m}
-}
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
-\text{in volume }V_{m}
-}
-}
+Nu=4.364
+\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Assuming constant 
+\begin_inset Formula $q^{''}$
+\end_inset
+
+ and a circular cross section
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Turbulent Flow - the Dittus-Boelter Correlation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Heating
+\begin_inset Formula 
+\[
+Nu=0.026Re^{0.8}Pr^{0.4}
 \]
 
 \end_inset
@@ -160,22 +235,11 @@ The general balance equation is given by
 
 \end_layout
 
-\begin_layout Standard
-and by using the Reynold's Transport Theorem: 
-\begin_inset Formula $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$
-\end_inset
-
- and Greene's Theorem: 
-\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
-\end_inset
-
-, we can write the form of the general balance equations as
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
+Cooling
 \begin_inset Formula 
 \[
-\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
+Nu=0.026Re^{0.8}Pr^{0.3}
 \]
 
 \end_inset
@@ -183,107 +247,46 @@ and by using the Reynold's Transport Theorem:
 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
-and, after differentiating:
-\end_layout
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{per unit volume}
-}
-}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
-\text{material motion}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
-\text{surface }S_{m}\text{ per}\\
-\text{unit volume}
-}
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
-\text{per unit volume}
-}
-}
-\]
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Turbulent_Heat_Transfer_Chart.tex}
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Continuity Equation
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nusselt Number versus Reynold's Number with Varying Prandtl Numbers
 \end_layout
-
-\begin_layout Standard
-Applying the the GBE 
-\begin_inset Formula $\psi=\rho$
-\end_inset
-
-, 
-\begin_inset Formula $\mathbb{J}=0$
-\end_inset
-
-, and 
-\begin_inset Formula $\dot{\psi_{g}}=0$
-\end_inset
-
-, we get
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
-\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-which is equivalent to (by FOIL): 
-\begin_inset Formula $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
-
-\begin_layout Standard
-and using the substantial derivative's definition: 
-\begin_inset Formula $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$
-\end_inset
-
- in the above equation, we get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and assuming incompressible: 
-\begin_inset Formula $\frac{D\rho}{Dt}=0$
-\end_inset
-
-, it is apparent that: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\nabla\cdot\vec{v}=0
-\]
 
 \end_inset
 

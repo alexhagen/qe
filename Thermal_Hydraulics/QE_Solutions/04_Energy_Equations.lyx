@@ -120,10 +120,9 @@ pageref{LastPage}
 \end_layout
 
 \begin_layout Title
-General Balance Equations and Continuity Equation 
+Energy Equations 
 \begin_inset CommandInset citation
 LatexCommand cite
-after "pp. 75-78"
 key "Bird2007"
 
 \end_inset
@@ -132,102 +131,20 @@ key "Bird2007"
 \end_layout
 
 \begin_layout Section
-General Balance Equation
-\end_layout
-
-\begin_layout Standard
-The general balance equation is given by
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{in volume }V_{m}
-}
-}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
-\text{surface }S_{m}
-}
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
-\text{in volume }V_{m}
-}
-}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and by using the Reynold's Transport Theorem: 
-\begin_inset Formula $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$
-\end_inset
-
- and Greene's Theorem: 
-\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
-\end_inset
-
-, we can write the form of the general balance equations as
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and, after differentiating:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{per unit volume}
-}
-}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
-\text{material motion}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
-\text{surface }S_{m}\text{ per}\\
-\text{unit volume}
-}
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
-\text{per unit volume}
-}
-}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Continuity Equation
+Energy Equation
 \end_layout
 
 \begin_layout Standard
 Applying the the GBE 
-\begin_inset Formula $\psi=\rho$
+\begin_inset Formula $\psi=\rho\left(u+\frac{\vec{v}^{2}}{2}\right)$
 \end_inset
 
 , 
-\begin_inset Formula $\mathbb{J}=0$
+\begin_inset Formula $\boldsymbol{J}=\vec{q}+\boldsymbol{T}\vec{v}$
 \end_inset
 
 , and 
-\begin_inset Formula $\dot{\psi_{g}}=0$
+\begin_inset Formula $\dot{\psi_{g}}=\rho\vec{v}\cdot\vec{g}+\dot{q}$
 \end_inset
 
 , we get
@@ -235,8 +152,52 @@ Applying the the GBE
 
 \begin_layout Standard
 \begin_inset Formula 
+\begin{multline*}
+\underbrace{\frac{\partial\left(\rho\left(u+\frac{\vec{v}^{2}}{2}\right)\right)}{\partial t}}_{\substack{\text{rate of energy change}\\
+\text{per unit volume}
+}
+}+\underbrace{\nabla\cdot\rho\vec{v}\left(u+\frac{\vec{v}^{2}}{2}\right)}_{\substack{\text{rate of energy change}\\
+\text{by convection per unit}\\
+\text{volume}
+}
+}\\
+=-\underbrace{\nabla\cdot\vec{q}}_{\substack{\text{conduction}}
+}-\underbrace{\nabla\cdot\left(p\vec{v}\right)}_{\substack{\text{work done by}\\
+\text{pressure}
+}
+}-\underbrace{\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)}_{\substack{\text{work done by}\\
+\text{viscous force}
+}
+}+\underbrace{\rho\left(\vec{v}\cdot\vec{g}\right)}_{\substack{\text{work done}\\
+\text{by gravity}
+}
+}+\underbrace{\dot{q}}_{\substack{\text{heat}\\
+\text{generation}
+}
+}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to put this in a more usable form, we can do a couple steps to split it
+ into separate kinetic energy and internal energy forms.
+ First, we FOIL the flux terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
 \[
-\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
+-\nabla\cdot\left(p\vec{v}\right)=-\underbrace{p\nabla\cdot\vec{v}}_{\substack{\text{reversible}\\
+\text{\ensuremath{pdV} work}
+}
+}-\underbrace{\vec{v}\cdot\nabla p}_{\substack{\text{kinetic}\\
+\text{energy}
+}
+}
 \]
 
 \end_inset
@@ -245,25 +206,15 @@ Applying the the GBE
 \end_layout
 
 \begin_layout Standard
-which is equivalent to (by FOIL): 
-\begin_inset Formula $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and using the substantial derivative's definition: 
-\begin_inset Formula $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$
-\end_inset
-
- in the above equation, we get:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
+-\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)=-\underbrace{\boldsymbol{\tau}:\nabla\vec{v}}_{\substack{\text{irreversible}\\
+\text{viscous work}
+}
+}-\underbrace{\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{kinetic}\\
+\text{energy}
+}
+}
 \]
 
 \end_inset
@@ -272,17 +223,63 @@ and using the substantial derivative's definition:
 \end_layout
 
 \begin_layout Standard
-and assuming incompressible: 
-\begin_inset Formula $\frac{D\rho}{Dt}=0$
+These create the two forms:
+\end_layout
+
+\begin_layout Itemize
+Internal Energy:
+\begin_inset Formula 
+\[
+\frac{Du}{Dt}=-\nabla\cdot\vec{q}-p\nabla\cdot\vec{v}-\boldsymbol{\tau}:\nabla\vec{v}+\dot{q}
+\]
+
 \end_inset
 
-, it is apparent that: 
+
+\end_layout
+
+\begin_layout Itemize
+Kinetic Energy:
+\begin_inset Formula 
+\[
+\frac{D\frac{\vec{v}^{2}}{2}}{Dt}=-\vec{v}\cdot\nabla p-\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}+\rho\vec{v}\cdot\vec{g}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+These are not basic balance equations, though, because they don't follow
+ the form 
+\begin_inset Formula $\nabla\left(\,\;\;\;\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Other equations to remember:
+\end_layout
+
+\begin_layout Itemize
+Poisson Heat Equation:
 \begin_inset Formula 
 \[
-\nabla\cdot\vec{v}=0
+\rho c_{p}\frac{\partial T}{\partial t}=\nabla\cdot\left(k\nabla T\right)+\dot{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Temperature Equation:
+\begin_inset Formula 
+\[
+\rho c_{v}\frac{DT}{Dt}=\rho c_{v}\frac{\partial T}{\partial t}+\rho c_{v}\vec{v}\nabla\cdot T=k\nabla^{2}T-\boldsymbol{\tau}:\nabla\vec{v}+T\left.\frac{\partial p}{\partial T}\right)_{\rho}\nabla\cdot\vec{v}+\dot{q}
 \]
 
 \end_inset

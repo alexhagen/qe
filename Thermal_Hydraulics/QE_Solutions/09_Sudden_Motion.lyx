@@ -5,6 +5,8 @@
 \textclass article
 \begin_preamble
 \usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
 \usepackage{lastpage}
 
 \let\oldmaketitle\maketitle
@@ -96,7 +98,7 @@ QE Studying: Thermal Hydraulics Solutions
 \end_layout
 
 \begin_layout Right Header
-1/4/15
+1/10/14
 \end_layout
 
 \begin_layout Center Footer
@@ -120,123 +122,114 @@ pageref{LastPage}
 \end_layout
 
 \begin_layout Title
-General Balance Equations and Continuity Equation 
-\begin_inset CommandInset citation
-LatexCommand cite
-after "pp. 75-78"
-key "Bird2007"
+Sudden Motion {Bird}
+\end_layout
+
+\begin_layout Subsection
+Illustration
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Sudden_Motion_Problem_Illustration.tex}
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-General Balance Equation
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
-\begin_layout Standard
-The general balance equation is given by
+\begin_layout Plain Layout
+Sudden Motion Problem Illustration
 \end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{in volume }V_{m}
-}
-}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
-\text{surface }S_{m}
-}
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
-\text{in volume }V_{m}
-}
-}
-\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-and by using the Reynold's Transport Theorem: 
-\begin_inset Formula $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$
-\end_inset
+\begin_layout Plain Layout
 
- and Greene's Theorem: 
-\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
-\end_inset
-
-, we can write the form of the general balance equations as
 \end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
-\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-and, after differentiating:
+\begin_layout Subsection
+Assumptions
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{per unit volume}
-}
-}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
-\text{material motion}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
-\text{surface }S_{m}\text{ per}\\
-\text{unit volume}
-}
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
-\text{per unit volume}
-}
-}
-\]
+\begin_layout Enumerate
+Adiabatic Isothermal (no Energy Equation)
+\end_layout
 
+\begin_layout Enumerate
+Two Dimensional (
+\begin_inset Formula $\frac{\partial}{\partial z}=0$
 \end_inset
 
-
+)
 \end_layout
 
-\begin_layout Section
+\begin_layout Enumerate
+Quasi Fully Developed (
+\begin_inset Formula $\frac{\partial v_{y}}{\partial y}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Laminar (
+\begin_inset Formula $\tau=-\mu\frac{\partial v_{y}}{\partial x}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Incompressible (
+\begin_inset Formula $\frac{D\rho}{Dt}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Uniform Surface Pressure (
+\begin_inset Formula $\left.p\right\rfloor _{y=0}=p_{\infty}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
 Continuity Equation
 \end_layout
 
 \begin_layout Standard
-Applying the the GBE 
-\begin_inset Formula $\psi=\rho$
-\end_inset
-
-, 
-\begin_inset Formula $\mathbb{J}=0$
-\end_inset
-
-, and 
-\begin_inset Formula $\dot{\psi_{g}}=0$
-\end_inset
-
-, we get
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0\;\;\therefore\;\;\cancelto{0}{\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla p}+\rho\nabla\cdot\vec{v}=0
 \]
 
 \end_inset
@@ -245,25 +238,9 @@ Applying the the GBE
 \end_layout
 
 \begin_layout Standard
-which is equivalent to (by FOIL): 
-\begin_inset Formula $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and using the substantial derivative's definition: 
-\begin_inset Formula $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$
-\end_inset
-
- in the above equation, we get:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
+\frac{\partial v_{x}}{\partial x}+\cancelto{0}{\frac{\partial v_{y}}{\partial y}}=0\;\;\therefore\;\;\frac{\partial v_{x}}{\partial x}=0
 \]
 
 \end_inset
@@ -272,22 +249,75 @@ and using the substantial derivative's definition:
 \end_layout
 
 \begin_layout Standard
-and assuming incompressible: 
-\begin_inset Formula $\frac{D\rho}{Dt}=0$
-\end_inset
-
-, it is apparent that: 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-\nabla\cdot\vec{v}=0
+v_{x}=c_{1}\;\;\&\;\;\left.v_{x}\right\rfloor _{0}=0\;\;\therefore\;\; v_{x}=0
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Momentum Equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\rho\vec{v}}{\partial t}+\nabla\cdot\left(\rho\vec{v}\vec{v}\right)=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and applying to the x direction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\rho\left(\frac{\partial v_{x}}{\partial t}+\cancelto{0}{v_{x}}\frac{\partial v_{y}}{\partial x}+v_{y}\cancelto{0}{\frac{\partial v_{y}}{\partial x}}+v_{x}\cancelto{0}{\frac{\partial v_{y}}{\partial x}}\right)\\
+=-\cancelto{0}{\frac{\partial p}{\partial y}}+\cancelto{0}{\rho g_{y}}+\mu\left(\frac{\partial^{2}v_{y}}{\partial x^{2}}+\cancelto{0}{\frac{\partial^{2}v_{y}}{\partial y^{2}}}+\cancelto{0}{\frac{\partial^{2}v_{y}}{\partial z^{2}}}\right)
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial v_{y}}{\partial t}=\frac{\mu}{\rho}\frac{\partial^{2}v_{y}}{\partial x^{2}}\;\;\&\;\;\nu\equiv\frac{\mu}{\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial v_{y}}{\partial t}=\nu\frac{\partial^{2}v_{y}}{\partial x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now use similarity solution to solve this instace of the heat equation form.
 \end_layout
 
 \begin_layout Standard

@@ -120,7 +120,7 @@ pageref{LastPage}
 \end_layout
 
 \begin_layout Title
-General Balance Equations and Continuity Equation 
+Momentum Equation and Boussinesq Assumption 
 \begin_inset CommandInset citation
 LatexCommand cite
 after "pp. 75-78"
@@ -132,102 +132,20 @@ key "Bird2007"
 \end_layout
 
 \begin_layout Section
-General Balance Equation
-\end_layout
-
-\begin_layout Standard
-The general balance equation is given by
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{in volume }V_{m}
-}
-}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
-\text{surface }S_{m}
-}
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
-\text{in volume }V_{m}
-}
-}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and by using the Reynold's Transport Theorem: 
-\begin_inset Formula $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$
-\end_inset
-
- and Greene's Theorem: 
-\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
-\end_inset
-
-, we can write the form of the general balance equations as
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and, after differentiating:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{per unit volume}
-}
-}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
-\text{material motion}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
-\text{surface }S_{m}\text{ per}\\
-\text{unit volume}
-}
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
-\text{per unit volume}
-}
-}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Continuity Equation
+Momentum Equation
 \end_layout
 
 \begin_layout Standard
 Applying the the GBE 
-\begin_inset Formula $\psi=\rho$
+\begin_inset Formula $\psi=\rho\vec{v}$
 \end_inset
 
 , 
-\begin_inset Formula $\mathbb{J}=0$
+\begin_inset Formula $\boldsymbol{J}=\boldsymbol{T}=p\boldsymbol{I}+\boldsymbol{\tau}$
 \end_inset
 
 , and 
-\begin_inset Formula $\dot{\psi_{g}}=0$
+\begin_inset Formula $\dot{\psi_{g}}=\rho\vec{g}$
 \end_inset
 
 , we get
@@ -236,7 +154,24 @@ Applying the the GBE
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
+\underbrace{\frac{\partial\left(\rho\vec{v}\right)}{\partial t}}_{\substack{\text{rate of change}\\
+\text{of momentum}\\
+\text{per unit volume}
+}
+}+\underbrace{\nabla\cdot\left(\rho\vec{v}\vec{v}\right)}_{\substack{\text{momentum change}\\
+\text{by convection}\\
+\text{per unit volume}
+}
+}=-\underbrace{\nabla p}_{\substack{\text{pressure}\\
+\text{force}
+}
+}-\underbrace{\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{viscous}\\
+\text{force}
+}
+}+\underbrace{\rho\vec{v}}_{\substack{\text{gravity}\\
+\text{force}
+}
+}
 \]
 
 \end_inset
@@ -245,25 +180,58 @@ Applying the the GBE
 \end_layout
 
 \begin_layout Standard
-which is equivalent to (by FOIL): 
-\begin_inset Formula $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$
+By using the substantial derivative, this become's Cauchy's Equation of
+ Motion: 
+\begin_inset Formula $\rho\frac{D\vec{v}}{Dt}=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}$
+\end_inset
+
+, which is idential in form to Newton's Second Law of Motion: 
+\begin_inset Formula $\rho\vec{a}=\sum\vec{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Boussinesq Assumption
+\end_layout
+
+\begin_layout Standard
+The boussinesq assumption is used in flows where gravity is important:
+\end_layout
+
+\begin_layout Itemize
+Thermal expansion causes density change.
+\end_layout
+
+\begin_layout Itemize
+This happens by the thermal expansion coefficient, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\beta\equiv\frac{1}{\nu}\left.\frac{\partial\nu}{\partial T}\right)_{p}=\frac{1}{\rho}\left.\frac{\partial\rho}{\partial T}\right)_{p}
+\]
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-and using the substantial derivative's definition: 
-\begin_inset Formula $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$
-\end_inset
+\begin_layout Itemize
+This density change is only important in gravity term.
+\end_layout
 
- in the above equation, we get:
+\begin_layout Standard
+Applying, we get
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
+dp=-\rho\beta dT\;\;\therefore\;\;\rho-\overline{\rho}=-\overline{\rho}\beta\left(T-\overline{T}\right)
 \]
 
 \end_inset
@@ -272,17 +240,13 @@ and using the substantial derivative's definition:
 \end_layout
 
 \begin_layout Standard
-and assuming incompressible: 
-\begin_inset Formula $\frac{D\rho}{Dt}=0$
-\end_inset
-
-, it is apparent that: 
+and putting into the momentum equations
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\nabla\cdot\vec{v}=0
+\overline{\rho}\frac{D\vec{v}}{Dt}=-\cancelto{\nabla p_{dyn}}{\nabla p}-\nabla\cdot\boldsymbol{\tau}+\left[\cancelto{0}{\overline{\rho}}-\overline{\rho}\beta\left(T-\overline{T}\right)\right]\vec{g}
 \]
 
 \end_inset

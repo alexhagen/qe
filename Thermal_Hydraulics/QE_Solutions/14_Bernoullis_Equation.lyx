@@ -5,6 +5,8 @@
 \textclass article
 \begin_preamble
 \usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
 \usepackage{lastpage}
 
 \let\oldmaketitle\maketitle
@@ -96,7 +98,7 @@ QE Studying: Thermal Hydraulics Solutions
 \end_layout
 
 \begin_layout Right Header
-1/4/15
+1/19/15
 \end_layout
 
 \begin_layout Center Footer
@@ -120,37 +122,135 @@ pageref{LastPage}
 \end_layout
 
 \begin_layout Title
-General Balance Equations and Continuity Equation 
-\begin_inset CommandInset citation
-LatexCommand cite
-after "pp. 75-78"
-key "Bird2007"
+Bernoulli's Equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+date{}
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-General Balance Equation
+\begin_layout Subsection
+Assumptions
 \end_layout
 
-\begin_layout Standard
-The general balance equation is given by
+\begin_layout Enumerate
+Steady State (
+\begin_inset Formula $\frac{\partial}{\partial t}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+One Dimensional (
+\begin_inset Formula $\nabla=\frac{\partial}{\partial z}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+No Viscous Loss (
+\begin_inset Formula $\boldsymbol{\tau}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Kinetic Energy Equation
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{in volume }V_{m}
-}
-}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
-\text{surface }S_{m}
-}
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
-\text{in volume }V_{m}
+\rho\cancelto{0}{\frac{\partial\frac{v^{2}}{2}}{\partial t}}+\rho\nabla\cdot\left(v\frac{v^{2}}{2}\right)=-v\cdot\nabla p-\cancelto{0}{v\cdot\nabla\cdot\boldsymbol{\tau}}+\rho v\cdot g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Converting to one dimensional, asserting that the force 
+\begin_inset Formula $\vec{g}$
+\end_inset
+
+ acts downward (negative), and removing cancelled terms
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho v_{z}\frac{\partial\frac{v_{z}^{2}}{2}}{\partial z}=-v_{z}\frac{\partial p}{\partial z}-\rho v_{z}g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dividing by 
+\begin_inset Formula $v_{z}$
+\end_inset
+
+ and integrating
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho\frac{v_{z}^{2}}{2}=-p-\rho gz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+applying 
+\begin_inset Formula $\gamma\equiv\rho g$
+\end_inset
+
+ and dividing by 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{v_{z}^{2}}{2g}+\frac{p}{\gamma}+z=\text{constant}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which gives us the bernoulli's equation, including loss:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{p_{1}}{\gamma_{1}}+\frac{v_{1}^{2}}{2g}+z_{1}=\frac{p_{2}}{\gamma_{2}}+\frac{v_{2}^{2}}{2g}+z_{2}+\underbrace{\left(\frac{fl}{D}+k\right)\frac{v_{2}^{2}}{2g}}_{\substack{\text{major and minor}\\
+\text{losses}
 }
 }
 \]
@@ -161,128 +261,17 @@ The general balance equation is given by
 \end_layout
 
 \begin_layout Standard
-and by using the Reynold's Transport Theorem: 
-\begin_inset Formula $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$
+which can be used, in conjunction with 
+\begin_inset Formula $h_{1}=h-h_{2}+l$
 \end_inset
 
- and Greene's Theorem: 
-\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
-\end_inset
-
-, we can write the form of the general balance equations as
+ to determine hydrostatic pressure and manometer pressures with
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and, after differentiating:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{per unit volume}
-}
-}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
-\text{material motion}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
-\text{surface }S_{m}\text{ per}\\
-\text{unit volume}
-}
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
-\text{per unit volume}
-}
-}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Continuity Equation
-\end_layout
-
-\begin_layout Standard
-Applying the the GBE 
-\begin_inset Formula $\psi=\rho$
-\end_inset
-
-, 
-\begin_inset Formula $\mathbb{J}=0$
-\end_inset
-
-, and 
-\begin_inset Formula $\dot{\psi_{g}}=0$
-\end_inset
-
-, we get
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-which is equivalent to (by FOIL): 
-\begin_inset Formula $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and using the substantial derivative's definition: 
-\begin_inset Formula $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$
-\end_inset
-
- in the above equation, we get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and assuming incompressible: 
-\begin_inset Formula $\frac{D\rho}{Dt}=0$
-\end_inset
-
-, it is apparent that: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\nabla\cdot\vec{v}=0
+p_{1}+\gamma z_{1}-\gamma_{m}z_{2}=p_{2}\;\;\therefore\;\;\Delta p=-\gamma\left(z_{2}+z_{1}\right)+\gamma_{m}h
 \]
 
 \end_inset
