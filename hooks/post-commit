@@ -103,15 +103,6 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     done
     # remove temp file if its there
     rm temp
-    # clean the base dir
-    git rm -r Neutronics/
-    rm -r Neutronics/
-    git rm -r Thermal_Hydraulics/
-    rm -r Thermal_Hydraulics/
-    git rm -r Interactions/
-    rm -r Interactions/
-    git rm -r Materials/
-    rm -r Materials/
     # then, commit the updated markdown files
     git commit -am 'added the updated markdown files'
 
