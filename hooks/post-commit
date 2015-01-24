@@ -100,10 +100,9 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         # export to md
         pandoc -o "${file%.lyx}.md" "${file%.lyx}.tex"
         # add yaml header
-        echo -e $LAYOUT_PREFIX | cat - "${file%.lyx}.md" > temp 
         mkdir -p "_pages/$(dirname $file)"
-        mv temp _pages/${file%.lyx}.md
-        git add _pages/${file%.lyx}.md
+        echo -e $LAYOUT_PREFIX | cat - "${file%.lyx}.md" > "_pages/${file%.lyx}.md"
+        git add "_pages/${file%.lyx}.md"
         rm "${file%.lyx}.tex"
         rm "$file"
         rmdir -p "$(dirname $file)"
