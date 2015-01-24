@@ -95,9 +95,10 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         pandoc -o "${file%.lyx}.md" "${file%.lyx}.tex"
         # add yaml header
         echo -e $LAYOUT_PREFIX | cat - "${file%.lyx}.md" > temp 
-        mkdir -p "_pages/${file%.lyx}.md"
+        mkdir -p "_pages/$(dirname $file)"
         mv temp "_pages/${file%.lyx}.md"
         git add "_pages/${file%.lyx}.md"
+        rm "${file%.lyx}.tex"
     done
     # remove temp file if its there
     rm temp
