@@ -74,6 +74,15 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     #git commit -am 'made the pdf generation files required'
     # then, checkout the gh-pages branch
     git checkout gh-pages
+    # clean the paths
+    git rm -r Thermal_Hydraulics/
+    git rm -r Neutronics/
+    git rm -r Interactions/
+    git rm -r Materials/
+    rm -r Thermal_Hydraulics/
+    rm -r Neutronics/
+    rm -r Interactions/
+    rm -r Materials/
     # then, checkout the files ending in *.lyx
     git checkout master -- $rel_paths
     # checkout all the bib files
@@ -99,6 +108,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         mkdir -p "${file%.lyx}"
         echo -e $LAYOUT_PREFIX | cat - "${file%.lyx}.md" > "${file%.lyx}/index.md"
         git add "${file%.lyx}/index.md"
+        rm "${file%.lyx}.md"
         rm "${file%.lyx}.tex"
     done
     # remove temp file if its there
