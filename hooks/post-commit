@@ -92,7 +92,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         # export to tex
         lyx2.1 --export "latex" "$file"
         # export to md
-        pandoc -o "$mdname" "`basename $file .lyx`.tex"
+        pandoc -o "`basename $file .lyx`.md" "`basename $file .lyx`.tex"
         # add yaml header
         echo -e $LAYOUT_PREFIX | cat - "`basename $file .lyx`.md" > temp && mv temp "_pages/`basename $file .lyx`.md"
         git add "_pages/`basename $file .lyx`.md"
