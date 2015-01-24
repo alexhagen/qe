@@ -308,6 +308,14 @@ layout: post-no-feature
 ---
 
 
+<<<<<<< HEAD
+=======
+---
+layout: post-no-feature
+---
+
+
+>>>>>>> f7bf5b2ab6bf9a8e11bc9c04884cbc11c215a469
 # NUCL 402 Solutions
 
 Lamarsh Introduction to Nuclear Engineering
@@ -387,3 +395,7 @@ Homeworks 1, 2, and 3 involved the neutron economy of a reactor and not thermal 
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f7bf5b2ab6bf9a8e11bc9c04884cbc11c215a469

@@ -308,6 +308,14 @@ layout: post-no-feature
 ---
 
 
+<<<<<<< HEAD:Thermal_Hydraulics/index.md
+=======
+---
+layout: post-no-feature
+---
+
+
+>>>>>>> f7bf5b2ab6bf9a8e11bc9c04884cbc11c215a469:Thermal_Hydraulics/index.md
 # Purdue Nuclear Engineering Thermal Hydraulics Qualification Exam
 By Alex Hagen
 
@@ -589,3 +597,7 @@ The difficulty becomes decyphering which of the years of each class the material
 
 
 
+<<<<<<< HEAD:Thermal_Hydraulics/index.md
+=======
+
+>>>>>>> f7bf5b2ab6bf9a8e11bc9c04884cbc11c215a469:Thermal_Hydraulics/index.md

@@ -308,48 +308,37 @@ layout: post-no-feature
 ---
 
 
-<<<<<<< HEAD
-=======
 ---
 layout: post-no-feature
 ---
 
 
->>>>>>> f7bf5b2ab6bf9a8e11bc9c04884cbc11c215a469
-# NUCL 350 Solutions
 
-- 1.1 - Dimensional Analysis
-- 1.38 - Dimensional Analysis
-- 1.94 - gravity head
-- [ ] ~~2.18 - Gravity Head~~
-- 2.29 Multicomponent gravity head
-- [ ] ~~2.113 - slanted gravity head~~
-- 3.2 - Bernoulli's
-- 3.22 - Bernoulli's
-- [ ] 3.98 - Bernoulli's
-- 4.9 Stagnation
-- 4.43 normal acceleration (nonconvective)
-- 4.66 flowrate
-- 5.11 fluid power
-- 5.108 fluid power
-- [ ] 6.10 rotational velocity profile
-- [ ] ~~6.14 velocity profile~~
-- 6.34 fluid flux
-- [ ] 6.92 derivative pressure equation
-- 6.104 gravity head
-- 7.15 buckingham pi theorem
-- [ ] 7.80 pipe flow
-- 7.81 pipe flow
-- [ ] ~~8.12 pipe flow~~
-- [ ] ~~8.28 fluid systems~~
-- [ ] ~~8.42 friction factor - losses~~
-- [ ] 8.69 major loss
-- 9.4 thin film
-- [ ] ~~9.21 thin film~~
-- 9.29 flow profile
-- 9.35 D=Cp1/2rho u^2 A
-- 9.39 ""
-- [ ] 9.41 D=Cp 1/2 rho u^2 A
+Gradient ($\nabla$)
+===================
+
+<span>\>p<span>3cm</span>\>p<span>10cm</span></span> commutative & $\nabla\left(fg\right)=f\nabla g+g\nabla f$<span>\
+</span> cartesian & $\nabla f=\frac{\partial f}{\partial x}\hat{x}+\frac{\partial f}{\partial y}\hat{y}+\frac{\partial f}{\partial z}\hat{z}$<span>\
+</span> cylindrical & $\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$<span>\
+</span> spherical & $\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial f}{\partial\phi}\hat{\phi}$<span>\
+</span>
+
+Divergence ($\nabla\cdot$)
+==========================
+
+<span>\>p<span>3cm</span>\>p<span>10cm</span></span> commutative & $\nabla\cdot\left(f\vec{v}\right)=f\left(\nabla\cdot\vec{v}\right)+\vec{v}\cdot\left(\nabla\cdot f\right)$<span>\
+</span> cartesian & $\nabla\cdot f=\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}$<span>\
+</span> cylindrical & $\nabla\cdot f=\frac{1}{r}\frac{\partial\left(rv_{r}\right)}{\partial r}+\frac{1}{r}\frac{\partial v_{\theta}}{\partial\theta}+\frac{\partial v_{z}}{\partial z}$<span>\
+</span> spherical & $\nabla\cdot f=\frac{1}{r^{2}}\frac{\partial\left(r^{2}v_{r}\right)}{\partial r}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial\left(\sin\left(\theta\right)v_{\theta}\right)}{\partial\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial v_{\phi}}{\partial\phi}$<span>\
+</span>
+
+Laplacian ($\nabla^{2}$)
+========================
+
+<span>\>p<span>3cm</span>\>p<span>10cm</span></span> cartesian & $\nabla^{2}f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$<span>\
+</span> cylindrical & $\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$<span>\
+</span> spherical & $\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$<span>\
+</span>
 
 
 
@@ -411,7 +400,5 @@ layout: post-no-feature
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> f7bf5b2ab6bf9a8e11bc9c04884cbc11c215a469
+
