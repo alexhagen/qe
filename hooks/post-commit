@@ -102,8 +102,8 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         # add yaml header
         echo -e $LAYOUT_PREFIX | cat - "${file%.lyx}.md" > temp 
         mkdir -p "_pages/$(dirname $file)"
-        mv temp "_pages/${file%.lyx}.md"
-        git add "_pages/${file%.lyx}.md"
+        mv temp _pages/${file%.lyx}.md
+        git add _pages/${file%.lyx}.md
         rm "${file%.lyx}.tex"
         rm "$file"
         rmdir -p "$(dirname $file)"
