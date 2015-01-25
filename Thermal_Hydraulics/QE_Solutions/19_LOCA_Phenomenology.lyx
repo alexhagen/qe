@@ -1,0 +1,551 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+\usepackage{multicol}
+
+\makeatletter
+
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth -1
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+LOCA Phenomenology
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/21/15
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+PWR
+\end_layout
+
+\begin_layout Standard
+LOCA occurs in the primary loop
+\end_layout
+
+\begin_layout Itemize
+High Pressure flashing to steam
+\end_layout
+
+\begin_layout Itemize
+Without ECCS, core uncovers, melts
+\end_layout
+
+\begin_layout Itemize
+Exothermic reactions with the air create 
+\begin_inset Formula $\ce{H_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Core then can melt through the reactor pressure vessel, or even containment
+\end_layout
+
+\begin_layout Standard
+but if the eccs turns on, then
+\end_layout
+
+\begin_layout Itemize
+Passive ECCS provides water into cold legs because of pressure reversal
+ across check valve
+\end_layout
+
+\begin_layout Itemize
+Active ECCS turns on
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+High Pressure Injection System (HPIS) pushes through a chemical shim into
+ cold legs
+\end_layout
+
+\begin_layout Itemize
+Low Pressure Injection System (LPIS) continuously cycles water through sump,
+ cold legs, and a HEX for heat removal
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Containment keeps in the gasses and vapor below 
+\begin_inset Formula $45\,\mathrm{psi}$
+\end_inset
+
+ and condenses with sprays
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/LOCA_Timeline_Illustration.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Timeline of Blowdown Phase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/LOCA_Temperature_Chart.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Temperature during LOCA in a PWR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+BWR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols*}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Small Break
+\end_layout
+
+\begin_layout Itemize
+Pressure relief valves push steam to suppression pool and depressurize the
+ system
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Large Break
+\end_layout
+
+\begin_layout Itemize
+Rapid depressuization due to blowdown
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ECCS on
+\end_layout
+
+\begin_layout Itemize
+Low Pressure Core Spray (LPCS) pushes water from pressure pool to above
+ the core always keeping it covered
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Low Pressure Coolant Injection (LPCI) pushes water in to recirculations
+ loops from pool
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+All water drains to suppression pool, so there is a continuous coolant supply
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Critical (Choked) Flow
+\end_layout
+
+\begin_layout Standard
+Flow where no more velocity can be obtained from more upstream pressure
+ or less backpressure
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Single Phase
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d\dot{m}}{dp}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\frac{d\dot{m}}{dp}\right)_{cr}=VA\frac{dp}{d\rho}+pA\frac{dV}{d\rho}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{cr}^{2}=\rho^{2}\frac{dp}{d\rho}=-\frac{dp}{d\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c^{2}=\left(\frac{dp}{d\rho}\right)_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Two Phase
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{cr}=\begin{cases}
+0.61\sqrt{2\rho_{f}\left(p_{0}-p_{b}\right)} & \nicefrac{L}{D}=0\\
+0.61\sqrt{2\rho_{f}\left(p_{0}-p_{cr}\right)} & 0<\nicefrac{L}{D}<3\\
+\frac{h_{fg}}{v_{fg}}\sqrt{\frac{1}{T_{cf}}} & \nicefrac{L}{D}\geq3
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and if it is subcooled, using the equation above and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{cr}=\sqrt{2\left[p_{0}-p\left(T_{0}\right)\right]\rho_{l}+G_{erm}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "th"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
