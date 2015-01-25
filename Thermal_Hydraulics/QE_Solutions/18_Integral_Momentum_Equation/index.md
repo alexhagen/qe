@@ -2,6 +2,7 @@
 layout: post-no-feature
 date: 12/31/14
 title: Integral Momentum Equation
+author: Alex Hagen
 ---
 
 

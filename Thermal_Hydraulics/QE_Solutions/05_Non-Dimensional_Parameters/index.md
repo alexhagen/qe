@@ -2,6 +2,7 @@
 layout: post-no-feature
 date: 1/12/15
 title: Non-Dimensional Parameters 
+author: Alex Hagen
 ---
 
 

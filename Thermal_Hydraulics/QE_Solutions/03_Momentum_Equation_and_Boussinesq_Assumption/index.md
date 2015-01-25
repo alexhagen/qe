@@ -2,6 +2,7 @@
 layout: post-no-feature
 date: 1/4/15
 title: Momentum Equation and Boussinesq Assumption 
+author: Alex Hagen
 ---
 
 

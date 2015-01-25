@@ -2,6 +2,7 @@
 layout: post-no-feature
 date: 1/4/15
 title: General Balance Equations and Continuity Equation 
+author: Alex Hagen
 ---
 
 

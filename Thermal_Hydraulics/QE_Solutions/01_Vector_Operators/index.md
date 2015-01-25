@@ -2,6 +2,7 @@
 layout: post-no-feature
 date: 1/6/15
 title: Vector Operations 
+author: Alex Hagen
 ---
 
 
