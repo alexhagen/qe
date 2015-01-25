@@ -9,9 +9,23 @@
 \usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -89,40 +103,16 @@ customHeadersFooters
 
 \begin_body
 
-\begin_layout Left Header
+\begin_layout Title
+Sudden Motion {Bird}
+\end_layout
+
+\begin_layout Author
 Alex Hagen
 \end_layout
 
-\begin_layout Center Header
-QE Studying: Thermal Hydraulics Solutions
-\end_layout
-
-\begin_layout Right Header
+\begin_layout Date
 1/10/14
-\end_layout
-
-\begin_layout Center Footer
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\backslash
- of 
-\backslash
-pageref{LastPage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Title
-Sudden Motion {Bird}
 \end_layout
 
 \begin_layout Subsection
@@ -251,7 +241,7 @@ Continuity Equation
 \begin_layout Standard
 \begin_inset Formula 
 \[
-v_{x}=c_{1}\;\;\&\;\;\left.v_{x}\right\rfloor _{0}=0\;\;\therefore\;\; v_{x}=0
+v_{x}=c_{1}\;\;\&\;\;\left.v_{x}\right\rfloor _{0}=0\;\;\therefore\;\;v_{x}=0
 \]
 
 \end_inset

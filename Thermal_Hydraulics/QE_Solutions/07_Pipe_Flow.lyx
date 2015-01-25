@@ -9,9 +9,23 @@
 \usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -89,40 +103,16 @@ customHeadersFooters
 
 \begin_body
 
-\begin_layout Left Header
+\begin_layout Title
+Pipe Flow {Munson, Bird}
+\end_layout
+
+\begin_layout Author
 Alex Hagen
 \end_layout
 
-\begin_layout Center Header
-QE Studying: Thermal Hydraulics Solutions
-\end_layout
-
-\begin_layout Right Header
+\begin_layout Date
 1/6/15
-\end_layout
-
-\begin_layout Center Footer
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\backslash
- of 
-\backslash
-pageref{LastPage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Title
-Pipe Flow {Munson, Bird}
 \end_layout
 
 \begin_layout Subsection
@@ -271,7 +261,7 @@ applying the cylindrical coordinates
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\nabla\cdot\vec{v}=\frac{1}{r}\frac{\partial}{\partial r}\left(rv_{r}\right)=0\;\;\therefore\;\; v_{r}=c_{1}\;\;\&\;\;\left.v_{r}\right\rfloor _{R}=0\;\;\therefore\;\; v_{r}=0
+\nabla\cdot\vec{v}=\frac{1}{r}\frac{\partial}{\partial r}\left(rv_{r}\right)=0\;\;\therefore\;\;v_{r}=c_{1}\;\;\&\;\;\left.v_{r}\right\rfloor _{R}=0\;\;\therefore\;\;v_{r}=0
 \]
 
 \end_inset
@@ -332,7 +322,7 @@ r\tau_{rz}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2L}\right]r^{2}
 
 \begin_inset Formula 
 \[
-\tau_{rz}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2L}\right]r+\frac{c_{2}}{r}\;\;\&\;\;\left.\tau_{rz}\right\rfloor _{0}=\text{finite}\;\;\therefore\;\; c_{2}=0
+\tau_{rz}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2L}\right]r+\frac{c_{2}}{r}\;\;\&\;\;\left.\tau_{rz}\right\rfloor _{0}=\text{finite}\;\;\therefore\;\;c_{2}=0
 \]
 
 \end_inset
@@ -365,7 +355,7 @@ r\tau_{rz}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{2L}\right]r^{2}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-v_{z}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{4\mu L}\right]r^{2}+c_{3}\;\;\&\;\;\left.v_{z}\right\rfloor _{R}=0\;\;\therefore\;\; c_{3}=-\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{4\mu L}\right]R^{2}
+v_{z}=\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{4\mu L}\right]r^{2}+c_{3}\;\;\&\;\;\left.v_{z}\right\rfloor _{R}=0\;\;\therefore\;\;c_{3}=-\left[\frac{\mathcal{P}_{L}-\mathcal{P}_{0}}{4\mu L}\right]R^{2}
 \]
 
 \end_inset

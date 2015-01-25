@@ -9,9 +9,23 @@
 \usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -89,53 +103,16 @@ customHeadersFooters
 
 \begin_body
 
-\begin_layout Left Header
+\begin_layout Title
+Fuel Plate {Todreas, Lamarsh}
+\end_layout
+
+\begin_layout Author
 Alex Hagen
 \end_layout
 
-\begin_layout Center Header
-QE Studying: Thermal Hydraulics Solutions
-\end_layout
-
-\begin_layout Right Header
+\begin_layout Date
 1/14/15
-\end_layout
-
-\begin_layout Center Footer
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\backslash
- of 
-\backslash
-pageref{LastPage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Title
-Fuel Plate {Todreas, Lamarsh}
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-date{}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -265,7 +242,7 @@ We start with Poisson's heat equation in cartesian 1d
 \begin_layout Standard
 \begin_inset Formula 
 \[
-k\frac{\partial T}{\partial x}+q^{'''}x=c_{1}\;\;\&\;\;\left.\frac{\partial T}{\partial x}\right\rfloor _{0}=0\;\;\therefore\;\; c_{1}=0
+k\frac{\partial T}{\partial x}+q^{'''}x=c_{1}\;\;\&\;\;\left.\frac{\partial T}{\partial x}\right\rfloor _{0}=0\;\;\therefore\;\;c_{1}=0
 \]
 
 \end_inset
@@ -276,7 +253,7 @@ k\frac{\partial T}{\partial x}+q^{'''}x=c_{1}\;\;\&\;\;\left.\frac{\partial T}{\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-T=-\frac{q^{'''}}{2k_{f}}x^{2}+c_{2}\;\;\&\;\;\left.T\right\rfloor _{0}=T_{m}\;\;\therefore\;\; c_{2}=T_{m}
+T=-\frac{q^{'''}}{2k_{f}}x^{2}+c_{2}\;\;\&\;\;\left.T\right\rfloor _{0}=T_{m}\;\;\therefore\;\;c_{2}=T_{m}
 \]
 
 \end_inset
@@ -347,7 +324,7 @@ k_{c}\frac{\partial T}{\partial x}=c_{1}\;\;\text{this is important because it s
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left.q_{f}^{''}\right\rfloor _{a}=\left.q_{c}^{''}\right\rfloor _{f}\;\;\therefore\;\; q^{'''}a=-k_{c}\left(\frac{c_{1}}{k_{c}}\right)\;\;\therefore\;\; c_{1}=-q^{'''}a
+\left.q_{f}^{''}\right\rfloor _{a}=\left.q_{c}^{''}\right\rfloor _{f}\;\;\therefore\;\;q^{'''}a=-k_{c}\left(\frac{c_{1}}{k_{c}}\right)\;\;\therefore\;\;c_{1}=-q^{'''}a
 \]
 
 \end_inset
@@ -358,7 +335,7 @@ k_{c}\frac{\partial T}{\partial x}=c_{1}\;\;\text{this is important because it s
 \begin_layout Standard
 \begin_inset Formula 
 \[
-T=-\frac{q^{'''}a}{k_{c}}x+c_{2}\;\;\&\;\;\left.T\right\rfloor _{a}=T_{s}\;\;\therefore\;\; c_{2}=T_{s}+\frac{q^{'''}a^{2}}{k_{c}}
+T=-\frac{q^{'''}a}{k_{c}}x+c_{2}\;\;\&\;\;\left.T\right\rfloor _{a}=T_{s}\;\;\therefore\;\;c_{2}=T_{s}+\frac{q^{'''}a^{2}}{k_{c}}
 \]
 
 \end_inset
@@ -412,7 +389,7 @@ h\left(T-T_{b}\right)=-k_{b}\frac{\partial T}{\partial x}\;\;\therefore\;\;\frac
 \begin_layout Standard
 \begin_inset Formula 
 \[
-T=c_{3}\exp\left(-\frac{h}{k_{b}}x\right)+T_{b}\;\;\&\;\;\left.T\right\rfloor _{a+b}=T_{c}\;\;\therefore\;\; c_{3}=\frac{\left(T_{c}-T_{b}\right)}{\exp\left(-\frac{h}{k_{b}}\left(a+b\right)\right)}
+T=c_{3}\exp\left(-\frac{h}{k_{b}}x\right)+T_{b}\;\;\&\;\;\left.T\right\rfloor _{a+b}=T_{c}\;\;\therefore\;\;c_{3}=\frac{\left(T_{c}-T_{b}\right)}{\exp\left(-\frac{h}{k_{b}}\left(a+b\right)\right)}
 \]
 
 \end_inset

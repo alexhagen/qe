@@ -9,9 +9,23 @@
 \usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -89,53 +103,16 @@ customHeadersFooters
 
 \begin_body
 
-\begin_layout Left Header
+\begin_layout Title
+Sudden Heating
+\end_layout
+
+\begin_layout Author
 Alex Hagen
 \end_layout
 
-\begin_layout Center Header
-QE Studying: Thermal Hydraulics Solutions
-\end_layout
-
-\begin_layout Right Header
+\begin_layout Date
 1/9/15
-\end_layout
-
-\begin_layout Center Footer
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\backslash
- of 
-\backslash
-pageref{LastPage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Title
-Sudden Heating 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-date{}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -302,8 +279,8 @@ This changes the boundary conditions to be:
 \[
 \theta=\begin{cases}
 0 & t=0\\
-\theta_{0} & t\geq0,\; x=0\\
-0 & t\geq0,\; x=\infty
+\theta_{0} & t\geq0,\;x=0\\
+0 & t\geq0,\;x=\infty
 \end{cases}
 \]
 
@@ -444,7 +421,7 @@ This can be integrated using the integrating factor
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\nicefrac{\theta}{\theta_{0}}\left(0,x\right)=\phi\left(0\right)=0\;\;\therefore\;\; c_{2}=0
+\nicefrac{\theta}{\theta_{0}}\left(0,x\right)=\phi\left(0\right)=0\;\;\therefore\;\;c_{2}=0
 \]
 
 \end_inset
@@ -455,7 +432,7 @@ This can be integrated using the integrating factor
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\nicefrac{\theta}{\theta_{0}}\left(t,\infty\right)=\phi\left(\infty\right)=1\;\;\therefore\;\; c_{1}=\int_{0}^{\infty}\exp\left(-\eta^{2}\right)d\eta=\frac{2}{\sqrt{\pi}}
+\nicefrac{\theta}{\theta_{0}}\left(t,\infty\right)=\phi\left(\infty\right)=1\;\;\therefore\;\;c_{1}=\int_{0}^{\infty}\exp\left(-\eta^{2}\right)d\eta=\frac{2}{\sqrt{\pi}}
 \]
 
 \end_inset

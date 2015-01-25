@@ -5,11 +5,27 @@
 \textclass article
 \begin_preamble
 \usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -87,38 +103,6 @@ customHeadersFooters
 
 \begin_body
 
-\begin_layout Left Header
-Alex Hagen
-\end_layout
-
-\begin_layout Center Header
-QE Studying: Thermal Hydraulics Solutions
-\end_layout
-
-\begin_layout Right Header
-1/4/15
-\end_layout
-
-\begin_layout Center Footer
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\backslash
- of 
-\backslash
-pageref{LastPage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Title
 General Balance Equations and Continuity Equation 
 \begin_inset CommandInset citation
@@ -129,6 +113,14 @@ key "Bird2007"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/4/15
 \end_layout
 
 \begin_layout Section

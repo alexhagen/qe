@@ -9,9 +9,23 @@
 \usepackage{pstricks}
 \usepackage{lastpage}
 
-\let\oldmaketitle\maketitle
+\makeatletter
 
-\renewcommand{\maketitle}{\oldmaketitle \thispagestyle{fancy}}
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -89,53 +103,16 @@ customHeadersFooters
 
 \begin_body
 
-\begin_layout Left Header
+\begin_layout Title
+BWR Boiling
+\end_layout
+
+\begin_layout Author
 Alex Hagen
 \end_layout
 
-\begin_layout Center Header
-QE Studying: Thermal Hydraulics Solutions
-\end_layout
-
-\begin_layout Right Header
+\begin_layout Date
 1/18/15
-\end_layout
-
-\begin_layout Center Footer
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\backslash
- of 
-\backslash
-pageref{LastPage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Title
-BWR Boiling 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-date{}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -358,7 +335,7 @@ and so
 \begin_layout Standard
 \begin_inset Formula 
 \[
-T_{b}=\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}\sin\left(\frac{\pi z}{H}\right)+c_{1}\;\;\&\;\;\left.T_{b}\right\rfloor _{-\frac{H}{2}}=T_{b0}\;\;\therefore\;\; c_{1}=T_{b0}+\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}
+T_{b}=\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}\sin\left(\frac{\pi z}{H}\right)+c_{1}\;\;\&\;\;\left.T_{b}\right\rfloor _{-\frac{H}{2}}=T_{b0}\;\;\therefore\;\;c_{1}=T_{b0}+\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}
 \]
 
 \end_inset
