@@ -81,6 +81,8 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
     rm -r Materials/
     # then, checkout the files ending in *.lyx
     git checkout master -- $rel_paths
+    git checkout master -- hooks/title.lua
+    git checkout master -- hooks/date.lua
     # checkout all the bib files
     git checkout master -- $bibs
     for file in $bibs
