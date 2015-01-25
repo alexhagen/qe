@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
-date: 
-title: 
+date: 1/4/15
+title: General Balance Equations and Continuity Equation 
 ---
 
 

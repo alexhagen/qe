@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
-date: 
-title: 
+date: 1/19/15
+title: Bernoulli’s Equation
 ---
 
 

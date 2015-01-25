@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
-date: 
-title: 
+date: 1/6/15
+title: Friction Factor and Heat Transfer Coefficient {Todreas}
 ---
 
 

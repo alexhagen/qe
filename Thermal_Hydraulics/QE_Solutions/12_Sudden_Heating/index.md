@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
-date: 
-title: 
+date: 1/9/15
+title: Sudden Heating
 ---
 
 

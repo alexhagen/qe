@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
-date: 
-title: 
+date: 12/31/14
+title: Integral Momentum Equation
 ---
 
 

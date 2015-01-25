@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
-date: 
-title: 
+date: 1/12/15
+title: Non-Dimensional Parameters 
 ---
 
 
