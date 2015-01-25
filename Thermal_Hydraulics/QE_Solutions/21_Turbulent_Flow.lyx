@@ -57,7 +57,7 @@ customHeadersFooters
 \use_hyperref false
 \papersize letterpaper
 \use_geometry true
-\use_package amsmath 1
+\use_package amsmath 2
 \use_package amssymb 1
 \use_package cancel 1
 \use_package esint 1
@@ -105,7 +105,7 @@ customHeadersFooters
 \begin_body
 
 \begin_layout Title
-Critical Heat Flux
+Turbulent Flow
 \end_layout
 
 \begin_layout Author
@@ -113,170 +113,108 @@ Alex Hagen
 \end_layout
 
 \begin_layout Date
-1/21/15
+1/2/15
 \end_layout
 
 \begin_layout Section
-Flow Boiling
+Turbulent Flow Characteristics
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-input{img/Flow_Boiling_Chart.tex}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Heat Flux as a Function of Temperature for Flow Boiling
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Critical Heat Flux
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-input{img/Critical_Heat_Flux_Chart.tex}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Convection Coefficient and Heat Flux as a Function of Temperature Illustrating
- Critical Heat Flux
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Correlations
-\end_layout
-
-\begin_layout Subsubsection
-Zuber
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-q_{CHF}^{''}=\left(\frac{\pi}{24}\right)h_{fg}\rho_{v}\left[\frac{\sigma g\left(\rho_{l}-\rho_{v}\right)}{\rho_{v}^{2}}\right]^{\nicefrac{1}{4}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Jens-Lottes
-\end_layout
-
-\begin_layout Standard
-Use the Jens-Lottes in imperial units and only for Subcooled boiling
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-q_{CHF}^{''}=C\times10^{6}\left(\frac{G}{10^{6}}\right)^{m}\Delta T^{0.22}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Hench-Levy Limit Lines
-\end_layout
-
-\begin_layout Standard
-Use the Hench-Levy Limit lines for nucleat boiling, in 
-\begin_inset Formula $\mathrm{psi}$
-\end_inset
-
- and all properties evaluated at 
-\begin_inset Formula $1000\,\mathrm{psi}$
+Transition to turbulent flow is at 
+\begin_inset Formula $Re=\frac{\rho vD}{\mu}\geq2000$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Turbulent_Velocity_and_Stress_Profiles.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tubulent Flow Velocity and Shear Stress Profiles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Derivation of Turbulent Flow Balance Equations
+\end_layout
+
+\begin_layout Standard
+We use the Reynold's analogy to average, assuming
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-q_{CHF}^{''}=\begin{cases}
-1.0 & x_{e}\leq\left(x_{e}\right)_{1}\\
-1.9-3.3x_{e}-0.7\tanh^{2}\left(\nicefrac{3G}{10^{6}}\right) & \left(x_{e}\right)_{1}<x_{e}<\left(x_{e}\right)_{2}\\
-0.6-0.7x_{e}-0.09\tanh^{2}\left(\nicefrac{2G}{10^{6}}\right) & x_{e}\geq\left(x_{e}\right)_{2}
-\end{cases}
+\left|\frac{\rho^{'}}{\rho}\right|\ll\left|\frac{v^{'}}{v}\right|\;\;\therefore\;\;\rho^{'}\approx0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, solving the continuity equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\rho\vec{v}=0\;\;\therefore\;\;\nabla\cdot\vec{v}=0\;\;\therefore\;\;\nabla\cdot\overline{v}=0\;\;\&\;\;\nabla\cdot v^{'}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving the momentum equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\rho\vec{v}}{\partial t}+\nabla\cdot\rho\vec{v}\vec{v}=-\nabla p+\mu\nabla^{2}\vec{v}+\rho\vec{g}
 \]
 
 \end_inset
@@ -287,7 +225,56 @@ q_{CHF}^{''}=\begin{cases}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left(x_{e}\right)_{1}=0.273-0.212\tanh^{2}\left(\nicefrac{3G}{10^{6}}\right)
+\frac{\partial\rho\overline{v}}{\partial t}+\nabla\cdot\rho\overline{v}\overline{v}=-\nabla p+\left[\mu\nabla^{2}\overline{v}-\nabla\cdot\rho\overline{v^{'}v^{'}}\right]+\rho\vec{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so the turnblent flux or the Reynolds Stress is written as 
+\begin_inset Formula $\boldsymbol{\tau}^{t}$
+\end_inset
+
+ in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{\tau}=\left[\boldsymbol{\tau}^{\mu}+\boldsymbol{\tau}^{t}\right]=\left[-\mu\nabla\overline{v}+\rho\overline{v^{'}v^{'}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\rho\overline{v}}{\partial t}+\nabla\cdot\rho\overline{v}\overline{v}=-\nabla p-\nabla\cdot\mathbb{\tau}^{T}+\rho\vec{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in pipe flow, this is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho\left(\cancelto{0}{\frac{\partial\overline{v_{z}}}{\partial t}}+\cancelto{0}{\overline{v_{r}}\frac{\partial\overline{v_{z}}}{\partial r}}+\cancelto{0}{\frac{\overline{v_{\theta}}}{r}\frac{\partial\overline{v_{z}}}{\partial\theta}}+\cancelto{0}{\overline{v_{z}}\frac{\partial\overline{v_{z}}}{\partial z}}\right)=-\frac{\partial p}{\partial z}+\cancelto{0}{\rho g_{z}}-\left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\tau_{rz}^{T}\right)+\cancelto{0}{\frac{1}{r}\frac{\partial\tau_{\theta z}^{T}}{\partial\theta}}+\cancelto{0}{\frac{\partial\tau_{zz}^{T}}{\partial z}}\right]
 \]
 
 \end_inset
@@ -298,7 +285,7 @@ q_{CHF}^{''}=\begin{cases}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left(x_{e}\right)_{2}=0.5-0.209\tanh^{2}\left(\nicefrac{3G}{10^{6}}\right)+0.0346\tanh^{2}\left(\nicefrac{2G}{10^{6}}\right)
+\frac{\partial p}{\partial z}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\tau_{rz}^{T}\right)\;\;\therefore\;\;\tau_{rz}^{T}=-\frac{\Delta p}{L}\frac{r}{2}
 \]
 
 \end_inset
@@ -307,10 +294,49 @@ q_{CHF}^{''}=\begin{cases}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-q_{CHF}^{''}\left(p\right)=q_{CHF}^{''}\left(1000\,\mathrm{psi}\right)\left[1.1-0.1\left(\frac{p-600}{400}\right)^{1.25}\right]
-\]
+and since the generation of turbulent is at the wall, the stress profile
+ and intensity are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Stress_and_Turbulent_Intensity_Profiles.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Stress and Turbulent Intensity Profiles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
