@@ -6,8 +6,6 @@ author: Alex Hagen
 ---
 
 
-$T_{LB}=T_{sat}+\left(T_{c}-T_{sat}\right)_{JL}-\frac{q^{''}}{h}$
-
 Flow Boiling
 ============
 
