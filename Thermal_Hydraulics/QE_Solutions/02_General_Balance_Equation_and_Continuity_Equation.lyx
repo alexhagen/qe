@@ -1,0 +1,297 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+
+\makeatletter
+
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth -1
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+General Balance Equations and Continuity Equation 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "pp. 75-78"
+key "Bird2007"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/4/15
+\end_layout
+
+\begin_layout Section
+General Balance Equation
+\end_layout
+
+\begin_layout Standard
+The general balance equation is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
+\text{per unit time}\\
+\text{in volume }V_{m}
+}
+}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
+\text{surface }S_{m}
+}
+}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
+\text{in volume }V_{m}
+}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and by using the Reynold's Transport Theorem: 
+\begin_inset Formula $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$
+\end_inset
+
+ and Greene's Theorem: 
+\begin_inset Formula $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$
+\end_inset
+
+, we can write the form of the general balance equations as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and, after differentiating:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
+\text{per unit time}\\
+\text{per unit volume}
+}
+}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
+\text{material motion}\\
+\text{per unit volume}
+}
+}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
+\text{surface }S_{m}\text{ per}\\
+\text{unit volume}
+}
+}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
+\text{per unit volume}
+}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Continuity Equation
+\end_layout
+
+\begin_layout Standard
+Applying the the GBE 
+\begin_inset Formula $\psi=\rho$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{J}=0$
+\end_inset
+
+, and 
+\begin_inset Formula $\dot{\psi_{g}}=0$
+\end_inset
+
+, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is equivalent to (by FOIL): 
+\begin_inset Formula $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and using the substantial derivative's definition: 
+\begin_inset Formula $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$
+\end_inset
+
+ in the above equation, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and assuming incompressible: 
+\begin_inset Formula $\frac{D\rho}{Dt}=0$
+\end_inset
+
+, it is apparent that: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nabla\cdot\vec{v}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "th"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

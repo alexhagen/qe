@@ -1,0 +1,271 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+
+\makeatletter
+
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth -1
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Bernoulli's Equation
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/19/15
+\end_layout
+
+\begin_layout Subsection
+Assumptions
+\end_layout
+
+\begin_layout Enumerate
+Steady State (
+\begin_inset Formula $\frac{\partial}{\partial t}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+One Dimensional (
+\begin_inset Formula $\nabla=\frac{\partial}{\partial z}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+No Viscous Loss (
+\begin_inset Formula $\boldsymbol{\tau}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Kinetic Energy Equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho\cancelto{0}{\frac{\partial\frac{v^{2}}{2}}{\partial t}}+\rho\nabla\cdot\left(v\frac{v^{2}}{2}\right)=-v\cdot\nabla p-\cancelto{0}{v\cdot\nabla\cdot\boldsymbol{\tau}}+\rho v\cdot g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Converting to one dimensional, asserting that the force 
+\begin_inset Formula $\vec{g}$
+\end_inset
+
+ acts downward (negative), and removing cancelled terms
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho v_{z}\frac{\partial\frac{v_{z}^{2}}{2}}{\partial z}=-v_{z}\frac{\partial p}{\partial z}-\rho v_{z}g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dividing by 
+\begin_inset Formula $v_{z}$
+\end_inset
+
+ and integrating
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho\frac{v_{z}^{2}}{2}=-p-\rho gz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+applying 
+\begin_inset Formula $\gamma\equiv\rho g$
+\end_inset
+
+ and dividing by 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{v_{z}^{2}}{2g}+\frac{p}{\gamma}+z=\text{constant}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which gives us the bernoulli's equation, including loss:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{p_{1}}{\gamma_{1}}+\frac{v_{1}^{2}}{2g}+z_{1}=\frac{p_{2}}{\gamma_{2}}+\frac{v_{2}^{2}}{2g}+z_{2}+\underbrace{\left(\frac{fl}{D}+k\right)\frac{v_{2}^{2}}{2g}}_{\substack{\text{major and minor}\\
+\text{losses}
+}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be used, in conjunction with 
+\begin_inset Formula $h_{1}=h-h_{2}+l$
+\end_inset
+
+ to determine hydrostatic pressure and manometer pressures with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{1}+\gamma z_{1}-\gamma_{m}z_{2}=p_{2}\;\;\therefore\;\;\Delta p=-\gamma\left(z_{2}+z_{1}\right)+\gamma_{m}h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "th"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

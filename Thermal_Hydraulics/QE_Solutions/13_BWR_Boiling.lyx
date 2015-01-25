@@ -1,0 +1,419 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+
+\makeatletter
+
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth -1
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+BWR Boiling
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/18/15
+\end_layout
+
+\begin_layout Subsection
+Illustration
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/BWR_Boiling_Problem_Illustration.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BWR Boiling Problem Illustration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Assumptions
+\end_layout
+
+\begin_layout Enumerate
+No Fast Fissions (
+\begin_inset Formula $RR_{f}=\Sigma_{f}\phi_{T}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Steady State (
+\begin_inset Formula $\frac{\partial}{\partial t}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+No gravity (
+\begin_inset Formula $\vec{g}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+No Viscous Forces (
+\begin_inset Formula $\boldsymbol{\tau}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Negligible pressure drop in coolant channel (
+\begin_inset Formula $\nabla p=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Negligible axial conduction (
+\begin_inset Formula $k\frac{\partial^{2}T}{\partial z^{2}}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Power Density
+\end_layout
+
+\begin_layout Standard
+First, we must find the power density using the neutronics of the reactor.
+ We can find the flux in a cylindrical reactor by solving for 
+\begin_inset Formula $\phi_{T}$
+\end_inset
+
+ in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=2\pi E_{R}\underbrace{\Sigma_{f}\int_{0}^{R}\int_{-\frac{H}{2}}^{\frac{H}{2}}\phi_{T}\left(\vec{r}\right)\vec{r}dzdr}_{\text{fission reaction rate}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the power density is related to this by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q^{'''}=E_{d}\Sigma_{f}\phi_{T}(\vec{r})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This, combined, gives us
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q^{'''}=\frac{1.16P}{HR_{f}^{2}n}\frac{E_{d}}{E_{R}}\mathrm{J_{0}}\left(\frac{2.405r}{\tilde{R}}\right)\cos\left(\frac{\pi z}{\tilde{H}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and assuming that the extrapolation length is small compared to the dimensions
+ of the reactor, 
+\begin_inset Formula $\tilde{R}\approx R$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{H}\approx H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So, in the hottest channel, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q^{'''}=q_{max}^{'''}\cos\left(\frac{\pi z}{H}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Energy Equation
+\end_layout
+
+\begin_layout Standard
+We start with the temperature equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho c_{v}\left[\cancelto{0}{\frac{\partial T}{\partial t}}+\vec{v}\cdot\nabla T\right]=\cancelto{0}{k\nabla^{2}T}+\cancelto{0}{\rho\vec{g}\cdot\vec{v}}+q^{'''}-\cancelto{0}{p\nabla\cdot\vec{v}}-\cancelto{0}{\boldsymbol{\tau}:\nabla\vec{v}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial T}{\partial z}=\frac{q^{'''}}{\rho c_{v}v_{z}}=\frac{q_{max}^{'''}}{\rho c_{v}v_{z}}\cos\left(\frac{\pi z}{H}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{b}=\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}\sin\left(\frac{\pi z}{H}\right)+c_{1}\;\;\&\;\;\left.T_{b}\right\rfloor _{-\frac{H}{2}}=T_{b0}\;\;\therefore\;\;c_{1}=T_{b0}+\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So in the channel,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{b}=T_{b0}+\frac{q_{max}^{'''}H}{\pi\rho c_{v}v_{z}}\left[1+\sin\left(\frac{\pi z}{H}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And follows this trend until 
+\begin_inset Formula $T_{b}\rightarrow T_{bsat}$
+\end_inset
+
+, after which 
+\begin_inset Formula $T_{b}=\begin{cases}
+T_{bsat} & z\geq z_{bsat}\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To determine the centerline pressure in the fluid, remember that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\begin{cases}
+\frac{a}{2k_{f}A}+\frac{b}{k_{c}A}+\frac{1}{hA} & \text{cartesian}\\
+\frac{1}{4\pi Hk_{f}}+\frac{ln(1-\nicefrac{a}{b})}{2\pi Hk_{c}}+\frac{1}{hA} & \text{cylindrical}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where we can find the heat must be continuous between each section
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{m}-T_{b}=q\left[R\right]=q_{max}^{'''}V_{f}R\cos\left(\frac{\pi z}{H}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "th"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
