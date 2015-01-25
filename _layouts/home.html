@@ -49,12 +49,29 @@
 
 <section class="article archive">
   <article class="archive-wrap">
+{% assign url_parts = page.url | split: '/' %}
+{% assign url_parts_size = url_parts | size %}
+<p>{{ url_parts_size }}</p>
+{% assign rm = url_parts | last %}
+{% assign base_url = page.url | replace: rm %}
 
-    {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+<ul>
+{% for node in site.pages %}
+  <p>{{ node.url }}</p><p>{{ base_url }}</p>
+  {% if node.url contains base_url %}
+    <p>contains {{ base_url }}</p>
+    {% assign node_url_parts = node.url | split: '/' %}
+    <p> {{ node_url_parts }}</p>
+    {% assign node_url_parts_size = node_url_parts | size %}
+    <p> {{ node_url_parts_size }}</p>
+    {% assign filename = node_url_parts | last %}
+    <p> {{ filename }}</p>
+    {% if url_parts_size == node_url_parts_size %}
+      <li><a href='{{ node.url }}'>{{ node.url }}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>
 
     </div>
   </article>
