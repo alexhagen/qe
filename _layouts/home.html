@@ -57,6 +57,7 @@
 
 <ul>
 {% for node in site.pages %}
+  <p>{{ node.title }}</p><p>{{ node.date }}</p>
   <p>{{ node.url }}</p><p>{{ base_url }}</p>
   {% if node.url contains base_url %}
     <p>contains {{ base_url }}</p>
@@ -67,7 +68,7 @@
     {% assign filename = node_url_parts | last %}
     <p> {{ filename }}</p>
     {% if url_parts_size == node_url_parts_size %}
-      <li><a href='{{ node.url }}'>{{ node.url }}</a></li>
+      <li><a href='{{ node.url }}'>{{ node.title }}</a></li>
     {% endif %}
   {% endif %}
 {% endfor %}
