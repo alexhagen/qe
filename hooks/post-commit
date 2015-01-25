@@ -104,7 +104,7 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         title="$( pandoc -t hooks/title.lua ${file%.lyx}.tex )"
         date="$( pandoc -t hooks/date.lua ${file%.lyx}.tex )"
         # create the new header
-        LAYOUT_PREFIX="---\r\nlayout: post-no-feature\r\ndate: $date\r\ntitle: $title\r\n---\r\n\r\n"
+        LAYOUT_PREFIX="---\r\nlayout: post-no-feature\r\ndate: $date\r\ntitle: $title\r\nauthor: Alex Hagen\r\n---\r\n\r\n"
         # export to md
         pandoc -o "${file%.lyx}.md" "${file%.lyx}.tex"
         # add yaml header
@@ -113,9 +113,12 @@ if [ `git rev-parse --abbrev-ref HEAD` == "master" ]; then
         git add "${file%.lyx}/index.md"
         rm "${file%.lyx}.md"
         rm "${file%.lyx}.tex"
+        rm "$file"
     done
     # remove temp file if its there
     rm temp
+    git rm hooks/title.lua
+    git rm hooks/date.lua
     # then, commit the updated markdown files
     git commit -am 'added the updated markdown files'
 
