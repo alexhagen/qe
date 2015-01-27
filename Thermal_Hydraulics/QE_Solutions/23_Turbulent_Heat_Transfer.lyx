@@ -1,0 +1,271 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
+\usepackage{lastpage}
+\usepackage{multicol}
+
+\makeatletter
+
+\def\maketitle{%
+\lhead{\@author}
+\chead{\textsc{\@title}}
+\rhead{\@date}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{QE Studying: Thermal Hydraulics Solutions}
+\cfoot{}
+\thispagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth -1
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Turbulent Heat Transfer
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/6/15
+\end_layout
+
+\begin_layout Standard
+With the energy equation given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c_{v}\left[\frac{\partial\rho T}{\partial t}+\nabla\cdot\rho T\vec{v}\right]=k\nabla^{2}T-\cancelto{0}{T\left.\frac{\partial p}{\partial T}\right)_{\rho}\nabla\cdot\vec{v}}-\cancelto{0}{\tau:\nabla\vec{v}}+\dot{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho c_{v}\left[\frac{\partial\overline{T}}{\partial t}+\nabla\cdot\overline{vT}\right]=\underbrace{k\nabla^{2}\overline{T}-\nabla\cdot\rho\overline{v^{'}T^{'}}}_{-\nabla\cdot\left[\vec{q}^{k}+\vec{q}^{t}\right]}+\dot{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, using Reynold's analogy, we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\tau^{t}}{\rho}=-\varepsilon_{M}\frac{\partial u}{\partial y}\;\;\dblcolon\;\;\frac{q^{''}}{\rho c}=-\varepsilon_{H}\frac{\partial T}{\partial y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using Prandtl's Mixing Length model,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q^{''}=\frac{Q}{A}=-\frac{1}{A}\frac{\delta m}{\delta t}c\delta T=-\rho\left|v_{y}^{'}\right|cl\frac{dv_{x}}{dy}=-\rho cl\left|v_{y}^{'}\right|\frac{dv_{x}}{dy}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varepsilon_{H}\equiv l\left|v_{y}^{'}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And, for moderate 
+\begin_inset Formula $Pr$
+\end_inset
+
+ numbers, 
+\begin_inset Formula $\varepsilon_{H}=\varepsilon_{M}$
+\end_inset
+
+, so, using the universal log profile or the 
+\begin_inset Formula $\nicefrac{1}{7}$
+\end_inset
+
+, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{img/Turbulent_Temperature_Profile.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Turbulent Temperature Profile and Dependence on 
+\begin_inset Formula $Pr$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "th"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
