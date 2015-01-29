@@ -1,0 +1,49 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLyXModule[exercise.sty]{Problem-Set}
+# probsoln configuration file
+
+Format 35
+
+Preamble
+	\usepackage{exercise}
+EndPreamble
+
+Style Problem
+	LaTeXType	Environment
+	LaTeXName	Exercise
+	LabelString	Problem
+	Argument 1
+		LabelString key-val
+		Mandatory 0
+    EndArgument
+End
+
+InsetLayout Flex:Question
+	LyXType		charstyle
+	LaTeXType	command
+	LaTeXName	Question
+	LabelString	Question
+	CustomPars	1
+	ContentAsLabel	1
+	Decoration	Classic
+	MultiPar 	1
+	Argument 1
+		LabelString key-val
+		Mandatory 0
+    EndArgument
+End
+
+InsetLayout Flex:subQuestion
+	LyXType		charstyle
+	LaTeXType	command
+	LaTeXName	subQuestion
+	LabelString	subQuestion
+	CustomPars	1
+	ContentAsLabel	1
+	Decoration	Classic
+	MultiPar 	1
+	Argument 1
+		LabelString key-val
+		Mandatory 0
+    EndArgument
+End

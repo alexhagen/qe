@@ -1,0 +1,941 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{pgf}
+\usepackage{lastpage}
+\usepackage{probsoln}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+probsoln
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 5
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Thermal Hydraulics Practice Exam I
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Date
+1/29/15
+\end_layout
+
+\begin_layout Problem
+In a BWR 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Give the 1D temperature profile within the reactor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Write the 1D energy equation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Calculate the power once 
+\begin_inset Formula $T=T_{sat}$
+\end_inset
+
+ (onset of nucleate boiling).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Calculate the actual power profile once stable boiling is achieved.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+What is the location of onset of nucleate boiling?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Explain subcooled boiling phenomenon and conditions under which it occur.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Dimensionless Parameters
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+List 5 dimensionless parameters, their definition, and their significance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+What dimensionless parameters must be equivalent for two systems to have
+ momentum equivalence?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+What dimensionless parameters must be equivalent for two systems to have
+ energy equivalence?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+What dimensionless parameters relate to the friction factor, and how?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Control Volume Analysis
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Write the continuity, momentum, and energy equations in control volume format.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Write the continuity and energy equations in control volume format during
+ a LOCA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Write the ECCS design criteria for a LOCA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Discuss the chain of events in a LOCA with and without the ECCS.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Pipe Flow
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Derive the velocity profile within a cylindrical pipe.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Solve for the average mass flux within in the pipe.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Discuss how the profile would change with transition to turbulent flow.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Derive the velocity profile of water flowing by a wall with high enough
+ velocity to be turbulent.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Sudden Heating
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Solve for the temperature which occurs in the case of sudden heating.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Calculate the temperature gradient which occurs at the origin in this case
+ of sudden heating.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Discussion the relation of this idealized case to practical applications
+ in reactor transients.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fission%20Engineering%20Fall%202013%20final.
+pdf
+\end_layout
+
+\end_inset
+
+Treating certain two-phase flows as mixture flows is very tempting becasue
+ of the reduced computational efforts.
+ Explain the major assumptions in the following models and why each can
+ be employed for real-world applications.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Homogenous Equilibrium Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Drift Flux Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fission%20Engineering%20Fall%202013%20final.
+pdf
+\end_layout
+
+\end_inset
+
+Consider a hypothetical LOCA caused by the double-ended rupture of a cold
+ leg in a PWR primary system: 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Sketch the PWR primary system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Describe the sequence of events in such an unlikely accident
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fission%20Engineering%20Fall%202013%20final.
+pdf
+\end_layout
+
+\end_inset
+
+Consider a hypothetical scenario in a Boiling Water Reactor, in which the
+ reactor is scrammed from normal, full power operating conditions at time
+ t=0 and “isolated” from the turbine (main steam line valves are closed),
+ simultaneously.
+ Under reactor isolation, the Reactor Core Isolation Cooling (RCIC) system
+ provides cooling by taking steam from one of the reactor main steam lines
+ upstream of the main steam isolation valve and directing it through a steam-dri
+ven turbine.
+ The turbine powers a pump which moves water from the suppression pool to
+ the reactor.
+ The expanded steam from the turbine is exhausted to the suppression pool.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Sketch the RCIC system and associated reactor/containment volumes.
+ Show flow directions on any piping.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+What is the energy source(s) of steam from the reactor? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+What problems could arise with respect to the pump if the turbine exhausts
+ steam for several hours to the suppression pool? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+The turbine regulating valve controls the speed of the turbine, and thereby
+ the rate at which steam is taken from the main steam line.
+ From a reactor safety context, explain why an upper limit on the turbine
+ speed must be enforced.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Explain why there must be an upper limit on the rate at which water is pumped
+ from the suppression pool to the reactor pressure vessel.
+ Include discussions of the reactor water level and a possible threat to
+ the turbine in your answer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fall%202012%20Fission%20Engineering.pdf
+\end_layout
+
+\end_inset
+
+Demonstrate that there are conditions (for example, expressed in terms of
+ a pressure ratio) under which regeneration provides no improvement to cycle
+ efficiency over a simple Brayton cycle operating between Tcold and Thot.
+ Assume ideal regeneration, isentropic compression and expansion, and constant
+ specific heats.
+ Your response can be given in the form of a thermodynamic sketch.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/RE%20(Fission)%20Spring%202014.pdf
+\end_layout
+
+\end_inset
+
+Consider a cylindrical fuel rod for a PWR.
+ Assume the material properties are independent of temperature and the gap
+ heat transfer can be modeled strictly by conduction.
+ Derive a formula for the linear power, q’(z), such that the centerline
+ fuel temperature is constant, independent of the axial location, z.
+ The answer must be a non-trivial answer.
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/RE%20(Fission)%20Spring%202014.pdf
+\end_layout
+
+\end_inset
+
+Consider a commercial US Boiling Water Reactor of 1000 MWe.
+ 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Sketch the coolant flow paths through the primary loop and associated reactor/co
+ntainment volumes.
+ Include recirculation within the Reactor Pressure Vessel.
+ Show flow directions on any piping.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Explain the physics of the jet pump operation and why the jet pumps are
+ needed.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+By controlling the speed of the recirculation pumps, the power (i.e.
+ the rate of fission reaction in the core) can be changed.
+ This is the “flow control” feature of the BWRs.
+ Explain the phenomena that allow the core power to change with recirculation
+ pump speed.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Why can’t the core power of a PWR be changed by altering the coolant mass
+ flow rate?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fall%202010%20Fission%20Engineering.pdf
+\end_layout
+
+\end_inset
+
+Reactor designs with liquid sodium coolant are attractive for closing the
+ fuel cycle because of their neutronics characteristics.
+ These reactors have many differences from light water reactors with respect
+ to thermal hydraulic characteristics.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Sodium has a low vapor pressure at low pressures.
+ Why is this considered a favorable attribute for a reactor coolant?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Estimate the magnitude of the ratio of the Pr for liquid sodium to the Pr
+ of water at atmospheric pressure.
+ Use your knowledge of thermophysical property values to obtain the estimate
+ and compare with your knowledge of Pr values.
+ Hint: ν Na / ν w ~2.5 and cp,Na / cp,w ~ 1/3.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Sketch the thermal and momentum boundary layers for liquid sodium coolant
+ as it flows upward between two fuel rods, from the start of the heated
+ length.
+ Assume the momentum boundary layer has zero thickness at the start of the
+ heated length.
+ Do the same for water.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Use your sketch of the thermal boundary layer for the liquid sodium coolant
+ in part (c) to explain the physical mechanisms by which heat is transferred
+ from the fuel rod surface to the coolant.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Despite these positive characteristics of liquid sodium coolant, why can’t
+ light water simply be replaced with a liquid metal in our PWR designs?
+ Give at least two reasons.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fall%2014%20Fission%20Engineering.pdf
+\end_layout
+
+\end_inset
+
+The fuel rods at TAMU’s Nuclear Science Center TRIGA consist of a central
+ zirconium rod (of radius Rzirc ) surrounded by the fuel meat located between
+ Rzirc and the fuel meat outer radius, Rfo .
+ The fuel meat is in perfect contact with the zirconium rod.
+ A clad surrounds the fuel meat (inner and outer clad radii are Rci and
+ Rco , respectively).
+ The fuel rod configuration is shown below.
+\end_layout
+
+\begin_layout Problem
+The clad and fuel conductivities are independent of temperature.
+ Fission generates a uniform volumetric heat in the fuel meat.
+ State governing equations and boundary conditions and perform the following:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Assuming the fuel temperature is known at Rfo , derive expressions for the
+ temperatures at any location in the fuel meat and the zirconium central
+ rod.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Flex Question
+status open
+
+\begin_layout Plain Layout
+Knowing the bulk liquid temperature in the hydraulic channel around the
+ fuel element, derive an expression for the fuel temperature at Rfo as a
+ function of the bulk liquid temperature.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Do not forget to define all variables you introduce to describe relevant
+ material properties.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
+%20Engineering/Fission%20Engineering/Fall%2014%20Fission%20Engineering.pdf
+\end_layout
+
+\end_inset
+
+A highly radioactive (150,000 Ci) cylindrical, spent fuel pin from a PWR
+ is stored vertically 6 meters below the surface of a large tank of water.
+ Estimate the maximum pool temperature to ensure that the peak fuel temperature
+ remains below 100 OC.
+ State your assumptions.
+ Given:1 MeV of thermal energy is deposited in fuel per disintegration Fuel
+ diameter 1 cm Fuel Length 360 cm Fuel Conductivity 10 W/m-K Heat Transfer
+ Coefficient, h 250 W/m2 -K Hint: Assume radioactive decay energy is distributed
+ similarly to power generation i.e.
+ cosine power distribution.
+\end_layout
+
+\end_body
+\end_document
