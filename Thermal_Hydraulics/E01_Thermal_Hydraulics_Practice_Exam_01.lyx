@@ -624,29 +624,6 @@ status open
 
 \begin_layout Plain Layout
 origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
-%20Engineering/Fission%20Engineering/Fall%202012%20Fission%20Engineering.pdf
-\end_layout
-
-\end_inset
-
-Demonstrate that there are conditions (for example, expressed in terms of
- a pressure ratio) under which regeneration provides no improvement to cycle
- efficiency over a simple Brayton cycle operating between Tcold and Thot.
- Assume ideal regeneration, isentropic compression and expansion, and constant
- specific heats.
- Your response can be given in the form of a thermodynamic sketch.
-\end_layout
-
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Problem
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-origin=https://collaborate.tamu.edu/nuclear/academic/qe/Shared%20Documents/Nuclear
 %20Engineering/Fission%20Engineering/RE%20(Fission)%20Spring%202014.pdf
 \end_layout
 
