@@ -1,0 +1,135 @@
+1400 0 3 16           
+15 SolidWorks 2012 14 ACIS 21.0.3 NT 24 Tue Feb 12 23:02:11 2013 
+1 9.9999999999999995e-007 1e-010 
+-0 body $3 -1 -1 $-1 $4 $-1 $-1 F #
+-1 body $5 -1 -1 $-1 $6 $-1 $-1 F #
+-2 body $7 -1 -1 $-1 $8 $-1 $-1 F #
+-3 name_attrib-gen-attrib $-1 -1 $-1 $-1 $0 keep keep_kept ignore copy @5 Part1 #
+-4 lump $9 -1 -1 $-1 $-1 $10 $0 F #
+-5 name_attrib-gen-attrib $-1 -1 $-1 $-1 $1 keep keep_kept ignore copy @5 Part1 #
+-6 lump $11 -1 -1 $-1 $-1 $12 $1 F #
+-7 name_attrib-gen-attrib $-1 -1 $-1 $-1 $2 keep keep_kept ignore copy @5 Part1 #
+-8 lump $13 -1 -1 $-1 $-1 $14 $2 F #
+-9 rgb_color-st-attrib $-1 -1 $-1 $-1 $4 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-10 shell $-1 -1 -1 $-1 $-1 $-1 $15 $-1 $4 F #
+-11 rgb_color-st-attrib $-1 -1 $-1 $-1 $6 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-12 shell $-1 -1 -1 $-1 $-1 $-1 $16 $-1 $6 F #
+-13 rgb_color-st-attrib $-1 -1 $-1 $-1 $8 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-14 shell $-1 -1 -1 $-1 $-1 $-1 $17 $-1 $8 F #
+-15 face $18 -1 -1 $-1 $19 $20 $10 $-1 $21 reversed single F F #
+-16 face $22 -1 -1 $-1 $23 $24 $12 $-1 $25 reversed single F F #
+-17 face $26 -1 -1 $-1 $-1 $-1 $14 $-1 $27 forward single F F #
+-18 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $15 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-19 face $28 -1 -1 $-1 $29 $30 $10 $-1 $31 reversed single F F #
+-20 loop $-1 -1 -1 $-1 $-1 $32 $15 F unknown #
+-21 plane-surface $-1 -1 -1 $-1 -100 -25.000000000000011 25 -1 0 0 0 0 1000 forward_v I I I I #
+-22 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $16 copy keep_kept ignore copy @11 Revolve1[1] 0 #
+-23 face $33 -1 -1 $-1 $34 $35 $12 $-1 $36 reversed single F F #
+-24 loop $-1 -1 -1 $-1 $-1 $37 $16 F unknown #
+-25 plane-surface $-1 -1 -1 $-1 394.90000000000003 0 0 -1 0 0 0 0 1000 forward_v I I I I #
+-26 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $17 copy keep_kept ignore copy @11 Revolve1[2] 0 #
+-27 sphere-surface $-1 -1 -1 $-1 95.850000000000009 0 0 55.849999999999994 1 0 0 0 0 1 forward_v I I I I #
+-28 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $19 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-29 face $38 -1 -1 $-1 $39 $40 $10 $-1 $41 reversed single F F #
+-30 loop $-1 -1 -1 $-1 $-1 $42 $19 F unknown #
+-31 plane-surface $-1 -1 -1 $-1 -200 24.999999999999989 25 0 -1 0 0 0 -1000 forward_v I I I I #
+-32 coedge $-1 -1 -1 $-1 $43 $44 $45 $46 forward $20 $-1 #
+-33 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $23 copy keep_kept ignore copy @11 Revolve1[1] 0 #
+-34 face $47 -1 -1 $-1 $-1 $48 $12 $-1 $49 forward single F F #
+-35 loop $-1 -1 -1 $-1 $-1 $50 $23 F unknown #
+-36 plane-surface $-1 -1 -1 $-1 191.70000000000005 0 0 1 0 0 0 0 -1000 forward_v I I I I #
+-37 coedge $-1 -1 -1 $-1 $37 $37 $51 $52 reversed $24 $-1 #
+-38 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $29 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-39 face $53 -1 -1 $-1 $54 $55 $10 $-1 $56 reversed single F F #
+-40 loop $-1 -1 -1 $-1 $-1 $57 $29 F unknown #
+-41 plane-surface $-1 -1 -1 $-1 -200 -25.000000000000011 25 1 0 0 0 0 -1000 forward_v I I I I #
+-42 coedge $-1 -1 -1 $-1 $58 $59 $60 $61 forward $30 $-1 #
+-43 coedge $-1 -1 -1 $-1 $62 $32 $59 $63 reversed $20 $-1 #
+-44 coedge $-1 -1 -1 $-1 $32 $62 $64 $65 forward $20 $-1 #
+-45 coedge $-1 -1 -1 $-1 $66 $60 $32 $46 reversed $67 $-1 #
+-46 edge $-1 -1 -1 $-1 $68 0 $69 0.050000000000000003 $32 $70 forward @7 unknown F #
+-47 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $34 copy keep_kept ignore copy @11 Revolve1[1] 0 #
+-48 loop $-1 -1 -1 $-1 $71 $72 $34 F unknown #
+-49 cone-surface $-1 -1 -1 $-1 0 0 0 -1 -0 -0 0 0 50.799999999999997 1 I I 0 1 50.799999999999997 forward I I I I #
+-50 coedge $-1 -1 -1 $-1 $50 $50 $72 $73 forward $35 $-1 #
+-51 coedge $-1 -1 -1 $-1 $51 $51 $37 $52 forward $71 $-1 #
+-52 edge $-1 -1 -1 $-1 $74 0 $74 6.2831853071795862 $51 $75 forward @7 unknown F #
+-53 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $39 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-54 face $76 -1 -1 $-1 $77 $78 $10 $-1 $79 reversed single F F #
+-55 loop $-1 -1 -1 $-1 $-1 $80 $39 F unknown #
+-56 plane-surface $-1 -1 -1 $-1 -200 -25.000000000000011 25 0 1 0 0 0 1000 forward_v I I I I #
+-57 coedge $-1 -1 -1 $-1 $81 $82 $83 $84 forward $40 $-1 #
+-58 coedge $-1 -1 -1 $-1 $85 $42 $82 $86 reversed $30 $-1 #
+-59 coedge $-1 -1 -1 $-1 $42 $85 $43 $63 forward $30 $-1 #
+-60 coedge $-1 -1 -1 $-1 $45 $83 $42 $61 reversed $67 $-1 #
+-61 edge $-1 -1 -1 $-1 $69 -0.10000000000000001 $87 -0 $42 $88 forward @7 unknown F #
+-62 coedge $-1 -1 -1 $-1 $44 $43 $89 $90 reversed $20 $-1 #
+-63 edge $-1 -1 -1 $-1 $91 -0 $69 0.050000000000000003 $59 $92 forward @7 unknown F #
+-64 coedge $-1 -1 -1 $-1 $93 $80 $44 $65 reversed $55 $-1 #
+-65 edge $-1 -1 -1 $-1 $94 -0 $68 0.050000000000000003 $44 $95 forward @7 unknown F #
+-66 coedge $-1 -1 -1 $-1 $83 $45 $80 $96 reversed $67 $-1 #
+-67 loop $-1 -1 -1 $-1 $-1 $45 $77 F unknown #
+-68 vertex $-1 -1 -1 $-1 $96 $97 #
+-69 vertex $-1 -1 -1 $-1 $61 $98 #
+-70 straight-curve $-1 -1 -1 $-1 -100 -25.000000000000011 -25 0 1000 0 I I #
+-71 loop $-1 -1 -1 $-1 $-1 $51 $34 F unknown #
+-72 coedge $-1 -1 -1 $-1 $72 $72 $50 $73 reversed $48 $-1 #
+-73 edge $-1 -1 -1 $-1 $99 0 $99 6.2831853071795862 $50 $100 forward @7 unknown F #
+-74 vertex $-1 -1 -1 $-1 $52 $101 #
+-75 ellipse-curve $-1 -1 -1 $-1 394.90000000000003 0 0 -1 -0 -0 0 0 50.799999999999997 1 I I #
+-76 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $54 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-77 face $102 -1 -1 $-1 $-1 $67 $10 $-1 $103 forward single F F #
+-78 loop $-1 -1 -1 $-1 $-1 $89 $54 F unknown #
+-79 plane-surface $-1 -1 -1 $-1 0 0 25 0 0 -1 -1000 0 0 forward_v I I I I #
+-80 coedge $-1 -1 -1 $-1 $64 $104 $66 $96 forward $55 $-1 #
+-81 coedge $-1 -1 -1 $-1 $105 $57 $104 $106 reversed $40 $-1 #
+-82 coedge $-1 -1 -1 $-1 $57 $105 $58 $86 forward $40 $-1 #
+-83 coedge $-1 -1 -1 $-1 $60 $66 $57 $84 reversed $67 $-1 #
+-84 edge $-1 -1 -1 $-1 $87 -0.050000000000000003 $107 -0 $57 $108 forward @7 unknown F #
+-85 coedge $-1 -1 -1 $-1 $59 $58 $109 $110 reversed $30 $-1 #
+-86 edge $-1 -1 -1 $-1 $111 -0 $87 0.050000000000000003 $82 $112 forward @7 unknown F #
+-87 vertex $-1 -1 -1 $-1 $61 $113 #
+-88 straight-curve $-1 -1 -1 $-1 -200 24.999999999999989 -25 -1000 -0 -0 I I #
+-89 coedge $-1 -1 -1 $-1 $109 $114 $62 $90 forward $78 $-1 #
+-90 edge $-1 -1 -1 $-1 $94 0 $91 0.050000000000000003 $89 $115 forward @7 unknown F #
+-91 vertex $-1 -1 -1 $-1 $110 $116 #
+-92 straight-curve $-1 -1 -1 $-1 -100 24.999999999999989 25 -0 -0 -1000 I I #
+-93 coedge $-1 -1 -1 $-1 $104 $64 $114 $117 reversed $55 $-1 #
+-94 vertex $-1 -1 -1 $-1 $117 $118 #
+-95 straight-curve $-1 -1 -1 $-1 -100 -25.000000000000011 25 -0 -0 -1000 I I #
+-96 edge $-1 -1 -1 $-1 $107 0 $68 0.10000000000000001 $80 $119 forward @7 unknown F #
+-97 point $-1 -1 -1 $-1 -100 -25.000000000000011 -25 #
+-98 point $-1 -1 -1 $-1 -100 24.999999999999989 -25 #
+-99 vertex $-1 -1 -1 $-1 $73 $120 #
+-100 ellipse-curve $-1 -1 -1 $-1 191.70000000000005 0 0 -1 -0 -0 0 0 50.799999999999997 1 I I #
+-101 point $-1 -1 -1 $-1 394.90000000000003 0 50.799999999999997 #
+-102 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $77 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-103 plane-surface $-1 -1 -1 $-1 0 0 -25 0 0 -1 -1000 0 0 forward_v I I I I #
+-104 coedge $-1 -1 -1 $-1 $80 $93 $81 $106 forward $55 $-1 #
+-105 coedge $-1 -1 -1 $-1 $82 $81 $121 $122 reversed $40 $-1 #
+-106 edge $-1 -1 -1 $-1 $123 -0 $107 0.050000000000000003 $104 $124 forward @7 unknown F #
+-107 vertex $-1 -1 -1 $-1 $84 $125 #
+-108 straight-curve $-1 -1 -1 $-1 -200 -25.000000000000011 -25 -0 -1000 -0 I I #
+-109 coedge $-1 -1 -1 $-1 $121 $89 $85 $110 forward $78 $-1 #
+-110 edge $-1 -1 -1 $-1 $91 -0.10000000000000001 $111 -0 $109 $126 forward @7 unknown F #
+-111 vertex $-1 -1 -1 $-1 $110 $127 #
+-112 straight-curve $-1 -1 -1 $-1 -200 24.999999999999989 25 -0 -0 -1000 I I #
+-113 point $-1 -1 -1 $-1 -200 24.999999999999989 -25 #
+-114 coedge $-1 -1 -1 $-1 $89 $121 $93 $117 forward $78 $-1 #
+-115 straight-curve $-1 -1 -1 $-1 -100 -25.000000000000011 25 0 1000 0 I I #
+-116 point $-1 -1 -1 $-1 -100 24.999999999999989 25 #
+-117 edge $-1 -1 -1 $-1 $123 0 $94 0.10000000000000001 $114 $128 forward @7 unknown F #
+-118 point $-1 -1 -1 $-1 -100 -25.000000000000011 25 #
+-119 straight-curve $-1 -1 -1 $-1 -200 -25.000000000000011 -25 1000 0 0 I I #
+-120 point $-1 -1 -1 $-1 191.70000000000005 0 50.799999999999997 #
+-121 coedge $-1 -1 -1 $-1 $114 $109 $105 $122 forward $78 $-1 #
+-122 edge $-1 -1 -1 $-1 $111 -0.050000000000000003 $123 -0 $121 $129 forward @7 unknown F #
+-123 vertex $-1 -1 -1 $-1 $122 $130 #
+-124 straight-curve $-1 -1 -1 $-1 -200 -25.000000000000011 25 -0 -0 -1000 I I #
+-125 point $-1 -1 -1 $-1 -200 -25.000000000000011 -25 #
+-126 straight-curve $-1 -1 -1 $-1 -200 24.999999999999989 25 -1000 -0 -0 I I #
+-127 point $-1 -1 -1 $-1 -200 24.999999999999989 25 #
+-128 straight-curve $-1 -1 -1 $-1 -200 -25.000000000000011 25 1000 0 0 I I #
+-129 straight-curve $-1 -1 -1 $-1 -200 -25.000000000000011 25 -0 -1000 -0 I I #
+-130 point $-1 -1 -1 $-1 -200 -25.000000000000011 25 #
+End-of-ACIS-data 

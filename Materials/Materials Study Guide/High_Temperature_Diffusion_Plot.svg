@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg preserveAspectRatio="xMinYMin meet" width="100%" height="100%" viewBox="0 0 937.500 421.875"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Matlab Figure Converted by PLOT2SVG written by Juerg Schwizer</desc>
+  <g id="topgroup">
+  <rect x="0" y="0" width="937.500" height="421.875" fill="#ffffff" stroke="none" />
+  <g id ="ID000000">
+  <clipPath id="ID000001">
+    <rect x="121.875" y="31.641" width="726.563" height="343.828"/>
+  </clipPath>
+      <polygon fill="#000000" fill-opacity="0.00" stroke="none" stroke-width="0.5pt" stroke-opacity="1.00" stroke-dasharray="none" points="121.875,375.469 848.438,375.469 848.438,31.641 121.875,31.641 "/>
+      <polygon fill="#000000" fill-opacity="0.00" stroke="none" stroke-width="0.5pt" stroke-opacity="1.00" stroke-dasharray="none" points="121.875,31.641 848.438,31.641 848.438,31.641 121.875,31.641 "/>
+      <polygon fill="#000000" fill-opacity="0.00" stroke="none" stroke-width="0.5pt" stroke-opacity="1.00" stroke-dasharray="none" points="121.875,375.469 121.875,375.469 121.875,31.641 121.875,31.641 "/>
+    <g>
+<g id="ID000002" clip-path="url(#ID000001)" >
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,375.469 303.516,274.343 485.156,173.217 666.797,72.091 848.438,72.091 "/>
+<g>
+</g>
+</g>
+<g id="ID000003" clip-path="url(#ID000001)" >
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,375.469 303.516,274.343 485.156,274.343 666.797,274.343 848.438,274.343 "/>
+<g>
+</g>
+</g>
+<g id="ID000004" clip-path="url(#ID000001)" >
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="8.0,2.0,2.0,2.0" points="303.516,375.469 303.516,274.343 "/>
+<g>
+</g>
+</g>
+<g id="ID000005" clip-path="url(#ID000001)" >
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="8.0,2.0,2.0,2.0" points="666.797,375.469 666.797,72.091 "/>
+<g>
+</g>
+</g>
+<g id="ID000006" >
+  <g transform="translate(484.219,406.391)">
+    <g transform="rotate(-0.0)">
+      <text x="0.000" y="0.000" font-family="Times New Roman" text-anchor="middle" font-size="9pt" fill="#000000" >log|t|</text>
+    </g>
+  </g>
+</g>
+<g id="ID000007" >
+  <g transform="translate(113.437,204.492)">
+    <g transform="rotate(-90.0)">
+      <text x="0.000" y="0.000" font-family="Times New Roman" text-anchor="middle" font-size="9pt" fill="#000000" >log|C|</text>
+    </g>
+  </g>
+</g>
+<g id="ID000008" >
+</g>
+    </g>
+    <g>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="303.516,375.469 303.516,368.203 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="666.797,375.469 666.797,368.203 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,375.469 848.438,375.469 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="303.516,31.641 303.516,38.906 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="666.797,31.641 666.797,38.906 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,31.641 848.438,31.641 "/>
+  <g transform="translate(303.516,393.408)">
+    <g transform="rotate(-0.0)">
+      <text x="0.000" y="0.000" font-family="Times New Roman" text-anchor="middle" font-size="9pt" fill="#000000" ><tspan>tau</tspan><tspan dy="3.8pt" font-size="7pt">2</tspan><tspan dy="-3.8pt" font-size="9pt"></tspan></text>
+    </g>
+  </g>
+  <g transform="translate(666.797,393.408)">
+    <g transform="rotate(-0.0)">
+      <text x="0.000" y="0.000" font-family="Times New Roman" text-anchor="middle" font-size="9pt" fill="#000000" ><tspan>tau</tspan><tspan dy="3.8pt" font-size="7pt">3</tspan><tspan dy="-3.8pt" font-size="9pt"></tspan></text>
+    </g>
+  </g>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,375.469 121.875,31.641 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="848.438,375.469 848.438,31.641 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,375.469 121.875,372.030 "/>
+      <polyline fill="none" stroke="#000000" stroke-width="0.5pt" stroke-dasharray="none" points="121.875,375.469 121.875,375.469 "/>
+    </g>
+  </g>
+  </g>
+</svg>

@@ -1,0 +1,4059 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+\def\thesection{\arabic{section}}
+\def\thesubsection{\thesection.\arabic{subsection}}
+\usepackage{etoolbox}
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{1.5em}{3.5em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{4.0em}{5.0em}}
+\makeatother
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headsep 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Binary Collisions
+\end_layout
+
+\begin_layout Subsection
+Lab System
+\end_layout
+
+\begin_layout Standard
+Momentum Conservation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M_{1}v_{1,0}=M_{1}v_{1,f}cos\theta_{1}+M_{2}v_{2,f}cos\theta_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Max Energy Transfer/Head on Collision
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{2}^{max}=\frac{4M_{1}M_{2}}{(M_{1}+M_{2})^{2}}T_{0}=\Lambda T_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Lab System Collision Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lab System Collision Diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Lab-System-Collision-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Center of Mass System
+\end_layout
+
+\begin_layout Standard
+Momentum Conservation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{cm}=\frac{v_{1}M_{1}+v_{2}M_{2}}{M_{1}+M_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Center of Mass System Collision Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Center of Mass System Collision Diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Center-of-Mass-System-Collision-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lab System and Center of Mass System Compared
+\end_layout
+
+\begin_layout Standard
+Comparison between angles:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+tan\theta_{1}=\frac{\frac{M_{2}}{M_{1}}sin\theta}{1+\frac{M_{2}}{M_{1}}cos\theta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparison between energies:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{2,f}=\Lambda E_{1,0}sin^{2}\frac{\theta}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{1,f}=E_{1,0}-E_{2,f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Potentials
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison of Potential Interactions
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Comparison-of-Potential-Interactions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="middle" width="4cm">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verbal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Energy Range
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Electrostatic (Coulomb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{gathered}V(r)=\frac{Z_{1}Z_{2}e^{2}}{r}\\
+e^{2}=14.4eV\cdot\breve{A}
+\end{gathered}
+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+only potential between nuclei
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $100keV\rightarrow MeV$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Closed Shell (Screened Coulomb)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{gathered}V(r)=\frac{Z_{1}Z_{2}a}{r}e^{\frac{-r}{a}}\\
+a=\frac{\sqrt{2}\lambda a_{B}}{(Z_{1}^{2/3}+Z_{2}^{2/3})^{1/2}}\\
+a_{B}=0.53\breve{A}\\
+\lambda\approx1
+\end{gathered}
+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+shells overlap and must move to a higher shell
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1keV\rightarrow100keV$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Born-Meyer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V(r)=e^{\frac{-r}{\rho}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+repulsion from electrons forced into unoccupied states
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $eV\rightarrow1keV$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thomas-Fermi Potential
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{gathered}V(r)=\frac{Z_{1}Z_{2}e^{2}}{r}\chi(\frac{r}{a})\\
+\chi(\frac{r}{a})=0.35e^{\frac{-0.3r}{a}}+0.55e^{\frac{-1.2r}{a}}+0.10e^{\frac{-6.0r}{a}}
+\end{gathered}
+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+assumes electrons form ideal gas filling potential well about positive charged
+ core
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+intermediate 
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cross Sections
+\end_layout
+
+\begin_layout Subsection
+Differential Cross Sections
+\end_layout
+
+\begin_layout Standard
+Generalized Isotropic:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{s}(E_{i})=\overset{{\scriptstyle \pi}}{\underset{{\scriptstyle 0}}{\int}}\sigma_{s}(E_{i},\theta)\cdot2\pi\cdot sin\theta d\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hard Sphere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{gathered}\sigma(E,T)=\frac{C}{E}\\
+C=\pi\frac{M_{1}}{M_{2}}\cdot\frac{Z_{1}^{2}Z_{2}^{2}e^{4}}{1}
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coulomb:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma(E,T)=\frac{C}{ET^{2}}=\pi Z_{1}^{2}Z_{2}^{2}e^{4}\cdot\frac{M_{1}}{M_{2}}\cdot\frac{1}{ET^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inverse Square:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma(E,T)=\frac{C}{E^{1/2}T^{3/2}}=\pi Z_{1}^{2}Z_{2}^{2}e^{4}\cdot\frac{M_{1}}{M_{2}}\cdot\frac{1}{E^{1/2}T^{3/2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Born-Meyer:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{gathered}\sigma(E,T)=\frac{\pi B^{2}}{\Lambda E}\left[ln(\frac{A}{\xi E})\right]^{2}\\
+\Lambda=\frac{4M_{1}M_{2}}{(M_{1}+M_{2})}\\
+\xi=\frac{M_{2}}{M_{1}+M_{2}}
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Energy Loss
+\end_layout
+
+\begin_layout Subsection
+Production Rate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Rate=N\overset{{\scriptstyle \infty}}{\underset{{\scriptstyle 0}}{\int}}\overset{{\scriptstyle \infty}}{\underset{{\scriptstyle 0}}{\int}}\Phi(E)\sigma_{d}(E,T)dEdT
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Energy Loss Mechanisms
+\end_layout
+
+\begin_layout Standard
+Mean Distance between Collisions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda=\frac{1}{N\sigma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dE}{dx}=\frac{\overline{T}}{\lambda}=\frac{\frac{\int T\sigma(E,T)dt}{\int\sigma(E,T)dT}}{\frac{1}{\int\sigma(E,T)dT}}=N\int T\sigma(E,T)dT
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Weighted Average Recoil Spectra: (fraction of recoil ions below a certain
+ energy)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W(T)=\frac{\overset{T}{\underset{E_{d}}{\int}}T\sigma(E,T)dT}{\overset{\Lambda E}{\underset{E_{d}}{\int}T\sigma(E,T)dT}}=\frac{ln(T)-ln(E_{d})}{ln(\Lambda E)-ln(E_{d})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Nuclear Stopping
+\end_layout
+
+\begin_layout Standard
+Using Coulomb potential:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{s}(E,T)=\frac{\pi b_{0}^{2}}{4}\left(\frac{\Lambda E}{T^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b_{0}=\frac{Z_{1}Z_{2}e^{2}}{\xi E}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xi=\frac{M_{2}}{M_{1}+M_{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\frac{dE}{dx}\right|_{n}=NS_{n}(E)=N\int T\sigma(E,T)dT=N\overset{{\scriptstyle T_{max}}}{\underset{{\scriptstyle T_{min}}}{\int}T\frac{\pi b_{0}^{2}}{4}\left(\frac{\Lambda E}{T^{2}}\right)dT}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{max}=\Lambda E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{min}=E_{a}=\frac{Z_{1}Z_{2}e^{2}}{a}\left(\frac{M_{1}+M_{2}}{M_{2}}\right)e^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=screening\; radius=\frac{\sqrt{2}\lambda a_{B}}{(Z_{1}^{2/3}+Z_{2}^{2/3})^{1/2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\frac{dE}{dx}\right|_{n}=N\pi\frac{Z_{1}^{2}Z_{2}^{2}e^{4}M_{1}}{E_{1}M_{2}}ln\frac{\Lambda E_{1}}{E_{a}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using Inverse Square Potential:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\frac{dE}{dx}\right|_{n}=\frac{\pi^{2}}{4}Na^{2}\Lambda E_{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electronic Stopping
+\end_layout
+
+\begin_layout Standard
+High Energy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma(E,T)=\frac{\pi b_{0}^{2}}{4}\cdot\frac{\Lambda E}{T^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\frac{dE}{dx}\right|_{e}N\pi\frac{Z_{1}^{2}e^{4}M_{1}}{E_{1}M_{e}}ln\frac{4M_{e}E_{1}}{IM_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Low Energy (Lindhard):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left.\frac{dE}{dx}\right|_{e}=\kappa\sqrt{E_{1}}\;\;\;\;\; for\;0<E(keV)<37Z^{7/3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\kappa=0.3NZ^{2/3}\frac{ev^{1/2}}{\breve{A}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Minimum Ion Energy to release an electron
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{c}=\frac{M_{1}}{4m_{e}}I
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electronic Stopping Power
+\end_layout
+
+\begin_layout Standard
+Bethe Non-Relativistic
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E>E_{T}\;\;\;\;\; E_{T}=(24.8keV)A_{1}Z_{1}^{4/3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dE}{dx}=2\pi N(Z_{1}^{*})^{2}Z_{2}e^{4}\frac{M_{1}}{E_{1}m_{e}}ln\left(\frac{4m_{e}E_{1}}{IM_{1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{1}^{*}=\frac{Z_{1}^{1/3}\bar{h}}{e^{2}}\sqrt{\frac{2E_{1}}{M_{1}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Medium Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{T}>E>E_{c}\;\;\;\;\; E_{c}=A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dE}{dx}=0.4NZ_{1}^{2/3}Z_{2}e^{4}ln\left(\frac{4m_{e}E_{1}}{IM_{1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Low Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{c}>E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dE}{dx}=\frac{0.3Z_{1}^{5/6}Z_{2}}{(Z_{1}^{2/3}+Z_{2}^{2/3})^{3/2}}\cdot\frac{N}{\sqrt{M_{1}}}\sqrt{E_{1}}\;\;\;\; in\;\frac{eV}{\breve{A}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Electronic_Stopping_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Electronic Stopping Power Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Electronic-Stopping-Power-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ion Range and Range Distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Path Range.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Projected Range Diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Projected-Range-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Moments:
+\end_layout
+
+\begin_layout Standard
+1st Moment, Average:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=\int xf(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2nd Moment, Variance:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma^{2}=\int(x-\mu)^{2}f(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+stdev=\sqrt{\sigma^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The range is defined by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\overset{{\scriptstyle 0}}{\underset{{\scriptstyle E_{0}}}{\int}}\frac{dE}{dE/dx}=\overset{{\scriptstyle 0}}{\underset{{\scriptstyle E_{0}}}{\int}}\frac{dE}{NS(E)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R\approx\frac{R}{1+(M_{2}/3M_{1})}\;\; for\; similar\; mass\;\Delta R_{p}\approx0.4R_{p}\approx\frac{1.1}{2.5}\sqrt{\Lambda}R_{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Displacements
+\end_layout
+
+\begin_layout Subsection
+Definitions
+\end_layout
+
+\begin_layout Itemize
+Displacement - lattice atom knocked from its lattice site
+\end_layout
+
+\begin_layout Itemize
+Displacement per atom - average number of lattice displacements per lattice
+ atom
+\end_layout
+
+\begin_layout Itemize
+Primary Knock-on Atom - lattice atom displaced by incident particle
+\end_layout
+
+\begin_layout Itemize
+Secondary Knock-on Atom - lattice atom displaced by PKA
+\end_layout
+
+\begin_layout Itemize
+Displacement Rate (
+\begin_inset Formula $R_{d}$
+\end_inset
+
+) - displacements per unit volume per unit time
+\end_layout
+
+\begin_layout Itemize
+Displacement Energy (
+\begin_inset Formula $E_{d})$
+\end_inset
+
+ - energy needed to displace an atom
+\end_layout
+
+\begin_layout Itemize
+Range Straggling - the width vs depth ratio of the incoming ion based on
+ relative mass of ion and substrate
+\end_layout
+
+\begin_layout Itemize
+Displacement damage function (
+\begin_inset Formula $\nu(T)$
+\end_inset
+
+) - # of displaced atoms produced by a PKA with energy 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Displacement Energy
+\end_layout
+
+\begin_layout Standard
+(emperical correlation)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{d}\approx175k_{b}T_{melt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k_{b}=1.38\times10^{-23}\,\frac{m^{2}kg}{s^{2}K}=8.62\times10^{-5}\,\frac{eV}{K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kinchin-Pease Model for Displacement
+\end_layout
+
+\begin_layout Itemize
+assumes collisions between like atoms
+\end_layout
+
+\begin_layout Itemize
+hard sphere cross sections
+\end_layout
+
+\begin_layout Itemize
+only nuclear stopping
+\end_layout
+
+\begin_layout Itemize
+binary collision ignores binding energy
+\end_layout
+
+\begin_layout Itemize
+crystal structure neglected
+\end_layout
+
+\begin_layout Standard
+Hard Sphere Cross Section
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma(E,T)=\frac{\sigma_{p}}{\Lambda E}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+K-P Displacement Damage Function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(T)=\begin{cases}
+0 & T\leq E_{d}\\
+1 & E_{d}\leq T<2E_{d}\\
+\frac{T}{2E_{d}} & 2E_{d}\leq T<E_{c}\\
+\frac{E_{c}}{2E_{d}} & T\geq E_{c}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename K-P_Displacement_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+K-P Displacement Damage Graph
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:K-P-Displacement-Damage-Graph"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Removing the Hard Sphere assumption
+\end_layout
+
+\begin_layout Standard
+Power Law:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(T)=0.57\frac{T}{2E_{d}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Use Hard Sphere but remove 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+ assumption
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(T)=\frac{T}{2E_{d}}\left(1-\frac{4k}{\sigma N\sqrt{2E_{d}}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comprehensive model with real potential and electronic stopping
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{gathered}V(T)=\xi(T)\left(\frac{T}{2E_{d}}\right)\\
+\xi(T)=\frac{1}{(1+0.13(3.4\varepsilon^{1/6}+0.4\varepsilon^{3/4}+\varepsilon))}\\
+\varepsilon=\frac{Ea}{2Z^{2}e^{2}}\\
+a=\frac{0.88a_{B}}{Z^{1/3}}\\
+a_{B}=0.053\, nm
+\end{gathered}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Displacement Rate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{d}=N\overset{{\scriptstyle \infty}}{\underset{{\scriptstyle 0}}{\int}}\Phi(E)\overset{{\scriptstyle \Lambda E}}{\underset{{\scriptstyle E_{d}}}{\int}}V(T)\sigma(E,T)dTdE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Reaction Rate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{PKA}=N\overset{{\scriptstyle \infty}}{\underset{{\scriptstyle 0}}{\int}}\Phi(E)\sigma(E,T)dE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Displacement Cross Section:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\sigma_{d}(E_{n})=\frac{\sigma_{el}(E_{n})}{\Lambda E_{n}}\overset{{\scriptstyle \Lambda E_{n}}}{\underset{{\scriptstyle E_{d}}}{\int}}\left[1+a_{1}(E_{n})\cdot\left(1-\frac{2E}{\Lambda E_{n}}\right)\right]V(E)dE+\frac{\sigma_{in}(E_{n})}{\left(1-\frac{(1+A)Q}{AE_{n}}\right)^{1/2}\Lambda E_{n}}\cdot\overset{{\scriptstyle E_{max}}}{\underset{{\scriptstyle E_{min}}}{\int}V(E)dE}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By ignoring inelastic scattering and only taking 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ (isotropic scattering):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{d}(E_{n})=\left(\frac{\Lambda E_{n}}{4E_{d}}\right)\sigma_{el}(E_{n})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Channeling and Focusing
+\end_layout
+
+\begin_layout Subsection
+Focusing
+\end_layout
+
+\begin_layout Itemize
+Focusing refers to transfer of energy between atoms by nearly head on collisions
+ along a row of atoms.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Focusing Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Focusing Diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Focusing-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Focusing occurs only within certain energy limits:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E<E_{foc}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{foc}=2V\frac{D}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Angles must be small enough to keep collisions in a line.
+\end_layout
+
+\begin_layout Itemize
+A long series of head on collisions can transfer the kinetic energy down
+ the row displacing all of the atoms by one lattice site.
+\end_layout
+
+\begin_layout Itemize
+A vacancy is left at the beginning and an interstitial at the end.
+\end_layout
+
+\begin_layout Itemize
+Long range focusing of a single atom is called a dynamic crowdion.
+\end_layout
+
+\begin_layout Itemize
+Focusing chaings are terminated by lattice imprections such as 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+thermal vibrations
+\end_layout
+
+\begin_layout Itemize
+impurity atoms
+\end_layout
+
+\begin_layout Itemize
+dislocations
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If collision energy is less than replacement energy 
+\begin_inset Formula $E_{R}$
+\end_inset
+
+, only energy transfer, not atom transfer.
+\end_layout
+
+\begin_layout Subsection
+Channeling
+\end_layout
+
+\begin_layout Itemize
+Channeling is complementary process where atoms move long distances along
+ open directions in the crystal structure.
+\end_layout
+
+\begin_layout Itemize
+Atoms are channeled by glancing collisions with the atomic rows that act
+ as walls.
+\end_layout
+
+\begin_layout Itemize
+Ion emains in channel by low angle scattering and slows down mostly by electric
+ stopping.
+\end_layout
+
+\begin_layout Itemize
+In a uniform lattic a channeled ion follows simple harmonic motion with
+ an energy dependent wavelength.
+\end_layout
+
+\begin_layout Itemize
+As the channeled ion slows the probability of wide angle scatter increases,
+ eventually causing termination of channeling.
+\end_layout
+
+\begin_layout Itemize
+The channeling effect reduces the number of displacements created by an
+ incoming particle
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example: a channeling probability of 
+\begin_inset Formula $P=7\%$
+\end_inset
+
+ in Fe with a 
+\begin_inset Formula $10\, keV$
+\end_inset
+
+ PKA reduces displacements by 
+\begin_inset Formula $50\%$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Channeling Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Channeling Diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Channeling-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Neutron Damage Mechanisms 
+\end_layout
+
+\begin_layout Subsection
+Elastic Scattering
+\end_layout
+
+\begin_layout Standard
+Elastic Scattering causes neutron damage if neutron energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E>\frac{E_{d}}{\Lambda}\; for\;\Lambda=\frac{4A}{(1+A^{2})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+below 
+\begin_inset Formula $\sim0.1\, MeV$
+\end_inset
+
+ elastic scattering is isotropic
+\end_layout
+
+\begin_layout Itemize
+above 
+\begin_inset Formula $\sim0.1\, MeV$
+\end_inset
+
+ elastic scattering exhibits a forward bias
+\end_layout
+
+\begin_layout Standard
+elastic displacement cross section:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{d_{el}}(E_{n})=\overset{{\scriptstyle \Lambda E}}{\underset{{\scriptstyle E_{d}}}{\int}}\sigma_{el}(E_{n},E)\nu(E)dE
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{el}(E_{n},\theta)=\frac{\sigma_{el}(E_{n})}{4\pi}(1+a_{1}(E_{n})cos\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\frac{a\cdot cos\theta}{dE}\right|=\frac{2}{\Lambda E_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inelastic Scattering
+\end_layout
+
+\begin_layout Standard
+Inelastic scatterin creates recoil nucleus after neutron emission
+\end_layout
+
+\begin_layout Itemize
+Inelastic scattering occurs when compound nucleus is formed and neutron
+ is re-emitted with less energy due to nuclear excitation (
+\begin_inset Formula $Q$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Inelastic scattering is isotropic.
+\end_layout
+
+\begin_layout Itemize
+The recoil energy after inelastic scattering is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{1}{2}\Lambda E_{n}\left[1-\frac{(1+A)Q}{2AE_{n}}-\left(1-\frac{(1+A)Q}{AE_{n}}\right)^{1/2}cos\theta\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Angular Cross Section:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{in}(E_{n},\theta)=\frac{\sigma_{in}(E_{n})}{4\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Angle to Energy transformation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\frac{dcos\theta}{dE}\right|_{in}=\frac{2}{\Lambda E_{in}}\left[1-\frac{(1+A)Q}{AE_{n}}\right]^{-1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Recoils from 
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Absorption of thermal neutrons and resulting photon release causes low energy
+ recoil atoms.
+\end_layout
+
+\begin_layout Itemize
+The recoil energy for heavy nuclei after photon emission is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\approx\frac{34}{A}\, keV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+ recoils are significant contributors to damage in thermal reactors.
+\end_layout
+
+\begin_layout Subsection
+Damage Functions
+\end_layout
+
+\begin_layout Standard
+To relate neutron exposure to macroscopic changes, semi-empirical damage
+ functions have been created:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta P_{i}=\Phi t\cdot\frac{\int G_{i}(E_{n})\phi(E_{n})dE_{n}}{\int\phi(E_{n})dE_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sputtering
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Sputtering Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sputtering Diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sputtering-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppering is the erosion of a material by energetic particles
+\end_layout
+
+\begin_layout Standard
+Sputtering Yield
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=sputtering\, yield=\frac{mean\,\#\, of\, emitted\, atoms}{incident\, particles}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for a medium mass ion in 
+\begin_inset Formula $keV$
+\end_inset
+
+ energies, typical values for 
+\begin_inset Formula $Y$
+\end_inset
+
+ are 
+\begin_inset Formula $\approx1\rightarrow10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=\gamma F_{D}(E_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma=materials\, factor=\frac{4.2}{NU_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{D}(E_{0})=\left.\frac{dE}{dx}\right|_{nuclear\, processes}=\alpha NS_{n}(E_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Matsunami Semi-Empirical Sputtering Formula
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{E}(E)=0.42\frac{\alpha_{s}Q_{s}S_{n}(E)}{U_{0}[1+0.35U_{0}S_{e}(\varepsilon)}\left[1+\left(\frac{E_{th}}{E}\right)^{1/2}\right]^{2.8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{th}=\begin{cases}
+(\frac{4}{3})^{6}\frac{U_{0}}{\Lambda} & M_{1}\geq M_{2}\\
+\left(\frac{2M_{1}+2M_{2}}{M_{1}+M_{2}}\right)^{6}\frac{U_{0}}{\Lambda} & M_{1}<M_{2}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n}(E)=K_{n}S_{n}(\varepsilon)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{n}=\frac{8.478Z_{1}Z_{2}}{(Z_{1}^{2/3}+Z_{2}^{2/3})^{1/2}}\cdot\frac{M_{1}}{(M_{1}+M_{2})}\left(10^{-15}\:\frac{eV\cdot cm^{2}}{atom}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n}(\varepsilon)=\frac{3.441\varepsilon^{1/2}ln(\varepsilon+2.718)}{1+6.355\varepsilon^{1/2}+\varepsilon(6.882\varepsilon^{1/2}-1.708)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varepsilon=\frac{0.03255}{Z_{1}Z_{2}(Z_{1}^{2/3}+Z_{2}^{2/3})^{1/2}}\cdot\frac{M_{2}}{(M_{1}+M_{2})}E\,\,(eV)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{s}=0.10+0.155\left(\frac{M_{2}}{M_{1}}\right)^{0.73}+0.001\left(\frac{M_{2}}{M_{1}}\right)^{1.5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Steady State Concentration during Ion Implantation
+\end_layout
+
+\begin_layout Itemize
+Overtime the process of sputtering and implantation comes to equilibrium
+ when the implanted ions are sputtered as fast as they are implanted.
+\end_layout
+
+\begin_layout Itemize
+The distribution of implanted ion density is highest at the surface and
+ decreases deeper into the material.
+\end_layout
+
+\begin_layout Itemize
+if ion A is implanted into material B:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{J_{A}}{J_{B}}=r\frac{N_{B}}{N_{A}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=\frac{probability\, of\, B\, atom\, sputtering}{probability\, of\, A\, atom\, sputtering}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Define flux of incident ions as 
+\begin_inset Formula $J_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(J_{A}+J_{B})=YJ_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at steady state 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J_{A}=J_{i}+J_{B}=(Y-1)J
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+gives 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{(Y-1)J_{i}}{J_{i}}=r\frac{N_{B}}{N_{A}}\therefore\frac{N_{A}}{N_{B}}=\frac{r}{Y-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sputtering in Alloys and Compounds: elements in alloys will not be sputtered
+ at equal rates because of binding energy and ejection probability.
+\end_layout
+
+\begin_layout Itemize
+Preferntial Sputtering: for a homogenous sample with componentes A and B,
+ surface conenctration 
+\begin_inset Formula $N^{s}$
+\end_inset
+
+ and bulk concentration 
+\begin_inset Formula $N^{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Initial Condition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{N_{A}^{s}}{N_{B}^{s}}=\frac{N_{A}^{B}}{N_{B}^{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Partial Yield
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{A}=\frac{ejected\, A}{incident}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and same for B.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Y_{A}}{Y_{B}}=r\frac{N^{s}A}{N^{s}B}\,\, for\, r\, typically\, between\,0.5\, and\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at 
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Y_{A}(0)}{Y_{B}(0)}=r\frac{N_{A}^{s}(0)}{N_{B}^{s}(0)}=r\frac{N_{A}^{B}}{N_{B}^{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at 
+\begin_inset Formula $t=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Y_{A}(\infty)}{Y_{B}(\infty)}=\frac{N_{A}^{B}}{N_{B}^{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at 
+\begin_inset Formula $t=\infty$
+\end_inset
+
+, the surface becomes enriched with one element
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{N_{A}^{s}(\infty)}{N_{B}^{s}(\infty)}=\frac{1}{r}\frac{N_{A}^{B}}{N_{B}^{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+High Ion Dose Implantation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{p}\frac{dN_{a}}{dt}=J_{i}-J_{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Max concentration is given by the reciprocal of the sputtering yields.
+\end_layout
+
+\begin_layout Itemize
+Max concentration is obtained after sputtering of a thickness comparable
+ with 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+the amount of material sputtered
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=implantation\, layer\, thickness=\frac{Y\Phi_{A}}{N_{0}R_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Point Defect Formation and Reaction Rates
+\end_layout
+
+\begin_layout Subsection
+Mechanisms of Diffusion
+\end_layout
+
+\begin_layout Itemize
+Echarge and ring = swapping of lattice sites
+\end_layout
+
+\begin_layout Itemize
+Vacancy is the most common
+\end_layout
+
+\begin_layout Itemize
+Interstitial - moving between interstitial sites, only occurs when 
+\begin_inset Formula $r_{inter}<r_{atom}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Interstitialey - displacement of an atom into interstitial site
+\end_layout
+
+\begin_layout Itemize
+Crowdion - atom added to lattice row but not in interstitial
+\end_layout
+
+\begin_layout Subsection
+Vacancy and Intersitial Movement
+\end_layout
+
+\begin_layout Itemize
+Vacancies have a low formation energy and high migration energy so they
+ are in higher concentrations than interstitials
+\end_layout
+
+\begin_layout Itemize
+Vacancy loops are easily formed
+\end_layout
+
+\begin_layout Itemize
+intersititals have higher formation energy and low migration energy making
+ them more mobile than vacancies.
+\end_layout
+
+\begin_layout Subsection
+Point Defect Balance Equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{v}}{\partial t}=K_{0}-K_{iv}C_{i}C_{v}-K_{vs}C_{v}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{i}}{\partial t}=K_{0}-K_{iv}C_{i}C_{v}-K_{is}C_{i}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{iv}=4\pi r_{iv}(D_{i}+D_{v})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{is}=4\pi r_{is}D_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{vs}=4\pi r_{vs}D_{v}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Low Temp, Low Sink Density
+\end_layout
+
+\begin_layout Standard
+Initially no losses and a linear increase
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=C_{v}=C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C}{\partial t}=K_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After some time 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+, concentrations level off and quasi-steady state exists
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=C_{v}=C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C}{\partial t}=k_{0}-K_{iv}C^{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\left(\frac{K_{0}}{K_{iv}}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to find 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{K_{0}}{K_{iv}}\right)^{1/2}=K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t=\tau_{1}=\left(\frac{1}{K_{0}K_{iv}}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+During quasi-steady state, intersitital sare migrating faster than vacancies.
+ Once interstitials start to reach sinks at 
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+ interstitials start to disappear and vacancies increase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=\left(\frac{K_{0}}{K_{iv}K_{is}C_{s}t}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=\left(\frac{K_{0}K_{is}C_{s}t}{K_{iv}}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at 
+\begin_inset Formula $\tau_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{K_{0}}{K_{iv}}\right)^{1/2}=\left(\frac{K_{0}}{K_{iv}K_{is}C_{s}t}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t=\frac{1}{K_{is}C_{s}}=\tau_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at some time later 
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+ vacancies get to sinks causing 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{r}$
+\end_inset
+
+ to level off and come to steady state
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{v}}{\partial t}=0=K_{0}-K_{iv}C_{i}C_{v}-K_{vs}C_{v}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at steady state 
+\begin_inset Formula $K_{vs}C_{V}=K_{is}C_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=\frac{K_{vs}C_{v}}{K_{is}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=\left(\frac{K_{0}K_{is}}{K_{iv}K_{vs}}+\frac{K_{is}^{2}C_{s}^{2}}{4K_{iv}^{2}}\right)^{1/2}-\frac{K_{is}C_{s}}{2K_{iv}}\approx\left(\frac{K_{0}K_{is}}{K_{iv}K_{vs}}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=\left(\frac{K_{0}K_{vs}}{K_{iv}K_{vs}}+\frac{K_{vs}^{2}C_{s}^{2}}{4K_{iv}^{2}}\right)^{1/2}-\frac{K_{vs}C_{s}}{2K_{is}}\approx\left(\frac{K_{0}K_{vs}}{K_{iv}K_{is}}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to find 
+\begin_inset Formula $\tau_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau_{3}=\frac{1}{K_{vs}C_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Low_Temperature_Low_Sink_Density_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Low Temp Low Sink Density Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Low-Temp-Low-Sink-Density-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Low_Temperature_Intermediate_Sink_Density_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Low Temp Intermediate Sink Density Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Low-Temp-Intermediate-Sink-Density-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Low Temp, High Sink Density
+\end_layout
+
+\begin_layout Standard
+High Sink density causes interstitials to hit sinks before finding vacancies.
+\end_layout
+
+\begin_layout Standard
+Initially
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=C_{v}=K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau_{2}=\frac{1}{K_{is}C_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ levels from sinks, 
+\begin_inset Formula $C_{v}$
+\end_inset
+
+ rises linearly
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{i}}{\partial t}=K_{0}-K_{is}C_{i}C_{s}\approx0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=\frac{K_{0}}{K_{is}C_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+at time 
+\begin_inset Formula $\tau_{4}$
+\end_inset
+
+ interstial loss from sinks equals loss to vacancies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{is}C_{i}C_{s}=K_{iv}C_{i}C_{v}\approx K_{iv}C_{i}K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau_{4}=\frac{K_{is}C_{s}}{K_{iv}K_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=\left(\frac{K_{0}K_{is}C_{s}t}{K_{iv}}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=\left(\frac{K_{0}}{K_{is}K_{iv}C_{s}t}\right)^{1/2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Steady state is reached at the same time and concentration formula except
+ that 
+\begin_inset Formula $C_{s}$
+\end_inset
+
+ cannot be ignored
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau_{3}=\frac{1}{K_{vs}C_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=\left(\frac{K_{0}K_{is}}{K_{iv}K_{vs}}+\frac{K_{is}^{2}C_{s}^{2}}{4K_{iv}^{2}}\right)^{1/2}-\frac{K_{is}C_{s}}{2K_{iv}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=\left(\frac{K_{0}K_{vs}}{K_{iv}K_{is}}+\frac{K_{vs}^{2}C_{s}^{2}}{4K_{iv}^{2}}\right)^{1/2}-\frac{K_{vs}C_{s}}{2K_{iv}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Low_Temperature_High_Sink_Density_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Low Temperature High Sink Density Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Low-Temperature-High-Sink-Density-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+High Temperature Diffusion
+\end_layout
+
+\begin_layout Standard
+At high temp, interstitials move to sinks quickly for recombination to occur
+ so rate equations are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{v}}{\partial t}=K_{0}-K_{vs}C_{v}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{i}}{\partial t}=K_{0}-K_{is}C_{i}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Initially 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=C_{i}=K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next intersitials hit sinks at 
+\begin_inset Formula $\tau_{2}=\frac{1}{K_{is}C_{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=K_{0}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{i}}{\partial t}=0=K_{0}-K_{is}C_{i}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{i}=\frac{K_{0}}{K_{is}C_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+later vacancies hit sinks at 
+\begin_inset Formula $\tau_{3}=\frac{1}{K_{vs}C_{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C_{v}}{\partial t}=0=K_{0}-K_{vs}C_{v}C_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{v}=\frac{K_{0}}{K_{vs}C_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename High_Temperature_Diffusion_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+High Temperature Diffusion Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:High-Temperature-Diffusion-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Swelling
+\end_layout
+
+\begin_layout Standard
+Swelling is influence by temperature, dose, dose rate, composition, transmutatio
+n gas, and sink strength.
+\end_layout
+
+\begin_layout Standard
+Voids grow by collecting vacancies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta V}{V}=\frac{4}{3}\pi r_{c}^{3}N_{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dose and Temperature Effects
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Dose_and_Temperature_Effects_Plot.svg
+	width 14cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dose and Temperature Effects Plots
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dose-and-Temperature-Effects-Plots"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Most metals swell in the range of 
+\begin_inset Formula $0.3T_{m}<T<0.55T_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Austenitic steels
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta V}{V}\approx\frac{1\%}{dpa}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dose Dependence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta V}{V}\approx\frac{dose\, in\, dpa}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dose Rate Dependence
+\end_layout
+
+\begin_layout Standard
+Peak Swelling temperature location depends on dose rate, sink strength,
+ and defect loss mode.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Dose_Rate_Shifting_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dose Rate Shifting with the Peak Swelling Temperature
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dose-Rate-Shifting-with-the-Peak-Swelling-Temperature"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dose rate effects the peak temperature increasing the dose rate also increases
+ the incubation period.
+\end_layout
+
+\begin_layout Paragraph
+Stress dependence
+\end_layout
+
+\begin_layout Itemize
+the thermal emission term is the void growth factor effected by stress.
+\end_layout
+
+\begin_layout Itemize
+stress at high temperatures can increase void growth rate if the stress
+ is greater than the surface tension of the voids.
+\end_layout
+
+\begin_layout Paragraph
+Radiation induced segregation
+\end_layout
+
+\begin_layout Itemize
+RIS occurs at sinks with voids
+\end_layout
+
+\begin_layout Itemize
+The shell of the sink changes in chemical composition which affects the
+ void capture efficiency
+\end_layout
+
+\begin_layout Paragraph
+Production Bias
+\end_layout
+
+\begin_layout Standard
+The size distribution of voids is dose dependent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Fraction_Voids_vs_Depth_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fraction of Voids vs.
+ Depth
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fraction-of-Voids-vs-Depth"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Irradiation Creep
+\end_layout
+
+\begin_layout Itemize
+Creep is time dependent deformation under an applied load and generall occurs
+ at high temperature.
+\end_layout
+
+\begin_layout Itemize
+Creep is different from swelling in that the material comlume is maintained
+ in creep
+\end_layout
+
+\begin_layout Itemize
+Creep does not occur if 
+\begin_inset Formula $T<\frac{1}{3}T_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Creep failure occurs form long exposure below yield stress
+\end_layout
+
+\begin_layout Itemize
+Creep failure occurs in 3 stages
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Strain_vs_Time_Plot.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Strain vs.
+ Time
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Strain-vs.-Time"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Transient Strain rate decreases with time
+\end_layout
+
+\begin_layout Enumerate
+Steady State
+\end_layout
+
+\begin_layout Enumerate
+Tertiary Creep with recrystallization leads to cracks and voids
+\end_layout
+
+\begin_layout Subsection
+Mechanisms
+\end_layout
+
+\begin_layout Standard
+Dislocations overcome barrier by thermal activation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diffusion Creep Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diffusion Creep Diagrams
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diffusion-Creep-Diagrams"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Grain Boundary Creep:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Grain Boundary Creep Diagram.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Grain Boundary Creep Diagrams
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Grain-Boundary-Creep-Diagrams"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Creep Mechanism Table
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Creep-Mechanism-Table"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="middle" width="4cm">
+<column alignment="center" valignment="middle" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mechanism
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Favored by
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nabarro-Herring
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+high temperature, low stress, large grains
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vacancy diffusion through crystal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coble
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+low stress, fine grains, temperature lower than N-H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vacancy diffusion along grain boundary
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grain Bound Sliding
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+same as N-H and Coble
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sliding along with diffusion
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dislocation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+high stress, low temperature, large grains
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dislocation with climb over obstacles
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hardening
+\end_layout
+
+\begin_layout Subsection
+Radiation Hardening
+\end_layout
+
+\begin_layout Standard
+Loss of ductility is the conern.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Loss_of_Ductility_Plots.svg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Loss of Ductility Plots
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Loss-of-Ductility-Plots"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mechanisms of Hardening
+\end_layout
+
+\begin_layout Enumerate
+Increase stress needed to start dislocation motion (source Hardening)
+\end_layout
+
+\begin_layout Enumerate
+Imede dislocation motion (friction hardening)
+\end_layout
+
+\begin_layout Subsection
+Defects by neutron radiation
+\end_layout
+
+\begin_layout Itemize
+Point defects (very small effect)
+\end_layout
+
+\begin_layout Itemize
+Impurity atoms (very small effect)
+\end_layout
+
+\begin_layout Itemize
+vacancy clusters
+\end_layout
+
+\begin_layout Itemize
+dislocation loops
+\end_layout
+
+\begin_layout Itemize
+dislocation lines
+\end_layout
+
+\begin_layout Itemize
+cavities
+\end_layout
+
+\begin_layout Itemize
+precipitates
+\end_layout
+
+\begin_layout Subsection
+Frank Read Dislocation Source
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Frank-Read Dislocation Source Diagram.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Frank Read Disloation Source
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Frank-Read-Disloation-Source"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{s}=\frac{Gb}{l}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Friction Hardening
+\end_layout
+
+\begin_layout Itemize
+Resistance to motion by obstacles
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+clusters
+\end_layout
+
+\begin_layout Itemize
+loops
+\end_layout
+
+\begin_layout Itemize
+precipitates
+\end_layout
+
+\begin_layout Itemize
+voids
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Characterized by long range or short range
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+long range caused by dislocation-dislocation interactions
+\end_layout
+
+\begin_layout Itemize
+short range caused by discrete obstacles
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{Fr}=\sigma_{short}+\sigma_{long}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{short}=\sigma_{precipitate}+\sigma_{void}+\sigma_{loops}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{long}=\frac{Gb}{2\pi\sqrt{3}}\sqrt{\rho_{dislocation}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Types of Fracture
+\end_layout
+
+\begin_layout Itemize
+Ductile - Plastic deformation prior to failure
+\end_layout
+
+\begin_layout Itemize
+Brittle - rapid crack propogation
+\end_layout
+
+\begin_layout Standard
+ductility measured by Charpy Test (dropping hammer on hard surface)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Transition_from_Brittle_to_Ductile.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Transition from Brittle to Ductile Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Transition-from-Brittle-to-Ductile-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Radiation changes the ductile to brittle transition temp (DBTT)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Failure Modes Diagram.svg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Failure Modes Diagram and Dimensional Changes Design Window Plot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Failure-Modes-Diagram-and-Dimensional-Changes-Design-Window-Plot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

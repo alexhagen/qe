@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   preserveAspectRatio="xMinYMin meet"
+   width="100%"
+   height="100%"
+   viewBox="0 0 937.500 421.875"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Low_Temperature_Intermediate_Sink_Density_Plot.svg">
+  <metadata
+     id="metadata100">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs98" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview96"
+     showgrid="false"
+     inkscape:zoom="1.8773333"
+     inkscape:cx="468.75"
+     inkscape:cy="210.9375"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <desc
+     id="desc4">Matlab Figure Converted by PLOT2SVG written by Juerg Schwizer</desc>
+  <g
+     id="ID000000">
+    <clipPath
+       id="ID000001">
+      <rect
+         id="rect11"
+         height="343.828"
+         width="726.56299"
+         y="31.641001"
+         x="121.875" />
+    </clipPath>
+    <polygon
+       style="fill:#000000;fill-opacity:0;stroke:none"
+       id="polygon13"
+       points="848.438,31.641 121.875,31.641 121.875,375.469 848.438,375.469 " />
+    <polygon
+       style="fill:#000000;fill-opacity:0;stroke:none"
+       id="polygon15"
+       points="848.438,31.641 121.875,31.641 121.875,31.641 848.438,31.641 " />
+    <polygon
+       style="fill:#000000;fill-opacity:0;stroke:none"
+       id="polygon17"
+       points="121.875,31.641 121.875,31.641 121.875,375.469 121.875,375.469 " />
+    <g
+       id="g19">
+      <g
+         clip-path="url(#ID000001)"
+         id="ID000002">
+        <polyline
+           style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+           id="polyline22"
+           points="121.875,375.469 364.063,184.453 606.250,69.844 848.438,69.844 " />
+        <g
+           id="g24" />
+      </g>
+      <g
+         clip-path="url(#ID000001)"
+         id="ID000003">
+        <polyline
+           style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+           id="polyline27"
+           points="121.875,375.469 364.063,184.453 606.250,299.063 848.438,299.063 " />
+        <g
+           id="g29" />
+      </g>
+      <g
+         id="ID000004">
+        <g
+           id="g32"
+           transform="translate(484.219,406.391)">
+          <g
+             id="g34">
+            <text
+               style="font-size:11.25px;text-anchor:middle;fill:#000000;font-family:Times New Roman"
+               id="text36"
+               font-size="9pt"
+               y="0"
+               x="0">log|t|</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="ID000005">
+        <g
+           id="g39"
+           transform="translate(113.437,204.492)">
+          <g
+             id="g41"
+             transform="matrix(0,-1,1,0,0,0)">
+            <text
+               style="font-size:11.25px;text-anchor:middle;fill:#000000;font-family:Times New Roman"
+               id="text43"
+               font-size="9pt"
+               y="0"
+               x="0">log|C|</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="ID000006" />
+    </g>
+    <g
+       id="g46">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline48"
+         points="364.063,375.469 364.063,368.203 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline50"
+         points="606.250,375.469 606.250,368.203 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline52"
+         points="121.875,375.469 848.438,375.469 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline54"
+         points="364.063,31.641 364.063,38.906 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline56"
+         points="606.250,31.641 606.250,38.906 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline58"
+         points="121.875,31.641 848.438,31.641 " />
+      <g
+         id="g60"
+         transform="translate(364.063,393.408)">
+        <g
+           id="g62">
+          <text
+             style="font-size:11.25px;text-anchor:middle;fill:#000000;font-family:Times New Roman"
+             id="text64"
+             font-size="9pt"
+             y="0"
+             x="0">
+            <tspan
+               id="tspan66">tau</tspan>
+            <tspan
+               style="font-size:8.75px"
+               id="tspan68"
+               font-size="7pt"
+               dy="4.75">1</tspan>
+            <tspan
+               style="font-size:11.25px"
+               id="tspan70"
+               font-size="9pt"
+               dy="-4.75">=tau</tspan>
+            <tspan
+               style="font-size:8.75px"
+               id="tspan72"
+               font-size="7pt"
+               dy="4.75">2</tspan>
+            <tspan
+               style="font-size:11.25px"
+               id="tspan74"
+               font-size="9pt"
+               dy="-4.75" />
+          </text>
+        </g>
+      </g>
+      <g
+         id="g76"
+         transform="translate(606.25,393.408)">
+        <g
+           id="g78">
+          <text
+             style="font-size:11.25px;text-anchor:middle;fill:#000000;font-family:Times New Roman"
+             id="text80"
+             font-size="9pt"
+             y="0"
+             x="0">
+            <tspan
+               id="tspan82">tau</tspan>
+            <tspan
+               style="font-size:8.75px"
+               id="tspan84"
+               font-size="7pt"
+               dy="4.75">3</tspan>
+            <tspan
+               style="font-size:11.25px"
+               id="tspan86"
+               font-size="9pt"
+               dy="-4.75" />
+          </text>
+        </g>
+      </g>
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline88"
+         points="121.875,375.469 121.875,31.641 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline90"
+         points="848.438,375.469 848.438,31.641 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline92"
+         points="121.875,375.469 121.875,372.030 " />
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:0.5pt;stroke-dasharray:none"
+         id="polyline94"
+         points="121.875,375.469 121.875,375.469 " />
+    </g>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+     x="759.58807"
+     y="57.528408"
+     id="text3125"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3127"
+       x="759.58807"
+       y="57.528408">C_v</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+     x="761.1861"
+     y="286.04404"
+     id="text3129"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3131"
+       x="761.1861"
+       y="286.04404">C_i</tspan></text>
+</svg>

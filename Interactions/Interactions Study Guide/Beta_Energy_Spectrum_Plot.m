@@ -1,0 +1,10 @@
+clc; close all; clear;
+T=linspace(0,12,1000);
+Y=T.^2.*exp(-T.^2/8)/8;
+plot(T,Y,'k-',[4 4],[0 1],'k--',[12 12],[0 1],'k--');
+xlabel('Beta Energy');ylabel('Probability');
+set(gca,'xtick',[4 12],'xticklabel',{'E_avg','E_max'},'ytick',[],'yticklabel',[]);
+axis([0 15 0 1.1*max(Y)]);
+set(gcf,'Position',[50 50 1000 450],'PaperPositionMode','auto');
+set(gca,'Color','none');
+plot2svg('Beta_Energy_Spectrum_Plot.svg');

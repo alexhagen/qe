@@ -1,0 +1,1041 @@
+1400 0 29 16           
+15 SolidWorks 2012 14 ACIS 21.0.3 NT 24 Tue Feb 12 23:19:38 2013 
+1 9.9999999999999995e-007 1e-010 
+-0 body $29 -1 -1 $-1 $30 $-1 $-1 F #
+-1 body $31 -1 -1 $-1 $32 $-1 $-1 F #
+-2 body $33 -1 -1 $-1 $34 $-1 $-1 F #
+-3 body $35 -1 -1 $-1 $36 $-1 $-1 F #
+-4 body $37 -1 -1 $-1 $38 $-1 $-1 F #
+-5 body $39 -1 -1 $-1 $40 $-1 $-1 F #
+-6 body $41 -1 -1 $-1 $42 $-1 $-1 F #
+-7 body $43 -1 -1 $-1 $44 $-1 $-1 F #
+-8 body $45 -1 -1 $-1 $46 $-1 $-1 F #
+-9 body $47 -1 -1 $-1 $48 $-1 $-1 F #
+-10 body $49 -1 -1 $-1 $50 $-1 $-1 F #
+-11 body $51 -1 -1 $-1 $52 $-1 $-1 F #
+-12 body $53 -1 -1 $-1 $54 $-1 $-1 F #
+-13 body $55 -1 -1 $-1 $56 $-1 $-1 F #
+-14 body $57 -1 -1 $-1 $58 $-1 $-1 F #
+-15 body $59 -1 -1 $-1 $60 $-1 $-1 F #
+-16 body $61 -1 -1 $-1 $62 $-1 $-1 F #
+-17 body $63 -1 -1 $-1 $64 $-1 $-1 F #
+-18 body $65 -1 -1 $-1 $66 $-1 $-1 F #
+-19 body $67 -1 -1 $-1 $68 $-1 $-1 F #
+-20 body $69 -1 -1 $-1 $70 $-1 $-1 F #
+-21 body $71 -1 -1 $-1 $72 $-1 $-1 F #
+-22 body $73 -1 -1 $-1 $74 $-1 $-1 F #
+-23 body $75 -1 -1 $-1 $76 $-1 $-1 F #
+-24 body $77 -1 -1 $-1 $78 $-1 $-1 F #
+-25 body $79 -1 -1 $-1 $80 $-1 $-1 F #
+-26 body $81 -1 -1 $-1 $82 $-1 $-1 F #
+-27 body $83 -1 -1 $-1 $84 $-1 $-1 F #
+-28 body $85 -1 -1 $-1 $86 $-1 $-1 F #
+-29 name_attrib-gen-attrib $-1 -1 $-1 $-1 $0 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-30 lump $87 -1 -1 $-1 $-1 $88 $0 F #
+-31 name_attrib-gen-attrib $-1 -1 $-1 $-1 $1 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-32 lump $89 -1 -1 $-1 $-1 $90 $1 F #
+-33 name_attrib-gen-attrib $-1 -1 $-1 $-1 $2 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-34 lump $91 -1 -1 $-1 $-1 $92 $2 F #
+-35 name_attrib-gen-attrib $-1 -1 $-1 $-1 $3 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-36 lump $93 -1 -1 $-1 $-1 $94 $3 F #
+-37 name_attrib-gen-attrib $-1 -1 $-1 $-1 $4 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-38 lump $95 -1 -1 $-1 $-1 $96 $4 F #
+-39 name_attrib-gen-attrib $-1 -1 $-1 $-1 $5 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-40 lump $97 -1 -1 $-1 $-1 $98 $5 F #
+-41 name_attrib-gen-attrib $-1 -1 $-1 $-1 $6 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-42 lump $99 -1 -1 $-1 $-1 $100 $6 F #
+-43 name_attrib-gen-attrib $-1 -1 $-1 $-1 $7 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-44 lump $101 -1 -1 $-1 $-1 $102 $7 F #
+-45 name_attrib-gen-attrib $-1 -1 $-1 $-1 $8 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-46 lump $103 -1 -1 $-1 $-1 $104 $8 F #
+-47 name_attrib-gen-attrib $-1 -1 $-1 $-1 $9 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-48 lump $105 -1 -1 $-1 $-1 $106 $9 F #
+-49 name_attrib-gen-attrib $-1 -1 $-1 $-1 $10 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-50 lump $107 -1 -1 $-1 $-1 $108 $10 F #
+-51 name_attrib-gen-attrib $-1 -1 $-1 $-1 $11 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-52 lump $109 -1 -1 $-1 $-1 $110 $11 F #
+-53 name_attrib-gen-attrib $-1 -1 $-1 $-1 $12 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-54 lump $111 -1 -1 $-1 $-1 $112 $12 F #
+-55 name_attrib-gen-attrib $-1 -1 $-1 $-1 $13 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-56 lump $113 -1 -1 $-1 $-1 $114 $13 F #
+-57 name_attrib-gen-attrib $-1 -1 $-1 $-1 $14 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-58 lump $115 -1 -1 $-1 $-1 $116 $14 F #
+-59 name_attrib-gen-attrib $-1 -1 $-1 $-1 $15 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-60 lump $117 -1 -1 $-1 $-1 $118 $15 F #
+-61 name_attrib-gen-attrib $-1 -1 $-1 $-1 $16 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-62 lump $119 -1 -1 $-1 $-1 $120 $16 F #
+-63 name_attrib-gen-attrib $-1 -1 $-1 $-1 $17 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-64 lump $121 -1 -1 $-1 $-1 $122 $17 F #
+-65 name_attrib-gen-attrib $-1 -1 $-1 $-1 $18 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-66 lump $123 -1 -1 $-1 $-1 $124 $18 F #
+-67 name_attrib-gen-attrib $-1 -1 $-1 $-1 $19 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-68 lump $125 -1 -1 $-1 $-1 $126 $19 F #
+-69 name_attrib-gen-attrib $-1 -1 $-1 $-1 $20 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-70 lump $127 -1 -1 $-1 $-1 $128 $20 F #
+-71 name_attrib-gen-attrib $-1 -1 $-1 $-1 $21 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-72 lump $129 -1 -1 $-1 $-1 $130 $21 F #
+-73 name_attrib-gen-attrib $-1 -1 $-1 $-1 $22 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-74 lump $131 -1 -1 $-1 $-1 $132 $22 F #
+-75 name_attrib-gen-attrib $-1 -1 $-1 $-1 $23 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-76 lump $133 -1 -1 $-1 $-1 $134 $23 F #
+-77 name_attrib-gen-attrib $-1 -1 $-1 $-1 $24 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-78 lump $135 -1 -1 $-1 $-1 $136 $24 F #
+-79 name_attrib-gen-attrib $-1 -1 $-1 $-1 $25 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-80 lump $137 -1 -1 $-1 $-1 $138 $25 F #
+-81 name_attrib-gen-attrib $-1 -1 $-1 $-1 $26 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-82 lump $139 -1 -1 $-1 $-1 $140 $26 F #
+-83 name_attrib-gen-attrib $-1 -1 $-1 $-1 $27 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-84 lump $141 -1 -1 $-1 $-1 $142 $27 F #
+-85 name_attrib-gen-attrib $-1 -1 $-1 $-1 $28 keep keep_kept ignore copy @19 HEBB_Setup_Geometry #
+-86 lump $143 -1 -1 $-1 $-1 $144 $28 F #
+-87 rgb_color-st-attrib $-1 -1 $-1 $-1 $30 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-88 shell $-1 -1 -1 $-1 $-1 $-1 $145 $-1 $30 F #
+-89 rgb_color-st-attrib $-1 -1 $-1 $-1 $32 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-90 shell $-1 -1 -1 $-1 $-1 $-1 $146 $-1 $32 F #
+-91 rgb_color-st-attrib $-1 -1 $-1 $-1 $34 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-92 shell $-1 -1 -1 $-1 $-1 $-1 $147 $-1 $34 F #
+-93 rgb_color-st-attrib $-1 -1 $-1 $-1 $36 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-94 shell $-1 -1 -1 $-1 $-1 $-1 $148 $-1 $36 F #
+-95 rgb_color-st-attrib $-1 -1 $-1 $-1 $38 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-96 shell $-1 -1 -1 $-1 $-1 $-1 $149 $-1 $38 F #
+-97 rgb_color-st-attrib $-1 -1 $-1 $-1 $40 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-98 shell $-1 -1 -1 $-1 $-1 $-1 $150 $-1 $40 F #
+-99 rgb_color-st-attrib $-1 -1 $-1 $-1 $42 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-100 shell $-1 -1 -1 $-1 $-1 $-1 $151 $-1 $42 F #
+-101 rgb_color-st-attrib $-1 -1 $-1 $-1 $44 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-102 shell $-1 -1 -1 $-1 $-1 $-1 $152 $-1 $44 F #
+-103 rgb_color-st-attrib $-1 -1 $-1 $-1 $46 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-104 shell $-1 -1 -1 $-1 $-1 $-1 $153 $-1 $46 F #
+-105 rgb_color-st-attrib $-1 -1 $-1 $-1 $48 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-106 shell $-1 -1 -1 $-1 $-1 $-1 $154 $-1 $48 F #
+-107 rgb_color-st-attrib $-1 -1 $-1 $-1 $50 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-108 shell $-1 -1 -1 $-1 $-1 $-1 $155 $-1 $50 F #
+-109 rgb_color-st-attrib $-1 -1 $-1 $-1 $52 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-110 shell $-1 -1 -1 $-1 $-1 $-1 $156 $-1 $52 F #
+-111 rgb_color-st-attrib $-1 -1 $-1 $-1 $54 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-112 shell $-1 -1 -1 $-1 $-1 $-1 $157 $-1 $54 F #
+-113 rgb_color-st-attrib $-1 -1 $-1 $-1 $56 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-114 shell $-1 -1 -1 $-1 $-1 $-1 $158 $-1 $56 F #
+-115 rgb_color-st-attrib $-1 -1 $-1 $-1 $58 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-116 shell $-1 -1 -1 $-1 $-1 $-1 $159 $-1 $58 F #
+-117 rgb_color-st-attrib $-1 -1 $-1 $-1 $60 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-118 shell $-1 -1 -1 $-1 $-1 $-1 $160 $-1 $60 F #
+-119 rgb_color-st-attrib $-1 -1 $-1 $-1 $62 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-120 shell $-1 -1 -1 $-1 $-1 $-1 $161 $-1 $62 F #
+-121 rgb_color-st-attrib $-1 -1 $-1 $-1 $64 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-122 shell $-1 -1 -1 $-1 $-1 $-1 $162 $-1 $64 F #
+-123 rgb_color-st-attrib $-1 -1 $-1 $-1 $66 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-124 shell $-1 -1 -1 $-1 $-1 $-1 $163 $-1 $66 F #
+-125 rgb_color-st-attrib $-1 -1 $-1 $-1 $68 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-126 shell $-1 -1 -1 $-1 $-1 $-1 $164 $-1 $68 F #
+-127 rgb_color-st-attrib $-1 -1 $-1 $-1 $70 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-128 shell $-1 -1 -1 $-1 $-1 $-1 $165 $-1 $70 F #
+-129 rgb_color-st-attrib $-1 -1 $-1 $-1 $72 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-130 shell $-1 -1 -1 $-1 $-1 $-1 $166 $-1 $72 F #
+-131 rgb_color-st-attrib $-1 -1 $-1 $-1 $74 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-132 shell $-1 -1 -1 $-1 $-1 $-1 $167 $-1 $74 F #
+-133 rgb_color-st-attrib $-1 -1 $-1 $-1 $76 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-134 shell $-1 -1 -1 $-1 $-1 $-1 $168 $-1 $76 F #
+-135 rgb_color-st-attrib $-1 -1 $-1 $-1 $78 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-136 shell $-1 -1 -1 $-1 $-1 $-1 $169 $-1 $78 F #
+-137 rgb_color-st-attrib $-1 -1 $-1 $-1 $80 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-138 shell $-1 -1 -1 $-1 $-1 $-1 $170 $-1 $80 F #
+-139 rgb_color-st-attrib $-1 -1 $-1 $-1 $82 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-140 shell $-1 -1 -1 $-1 $-1 $-1 $171 $-1 $82 F #
+-141 rgb_color-st-attrib $-1 -1 $-1 $-1 $84 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-142 shell $-1 -1 -1 $-1 $-1 $-1 $172 $-1 $84 F #
+-143 rgb_color-st-attrib $-1 -1 $-1 $-1 $86 0.792156862745098 0.81960784313725488 0.93333333333333335 #
+-144 shell $-1 -1 -1 $-1 $-1 $-1 $173 $-1 $86 F #
+-145 face $174 -1 -1 $-1 $175 $176 $88 $-1 $177 reversed single F F #
+-146 face $178 -1 -1 $-1 $179 $180 $90 $-1 $181 reversed single F F #
+-147 face $182 -1 -1 $-1 $-1 $-1 $92 $-1 $183 forward single F F #
+-148 face $184 -1 -1 $-1 $185 $186 $94 $-1 $187 reversed single F F #
+-149 face $188 -1 -1 $-1 $189 $190 $96 $-1 $191 reversed single F F #
+-150 face $192 -1 -1 $-1 $193 $194 $98 $-1 $195 reversed single F F #
+-151 face $196 -1 -1 $-1 $197 $198 $100 $-1 $199 reversed single F F #
+-152 face $200 -1 -1 $-1 $201 $202 $102 $-1 $203 reversed single F F #
+-153 face $204 -1 -1 $-1 $205 $206 $104 $-1 $207 reversed single F F #
+-154 face $208 -1 -1 $-1 $209 $210 $106 $-1 $211 reversed single F F #
+-155 face $212 -1 -1 $-1 $213 $214 $108 $-1 $215 reversed single F F #
+-156 face $216 -1 -1 $-1 $217 $218 $110 $-1 $219 reversed single F F #
+-157 face $220 -1 -1 $-1 $221 $222 $112 $-1 $223 reversed single F F #
+-158 face $224 -1 -1 $-1 $225 $226 $114 $-1 $227 reversed single F F #
+-159 face $228 -1 -1 $-1 $229 $230 $116 $-1 $231 reversed single F F #
+-160 face $232 -1 -1 $-1 $233 $234 $118 $-1 $235 reversed single F F #
+-161 face $236 -1 -1 $-1 $237 $238 $120 $-1 $239 reversed single F F #
+-162 face $240 -1 -1 $-1 $241 $242 $122 $-1 $243 reversed single F F #
+-163 face $244 -1 -1 $-1 $245 $246 $124 $-1 $247 reversed single F F #
+-164 face $248 -1 -1 $-1 $249 $250 $126 $-1 $251 reversed single F F #
+-165 face $252 -1 -1 $-1 $253 $254 $128 $-1 $255 reversed single F F #
+-166 face $256 -1 -1 $-1 $257 $258 $130 $-1 $259 reversed single F F #
+-167 face $260 -1 -1 $-1 $261 $262 $132 $-1 $263 reversed single F F #
+-168 face $264 -1 -1 $-1 $265 $266 $134 $-1 $267 reversed single F F #
+-169 face $268 -1 -1 $-1 $269 $270 $136 $-1 $271 reversed single F F #
+-170 face $272 -1 -1 $-1 $273 $274 $138 $-1 $275 reversed single F F #
+-171 face $276 -1 -1 $-1 $277 $278 $140 $-1 $279 reversed single F F #
+-172 face $280 -1 -1 $-1 $281 $282 $142 $-1 $283 reversed single F F #
+-173 face $284 -1 -1 $-1 $285 $286 $144 $-1 $287 reversed single F F #
+-174 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $145 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-175 face $288 -1 -1 $-1 $289 $290 $88 $-1 $291 reversed single F F #
+-176 loop $-1 -1 -1 $-1 $-1 $292 $145 F unknown #
+-177 plane-surface $-1 -1 -1 $-1 -250 -25.000000000000011 25 -1 0 0 0 0 1000 forward_v I I I I #
+-178 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $146 copy keep_kept ignore copy @11 Revolve1[1] 0 #
+-179 face $293 -1 -1 $-1 $294 $295 $90 $-1 $296 reversed single F F #
+-180 loop $-1 -1 -1 $-1 $-1 $297 $146 F unknown #
+-181 plane-surface $-1 -1 -1 $-1 40 0 0 -1 0 0 0 0 1000 forward_v I I I I #
+-182 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $147 copy keep_kept ignore copy @11 Revolve1[2] 0 #
+-183 sphere-surface $-1 -1 -1 $-1 295.85000000000002 0 0 55.850000000000009 1 0 0 0 0 1 forward_v I I I I #
+-184 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $148 copy keep_kept ignore copy @16 Boss-Extrude3[1] 0 #
+-185 face $298 -1 -1 $-1 $299 $300 $94 $-1 $301 reversed single F F #
+-186 loop $-1 -1 -1 $-1 $-1 $302 $148 F unknown #
+-187 plane-surface $-1 -1 -1 $-1 -10.000000000000018 50 -275 1 0 -1.2490009027033011e-016 -1.2490009027033011e-013 0 -1000 forward_v I I I I #
+-188 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $149 copy keep_kept ignore copy @16 Boss-Extrude3[2] 0 #
+-189 face $303 -1 -1 $-1 $304 $305 $96 $-1 $306 reversed single F F #
+-190 loop $-1 -1 -1 $-1 $-1 $307 $149 F unknown #
+-191 plane-surface $-1 -1 -1 $-1 9.9999999999999769 50 275 -1 0 -1.1796119636642288e-016 -1.1796119636642288e-013 0 1000 forward_v I I I I #
+-192 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $150 copy keep_kept ignore copy @12 LPattern1[1] 0 #
+-193 face $308 -1 -1 $-1 $309 $310 $98 $-1 $311 reversed single F F #
+-194 loop $-1 -1 -1 $-1 $-1 $312 $150 F unknown #
+-195 plane-surface $-1 -1 -1 $-1 40.000000000000007 0 35 -1 0 0 0 0 1000 forward_v I I I I #
+-196 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $151 copy keep_kept ignore copy @12 LPattern1[2] 0 #
+-197 face $313 -1 -1 $-1 $314 $315 $100 $-1 $316 reversed single F F #
+-198 loop $-1 -1 -1 $-1 $-1 $317 $151 F unknown #
+-199 plane-surface $-1 -1 -1 $-1 40.000000000000007 0 70 -1 0 0 0 0 1000 forward_v I I I I #
+-200 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $152 copy keep_kept ignore copy @12 LPattern1[3] 0 #
+-201 face $318 -1 -1 $-1 $319 $320 $102 $-1 $321 reversed single F F #
+-202 loop $-1 -1 -1 $-1 $-1 $322 $152 F unknown #
+-203 plane-surface $-1 -1 -1 $-1 40 35 0 -1 0 0 0 0 1000 forward_v I I I I #
+-204 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $153 copy keep_kept ignore copy @12 LPattern1[4] 0 #
+-205 face $323 -1 -1 $-1 $324 $325 $104 $-1 $326 reversed single F F #
+-206 loop $-1 -1 -1 $-1 $-1 $327 $153 F unknown #
+-207 plane-surface $-1 -1 -1 $-1 40.000000000000007 35 35 -1 0 0 0 0 1000 forward_v I I I I #
+-208 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $154 copy keep_kept ignore copy @12 LPattern1[5] 0 #
+-209 face $328 -1 -1 $-1 $329 $330 $106 $-1 $331 reversed single F F #
+-210 loop $-1 -1 -1 $-1 $-1 $332 $154 F unknown #
+-211 plane-surface $-1 -1 -1 $-1 40.000000000000007 35 70 -1 0 0 0 0 1000 forward_v I I I I #
+-212 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $155 copy keep_kept ignore copy @12 LPattern1[6] 0 #
+-213 face $333 -1 -1 $-1 $334 $335 $108 $-1 $336 reversed single F F #
+-214 loop $-1 -1 -1 $-1 $-1 $337 $155 F unknown #
+-215 plane-surface $-1 -1 -1 $-1 40 70 0 -1 0 0 0 0 1000 forward_v I I I I #
+-216 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $156 copy keep_kept ignore copy @12 LPattern1[7] 0 #
+-217 face $338 -1 -1 $-1 $339 $340 $110 $-1 $341 reversed single F F #
+-218 loop $-1 -1 -1 $-1 $-1 $342 $156 F unknown #
+-219 plane-surface $-1 -1 -1 $-1 40.000000000000007 70 35 -1 0 0 0 0 1000 forward_v I I I I #
+-220 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $157 copy keep_kept ignore copy @12 LPattern1[8] 0 #
+-221 face $343 -1 -1 $-1 $344 $345 $112 $-1 $346 reversed single F F #
+-222 loop $-1 -1 -1 $-1 $-1 $347 $157 F unknown #
+-223 plane-surface $-1 -1 -1 $-1 40.000000000000007 70 70 -1 0 0 0 0 1000 forward_v I I I I #
+-224 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $158 copy keep_kept ignore copy @10 Mirror1[1] 0 #
+-225 face $348 -1 -1 $-1 $349 $350 $114 $-1 $351 reversed single F F #
+-226 loop $-1 -1 -1 $-1 $-1 $352 $158 F unknown #
+-227 plane-surface $-1 -1 -1 $-1 40.000000000000007 70 -35 -1 -0 -0 0 0 -1000 forward_v I I I I #
+-228 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $159 copy keep_kept ignore copy @10 Mirror1[2] 0 #
+-229 face $353 -1 -1 $-1 $354 $355 $116 $-1 $356 reversed single F F #
+-230 loop $-1 -1 -1 $-1 $-1 $357 $159 F unknown #
+-231 plane-surface $-1 -1 -1 $-1 40.000000000000007 35 -35 -1 -0 -0 0 0 -1000 forward_v I I I I #
+-232 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $160 copy keep_kept ignore copy @10 Mirror1[3] 0 #
+-233 face $358 -1 -1 $-1 $359 $360 $118 $-1 $361 reversed single F F #
+-234 loop $-1 -1 -1 $-1 $-1 $362 $160 F unknown #
+-235 plane-surface $-1 -1 -1 $-1 40.000000000000007 0 -35 -1 -0 -0 0 0 -1000 forward_v I I I I #
+-236 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $161 copy keep_kept ignore copy @10 Mirror1[4] 0 #
+-237 face $363 -1 -1 $-1 $364 $365 $120 $-1 $366 reversed single F F #
+-238 loop $-1 -1 -1 $-1 $-1 $367 $161 F unknown #
+-239 plane-surface $-1 -1 -1 $-1 40.000000000000007 0 -70 -1 -0 -0 0 0 -1000 forward_v I I I I #
+-240 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $162 copy keep_kept ignore copy @10 Mirror1[5] 0 #
+-241 face $368 -1 -1 $-1 $369 $370 $122 $-1 $371 reversed single F F #
+-242 loop $-1 -1 -1 $-1 $-1 $372 $162 F unknown #
+-243 plane-surface $-1 -1 -1 $-1 40.000000000000007 35 -70 -1 -0 -0 0 0 -1000 forward_v I I I I #
+-244 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $163 copy keep_kept ignore copy @10 Mirror1[6] 0 #
+-245 face $373 -1 -1 $-1 $374 $375 $124 $-1 $376 reversed single F F #
+-246 loop $-1 -1 -1 $-1 $-1 $377 $163 F unknown #
+-247 plane-surface $-1 -1 -1 $-1 40.000000000000007 70 -70 -1 -0 -0 0 0 -1000 forward_v I I I I #
+-248 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $164 copy keep_kept ignore copy @10 Mirror2[1] 0 #
+-249 face $378 -1 -1 $-1 $379 $380 $126 $-1 $381 reversed single F F #
+-250 loop $-1 -1 -1 $-1 $-1 $382 $164 F unknown #
+-251 plane-surface $-1 -1 -1 $-1 40.000000000000007 -70 -70 -1 0 0 0 0 -1000 forward_v I I I I #
+-252 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $165 copy keep_kept ignore copy @10 Mirror2[2] 0 #
+-253 face $383 -1 -1 $-1 $384 $385 $128 $-1 $386 reversed single F F #
+-254 loop $-1 -1 -1 $-1 $-1 $387 $165 F unknown #
+-255 plane-surface $-1 -1 -1 $-1 40.000000000000007 -70 -35 -1 0 0 0 0 -1000 forward_v I I I I #
+-256 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $166 copy keep_kept ignore copy @10 Mirror2[3] 0 #
+-257 face $388 -1 -1 $-1 $389 $390 $130 $-1 $391 reversed single F F #
+-258 loop $-1 -1 -1 $-1 $-1 $392 $166 F unknown #
+-259 plane-surface $-1 -1 -1 $-1 40 -70 0 -1 0 0 0 0 1000 forward_v I I I I #
+-260 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $167 copy keep_kept ignore copy @10 Mirror2[4] 0 #
+-261 face $393 -1 -1 $-1 $394 $395 $132 $-1 $396 reversed single F F #
+-262 loop $-1 -1 -1 $-1 $-1 $397 $167 F unknown #
+-263 plane-surface $-1 -1 -1 $-1 40.000000000000007 -70 35 -1 0 0 0 0 1000 forward_v I I I I #
+-264 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $168 copy keep_kept ignore copy @10 Mirror2[5] 0 #
+-265 face $398 -1 -1 $-1 $399 $400 $134 $-1 $401 reversed single F F #
+-266 loop $-1 -1 -1 $-1 $-1 $402 $168 F unknown #
+-267 plane-surface $-1 -1 -1 $-1 40.000000000000007 -70 70 -1 0 0 0 0 1000 forward_v I I I I #
+-268 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $169 copy keep_kept ignore copy @10 Mirror2[6] 0 #
+-269 face $403 -1 -1 $-1 $404 $405 $136 $-1 $406 reversed single F F #
+-270 loop $-1 -1 -1 $-1 $-1 $407 $169 F unknown #
+-271 plane-surface $-1 -1 -1 $-1 40.000000000000007 -35 70 -1 0 0 0 0 1000 forward_v I I I I #
+-272 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $170 copy keep_kept ignore copy @10 Mirror2[7] 0 #
+-273 face $408 -1 -1 $-1 $409 $410 $138 $-1 $411 reversed single F F #
+-274 loop $-1 -1 -1 $-1 $-1 $412 $170 F unknown #
+-275 plane-surface $-1 -1 -1 $-1 40.000000000000007 -35 35 -1 0 0 0 0 1000 forward_v I I I I #
+-276 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $171 copy keep_kept ignore copy @10 Mirror2[8] 0 #
+-277 face $413 -1 -1 $-1 $414 $415 $140 $-1 $416 reversed single F F #
+-278 loop $-1 -1 -1 $-1 $-1 $417 $171 F unknown #
+-279 plane-surface $-1 -1 -1 $-1 40 -35 0 -1 0 0 0 0 1000 forward_v I I I I #
+-280 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $172 copy keep_kept ignore copy @10 Mirror2[9] 0 #
+-281 face $418 -1 -1 $-1 $419 $420 $142 $-1 $421 reversed single F F #
+-282 loop $-1 -1 -1 $-1 $-1 $422 $172 F unknown #
+-283 plane-surface $-1 -1 -1 $-1 40.000000000000007 -35 -35 -1 0 0 0 0 -1000 forward_v I I I I #
+-284 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $173 copy keep_kept ignore copy @11 Mirror2[10] 0 #
+-285 face $423 -1 -1 $-1 $424 $425 $144 $-1 $426 reversed single F F #
+-286 loop $-1 -1 -1 $-1 $-1 $427 $173 F unknown #
+-287 plane-surface $-1 -1 -1 $-1 40.000000000000007 -35 -70 -1 0 0 0 0 -1000 forward_v I I I I #
+-288 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $175 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-289 face $428 -1 -1 $-1 $429 $430 $88 $-1 $431 reversed single F F #
+-290 loop $-1 -1 -1 $-1 $-1 $432 $175 F unknown #
+-291 plane-surface $-1 -1 -1 $-1 -350 24.999999999999989 25 0 -1 0 0 0 -1000 forward_v I I I I #
+-292 coedge $-1 -1 -1 $-1 $433 $434 $435 $436 forward $176 $-1 #
+-293 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $179 copy keep_kept ignore copy @11 Revolve1[1] 0 #
+-294 face $437 -1 -1 $-1 $-1 $438 $90 $-1 $439 forward single F F #
+-295 loop $-1 -1 -1 $-1 $-1 $440 $179 F unknown #
+-296 plane-surface $-1 -1 -1 $-1 20 0 0 1 0 0 0 0 -1000 forward_v I I I I #
+-297 coedge $-1 -1 -1 $-1 $297 $297 $441 $442 reversed $180 $-1 #
+-298 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $185 copy keep_kept ignore copy @16 Boss-Extrude3[1] 0 #
+-299 face $443 -1 -1 $-1 $444 $445 $94 $-1 $446 reversed single F F #
+-300 loop $-1 -1 -1 $-1 $-1 $447 $185 F unknown #
+-301 plane-surface $-1 -1 -1 $-1 10.000000000000014 50 -25 0 0 -1 -1000 0 0 forward_v I I I I #
+-302 coedge $-1 -1 -1 $-1 $448 $449 $450 $451 forward $186 $-1 #
+-303 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $189 copy keep_kept ignore copy @16 Boss-Extrude3[2] 0 #
+-304 face $452 -1 -1 $-1 $453 $454 $96 $-1 $455 reversed single F F #
+-305 loop $-1 -1 -1 $-1 $-1 $456 $189 F unknown #
+-306 plane-surface $-1 -1 -1 $-1 10.000000000000007 50 25 0 0 1 1000 0 0 forward_v I I I I #
+-307 coedge $-1 -1 -1 $-1 $457 $458 $459 $460 forward $190 $-1 #
+-308 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $193 copy keep_kept ignore copy @12 LPattern1[1] 0 #
+-309 face $461 -1 -1 $-1 $-1 $462 $98 $-1 $463 forward single F F #
+-310 loop $-1 -1 -1 $-1 $-1 $464 $193 F unknown #
+-311 plane-surface $-1 -1 -1 $-1 20.000000000000004 0 35 1 0 0 0 0 -1000 forward_v I I I I #
+-312 coedge $-1 -1 -1 $-1 $312 $312 $465 $466 reversed $194 $-1 #
+-313 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $197 copy keep_kept ignore copy @12 LPattern1[2] 0 #
+-314 face $467 -1 -1 $-1 $-1 $468 $100 $-1 $469 forward single F F #
+-315 loop $-1 -1 -1 $-1 $-1 $470 $197 F unknown #
+-316 plane-surface $-1 -1 -1 $-1 20.000000000000007 0 70 1 0 0 0 0 -1000 forward_v I I I I #
+-317 coedge $-1 -1 -1 $-1 $317 $317 $471 $472 reversed $198 $-1 #
+-318 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $201 copy keep_kept ignore copy @12 LPattern1[3] 0 #
+-319 face $473 -1 -1 $-1 $-1 $474 $102 $-1 $475 forward single F F #
+-320 loop $-1 -1 -1 $-1 $-1 $476 $201 F unknown #
+-321 plane-surface $-1 -1 -1 $-1 20 35 0 1 0 0 0 0 -1000 forward_v I I I I #
+-322 coedge $-1 -1 -1 $-1 $322 $322 $477 $478 reversed $202 $-1 #
+-323 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $205 copy keep_kept ignore copy @12 LPattern1[4] 0 #
+-324 face $479 -1 -1 $-1 $-1 $480 $104 $-1 $481 forward single F F #
+-325 loop $-1 -1 -1 $-1 $-1 $482 $205 F unknown #
+-326 plane-surface $-1 -1 -1 $-1 20.000000000000004 35 35 1 0 0 0 0 -1000 forward_v I I I I #
+-327 coedge $-1 -1 -1 $-1 $327 $327 $483 $484 reversed $206 $-1 #
+-328 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $209 copy keep_kept ignore copy @12 LPattern1[5] 0 #
+-329 face $485 -1 -1 $-1 $-1 $486 $106 $-1 $487 forward single F F #
+-330 loop $-1 -1 -1 $-1 $-1 $488 $209 F unknown #
+-331 plane-surface $-1 -1 -1 $-1 20.000000000000007 35 70 1 0 0 0 0 -1000 forward_v I I I I #
+-332 coedge $-1 -1 -1 $-1 $332 $332 $489 $490 reversed $210 $-1 #
+-333 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $213 copy keep_kept ignore copy @12 LPattern1[6] 0 #
+-334 face $491 -1 -1 $-1 $-1 $492 $108 $-1 $493 forward single F F #
+-335 loop $-1 -1 -1 $-1 $-1 $494 $213 F unknown #
+-336 plane-surface $-1 -1 -1 $-1 20 70 0 1 0 0 0 0 -1000 forward_v I I I I #
+-337 coedge $-1 -1 -1 $-1 $337 $337 $495 $496 reversed $214 $-1 #
+-338 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $217 copy keep_kept ignore copy @12 LPattern1[7] 0 #
+-339 face $497 -1 -1 $-1 $-1 $498 $110 $-1 $499 forward single F F #
+-340 loop $-1 -1 -1 $-1 $-1 $500 $217 F unknown #
+-341 plane-surface $-1 -1 -1 $-1 20.000000000000004 70 35 1 0 0 0 0 -1000 forward_v I I I I #
+-342 coedge $-1 -1 -1 $-1 $342 $342 $501 $502 reversed $218 $-1 #
+-343 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $221 copy keep_kept ignore copy @12 LPattern1[8] 0 #
+-344 face $503 -1 -1 $-1 $-1 $504 $112 $-1 $505 forward single F F #
+-345 loop $-1 -1 -1 $-1 $-1 $506 $221 F unknown #
+-346 plane-surface $-1 -1 -1 $-1 20.000000000000007 70 70 1 0 0 0 0 -1000 forward_v I I I I #
+-347 coedge $-1 -1 -1 $-1 $347 $347 $507 $508 reversed $222 $-1 #
+-348 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $225 copy keep_kept ignore copy @10 Mirror1[1] 0 #
+-349 face $509 -1 -1 $-1 $-1 $510 $114 $-1 $511 forward single F F #
+-350 loop $-1 -1 -1 $-1 $-1 $512 $225 F unknown #
+-351 plane-surface $-1 -1 -1 $-1 20.000000000000004 70 -35 1 0 0 0 0 1000 forward_v I I I I #
+-352 coedge $-1 -1 -1 $-1 $352 $352 $513 $514 forward $226 $-1 #
+-353 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $229 copy keep_kept ignore copy @10 Mirror1[2] 0 #
+-354 face $515 -1 -1 $-1 $-1 $516 $116 $-1 $517 forward single F F #
+-355 loop $-1 -1 -1 $-1 $-1 $518 $229 F unknown #
+-356 plane-surface $-1 -1 -1 $-1 20.000000000000004 35 -35 1 0 0 0 0 1000 forward_v I I I I #
+-357 coedge $-1 -1 -1 $-1 $357 $357 $519 $520 forward $230 $-1 #
+-358 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $233 copy keep_kept ignore copy @10 Mirror1[3] 0 #
+-359 face $521 -1 -1 $-1 $-1 $522 $118 $-1 $523 forward single F F #
+-360 loop $-1 -1 -1 $-1 $-1 $524 $233 F unknown #
+-361 plane-surface $-1 -1 -1 $-1 20.000000000000004 0 -35 1 0 0 0 0 1000 forward_v I I I I #
+-362 coedge $-1 -1 -1 $-1 $362 $362 $525 $526 forward $234 $-1 #
+-363 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $237 copy keep_kept ignore copy @10 Mirror1[4] 0 #
+-364 face $527 -1 -1 $-1 $-1 $528 $120 $-1 $529 forward single F F #
+-365 loop $-1 -1 -1 $-1 $-1 $530 $237 F unknown #
+-366 plane-surface $-1 -1 -1 $-1 20.000000000000007 0 -70 1 0 0 0 0 1000 forward_v I I I I #
+-367 coedge $-1 -1 -1 $-1 $367 $367 $531 $532 forward $238 $-1 #
+-368 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $241 copy keep_kept ignore copy @10 Mirror1[5] 0 #
+-369 face $533 -1 -1 $-1 $-1 $534 $122 $-1 $535 forward single F F #
+-370 loop $-1 -1 -1 $-1 $-1 $536 $241 F unknown #
+-371 plane-surface $-1 -1 -1 $-1 20.000000000000007 35 -70 1 0 0 0 0 1000 forward_v I I I I #
+-372 coedge $-1 -1 -1 $-1 $372 $372 $537 $538 forward $242 $-1 #
+-373 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $245 copy keep_kept ignore copy @10 Mirror1[6] 0 #
+-374 face $539 -1 -1 $-1 $-1 $540 $124 $-1 $541 forward single F F #
+-375 loop $-1 -1 -1 $-1 $-1 $542 $245 F unknown #
+-376 plane-surface $-1 -1 -1 $-1 20.000000000000007 70 -70 1 0 0 0 0 1000 forward_v I I I I #
+-377 coedge $-1 -1 -1 $-1 $377 $377 $543 $544 forward $246 $-1 #
+-378 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $249 copy keep_kept ignore copy @10 Mirror2[1] 0 #
+-379 face $545 -1 -1 $-1 $-1 $546 $126 $-1 $547 forward single F F #
+-380 loop $-1 -1 -1 $-1 $-1 $548 $249 F unknown #
+-381 plane-surface $-1 -1 -1 $-1 20.000000000000007 -70 -70 1 0 0 0 0 1000 forward_v I I I I #
+-382 coedge $-1 -1 -1 $-1 $382 $382 $549 $550 reversed $250 $-1 #
+-383 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $253 copy keep_kept ignore copy @10 Mirror2[2] 0 #
+-384 face $551 -1 -1 $-1 $-1 $552 $128 $-1 $553 forward single F F #
+-385 loop $-1 -1 -1 $-1 $-1 $554 $253 F unknown #
+-386 plane-surface $-1 -1 -1 $-1 20.000000000000004 -70 -35 1 0 0 0 0 1000 forward_v I I I I #
+-387 coedge $-1 -1 -1 $-1 $387 $387 $555 $556 reversed $254 $-1 #
+-388 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $257 copy keep_kept ignore copy @10 Mirror2[3] 0 #
+-389 face $557 -1 -1 $-1 $-1 $558 $130 $-1 $559 forward single F F #
+-390 loop $-1 -1 -1 $-1 $-1 $560 $257 F unknown #
+-391 plane-surface $-1 -1 -1 $-1 20 -70 0 1 0 0 0 0 -1000 forward_v I I I I #
+-392 coedge $-1 -1 -1 $-1 $392 $392 $561 $562 forward $258 $-1 #
+-393 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $261 copy keep_kept ignore copy @10 Mirror2[4] 0 #
+-394 face $563 -1 -1 $-1 $-1 $564 $132 $-1 $565 forward single F F #
+-395 loop $-1 -1 -1 $-1 $-1 $566 $261 F unknown #
+-396 plane-surface $-1 -1 -1 $-1 20.000000000000004 -70 35 1 0 0 0 0 -1000 forward_v I I I I #
+-397 coedge $-1 -1 -1 $-1 $397 $397 $567 $568 forward $262 $-1 #
+-398 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $265 copy keep_kept ignore copy @10 Mirror2[5] 0 #
+-399 face $569 -1 -1 $-1 $-1 $570 $134 $-1 $571 forward single F F #
+-400 loop $-1 -1 -1 $-1 $-1 $572 $265 F unknown #
+-401 plane-surface $-1 -1 -1 $-1 20.000000000000007 -70 70 1 0 0 0 0 -1000 forward_v I I I I #
+-402 coedge $-1 -1 -1 $-1 $402 $402 $573 $574 forward $266 $-1 #
+-403 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $269 copy keep_kept ignore copy @10 Mirror2[6] 0 #
+-404 face $575 -1 -1 $-1 $-1 $576 $136 $-1 $577 forward single F F #
+-405 loop $-1 -1 -1 $-1 $-1 $578 $269 F unknown #
+-406 plane-surface $-1 -1 -1 $-1 20.000000000000007 -35 70 1 0 0 0 0 -1000 forward_v I I I I #
+-407 coedge $-1 -1 -1 $-1 $407 $407 $579 $580 forward $270 $-1 #
+-408 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $273 copy keep_kept ignore copy @10 Mirror2[7] 0 #
+-409 face $581 -1 -1 $-1 $-1 $582 $138 $-1 $583 forward single F F #
+-410 loop $-1 -1 -1 $-1 $-1 $584 $273 F unknown #
+-411 plane-surface $-1 -1 -1 $-1 20.000000000000004 -35 35 1 0 0 0 0 -1000 forward_v I I I I #
+-412 coedge $-1 -1 -1 $-1 $412 $412 $585 $586 forward $274 $-1 #
+-413 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $277 copy keep_kept ignore copy @10 Mirror2[8] 0 #
+-414 face $587 -1 -1 $-1 $-1 $588 $140 $-1 $589 forward single F F #
+-415 loop $-1 -1 -1 $-1 $-1 $590 $277 F unknown #
+-416 plane-surface $-1 -1 -1 $-1 20 -35 0 1 0 0 0 0 -1000 forward_v I I I I #
+-417 coedge $-1 -1 -1 $-1 $417 $417 $591 $592 forward $278 $-1 #
+-418 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $281 copy keep_kept ignore copy @10 Mirror2[9] 0 #
+-419 face $593 -1 -1 $-1 $-1 $594 $142 $-1 $595 forward single F F #
+-420 loop $-1 -1 -1 $-1 $-1 $596 $281 F unknown #
+-421 plane-surface $-1 -1 -1 $-1 20.000000000000004 -35 -35 1 0 0 0 0 1000 forward_v I I I I #
+-422 coedge $-1 -1 -1 $-1 $422 $422 $597 $598 reversed $282 $-1 #
+-423 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $285 copy keep_kept ignore copy @11 Mirror2[10] 0 #
+-424 face $599 -1 -1 $-1 $-1 $600 $144 $-1 $601 forward single F F #
+-425 loop $-1 -1 -1 $-1 $-1 $602 $285 F unknown #
+-426 plane-surface $-1 -1 -1 $-1 20.000000000000007 -35 -70 1 0 0 0 0 1000 forward_v I I I I #
+-427 coedge $-1 -1 -1 $-1 $427 $427 $603 $604 reversed $286 $-1 #
+-428 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $289 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-429 face $605 -1 -1 $-1 $606 $607 $88 $-1 $608 reversed single F F #
+-430 loop $-1 -1 -1 $-1 $-1 $609 $289 F unknown #
+-431 plane-surface $-1 -1 -1 $-1 -350 -25.000000000000011 25 1 0 0 0 0 -1000 forward_v I I I I #
+-432 coedge $-1 -1 -1 $-1 $610 $611 $612 $613 forward $290 $-1 #
+-433 coedge $-1 -1 -1 $-1 $614 $292 $611 $615 reversed $176 $-1 #
+-434 coedge $-1 -1 -1 $-1 $292 $614 $616 $617 forward $176 $-1 #
+-435 coedge $-1 -1 -1 $-1 $618 $612 $292 $436 reversed $619 $-1 #
+-436 edge $-1 -1 -1 $-1 $620 0 $621 0.050000000000000003 $292 $622 forward @7 unknown F #
+-437 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $294 copy keep_kept ignore copy @11 Revolve1[1] 0 #
+-438 loop $-1 -1 -1 $-1 $623 $624 $294 F unknown #
+-439 cone-surface $-1 -1 -1 $-1 0 0 0 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-440 coedge $-1 -1 -1 $-1 $440 $440 $624 $625 forward $295 $-1 #
+-441 coedge $-1 -1 -1 $-1 $441 $441 $297 $442 forward $623 $-1 #
+-442 edge $-1 -1 -1 $-1 $626 0 $626 6.2831853071795862 $441 $627 forward @7 unknown F #
+-443 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $299 copy keep_kept ignore copy @16 Boss-Extrude3[1] 0 #
+-444 face $628 -1 -1 $-1 $629 $630 $94 $-1 $631 reversed single F F #
+-445 loop $-1 -1 -1 $-1 $-1 $632 $299 F unknown #
+-446 plane-surface $-1 -1 -1 $-1 9.999999999999984 50 -275 -1 0 1.1796119636642288e-016 1.1796119636642288e-013 0 1000 forward_v I I I I #
+-447 coedge $-1 -1 -1 $-1 $633 $634 $635 $636 forward $300 $-1 #
+-448 coedge $-1 -1 -1 $-1 $637 $302 $634 $638 reversed $186 $-1 #
+-449 coedge $-1 -1 -1 $-1 $302 $637 $639 $640 forward $186 $-1 #
+-450 coedge $-1 -1 -1 $-1 $641 $635 $302 $451 reversed $642 $-1 #
+-451 edge $-1 -1 -1 $-1 $643 0 $644 0.25 $302 $645 forward @7 unknown F #
+-452 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $304 copy keep_kept ignore copy @16 Boss-Extrude3[2] 0 #
+-453 face $646 -1 -1 $-1 $647 $648 $96 $-1 $649 reversed single F F #
+-454 loop $-1 -1 -1 $-1 $-1 $650 $304 F unknown #
+-455 plane-surface $-1 -1 -1 $-1 -10.000000000000011 50 275 1 0 1.2490009027033011e-016 1.2490009027033011e-013 0 -1000 forward_v I I I I #
+-456 coedge $-1 -1 -1 $-1 $651 $652 $653 $654 forward $305 $-1 #
+-457 coedge $-1 -1 -1 $-1 $655 $307 $652 $656 reversed $190 $-1 #
+-458 coedge $-1 -1 -1 $-1 $307 $655 $657 $658 forward $190 $-1 #
+-459 coedge $-1 -1 -1 $-1 $659 $653 $307 $460 reversed $660 $-1 #
+-460 edge $-1 -1 -1 $-1 $661 0 $662 0.25 $307 $663 forward @7 unknown F #
+-461 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $309 copy keep_kept ignore copy @12 LPattern1[1] 0 #
+-462 loop $-1 -1 -1 $-1 $664 $665 $309 F unknown #
+-463 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 0 35 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-464 coedge $-1 -1 -1 $-1 $464 $464 $665 $666 forward $310 $-1 #
+-465 coedge $-1 -1 -1 $-1 $465 $465 $312 $466 forward $664 $-1 #
+-466 edge $-1 -1 -1 $-1 $667 0 $667 6.2831853071795862 $465 $668 forward @7 unknown F #
+-467 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $314 copy keep_kept ignore copy @12 LPattern1[2] 0 #
+-468 loop $-1 -1 -1 $-1 $669 $670 $314 F unknown #
+-469 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 0 70 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-470 coedge $-1 -1 -1 $-1 $470 $470 $670 $671 forward $315 $-1 #
+-471 coedge $-1 -1 -1 $-1 $471 $471 $317 $472 forward $669 $-1 #
+-472 edge $-1 -1 -1 $-1 $672 0 $672 6.2831853071795862 $471 $673 forward @7 unknown F #
+-473 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $319 copy keep_kept ignore copy @12 LPattern1[3] 0 #
+-474 loop $-1 -1 -1 $-1 $674 $675 $319 F unknown #
+-475 cone-surface $-1 -1 -1 $-1 0 35 0 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-476 coedge $-1 -1 -1 $-1 $476 $476 $675 $676 forward $320 $-1 #
+-477 coedge $-1 -1 -1 $-1 $477 $477 $322 $478 forward $674 $-1 #
+-478 edge $-1 -1 -1 $-1 $677 0 $677 6.2831853071795862 $477 $678 forward @7 unknown F #
+-479 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $324 copy keep_kept ignore copy @12 LPattern1[4] 0 #
+-480 loop $-1 -1 -1 $-1 $679 $680 $324 F unknown #
+-481 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 35 35 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-482 coedge $-1 -1 -1 $-1 $482 $482 $680 $681 forward $325 $-1 #
+-483 coedge $-1 -1 -1 $-1 $483 $483 $327 $484 forward $679 $-1 #
+-484 edge $-1 -1 -1 $-1 $682 0 $682 6.2831853071795862 $483 $683 forward @7 unknown F #
+-485 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $329 copy keep_kept ignore copy @12 LPattern1[5] 0 #
+-486 loop $-1 -1 -1 $-1 $684 $685 $329 F unknown #
+-487 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 35 70 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-488 coedge $-1 -1 -1 $-1 $488 $488 $685 $686 forward $330 $-1 #
+-489 coedge $-1 -1 -1 $-1 $489 $489 $332 $490 forward $684 $-1 #
+-490 edge $-1 -1 -1 $-1 $687 0 $687 6.2831853071795862 $489 $688 forward @7 unknown F #
+-491 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $334 copy keep_kept ignore copy @12 LPattern1[6] 0 #
+-492 loop $-1 -1 -1 $-1 $689 $690 $334 F unknown #
+-493 cone-surface $-1 -1 -1 $-1 0 70 0 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-494 coedge $-1 -1 -1 $-1 $494 $494 $690 $691 forward $335 $-1 #
+-495 coedge $-1 -1 -1 $-1 $495 $495 $337 $496 forward $689 $-1 #
+-496 edge $-1 -1 -1 $-1 $692 0 $692 6.2831853071795862 $495 $693 forward @7 unknown F #
+-497 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $339 copy keep_kept ignore copy @12 LPattern1[7] 0 #
+-498 loop $-1 -1 -1 $-1 $694 $695 $339 F unknown #
+-499 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 70 35 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-500 coedge $-1 -1 -1 $-1 $500 $500 $695 $696 forward $340 $-1 #
+-501 coedge $-1 -1 -1 $-1 $501 $501 $342 $502 forward $694 $-1 #
+-502 edge $-1 -1 -1 $-1 $697 0 $697 6.2831853071795862 $501 $698 forward @7 unknown F #
+-503 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $344 copy keep_kept ignore copy @12 LPattern1[8] 0 #
+-504 loop $-1 -1 -1 $-1 $699 $700 $344 F unknown #
+-505 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 70 70 -1 -0 -0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-506 coedge $-1 -1 -1 $-1 $506 $506 $700 $701 forward $345 $-1 #
+-507 coedge $-1 -1 -1 $-1 $507 $507 $347 $508 forward $699 $-1 #
+-508 edge $-1 -1 -1 $-1 $702 0 $702 6.2831853071795862 $507 $703 forward @7 unknown F #
+-509 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $349 copy keep_kept ignore copy @10 Mirror1[1] 0 #
+-510 loop $-1 -1 -1 $-1 $704 $705 $349 F unknown #
+-511 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 70 -35 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-512 coedge $-1 -1 -1 $-1 $512 $512 $705 $706 reversed $350 $-1 #
+-513 coedge $-1 -1 -1 $-1 $513 $513 $352 $514 reversed $704 $-1 #
+-514 edge $-1 -1 -1 $-1 $707 0 $707 6.2831853071795862 $352 $708 forward @7 unknown F #
+-515 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $354 copy keep_kept ignore copy @10 Mirror1[2] 0 #
+-516 loop $-1 -1 -1 $-1 $709 $710 $354 F unknown #
+-517 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 35 -35 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-518 coedge $-1 -1 -1 $-1 $518 $518 $710 $711 reversed $355 $-1 #
+-519 coedge $-1 -1 -1 $-1 $519 $519 $357 $520 reversed $709 $-1 #
+-520 edge $-1 -1 -1 $-1 $712 0 $712 6.2831853071795862 $357 $713 forward @7 unknown F #
+-521 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $359 copy keep_kept ignore copy @10 Mirror1[3] 0 #
+-522 loop $-1 -1 -1 $-1 $714 $715 $359 F unknown #
+-523 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 0 -35 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-524 coedge $-1 -1 -1 $-1 $524 $524 $715 $716 reversed $360 $-1 #
+-525 coedge $-1 -1 -1 $-1 $525 $525 $362 $526 reversed $714 $-1 #
+-526 edge $-1 -1 -1 $-1 $717 0 $717 6.2831853071795862 $362 $718 forward @7 unknown F #
+-527 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $364 copy keep_kept ignore copy @10 Mirror1[4] 0 #
+-528 loop $-1 -1 -1 $-1 $719 $720 $364 F unknown #
+-529 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 0 -70 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-530 coedge $-1 -1 -1 $-1 $530 $530 $720 $721 reversed $365 $-1 #
+-531 coedge $-1 -1 -1 $-1 $531 $531 $367 $532 reversed $719 $-1 #
+-532 edge $-1 -1 -1 $-1 $722 0 $722 6.2831853071795862 $367 $723 forward @7 unknown F #
+-533 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $369 copy keep_kept ignore copy @10 Mirror1[5] 0 #
+-534 loop $-1 -1 -1 $-1 $724 $725 $369 F unknown #
+-535 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 35 -70 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-536 coedge $-1 -1 -1 $-1 $536 $536 $725 $726 reversed $370 $-1 #
+-537 coedge $-1 -1 -1 $-1 $537 $537 $372 $538 reversed $724 $-1 #
+-538 edge $-1 -1 -1 $-1 $727 0 $727 6.2831853071795862 $372 $728 forward @7 unknown F #
+-539 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $374 copy keep_kept ignore copy @10 Mirror1[6] 0 #
+-540 loop $-1 -1 -1 $-1 $729 $730 $374 F unknown #
+-541 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 70 -70 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-542 coedge $-1 -1 -1 $-1 $542 $542 $730 $731 reversed $375 $-1 #
+-543 coedge $-1 -1 -1 $-1 $543 $543 $377 $544 reversed $729 $-1 #
+-544 edge $-1 -1 -1 $-1 $732 0 $732 6.2831853071795862 $377 $733 forward @7 unknown F #
+-545 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $379 copy keep_kept ignore copy @10 Mirror2[1] 0 #
+-546 loop $-1 -1 -1 $-1 $734 $735 $379 F unknown #
+-547 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 -70 -70 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-548 coedge $-1 -1 -1 $-1 $548 $548 $735 $736 forward $380 $-1 #
+-549 coedge $-1 -1 -1 $-1 $549 $549 $382 $550 forward $734 $-1 #
+-550 edge $-1 -1 -1 $-1 $737 0 $737 6.2831853071795862 $549 $738 forward @7 unknown F #
+-551 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $384 copy keep_kept ignore copy @10 Mirror2[2] 0 #
+-552 loop $-1 -1 -1 $-1 $739 $740 $384 F unknown #
+-553 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 -70 -35 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-554 coedge $-1 -1 -1 $-1 $554 $554 $740 $741 forward $385 $-1 #
+-555 coedge $-1 -1 -1 $-1 $555 $555 $387 $556 forward $739 $-1 #
+-556 edge $-1 -1 -1 $-1 $742 0 $742 6.2831853071795862 $555 $743 forward @7 unknown F #
+-557 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $389 copy keep_kept ignore copy @10 Mirror2[3] 0 #
+-558 loop $-1 -1 -1 $-1 $744 $745 $389 F unknown #
+-559 cone-surface $-1 -1 -1 $-1 0 -70 0 -1 0 0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-560 coedge $-1 -1 -1 $-1 $560 $560 $745 $746 reversed $390 $-1 #
+-561 coedge $-1 -1 -1 $-1 $561 $561 $392 $562 reversed $744 $-1 #
+-562 edge $-1 -1 -1 $-1 $747 0 $747 6.2831853071795862 $392 $748 forward @7 unknown F #
+-563 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $394 copy keep_kept ignore copy @10 Mirror2[4] 0 #
+-564 loop $-1 -1 -1 $-1 $749 $750 $394 F unknown #
+-565 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 -70 35 -1 0 0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-566 coedge $-1 -1 -1 $-1 $566 $566 $750 $751 reversed $395 $-1 #
+-567 coedge $-1 -1 -1 $-1 $567 $567 $397 $568 reversed $749 $-1 #
+-568 edge $-1 -1 -1 $-1 $752 0 $752 6.2831853071795862 $397 $753 forward @7 unknown F #
+-569 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $399 copy keep_kept ignore copy @10 Mirror2[5] 0 #
+-570 loop $-1 -1 -1 $-1 $754 $755 $399 F unknown #
+-571 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 -70 70 -1 0 0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-572 coedge $-1 -1 -1 $-1 $572 $572 $755 $756 reversed $400 $-1 #
+-573 coedge $-1 -1 -1 $-1 $573 $573 $402 $574 reversed $754 $-1 #
+-574 edge $-1 -1 -1 $-1 $757 0 $757 6.2831853071795862 $402 $758 forward @7 unknown F #
+-575 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $404 copy keep_kept ignore copy @10 Mirror2[6] 0 #
+-576 loop $-1 -1 -1 $-1 $759 $760 $404 F unknown #
+-577 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 -35 70 -1 0 0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-578 coedge $-1 -1 -1 $-1 $578 $578 $760 $761 reversed $405 $-1 #
+-579 coedge $-1 -1 -1 $-1 $579 $579 $407 $580 reversed $759 $-1 #
+-580 edge $-1 -1 -1 $-1 $762 0 $762 6.2831853071795862 $407 $763 forward @7 unknown F #
+-581 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $409 copy keep_kept ignore copy @10 Mirror2[7] 0 #
+-582 loop $-1 -1 -1 $-1 $764 $765 $409 F unknown #
+-583 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 -35 35 -1 0 0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-584 coedge $-1 -1 -1 $-1 $584 $584 $765 $766 reversed $410 $-1 #
+-585 coedge $-1 -1 -1 $-1 $585 $585 $412 $586 reversed $764 $-1 #
+-586 edge $-1 -1 -1 $-1 $767 0 $767 6.2831853071795862 $412 $768 forward @7 unknown F #
+-587 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $414 copy keep_kept ignore copy @10 Mirror2[8] 0 #
+-588 loop $-1 -1 -1 $-1 $769 $770 $414 F unknown #
+-589 cone-surface $-1 -1 -1 $-1 0 -35 0 -1 0 0 0 0 15.5 1 I I 0 1 15.5 forward I I I I #
+-590 coedge $-1 -1 -1 $-1 $590 $590 $770 $771 reversed $415 $-1 #
+-591 coedge $-1 -1 -1 $-1 $591 $591 $417 $592 reversed $769 $-1 #
+-592 edge $-1 -1 -1 $-1 $772 0 $772 6.2831853071795862 $417 $773 forward @7 unknown F #
+-593 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $419 copy keep_kept ignore copy @10 Mirror2[9] 0 #
+-594 loop $-1 -1 -1 $-1 $774 $775 $419 F unknown #
+-595 cone-surface $-1 -1 -1 $-1 4.1286418728248017e-015 -35 -35 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-596 coedge $-1 -1 -1 $-1 $596 $596 $775 $776 forward $420 $-1 #
+-597 coedge $-1 -1 -1 $-1 $597 $597 $422 $598 forward $774 $-1 #
+-598 edge $-1 -1 -1 $-1 $777 0 $777 6.2831853071795862 $597 $778 forward @7 unknown F #
+-599 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $424 copy keep_kept ignore copy @11 Mirror2[10] 0 #
+-600 loop $-1 -1 -1 $-1 $779 $780 $424 F unknown #
+-601 cone-surface $-1 -1 -1 $-1 8.2572837456496033e-015 -35 -70 -1 0 0 0 0 -15.5 1 I I 0 1 15.5 forward I I I I #
+-602 coedge $-1 -1 -1 $-1 $602 $602 $780 $781 forward $425 $-1 #
+-603 coedge $-1 -1 -1 $-1 $603 $603 $427 $604 forward $779 $-1 #
+-604 edge $-1 -1 -1 $-1 $782 0 $782 6.2831853071795862 $603 $783 forward @7 unknown F #
+-605 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $429 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-606 face $784 -1 -1 $-1 $785 $786 $88 $-1 $787 reversed single F F #
+-607 loop $-1 -1 -1 $-1 $-1 $788 $429 F unknown #
+-608 plane-surface $-1 -1 -1 $-1 -350 -25.000000000000011 25 0 1 0 0 0 1000 forward_v I I I I #
+-609 coedge $-1 -1 -1 $-1 $789 $790 $791 $792 forward $430 $-1 #
+-610 coedge $-1 -1 -1 $-1 $793 $432 $790 $794 reversed $290 $-1 #
+-611 coedge $-1 -1 -1 $-1 $432 $793 $433 $615 forward $290 $-1 #
+-612 coedge $-1 -1 -1 $-1 $435 $791 $432 $613 reversed $619 $-1 #
+-613 edge $-1 -1 -1 $-1 $621 -0.10000000000000001 $795 -0 $432 $796 forward @7 unknown F #
+-614 coedge $-1 -1 -1 $-1 $434 $433 $797 $798 reversed $176 $-1 #
+-615 edge $-1 -1 -1 $-1 $799 -0 $621 0.050000000000000003 $611 $800 forward @7 unknown F #
+-616 coedge $-1 -1 -1 $-1 $801 $788 $434 $617 reversed $607 $-1 #
+-617 edge $-1 -1 -1 $-1 $802 -0 $620 0.050000000000000003 $434 $803 forward @7 unknown F #
+-618 coedge $-1 -1 -1 $-1 $791 $435 $788 $804 reversed $619 $-1 #
+-619 loop $-1 -1 -1 $-1 $-1 $435 $785 F unknown #
+-620 vertex $-1 -1 -1 $-1 $804 $805 #
+-621 vertex $-1 -1 -1 $-1 $613 $806 #
+-622 straight-curve $-1 -1 -1 $-1 -250 -25.000000000000011 -25 0 1000 0 I I #
+-623 loop $-1 -1 -1 $-1 $-1 $441 $294 F unknown #
+-624 coedge $-1 -1 -1 $-1 $624 $624 $440 $625 reversed $438 $-1 #
+-625 edge $-1 -1 -1 $-1 $807 0 $807 6.2831853071795862 $440 $808 forward @7 unknown F #
+-626 vertex $-1 -1 -1 $-1 $442 $809 #
+-627 ellipse-curve $-1 -1 -1 $-1 40 0 0 -1 -0 -0 0 0 15.5 1 I I #
+-628 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $444 copy keep_kept ignore copy @16 Boss-Extrude3[1] 0 #
+-629 face $810 -1 -1 $-1 $811 $812 $94 $-1 $813 reversed single F F #
+-630 loop $-1 -1 -1 $-1 $-1 $814 $444 F unknown #
+-631 plane-surface $-1 -1 -1 $-1 9.999999999999984 50 -275 0 0 1 1000 0 0 forward_v I I I I #
+-632 coedge $-1 -1 -1 $-1 $815 $816 $817 $818 forward $445 $-1 #
+-633 coedge $-1 -1 -1 $-1 $819 $447 $816 $820 reversed $300 $-1 #
+-634 coedge $-1 -1 -1 $-1 $447 $819 $448 $638 forward $300 $-1 #
+-635 coedge $-1 -1 -1 $-1 $450 $817 $447 $636 reversed $642 $-1 #
+-636 edge $-1 -1 -1 $-1 $644 -0.02 $821 0 $447 $822 forward @7 unknown F #
+-637 coedge $-1 -1 -1 $-1 $449 $448 $823 $824 reversed $186 $-1 #
+-638 edge $-1 -1 -1 $-1 $825 -0 $644 0.10000000000000001 $634 $826 forward @7 unknown F #
+-639 coedge $-1 -1 -1 $-1 $827 $814 $449 $640 reversed $630 $-1 #
+-640 edge $-1 -1 -1 $-1 $828 -0 $643 0.10000000000000001 $449 $829 forward @7 unknown F #
+-641 coedge $-1 -1 -1 $-1 $817 $450 $814 $830 reversed $642 $-1 #
+-642 loop $-1 -1 -1 $-1 $-1 $450 $811 F unknown #
+-643 vertex $-1 -1 -1 $-1 $830 $831 #
+-644 vertex $-1 -1 -1 $-1 $636 $832 #
+-645 straight-curve $-1 -1 -1 $-1 -10.000000000000018 -50 -275 1.2490009027033011e-013 0 1000 I I #
+-646 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $453 copy keep_kept ignore copy @16 Boss-Extrude3[2] 0 #
+-647 face $833 -1 -1 $-1 $834 $835 $96 $-1 $836 forward single F F #
+-648 loop $-1 -1 -1 $-1 $-1 $837 $453 F unknown #
+-649 plane-surface $-1 -1 -1 $-1 9.9999999999999769 50 275 0 0 -1 -1000 0 0 forward_v I I I I #
+-650 coedge $-1 -1 -1 $-1 $838 $839 $840 $841 forward $454 $-1 #
+-651 coedge $-1 -1 -1 $-1 $842 $456 $839 $843 reversed $305 $-1 #
+-652 coedge $-1 -1 -1 $-1 $456 $842 $457 $656 forward $305 $-1 #
+-653 coedge $-1 -1 -1 $-1 $459 $840 $456 $654 reversed $660 $-1 #
+-654 edge $-1 -1 -1 $-1 $662 0 $844 0.019999999999999987 $456 $845 forward @7 unknown F #
+-655 coedge $-1 -1 -1 $-1 $458 $457 $846 $847 reversed $190 $-1 #
+-656 edge $-1 -1 -1 $-1 $848 -0 $662 0.10000000000000001 $652 $849 forward @7 unknown F #
+-657 coedge $-1 -1 -1 $-1 $850 $837 $458 $658 reversed $648 $-1 #
+-658 edge $-1 -1 -1 $-1 $851 -0 $661 0.10000000000000001 $458 $852 forward @7 unknown F #
+-659 coedge $-1 -1 -1 $-1 $840 $459 $837 $853 reversed $660 $-1 #
+-660 loop $-1 -1 -1 $-1 $-1 $459 $834 F unknown #
+-661 vertex $-1 -1 -1 $-1 $853 $854 #
+-662 vertex $-1 -1 -1 $-1 $654 $855 #
+-663 straight-curve $-1 -1 -1 $-1 9.9999999999999769 -50 275 1.1796119636642288e-013 0 -1000 I I #
+-664 loop $-1 -1 -1 $-1 $-1 $465 $309 F unknown #
+-665 coedge $-1 -1 -1 $-1 $665 $665 $464 $666 reversed $462 $-1 #
+-666 edge $-1 -1 -1 $-1 $856 0 $856 6.2831853071795862 $464 $857 forward @7 unknown F #
+-667 vertex $-1 -1 -1 $-1 $466 $858 #
+-668 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 0 35 -1 -0 -0 0 0 15.5 1 I I #
+-669 loop $-1 -1 -1 $-1 $-1 $471 $314 F unknown #
+-670 coedge $-1 -1 -1 $-1 $670 $670 $470 $671 reversed $468 $-1 #
+-671 edge $-1 -1 -1 $-1 $859 0 $859 6.2831853071795862 $470 $860 forward @7 unknown F #
+-672 vertex $-1 -1 -1 $-1 $472 $861 #
+-673 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 0 70 -1 -0 -0 0 0 15.5 1 I I #
+-674 loop $-1 -1 -1 $-1 $-1 $477 $319 F unknown #
+-675 coedge $-1 -1 -1 $-1 $675 $675 $476 $676 reversed $474 $-1 #
+-676 edge $-1 -1 -1 $-1 $862 0 $862 6.2831853071795862 $476 $863 forward @7 unknown F #
+-677 vertex $-1 -1 -1 $-1 $478 $864 #
+-678 ellipse-curve $-1 -1 -1 $-1 40 35 0 -1 -0 -0 0 0 15.5 1 I I #
+-679 loop $-1 -1 -1 $-1 $-1 $483 $324 F unknown #
+-680 coedge $-1 -1 -1 $-1 $680 $680 $482 $681 reversed $480 $-1 #
+-681 edge $-1 -1 -1 $-1 $865 0 $865 6.2831853071795862 $482 $866 forward @7 unknown F #
+-682 vertex $-1 -1 -1 $-1 $484 $867 #
+-683 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 35 35 -1 -0 -0 0 0 15.5 1 I I #
+-684 loop $-1 -1 -1 $-1 $-1 $489 $329 F unknown #
+-685 coedge $-1 -1 -1 $-1 $685 $685 $488 $686 reversed $486 $-1 #
+-686 edge $-1 -1 -1 $-1 $868 0 $868 6.2831853071795862 $488 $869 forward @7 unknown F #
+-687 vertex $-1 -1 -1 $-1 $490 $870 #
+-688 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 35 70 -1 -0 -0 0 0 15.5 1 I I #
+-689 loop $-1 -1 -1 $-1 $-1 $495 $334 F unknown #
+-690 coedge $-1 -1 -1 $-1 $690 $690 $494 $691 reversed $492 $-1 #
+-691 edge $-1 -1 -1 $-1 $871 0 $871 6.2831853071795862 $494 $872 forward @7 unknown F #
+-692 vertex $-1 -1 -1 $-1 $496 $873 #
+-693 ellipse-curve $-1 -1 -1 $-1 40 70 0 -1 -0 -0 0 0 15.5 1 I I #
+-694 loop $-1 -1 -1 $-1 $-1 $501 $339 F unknown #
+-695 coedge $-1 -1 -1 $-1 $695 $695 $500 $696 reversed $498 $-1 #
+-696 edge $-1 -1 -1 $-1 $874 0 $874 6.2831853071795862 $500 $875 forward @7 unknown F #
+-697 vertex $-1 -1 -1 $-1 $502 $876 #
+-698 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 70 35 -1 -0 -0 0 0 15.5 1 I I #
+-699 loop $-1 -1 -1 $-1 $-1 $507 $344 F unknown #
+-700 coedge $-1 -1 -1 $-1 $700 $700 $506 $701 reversed $504 $-1 #
+-701 edge $-1 -1 -1 $-1 $877 0 $877 6.2831853071795862 $506 $878 forward @7 unknown F #
+-702 vertex $-1 -1 -1 $-1 $508 $879 #
+-703 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 70 70 -1 -0 -0 0 0 15.5 1 I I #
+-704 loop $-1 -1 -1 $-1 $-1 $513 $349 F unknown #
+-705 coedge $-1 -1 -1 $-1 $705 $705 $512 $706 forward $510 $-1 #
+-706 edge $-1 -1 -1 $-1 $880 0 $880 6.2831853071795862 $705 $881 forward @7 unknown F #
+-707 vertex $-1 -1 -1 $-1 $514 $882 #
+-708 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 70 -35 1 0 0 0 0 -15.5 1 I I #
+-709 loop $-1 -1 -1 $-1 $-1 $519 $354 F unknown #
+-710 coedge $-1 -1 -1 $-1 $710 $710 $518 $711 forward $516 $-1 #
+-711 edge $-1 -1 -1 $-1 $883 0 $883 6.2831853071795862 $710 $884 forward @7 unknown F #
+-712 vertex $-1 -1 -1 $-1 $520 $885 #
+-713 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 35 -35 1 0 0 0 0 -15.5 1 I I #
+-714 loop $-1 -1 -1 $-1 $-1 $525 $359 F unknown #
+-715 coedge $-1 -1 -1 $-1 $715 $715 $524 $716 forward $522 $-1 #
+-716 edge $-1 -1 -1 $-1 $886 0 $886 6.2831853071795862 $715 $887 forward @7 unknown F #
+-717 vertex $-1 -1 -1 $-1 $526 $888 #
+-718 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 0 -35 1 0 0 0 0 -15.5 1 I I #
+-719 loop $-1 -1 -1 $-1 $-1 $531 $364 F unknown #
+-720 coedge $-1 -1 -1 $-1 $720 $720 $530 $721 forward $528 $-1 #
+-721 edge $-1 -1 -1 $-1 $889 0 $889 6.2831853071795862 $720 $890 forward @7 unknown F #
+-722 vertex $-1 -1 -1 $-1 $532 $891 #
+-723 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 0 -70 1 0 0 0 0 -15.5 1 I I #
+-724 loop $-1 -1 -1 $-1 $-1 $537 $369 F unknown #
+-725 coedge $-1 -1 -1 $-1 $725 $725 $536 $726 forward $534 $-1 #
+-726 edge $-1 -1 -1 $-1 $892 0 $892 6.2831853071795862 $725 $893 forward @7 unknown F #
+-727 vertex $-1 -1 -1 $-1 $538 $894 #
+-728 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 35 -70 1 0 0 0 0 -15.5 1 I I #
+-729 loop $-1 -1 -1 $-1 $-1 $543 $374 F unknown #
+-730 coedge $-1 -1 -1 $-1 $730 $730 $542 $731 forward $540 $-1 #
+-731 edge $-1 -1 -1 $-1 $895 0 $895 6.2831853071795862 $730 $896 forward @7 unknown F #
+-732 vertex $-1 -1 -1 $-1 $544 $897 #
+-733 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 70 -70 1 0 0 0 0 -15.5 1 I I #
+-734 loop $-1 -1 -1 $-1 $-1 $549 $379 F unknown #
+-735 coedge $-1 -1 -1 $-1 $735 $735 $548 $736 reversed $546 $-1 #
+-736 edge $-1 -1 -1 $-1 $898 0 $898 6.2831853071795862 $548 $899 forward @7 unknown F #
+-737 vertex $-1 -1 -1 $-1 $550 $900 #
+-738 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -70 -70 -1 -0 -0 0 0 -15.5 1 I I #
+-739 loop $-1 -1 -1 $-1 $-1 $555 $384 F unknown #
+-740 coedge $-1 -1 -1 $-1 $740 $740 $554 $741 reversed $552 $-1 #
+-741 edge $-1 -1 -1 $-1 $901 0 $901 6.2831853071795862 $554 $902 forward @7 unknown F #
+-742 vertex $-1 -1 -1 $-1 $556 $903 #
+-743 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -70 -35 -1 -0 -0 0 0 -15.5 1 I I #
+-744 loop $-1 -1 -1 $-1 $-1 $561 $389 F unknown #
+-745 coedge $-1 -1 -1 $-1 $745 $745 $560 $746 forward $558 $-1 #
+-746 edge $-1 -1 -1 $-1 $904 0 $904 6.2831853071795862 $745 $905 forward @7 unknown F #
+-747 vertex $-1 -1 -1 $-1 $562 $906 #
+-748 ellipse-curve $-1 -1 -1 $-1 40 -70 0 1 0 0 0 0 15.5 1 I I #
+-749 loop $-1 -1 -1 $-1 $-1 $567 $394 F unknown #
+-750 coedge $-1 -1 -1 $-1 $750 $750 $566 $751 forward $564 $-1 #
+-751 edge $-1 -1 -1 $-1 $907 0 $907 6.2831853071795862 $750 $908 forward @7 unknown F #
+-752 vertex $-1 -1 -1 $-1 $568 $909 #
+-753 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -70 35 1 0 0 0 0 15.5 1 I I #
+-754 loop $-1 -1 -1 $-1 $-1 $573 $399 F unknown #
+-755 coedge $-1 -1 -1 $-1 $755 $755 $572 $756 forward $570 $-1 #
+-756 edge $-1 -1 -1 $-1 $910 0 $910 6.2831853071795862 $755 $911 forward @7 unknown F #
+-757 vertex $-1 -1 -1 $-1 $574 $912 #
+-758 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -70 70 1 0 0 0 0 15.5 1 I I #
+-759 loop $-1 -1 -1 $-1 $-1 $579 $404 F unknown #
+-760 coedge $-1 -1 -1 $-1 $760 $760 $578 $761 forward $576 $-1 #
+-761 edge $-1 -1 -1 $-1 $913 0 $913 6.2831853071795862 $760 $914 forward @7 unknown F #
+-762 vertex $-1 -1 -1 $-1 $580 $915 #
+-763 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -35 70 1 0 0 0 0 15.5 1 I I #
+-764 loop $-1 -1 -1 $-1 $-1 $585 $409 F unknown #
+-765 coedge $-1 -1 -1 $-1 $765 $765 $584 $766 forward $582 $-1 #
+-766 edge $-1 -1 -1 $-1 $916 0 $916 6.2831853071795862 $765 $917 forward @7 unknown F #
+-767 vertex $-1 -1 -1 $-1 $586 $918 #
+-768 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -35 35 1 0 0 0 0 15.5 1 I I #
+-769 loop $-1 -1 -1 $-1 $-1 $591 $414 F unknown #
+-770 coedge $-1 -1 -1 $-1 $770 $770 $590 $771 forward $588 $-1 #
+-771 edge $-1 -1 -1 $-1 $919 0 $919 6.2831853071795862 $770 $920 forward @7 unknown F #
+-772 vertex $-1 -1 -1 $-1 $592 $921 #
+-773 ellipse-curve $-1 -1 -1 $-1 40 -35 0 1 0 0 0 0 15.5 1 I I #
+-774 loop $-1 -1 -1 $-1 $-1 $597 $419 F unknown #
+-775 coedge $-1 -1 -1 $-1 $775 $775 $596 $776 reversed $594 $-1 #
+-776 edge $-1 -1 -1 $-1 $922 0 $922 6.2831853071795862 $596 $923 forward @7 unknown F #
+-777 vertex $-1 -1 -1 $-1 $598 $924 #
+-778 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -35 -35 -1 -0 -0 0 0 -15.5 1 I I #
+-779 loop $-1 -1 -1 $-1 $-1 $603 $424 F unknown #
+-780 coedge $-1 -1 -1 $-1 $780 $780 $602 $781 reversed $600 $-1 #
+-781 edge $-1 -1 -1 $-1 $925 0 $925 6.2831853071795862 $602 $926 forward @7 unknown F #
+-782 vertex $-1 -1 -1 $-1 $604 $927 #
+-783 ellipse-curve $-1 -1 -1 $-1 40.000000000000007 -35 -70 -1 -0 -0 0 0 -15.5 1 I I #
+-784 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $606 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-785 face $928 -1 -1 $-1 $-1 $619 $88 $-1 $929 forward single F F #
+-786 loop $-1 -1 -1 $-1 $-1 $797 $606 F unknown #
+-787 plane-surface $-1 -1 -1 $-1 0 0 25 0 0 -1 -1000 0 0 forward_v I I I I #
+-788 coedge $-1 -1 -1 $-1 $616 $930 $618 $804 forward $607 $-1 #
+-789 coedge $-1 -1 -1 $-1 $931 $609 $930 $932 reversed $430 $-1 #
+-790 coedge $-1 -1 -1 $-1 $609 $931 $610 $794 forward $430 $-1 #
+-791 coedge $-1 -1 -1 $-1 $612 $618 $609 $792 reversed $619 $-1 #
+-792 edge $-1 -1 -1 $-1 $795 -0.050000000000000003 $933 -0 $609 $934 forward @7 unknown F #
+-793 coedge $-1 -1 -1 $-1 $611 $610 $935 $936 reversed $290 $-1 #
+-794 edge $-1 -1 -1 $-1 $937 -0 $795 0.050000000000000003 $790 $938 forward @7 unknown F #
+-795 vertex $-1 -1 -1 $-1 $613 $939 #
+-796 straight-curve $-1 -1 -1 $-1 -350 24.999999999999989 -25 -1000 -0 -0 I I #
+-797 coedge $-1 -1 -1 $-1 $935 $940 $614 $798 forward $786 $-1 #
+-798 edge $-1 -1 -1 $-1 $802 0 $799 0.050000000000000003 $797 $941 forward @7 unknown F #
+-799 vertex $-1 -1 -1 $-1 $936 $942 #
+-800 straight-curve $-1 -1 -1 $-1 -250 24.999999999999989 25 -0 -0 -1000 I I #
+-801 coedge $-1 -1 -1 $-1 $930 $616 $940 $943 reversed $607 $-1 #
+-802 vertex $-1 -1 -1 $-1 $943 $944 #
+-803 straight-curve $-1 -1 -1 $-1 -250 -25.000000000000011 25 -0 -0 -1000 I I #
+-804 edge $-1 -1 -1 $-1 $933 0 $620 0.10000000000000001 $788 $945 forward @7 unknown F #
+-805 point $-1 -1 -1 $-1 -250 -25.000000000000011 -25 #
+-806 point $-1 -1 -1 $-1 -250 24.999999999999989 -25 #
+-807 vertex $-1 -1 -1 $-1 $625 $946 #
+-808 ellipse-curve $-1 -1 -1 $-1 20 0 0 -1 -0 -0 0 0 15.5 1 I I #
+-809 point $-1 -1 -1 $-1 40 0 15.5 #
+-810 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $629 copy keep_kept ignore copy @16 Boss-Extrude3[1] 0 #
+-811 face $947 -1 -1 $-1 $-1 $642 $94 $-1 $948 forward single F F #
+-812 loop $-1 -1 -1 $-1 $-1 $823 $629 F unknown #
+-813 plane-surface $-1 -1 -1 $-1 0 50 0 0 -1 0 0 0 -1000 forward_v I I I I #
+-814 coedge $-1 -1 -1 $-1 $639 $949 $641 $830 forward $630 $-1 #
+-815 coedge $-1 -1 -1 $-1 $950 $632 $949 $951 reversed $445 $-1 #
+-816 coedge $-1 -1 -1 $-1 $632 $950 $633 $820 forward $445 $-1 #
+-817 coedge $-1 -1 -1 $-1 $635 $641 $632 $818 reversed $642 $-1 #
+-818 edge $-1 -1 -1 $-1 $821 -0.25 $952 -0 $632 $953 forward @7 unknown F #
+-819 coedge $-1 -1 -1 $-1 $634 $633 $954 $955 reversed $300 $-1 #
+-820 edge $-1 -1 -1 $-1 $956 -0 $821 0.10000000000000001 $816 $957 forward @7 unknown F #
+-821 vertex $-1 -1 -1 $-1 $636 $958 #
+-822 straight-curve $-1 -1 -1 $-1 10.000000000000014 -50 -25 1000 0 0 I I #
+-823 coedge $-1 -1 -1 $-1 $954 $959 $637 $824 forward $812 $-1 #
+-824 edge $-1 -1 -1 $-1 $828 0 $825 0.25 $823 $960 forward @7 unknown F #
+-825 vertex $-1 -1 -1 $-1 $955 $961 #
+-826 straight-curve $-1 -1 -1 $-1 -9.9999999999999858 50 -25 -0 -1000 -0 I I #
+-827 coedge $-1 -1 -1 $-1 $949 $639 $959 $962 reversed $630 $-1 #
+-828 vertex $-1 -1 -1 $-1 $962 $963 #
+-829 straight-curve $-1 -1 -1 $-1 -10.000000000000018 50 -275 -0 -1000 -0 I I #
+-830 edge $-1 -1 -1 $-1 $952 0 $643 0.02 $814 $964 forward @7 unknown F #
+-831 point $-1 -1 -1 $-1 -10.000000000000018 -50 -275 #
+-832 point $-1 -1 -1 $-1 -9.9999999999999858 -50 -25 #
+-833 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $647 copy keep_kept ignore copy @16 Boss-Extrude3[2] 0 #
+-834 face $965 -1 -1 $-1 $-1 $660 $96 $-1 $966 reversed single F F #
+-835 loop $-1 -1 -1 $-1 $-1 $846 $647 F unknown #
+-836 plane-surface $-1 -1 -1 $-1 0 50 0 0 1 0 0 0 1000 forward_v I I I I #
+-837 coedge $-1 -1 -1 $-1 $657 $967 $659 $853 forward $648 $-1 #
+-838 coedge $-1 -1 -1 $-1 $968 $650 $967 $969 reversed $454 $-1 #
+-839 coedge $-1 -1 -1 $-1 $650 $968 $651 $843 forward $454 $-1 #
+-840 coedge $-1 -1 -1 $-1 $653 $659 $650 $841 reversed $660 $-1 #
+-841 edge $-1 -1 -1 $-1 $844 -0.25 $970 0 $650 $971 forward @7 unknown F #
+-842 coedge $-1 -1 -1 $-1 $652 $651 $972 $973 reversed $305 $-1 #
+-843 edge $-1 -1 -1 $-1 $974 -0 $844 0.10000000000000001 $839 $975 forward @7 unknown F #
+-844 vertex $-1 -1 -1 $-1 $654 $976 #
+-845 straight-curve $-1 -1 -1 $-1 10.000000000000007 -50 25 -1000 0 0 I I #
+-846 coedge $-1 -1 -1 $-1 $972 $977 $655 $847 forward $835 $-1 #
+-847 edge $-1 -1 -1 $-1 $851 0 $848 0.25 $846 $978 forward @7 unknown F #
+-848 vertex $-1 -1 -1 $-1 $973 $979 #
+-849 straight-curve $-1 -1 -1 $-1 10.000000000000007 50 25 -0 -1000 -0 I I #
+-850 coedge $-1 -1 -1 $-1 $967 $657 $977 $980 reversed $648 $-1 #
+-851 vertex $-1 -1 -1 $-1 $980 $981 #
+-852 straight-curve $-1 -1 -1 $-1 9.9999999999999769 50 275 -0 -1000 -0 I I #
+-853 edge $-1 -1 -1 $-1 $970 -0.019999999999999987 $661 0 $837 $982 forward @7 unknown F #
+-854 point $-1 -1 -1 $-1 9.9999999999999769 -50 275 #
+-855 point $-1 -1 -1 $-1 10.000000000000007 -50 25 #
+-856 vertex $-1 -1 -1 $-1 $666 $983 #
+-857 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 0 35 -1 -0 -0 0 0 15.5 1 I I #
+-858 point $-1 -1 -1 $-1 40.000000000000007 0 50.5 #
+-859 vertex $-1 -1 -1 $-1 $671 $984 #
+-860 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 0 70 -1 -0 -0 0 0 15.5 1 I I #
+-861 point $-1 -1 -1 $-1 40.000000000000007 0 85.5 #
+-862 vertex $-1 -1 -1 $-1 $676 $985 #
+-863 ellipse-curve $-1 -1 -1 $-1 20 35 0 -1 -0 -0 0 0 15.5 1 I I #
+-864 point $-1 -1 -1 $-1 40 35 15.5 #
+-865 vertex $-1 -1 -1 $-1 $681 $986 #
+-866 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 35 35 -1 -0 -0 0 0 15.5 1 I I #
+-867 point $-1 -1 -1 $-1 40.000000000000007 35 50.5 #
+-868 vertex $-1 -1 -1 $-1 $686 $987 #
+-869 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 35 70 -1 -0 -0 0 0 15.5 1 I I #
+-870 point $-1 -1 -1 $-1 40.000000000000007 35 85.5 #
+-871 vertex $-1 -1 -1 $-1 $691 $988 #
+-872 ellipse-curve $-1 -1 -1 $-1 20 70 0 -1 -0 -0 0 0 15.5 1 I I #
+-873 point $-1 -1 -1 $-1 40 70 15.5 #
+-874 vertex $-1 -1 -1 $-1 $696 $989 #
+-875 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 70 35 -1 -0 -0 0 0 15.5 1 I I #
+-876 point $-1 -1 -1 $-1 40.000000000000007 70 50.5 #
+-877 vertex $-1 -1 -1 $-1 $701 $990 #
+-878 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 70 70 -1 -0 -0 0 0 15.5 1 I I #
+-879 point $-1 -1 -1 $-1 40.000000000000007 70 85.5 #
+-880 vertex $-1 -1 -1 $-1 $706 $991 #
+-881 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 70 -35 1 0 0 0 0 -15.5 1 I I #
+-882 point $-1 -1 -1 $-1 40.000000000000007 70 -50.5 #
+-883 vertex $-1 -1 -1 $-1 $711 $992 #
+-884 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 35 -35 1 0 0 0 0 -15.5 1 I I #
+-885 point $-1 -1 -1 $-1 40.000000000000007 35 -50.5 #
+-886 vertex $-1 -1 -1 $-1 $716 $993 #
+-887 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 0 -35 1 0 0 0 0 -15.5 1 I I #
+-888 point $-1 -1 -1 $-1 40.000000000000007 0 -50.5 #
+-889 vertex $-1 -1 -1 $-1 $721 $994 #
+-890 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 0 -70 1 0 0 0 0 -15.5 1 I I #
+-891 point $-1 -1 -1 $-1 40.000000000000007 0 -85.5 #
+-892 vertex $-1 -1 -1 $-1 $726 $995 #
+-893 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 35 -70 1 0 0 0 0 -15.5 1 I I #
+-894 point $-1 -1 -1 $-1 40.000000000000007 35 -85.5 #
+-895 vertex $-1 -1 -1 $-1 $731 $996 #
+-896 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 70 -70 1 0 0 0 0 -15.5 1 I I #
+-897 point $-1 -1 -1 $-1 40.000000000000007 70 -85.5 #
+-898 vertex $-1 -1 -1 $-1 $736 $997 #
+-899 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 -70 -70 -1 -0 -0 0 0 -15.5 1 I I #
+-900 point $-1 -1 -1 $-1 40.000000000000007 -70 -85.5 #
+-901 vertex $-1 -1 -1 $-1 $741 $998 #
+-902 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 -70 -35 -1 -0 -0 0 0 -15.5 1 I I #
+-903 point $-1 -1 -1 $-1 40.000000000000007 -70 -50.5 #
+-904 vertex $-1 -1 -1 $-1 $746 $999 #
+-905 ellipse-curve $-1 -1 -1 $-1 20 -70 0 1 0 0 0 0 15.5 1 I I #
+-906 point $-1 -1 -1 $-1 40 -70 15.5 #
+-907 vertex $-1 -1 -1 $-1 $751 $1000 #
+-908 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 -70 35 1 0 0 0 0 15.5 1 I I #
+-909 point $-1 -1 -1 $-1 40.000000000000007 -70 50.5 #
+-910 vertex $-1 -1 -1 $-1 $756 $1001 #
+-911 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 -70 70 1 0 0 0 0 15.5 1 I I #
+-912 point $-1 -1 -1 $-1 40.000000000000007 -70 85.5 #
+-913 vertex $-1 -1 -1 $-1 $761 $1002 #
+-914 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 -35 70 1 0 0 0 0 15.5 1 I I #
+-915 point $-1 -1 -1 $-1 40.000000000000007 -35 85.5 #
+-916 vertex $-1 -1 -1 $-1 $766 $1003 #
+-917 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 -35 35 1 0 0 0 0 15.5 1 I I #
+-918 point $-1 -1 -1 $-1 40.000000000000007 -35 50.5 #
+-919 vertex $-1 -1 -1 $-1 $771 $1004 #
+-920 ellipse-curve $-1 -1 -1 $-1 20 -35 0 1 0 0 0 0 15.5 1 I I #
+-921 point $-1 -1 -1 $-1 40 -35 15.5 #
+-922 vertex $-1 -1 -1 $-1 $776 $1005 #
+-923 ellipse-curve $-1 -1 -1 $-1 20.000000000000004 -35 -35 -1 -0 -0 0 0 -15.5 1 I I #
+-924 point $-1 -1 -1 $-1 40.000000000000007 -35 -50.5 #
+-925 vertex $-1 -1 -1 $-1 $781 $1006 #
+-926 ellipse-curve $-1 -1 -1 $-1 20.000000000000007 -35 -70 -1 -0 -0 0 0 -15.5 1 I I #
+-927 point $-1 -1 -1 $-1 40.000000000000007 -35 -85.5 #
+-928 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $785 copy keep_kept ignore copy @13 Boss-Extrude2 0 #
+-929 plane-surface $-1 -1 -1 $-1 0 0 -25 0 0 -1 -1000 0 0 forward_v I I I I #
+-930 coedge $-1 -1 -1 $-1 $788 $801 $789 $932 forward $607 $-1 #
+-931 coedge $-1 -1 -1 $-1 $790 $789 $1007 $1008 reversed $430 $-1 #
+-932 edge $-1 -1 -1 $-1 $1009 -0 $933 0.050000000000000003 $930 $1010 forward @7 unknown F #
+-933 vertex $-1 -1 -1 $-1 $792 $1011 #
+-934 straight-curve $-1 -1 -1 $-1 -350 -25.000000000000011 -25 -0 -1000 -0 I I #
+-935 coedge $-1 -1 -1 $-1 $1007 $797 $793 $936 forward $786 $-1 #
+-936 edge $-1 -1 -1 $-1 $799 -0.10000000000000001 $937 -0 $935 $1012 forward @7 unknown F #
+-937 vertex $-1 -1 -1 $-1 $936 $1013 #
+-938 straight-curve $-1 -1 -1 $-1 -350 24.999999999999989 25 -0 -0 -1000 I I #
+-939 point $-1 -1 -1 $-1 -350 24.999999999999989 -25 #
+-940 coedge $-1 -1 -1 $-1 $797 $1007 $801 $943 forward $786 $-1 #
+-941 straight-curve $-1 -1 -1 $-1 -250 -25.000000000000011 25 0 1000 0 I I #
+-942 point $-1 -1 -1 $-1 -250 24.999999999999989 25 #
+-943 edge $-1 -1 -1 $-1 $1009 0 $802 0.10000000000000001 $940 $1014 forward @7 unknown F #
+-944 point $-1 -1 -1 $-1 -250 -25.000000000000011 25 #
+-945 straight-curve $-1 -1 -1 $-1 -350 -25.000000000000011 -25 1000 0 0 I I #
+-946 point $-1 -1 -1 $-1 20 0 15.5 #
+-947 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $811 copy keep_kept ignore copy @16 Boss-Extrude3[1] 0 #
+-948 plane-surface $-1 -1 -1 $-1 0 -50 0 0 -1 0 0 0 -1000 forward_v I I I I #
+-949 coedge $-1 -1 -1 $-1 $814 $827 $815 $951 forward $630 $-1 #
+-950 coedge $-1 -1 -1 $-1 $816 $815 $1015 $1016 reversed $445 $-1 #
+-951 edge $-1 -1 -1 $-1 $1017 -0 $952 0.10000000000000001 $949 $1018 forward @7 unknown F #
+-952 vertex $-1 -1 -1 $-1 $818 $1019 #
+-953 straight-curve $-1 -1 -1 $-1 9.999999999999984 -50 -275 -1.1796119636642288e-013 -0 -1000 I I #
+-954 coedge $-1 -1 -1 $-1 $1015 $823 $819 $955 forward $812 $-1 #
+-955 edge $-1 -1 -1 $-1 $825 -0.02 $956 0 $954 $1020 forward @7 unknown F #
+-956 vertex $-1 -1 -1 $-1 $955 $1021 #
+-957 straight-curve $-1 -1 -1 $-1 10.000000000000014 50 -25 -0 -1000 -0 I I #
+-958 point $-1 -1 -1 $-1 10.000000000000014 -50 -25 #
+-959 coedge $-1 -1 -1 $-1 $823 $1015 $827 $962 forward $812 $-1 #
+-960 straight-curve $-1 -1 -1 $-1 -10.000000000000018 50 -275 1.2490009027033011e-013 0 1000 I I #
+-961 point $-1 -1 -1 $-1 -9.9999999999999858 50 -25 #
+-962 edge $-1 -1 -1 $-1 $1017 0 $828 0.02 $959 $1022 forward @7 unknown F #
+-963 point $-1 -1 -1 $-1 -10.000000000000018 50 -275 #
+-964 straight-curve $-1 -1 -1 $-1 9.999999999999984 -50 -275 -1000 0 0 I I #
+-965 integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $-1 $834 copy keep_kept ignore copy @16 Boss-Extrude3[2] 0 #
+-966 plane-surface $-1 -1 -1 $-1 0 -50 0 0 1 0 0 0 1000 forward_v I I I I #
+-967 coedge $-1 -1 -1 $-1 $837 $850 $838 $969 forward $648 $-1 #
+-968 coedge $-1 -1 -1 $-1 $839 $838 $1023 $1024 reversed $454 $-1 #
+-969 edge $-1 -1 -1 $-1 $1025 -0 $970 0.10000000000000001 $967 $1026 forward @7 unknown F #
+-970 vertex $-1 -1 -1 $-1 $841 $1027 #
+-971 straight-curve $-1 -1 -1 $-1 -10.000000000000011 -50 275 -1.2490009027033011e-013 0 1000 I I #
+-972 coedge $-1 -1 -1 $-1 $1023 $846 $842 $973 forward $835 $-1 #
+-973 edge $-1 -1 -1 $-1 $848 0 $974 0.019999999999999987 $972 $1028 forward @7 unknown F #
+-974 vertex $-1 -1 -1 $-1 $973 $1029 #
+-975 straight-curve $-1 -1 -1 $-1 -9.9999999999999787 50 25 -0 -1000 -0 I I #
+-976 point $-1 -1 -1 $-1 -9.9999999999999787 -50 25 #
+-977 coedge $-1 -1 -1 $-1 $846 $1023 $850 $980 forward $835 $-1 #
+-978 straight-curve $-1 -1 -1 $-1 9.9999999999999769 50 275 1.1796119636642288e-013 0 -1000 I I #
+-979 point $-1 -1 -1 $-1 10.000000000000007 50 25 #
+-980 edge $-1 -1 -1 $-1 $1025 -0.019999999999999987 $851 0 $977 $1030 forward @7 unknown F #
+-981 point $-1 -1 -1 $-1 9.9999999999999769 50 275 #
+-982 straight-curve $-1 -1 -1 $-1 9.9999999999999769 -50 275 1000 0 0 I I #
+-983 point $-1 -1 -1 $-1 20.000000000000004 0 50.5 #
+-984 point $-1 -1 -1 $-1 20.000000000000007 0 85.5 #
+-985 point $-1 -1 -1 $-1 20 35 15.5 #
+-986 point $-1 -1 -1 $-1 20.000000000000004 35 50.5 #
+-987 point $-1 -1 -1 $-1 20.000000000000007 35 85.5 #
+-988 point $-1 -1 -1 $-1 20 70 15.5 #
+-989 point $-1 -1 -1 $-1 20.000000000000004 70 50.5 #
+-990 point $-1 -1 -1 $-1 20.000000000000007 70 85.5 #
+-991 point $-1 -1 -1 $-1 20.000000000000004 70 -50.5 #
+-992 point $-1 -1 -1 $-1 20.000000000000004 35 -50.5 #
+-993 point $-1 -1 -1 $-1 20.000000000000004 0 -50.5 #
+-994 point $-1 -1 -1 $-1 20.000000000000007 0 -85.5 #
+-995 point $-1 -1 -1 $-1 20.000000000000007 35 -85.5 #
+-996 point $-1 -1 -1 $-1 20.000000000000007 70 -85.5 #
+-997 point $-1 -1 -1 $-1 20.000000000000007 -70 -85.5 #
+-998 point $-1 -1 -1 $-1 20.000000000000004 -70 -50.5 #
+-999 point $-1 -1 -1 $-1 20 -70 15.5 #
+-1000 point $-1 -1 -1 $-1 20.000000000000004 -70 50.5 #
+-1001 point $-1 -1 -1 $-1 20.000000000000007 -70 85.5 #
+-1002 point $-1 -1 -1 $-1 20.000000000000007 -35 85.5 #
+-1003 point $-1 -1 -1 $-1 20.000000000000004 -35 50.5 #
+-1004 point $-1 -1 -1 $-1 20 -35 15.5 #
+-1005 point $-1 -1 -1 $-1 20.000000000000004 -35 -50.5 #
+-1006 point $-1 -1 -1 $-1 20.000000000000007 -35 -85.5 #
+-1007 coedge $-1 -1 -1 $-1 $940 $935 $931 $1008 forward $786 $-1 #
+-1008 edge $-1 -1 -1 $-1 $937 -0.050000000000000003 $1009 -0 $1007 $1031 forward @7 unknown F #
+-1009 vertex $-1 -1 -1 $-1 $1008 $1032 #
+-1010 straight-curve $-1 -1 -1 $-1 -350 -25.000000000000011 25 -0 -0 -1000 I I #
+-1011 point $-1 -1 -1 $-1 -350 -25.000000000000011 -25 #
+-1012 straight-curve $-1 -1 -1 $-1 -350 24.999999999999989 25 -1000 -0 -0 I I #
+-1013 point $-1 -1 -1 $-1 -350 24.999999999999989 25 #
+-1014 straight-curve $-1 -1 -1 $-1 -350 -25.000000000000011 25 1000 0 0 I I #
+-1015 coedge $-1 -1 -1 $-1 $959 $954 $950 $1016 forward $812 $-1 #
+-1016 edge $-1 -1 -1 $-1 $956 -0.25 $1017 -0 $1015 $1033 forward @7 unknown F #
+-1017 vertex $-1 -1 -1 $-1 $1016 $1034 #
+-1018 straight-curve $-1 -1 -1 $-1 9.999999999999984 50 -275 -0 -1000 -0 I I #
+-1019 point $-1 -1 -1 $-1 9.999999999999984 -50 -275 #
+-1020 straight-curve $-1 -1 -1 $-1 10.000000000000014 50 -25 1000 0 0 I I #
+-1021 point $-1 -1 -1 $-1 10.000000000000014 50 -25 #
+-1022 straight-curve $-1 -1 -1 $-1 9.999999999999984 50 -275 -1000 0 0 I I #
+-1023 coedge $-1 -1 -1 $-1 $977 $972 $968 $1024 forward $835 $-1 #
+-1024 edge $-1 -1 -1 $-1 $974 -0.25 $1025 0 $1023 $1035 forward @7 unknown F #
+-1025 vertex $-1 -1 -1 $-1 $1024 $1036 #
+-1026 straight-curve $-1 -1 -1 $-1 -10.000000000000011 50 275 -0 -1000 -0 I I #
+-1027 point $-1 -1 -1 $-1 -10.000000000000011 -50 275 #
+-1028 straight-curve $-1 -1 -1 $-1 10.000000000000007 50 25 -1000 0 0 I I #
+-1029 point $-1 -1 -1 $-1 -9.9999999999999787 50 25 #
+-1030 straight-curve $-1 -1 -1 $-1 9.9999999999999769 50 275 1000 0 0 I I #
+-1031 straight-curve $-1 -1 -1 $-1 -350 -25.000000000000011 25 -0 -1000 -0 I I #
+-1032 point $-1 -1 -1 $-1 -350 -25.000000000000011 25 #
+-1033 straight-curve $-1 -1 -1 $-1 9.999999999999984 50 -275 -1.1796119636642288e-013 -0 -1000 I I #
+-1034 point $-1 -1 -1 $-1 9.999999999999984 50 -275 #
+-1035 straight-curve $-1 -1 -1 $-1 -10.000000000000011 50 275 -1.2490009027033011e-013 0 1000 I I #
+-1036 point $-1 -1 -1 $-1 -10.000000000000011 50 275 #
+End-of-ACIS-data 

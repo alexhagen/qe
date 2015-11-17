@@ -1,0 +1,4206 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+\def\thesection{\alph{section}}
+\end_preamble
+\use_default_options true
+\master QE 2013 Journal Article Review.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 0.5in
+\rightmargin 0.5in
+\bottommargin 1in
+\headheight 0.2in
+\headsep 0.2in
+\columnsep 0.1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Summary of the Article
+\begin_inset CommandInset label
+LatexCommand label
+name "part:Summary-of-the-Article"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This summary is based on work by Tsahi Gozani 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Motivation
+\end_layout
+
+\begin_layout Standard
+Terrorist activity has made the detection and tracking of nuclear material
+ a matter of world security.
+ Current techniques have been employed in many of the world's busiest ports.
+ These techniques are passive and leverage the spectra of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ rays emitted from SNMs.
+ Several direct neutron detection methods have been employed, using 
+\begin_inset Formula $^{3}He$
+\end_inset
+
+ tubes, but have been limited because of the increasing cost of the raw
+ materials involved.
+ The current passive techniques are easily saturated (for example with medical
+ waste) and do not provide 
+\begin_inset Quotes eld
+\end_inset
+
+unequivocal and hard-to-defeat detection
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 599"
+key "Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Methods that leverage the fission spectrum, nuclear structure, and the high
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+ number of SNMs have been created.
+ These methods are active and depend on the activation of the atoms in question.
+ Gozani has defined the methods using the fission spectrum as conventional,
+ and other methods as non-conventional.
+ Gozani's paper 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a"
+
+\end_inset
+
+ and it's companion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009"
+
+\end_inset
+
+ serve to describe and summarize the possibilities for interdiction of special
+ nuclear material.
+\end_layout
+
+\begin_layout Standard
+Gozani's companion paper, 
+\begin_inset Quotes eld
+\end_inset
+
+Fission Signatures for Nuclear Material Detection
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009"
+
+\end_inset
+
+ describes the techniques for determining the presence of fission.
+ These techniques are centered around four specific signatures, namely:
+\end_layout
+
+\begin_layout Itemize
+Prompt Fission Release
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Neutrons
+\end_layout
+
+\begin_layout Itemize
+Gamma Rays
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Delayed Fission Release
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Neutrons
+\end_layout
+
+\begin_layout Itemize
+Gamma Rays
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The difficulty in these techniques come in the detection of these signatures
+ despite varying factors.
+ These signatures must be detected while saturated in source 
+\begin_inset Formula $n$
+\end_inset
+
+s or 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s, and for delayed signatures, the intensity of response is very small.
+ The difficulty in ameliorating these disadvantages has prompted the inspection
+ into other techniques, name those deemed by Gozani as non-conventional
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009,Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Methods
+\end_layout
+
+\begin_layout Subsection
+Nuclear Levels as Signatures
+\end_layout
+
+\begin_layout Standard
+The nuclear structure of SNMs is a vital and important characteristic for
+ detection of these materials.
+ These materials all exhibit a large 
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+ cross section, where upon incident neutrons, the nucleus will be excited
+ and emit a 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ These 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s can be detected, and as 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ detection and spectrometry is a well developed field, analysis can be done
+ on these signatures.
+ This is amplified in fissile materials in two ways, as the fission process
+ multiplies source neutrons and emits 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s.
+ The following techniques leverage the nuclear levels and 
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+ cross section of SNMs to detect their presence.
+\end_layout
+
+\begin_layout Subsubsection
+Inelastic Scattering and Fast Fission Neutron Induced Reactions
+\end_layout
+
+\begin_layout Standard
+Pulsed Fast Neutron Analysis (PFNA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PFNA"
+description "- Pulsed Fast Neutron Analysis"
+
+\end_inset
+
+) was conceived by Gozani, Sawa, and Ryge in 1987 and has since been employed
+ in many different capacities.
+ The technique consists of a several step process.
+ An incident beam of accelerated neutrons is collimated at the material
+ in question.
+ As an intermediate step, this beam of neutrons is chopped and bunch.
+ Thus, a pulse beam of neutrons hits the material in a specific location.
+ Upon interaction with the material, inelastic scattering causes a 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ release from the material.
+ This 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ release is then detected by arrays of detectors (generally 
+\begin_inset Formula $NaI$
+\end_inset
+
+).
+ By analysis of the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ energy and temporal profile, a spatial and temporal map of the materials
+ in question can be deconstructed from this process.
+ A diagram of this process is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PFNA-Process-Diagram"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a,Stevenson2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are physical limitations to the PFNA process.
+ In general, the process is limited in that it
+\end_layout
+
+\begin_layout Itemize
+May only detect materials with large 
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+ cross section.
+\end_layout
+
+\begin_layout Itemize
+May be corrupted by scattering of 
+\begin_inset Formula $n$
+\end_inset
+
+ in materials - causing increase of voxel size.
+\end_layout
+
+\begin_layout Itemize
+May be eliminated by full attenuation of 
+\begin_inset Formula $n$
+\end_inset
+
+ beam in materials.
+\end_layout
+
+\begin_layout Itemize
+Is adversely effected by finite time of flight of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ which causes disturbance of voxels.
+\end_layout
+
+\begin_layout Standard
+Although these limitations are present, they have not deteriorated the impact
+ of PFNA: it is still applicable and practical for many material sensing
+ applications 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani1995"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PFNA Process Diagram.svg
+	width 7.2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+PFNA Process Diagram 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani1995,Gozani2009a,Stevenson2006"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PFNA-Process-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The practicality of PFNA comes from the coincidence of distinctive signatures
+ with material that is dangerous to work with.
+ Generally, each material will emit either quantized peaks of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s or a continuous spectra of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ energies.
+ The original use for PFNA was for the detection of explosives.
+ This application benefited from the distinctive lines in the spectra of
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ release from nitrogen (which is present in large quantities in all conventional
+ explosives).
+ Happily, though, there is an even more distinctive spectra available from
+ SNM.
+ Because of neutron multiplication within the material, an increased 
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+ cross section, and the emission of fission 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, an amplified and distinctive fission spectrum is detection when PFNA is
+ used on SNM.
+ In this way, PFNA easily transitions from use in detecting conventional
+ explosives to SNM and is a viable technique for this application 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sawa1991,Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+X-ray Based Gamma Nuclear Resonance Fluorescence (NRF)
+\end_layout
+
+\begin_layout Standard
+Besides having available 
+\begin_inset Formula $(n,\gamma)$
+\end_inset
+
+ cross sections, many SNMs and materials of interest also have a large NRF
+ cross section.
+ NRF is the process of nuclear excitation by incident 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s, and emission of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s by decay 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berttozi2007"
+
+\end_inset
+
+.
+ This process will show very high amplitude peaks for SNM materials because
+ the cross sections of these materials are in the several hundreds of barns.
+ This process is described in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NRF-Process-Diagram"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The NRF technique has several large drawbacks.
+ The process is a very high-Q system (the 
+\begin_inset Formula $FWHM$
+\end_inset
+
+ of each peak is much smaller than the amplitude).
+ Thus, an extremely high resolution detector is needed so as not to miss
+ each characteristic peak.
+ Usually Ge detectors are used.
+ The process also has no inherent spatial resolution, so in order to create
+ voxels, many tiled detectors must be used.
+ Finally, the only practice source of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s for this process is a very conversion efficiency Bremsstrahlung source,
+ which must be driven at very high power 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename NRF Process Diagram.svg
+	width 7.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+NRF Process Diagram 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berttozi2007,Gozani2009a"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NRF-Process-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+High Z Detection
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $Z$
+\end_inset
+
+ number of a material has a direct correlation to the attenuation coefficient
+ of the material.
+ The attenuation coefficient logarithmically affects the reduction in intensity
+ of a 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ or 
+\begin_inset Formula $n$
+\end_inset
+
+ beam through the material, as given by the following correlation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I=I_{0}\exp\left(-(\frac{\mu}{\rho}\rho x)\right)\label{eq:Attenuation-Correlation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ is the incident intensity of the beam, 
+\begin_inset Formula $\frac{\mu}{\rho}$
+\end_inset
+
+ is the mass attenuation coefficient of the material, 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density of the material, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is the distance of beam travel through the material.
+ The concept of high Z detection has been used for many years, in X-Ray
+ interrogation, to investigate luggage and cargo.
+ Several new techniques using this principle could extend it's usefulness
+ to SNMs.
+\end_layout
+
+\begin_layout Subsubsection
+Dual Energy X-Ray
+\end_layout
+
+\begin_layout Standard
+The simplicity of the Dual Energy X-Ray technique is its main attractor.
+ In this technique, two separate beams of X-Rays are focused on the material,
+ one with higher energy than the other (generally used beams are 
+\begin_inset Formula $6\, MV$
+\end_inset
+
+ and 
+\begin_inset Formula $9\, MV$
+\end_inset
+
+).
+ Because of the higher attenuation coefficient at higher energies in high
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+ materials, the intensity ratio of these beams can tell some information
+ about the makeup of the material.
+ This creates a mathematical relationship of the material and can be used
+ to interrogate any material with significant differences in 
+\begin_inset Formula $Z$
+\end_inset
+
+ number of materials.
+ This process is depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dual-Energy-X-Ray-Process-Diagram"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The Dual Energy X-Ray technique has many of the same physical limitations
+ as the NRF technique.
+ The sensitivity of the detector (this time resolution in intensity space,
+ not in energy space) is required to be high.
+ Also, the detector provides only one beam and thus a one dimensional map
+ of the material.
+ A sophisticated mobile system, or an array of systems must be used to create
+ voxels for this process.
+ This limitation has been somewhat ameliorated by the creation of digital
+ fluorescent screens (as is used in medical X-Ray diagnosis) {cite!}.
+ Finally, the integral equation created by the ratio of beam intensities
+ through unknown material may only be solved by assuming binary systems
+ (only high 
+\begin_inset Formula $Z$
+\end_inset
+
+ or only low 
+\begin_inset Formula $Z$
+\end_inset
+
+) as well as other geometric assumptions.
+ This technique is only applicable in specific instances 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chen2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Dual Energy XRay Process Diagram.svg
+	width 7.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dual Energy X-Ray Process Diagram 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a,Chen2007"
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dual-Energy-X-Ray-Process-Diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+High Energy Bremsstrahlung Backscattering
+\end_layout
+
+\begin_layout Standard
+Electrons lose energy in material through the Bremsstrahlung emission, especiall
+y in the backscatter regions.
+ This effect is more common and prominent with high energy x-rays in high
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+ materials.
+ By passing electron beams through material and comparing the Bremsstrahlung
+ spectra detected, distinguishing characteristics can be determined for
+ certain high 
+\begin_inset Formula $Z$
+\end_inset
+
+ materials, most notably tungsten.
+ The physical setup of this process is very similar to Dual Energy X-Ray
+ Process and thus a new diagram has not been created.
+ The simple difference is that there are detectors placed in backscatter
+ regions that compare the Bremsstrahlung spectrum.
+\end_layout
+
+\begin_layout Standard
+Limitations of this system are very similar to Dual Energy X-Ray interrogation.
+ In this case, the collimation of the beam has a direct influence on the
+ voxel size, but also has an indirect influence on the number of X-Ray detectors
+ needed.
+ This causes an optimization problem for the amount of collimation.
+ The intensity resolution requirement is very large, as the estimated amount
+ of Bremsstrahlung is 
+\begin_inset Formula $10^{-12}\,\frac{\gamma}{cm^{2}\cdot e^{-}}$
+\end_inset
+
+.
+ This process does show distinguishing characteristics, but has few practical
+ uses at it's current level of technological sophistication 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Dual Species Radiography
+\end_layout
+
+\begin_layout Standard
+Supplementation of any X-Ray interrogation technique with a fast neutron
+ analysis technique generates exponentially more information.
+ This is because of the fundamental interactions between neutrons and X-Rays
+ in high 
+\begin_inset Formula $Z$
+\end_inset
+
+ materials.
+ The discrimination of high 
+\begin_inset Formula $Z$
+\end_inset
+
+ material becomes much higher resolution, and certain materials that would
+ shield will not effect the others, creating a much more robust detection
+ technique.
+ This has been shown as a successful and promising technique since 1999
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rynes1999,Gozani2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Standard
+Gozani's paper lays out the motivation for SNM detection techniques, and
+ discusses the history of techniques.
+ He makes a defining split between conventional methods and non-conventional
+ methods, and then describes the methods he considers non-conventional.
+ His paper discusses two separate types of non-conventional methods, by
+ detecting the nuclear levels of SNMs, and by detecting the high 
+\begin_inset Formula $Z$
+\end_inset
+
+ of SNMs.
+ The methods that detect the nuclear levels are that of PFNA and NRF, of
+ which he describes PFNA in most detail (as he is one of the founders of
+ this technique).
+ Finally, he discusses the high 
+\begin_inset Formula $Z$
+\end_inset
+
+ techniques, which all leverage the attenuation of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s inside of SNM.
+ He lays out a table describing the properties of each technique in a table.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Critique of the Article
+\end_layout
+
+\begin_layout Section
+Motivation
+\end_layout
+
+\begin_layout Standard
+Motivation for work on SNM detection is well placed and exceedingly important.
+ The prevention of nuclear terror has been listed as one of the 14 grand
+ challenges for engineers in the next century 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Engineering2012"
+
+\end_inset
+
+.
+ The prevention of nuclear terror has several different fronts: to intercept
+ weapons already constructed, to disable groups capable of creating weapons,
+ and to safeguard materials needed to create these weapons.
+ The detection of SNMs is paramount in both the first and third of those.
+ By detecting SNMs, it will be possible to quarantine any suspicious packages
+ that may be nuclear terror weapons incoming in the nations ports, and also
+ to block shipment of any material possible to be enriched to SNM as it
+ leaves the country.
+ The motivation Gozani uses to write this paper is noble and has significant
+ support behind it as the country and world moves forward.
+\end_layout
+
+\begin_layout Standard
+With this motivation in mind, Gozani had a choice on the direction the paper
+ should move from there.
+ The paper could be written to a very technical audience, such as other
+ Ph.D.
+ level scientists in his field (as would likely be present at the 
+\noun on
+Application of Accelerators in Research and Industry International Conference
+\noun default
+, where this paper was presented).
+ This type of paper, which will be referred to as a high level technical
+ paper in this critique, would include theory behind each of the detection
+ methods, the experimental setups used to determine the efficiency and results
+ presented, and future work that may be done.
+ A high level technical paper should provide enough information for a well
+ equipped laboratory to replicate the findings.
+ Another type of paper, a low level industrial paper, would be focused towards
+ an audience of venture capitalists and portal administrators.
+ This type of paper would provide viability information and implementation
+ schemes to describe how the detection techniques might be practically employed.
+\end_layout
+
+\begin_layout Standard
+Gozani's paper did not meet the requirements of either of the two types
+ of papers described.
+ While he discusses lightly the theory behind the techniques, he generally
+ does not provide any experimental information, and in some cases no results.
+ It would be impossible to replicate his findings from only this paper.
+ On many of these techniques, Gozani does not even describe the type of
+ detector employed.
+ Gozani obviously chose not to write a high level technical paper, which
+ is prudent, as each of the different techniques has several papers written
+ describing the high level theory and experimental setups used for discovery
+ and optimization of that technique.
+\end_layout
+
+\begin_layout Standard
+Gozani, though, does not provide a pragmatic paper, either.
+ The final summary of Gozani's paper is a table describing the differences
+ between detection technique.
+ This table lists the basis, source, technique, reaction type, specificity,
+ and sensitivity of each technique.
+ This provide enough information for a college student doing a project on
+ the state of the art of SNM detection, but does not provide enough information
+ for industry professionals to make decisions on implementation of these
+ methods, or for research scientists to begin optimizing or utilizing any
+ method.
+\end_layout
+
+\begin_layout Standard
+Presenting to a group of professionals and researchers in applications of
+ accelerators, Gozani chose not to write an overtly technical paper.
+ He kept his paper to a brief overview of various techniques, and succinctly
+ compared these techniques.
+ While well placed in his motivation, and prudent not to be overly technical
+ in his description, Gozani lacks any important information that a research
+ professional or portal administrator might need to implement the techniques
+ described.
+ He describes the techniques very well, but the effort is wasted as solely
+ a summary paper with no added value to it.
+\end_layout
+
+\begin_layout Section
+Methods
+\end_layout
+
+\begin_layout Standard
+There are five different detection methods that Gozani discusses.
+ Each of these methods have their distinct advantages and disadvantages,
+ as spelled out by Gozani in the paper.
+ The critique of this paper should not focus on any of the techniques, as
+ the point of the paper is to summarize and not to present new techniques.
+ Gozani himself does most of this critiquing, and specific information about
+ the applicability and merits of each technique are detailed in Part 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "part:Summary-of-the-Article"
+
+\end_inset
+
+ and in references 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berttozi2007,Chen2007,Gozani2009a,Johnson2007,Rynes1999,Sawa1991,Stevenson2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Impact
+\end_layout
+
+\begin_layout Subsection
+Citations and Referencing
+\end_layout
+
+\begin_layout Standard
+As should be expected from a paper commissioned by an industrial corporation
+ (in this case, Rapiscan Laboratories, Inc.), Gozani's paper is heavily biased
+ towards the techniques developed by his company and their collaborators.
+ Each citation is from an author that has been published on a paper with
+ Gozani in the past.
+ This shows that there is not much diversification or reproduction of Gozani's
+ work, and he has had to rely only on his laboratory group to provide results.
+ This lack of diversification should raise a red flag to reviewers: those
+ that do not have external verification may be lacking major components
+ needed for reproduction, or have chosen a technique so specific that other
+ users would not benefit from using the technique.
+ While it is understandable that Gozani writes a paper on only his discoveries
+ (as that is what he has set out to do), he should diversify the citations
+ about each of the different techniques to provide a broader perspective
+ about the techniques.
+ The paper is a summary on the state of non-conventional SNM detection,
+ not on the work being done at Rapiscan Laboratories.
+\end_layout
+
+\begin_layout Standard
+Gozani also leaves out several important players currently in the SNM detection
+ field.
+ Generally, in SNM detection, new technology is developed in two fields.
+ One is the mathematical and algorithmic optimization of current methods
+ of SNM detection, which is partially spelled out in the companion paper
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009"
+
+\end_inset
+
+.
+ The second is the development of new non-conventional techniques.
+ One such technique is Tensioned Metastable Fluids Detection (TMFD 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TMFD"
+description "- Tensioned Metastable Fluids Detection"
+
+\end_inset
+
+), which leverages the 
+\begin_inset Formula $(n,n)$
+\end_inset
+
+ reaction and it's recoils to provide directional information on neutron
+ sources in a passive manner.
+ This technique is unique suited for accelerator applications, as it can
+ be phase locked against the incident accelerator source, and detect only
+ the fission neutrons.
+ TMFD is similar other non-conventional techniques in that it works on detecting
+ as directly as possible the neutrons emitted from SNMs.
+ Gozani focuses on techniques that are well removed from the direct emission
+ of the neutrons in SNMs, and thus his summary paper about active interrogation
+ is instead outdated and incomplete in its summarization.
+\end_layout
+
+\begin_layout Subsection
+Portal Monitoring and Transportation Safety Impact
+\end_layout
+
+\begin_layout Standard
+This paper in general has had very little impact on portal monitoring and
+ transportation safety.
+ In general, portals currently use 
+\begin_inset Formula $^{3}He$
+\end_inset
+
+ tube technology and spectrum analysis algorithms to determine the presence
+ of SNM in containers passing through their boundaries.
+ This is a conventional technique that is spelled out in the companion paper
+ by Gozani 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009"
+
+\end_inset
+
+.
+ The non-conventional techniques spelled out in Gozani's paper are currently
+ under development and not prepared for field use.
+ Of the techniques described, PFNA has the highest Technology Readiness
+ Level (TRL 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TRL"
+description "- Technology Readiness Level"
+
+\end_inset
+
+) and will likely be implemented in the field first.
+ This is because of it's use of less expensive 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ detectors (NaI vs.
+ Ge detectors) and the inherent information about two dimensional geometry
+ in a single system.
+ While all of these techniques require a prohibitive amount of electronics
+ back end and high cost components, the components used in PFNA are the
+ most easily accessible.
+\end_layout
+
+\begin_layout Standard
+The impact of these techniques on portal monitoring is small not only because
+ of their low TRLs, but because of the complexity of each of the systems.
+ Presented at an accelerator applications, it is only sensible that these
+ techniques are active techniques.
+ They require the targeting and excitation of the material to be detected,
+ which requires that all material passing through the portal be targeted
+ and interrogated.
+ This is temporally prohibitive in the time sensitive world of shipping,
+ as well as power and resources consumptive.
+ The price and complexity of each system is also prohibitive.
+ At minimum, each system requires one 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ detector tube, an amplifier, a high voltage supply, a preamplifier, a signal
+ discriminator, and a multichannel analyzer.
+ Many require computing resources to deconstruct the spectra, and many require
+ multiple units of above described systems to provide any resolution.
+ Finally, and most importantly, each of these techniques detects at the
+ least a secondary event.
+ Many of these detect a tertiary event of fission or nucleus excitation.
+ The detections caused will have false positives from other materials with
+ similar spectra or 
+\begin_inset Formula $Z$
+\end_inset
+
+ numbers, and thus the techniques become exceedingly time prohibitive because
+ of the amount of cargo that will need to be rechecked.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Extension of the Article
+\begin_inset CommandInset label
+LatexCommand label
+name "part:Extension-of-the-Article"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+There are several aspects of this article that should be extended upon.
+ As a summary of non-conventional techniques for SNM detection, the article
+ includes neither sufficient theory nor application details.
+ In this way, it may be useful to expand the article in one of these directions.
+ For the extension given below, application details and possible details
+ for implementation will be given.
+ This extension will serve to replace the Gozani's summaries for each technique.
+ As a final deliverable, a more comprehensive and usable table comparing
+ the methods will be developed.
+\end_layout
+
+\begin_layout Section
+Methods
+\end_layout
+
+\begin_layout Standard
+In order to provide a full implementation description of each technique,
+ the equipment used, efficiency for detection, spatial resolution achieved,
+ and any added-value benefits of each technique should be listed.
+ The techniques analyzed will be only those discussed by Gozani in his article,
+ although there are many others that could be investigated.
+ In general, literature review and a working knowledge of experimental setups
+ were used to compile the information required.
+\end_layout
+
+\begin_layout Subsection
+Equipment Involved (Bill of Materials)
+\end_layout
+
+\begin_layout Standard
+The equipment involved can be gleaned from Gozani's description of each
+ technique.
+ These techniques use a combination of different types of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ detectors, and neutron, 
+\begin_inset Formula $e^{-}$
+\end_inset
+
+, or 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ accelerators.
+ Thus, a working knowledge of these detectors and the drive-train electronics
+ must be employed to provide an accurate Bill of Materials (BOM 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BOM"
+description "- Bill of Materials"
+
+\end_inset
+
+).
+ The complexity of these systems makes the bill of materials prohibitively
+ long, so only major components will be used
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Knoll2000"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Efficiency of SNM Detection
+\end_layout
+
+\begin_layout Standard
+In order to analyze the efficiency of SNM detection, several factors must
+ be taken into account.
+ A metric which could be used to vet these is the standard of detection
+ of an 8 kg sphere of Plutonium set by the International Atomic Energy Agency
+ (IAEA 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IAEA"
+description "- International Atomic Energy Agency"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAEA2010"
+
+\end_inset
+
+.
+ This type of analysis is beyond the scope of this review and has not been
+ carried out.
+ A separate metric on which to analyze these techniques is to compare to
+ current standards.
+ Pacific Northwest National Laboratory (PNNL 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PNNL"
+description "- Pacific Northwest National Laboratory"
+
+\end_inset
+
+) has generated a standard for non-proliferation.
+ This standard depends on the ability to detect SNMs as they are transported.
+ This standard describes a detection criteria to which the techniques listed
+ by Gozani can be held.
+ The standard requires that absolute detection efficiency should be above
+ 
+\begin_inset Formula $2.5\,\frac{cps}{ng}$
+\end_inset
+
+ of 
+\begin_inset Formula $^{252}Cf$
+\end_inset
+
+ at a standoff of 
+\begin_inset Formula $2\, m$
+\end_inset
+
+ from the geometric center of the system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kouzes2010"
+
+\end_inset
+
+.
+ In the cases that the literature states a count rate and a source strength,
+ an efficiency will be defined as 
+\begin_inset Formula $\eta_{eff}\equiv\frac{\#\, detections}{\#\, source\, particles}$
+\end_inset
+
+.
+ This will be an exact efficiency of the application of the accelerator.
+ In cases that the literature does not state these results, MCNP modeling
+ could be done to determine this.
+ Input decks for geometry and cell definitions have been created and could
+ be used to create these simulations.
+ The plane source, materials, and importance weighting in each case should
+ be determined by the experimenter.
+ This is beyond the scope of the experiment, as the literature does not
+ provide accelerator nor detector information for many of the cases present.
+\end_layout
+
+\begin_layout Subsection
+Spatial Resolution
+\end_layout
+
+\begin_layout Standard
+Gozani does a sufficient job of describing the spatial resolution of each
+ of these techniques.
+ For some of the techniques, the voxel size is dependent on the number of
+ detectors used, and thus will be analyzed only for the BOM given.
+ This should be considered in the final overall rating, as these types of
+ systems could be optimized for cost vs.
+ resolution.
+\end_layout
+
+\begin_layout Subsection
+Added Value
+\end_layout
+
+\begin_layout Standard
+The added value of certain systems will be discussed on a case by case basis,
+ from the advantages given by Gozani.
+\end_layout
+
+\begin_layout Subsection
+Overall Rating
+\end_layout
+
+\begin_layout Standard
+The creation of an overall rating is not as straightforward as the compilation
+ of the above material.
+ The design process for a rating system is as follows:
+\end_layout
+
+\begin_layout Itemize
+Determine quantitative value for each of the above sections
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bill of Materials - the complexity, cost, and common modes of failure will
+ increase with each part in the BOM.
+ Thus, the BOM factor will be determined solely off of the number of total
+ parts in the BOM, 
+\begin_inset Formula $\lambda_{BOM,i}=1-\frac{n_{i}}{n_{max}}$
+\end_inset
+
+, where 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ is the number of parts in the current technique, and 
+\begin_inset Formula $n_{max}$
+\end_inset
+
+ is the maximum parts of any technique analyzed.
+ More advanced weighting schemes could be developed, for instance the parts
+ could be weighted on their cost, power consumption, probability of failure,
+ or difficulty to use.
+\end_layout
+
+\begin_layout Itemize
+Efficiency - an increase in the efficiency of the detector is desired, and
+ this quantity is already normalized.
+ Thus the value used to determine the efficiency factor is 
+\begin_inset Formula $\lambda_{eff,i}\equiv\eta_{eff,i}$
+\end_inset
+
+ where 
+\begin_inset Formula $\eta_{eff,i}$
+\end_inset
+
+ is the efficiency of the technique as calculated above.
+\end_layout
+
+\begin_layout Itemize
+Spatial Resolution - the increase of the spatial resolution is desired,
+ thus a normalized quantity directly proportional to the resolution should
+ be used.
+ This value will be defined as 
+\begin_inset Formula $\lambda_{res,i}\equiv\frac{res_{i}}{res_{max}}$
+\end_inset
+
+ where 
+\begin_inset Formula $res_{max}$
+\end_inset
+
+ is the maximum resolution of any technique given, and 
+\begin_inset Formula $res_{i}$
+\end_inset
+
+ is the resolution of the current technique.
+ The resolution of the current technique (
+\begin_inset Formula $res_{i}$
+\end_inset
+
+) will be given by the number of voxels per square inch.
+ 
+\end_layout
+
+\begin_layout Itemize
+Added value - this will not be involved in the overall rating, as it will
+ be implemented as a supplement for each system.
+ As such, the added value section will not include any essential features.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Determine weighting scheme for each of the above sections - The weighting
+ of these schemes is the most difficult and convoluted process.
+ For different applications of these detectors, different weighting schemes
+ would be important.
+ For the application of a portal monitor, an adaptive weighting scheme will
+ be used.
+ The adaptive scheme is verbally defined as this: For techniques in which
+ the 
+\begin_inset Formula $\lambda_{BOM}<0.50$
+\end_inset
+
+, the efficiency and spatial resolution will be weighted as twice their
+ nominal values.
+ For techniques in which the 
+\begin_inset Formula $\lambda_{BOM}\geq0.50$
+\end_inset
+
+, the expression 
+\begin_inset Formula $\lambda\equiv\lambda_{BOM}^{2}+\lambda_{eff}+\lambda_{res}$
+\end_inset
+
+ will be the overall factor.
+ To explain this verbal definition, performance will excuse the increased
+ cost and complexity, whereas for an elegant design, this is it's main selling
+ point (although this effect should be mitigated by the performance).
+ This is, admittedly, quite an arbitrary scheme.
+ It would be possible to either interview portal monitor administrators,
+ or to develop a neural network to weight the methods correctly.
+\end_layout
+
+\begin_layout Itemize
+Determine additive or product scheme - The scheme must be additive, as the
+ normalization of the above factors have determined the range to be 
+\begin_inset Formula $\lambda\exists[0,1]$
+\end_inset
+
+.
+ If the scheme were product, certain overall factors would be trivial.
+\end_layout
+
+\begin_layout Itemize
+Calculate Overall Performance Factors.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+The following pages serve as white sheets for the four techniques Gozani
+ provides.
+ The BOMs have been developed straight out of Gozani's descriptions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009a"
+
+\end_inset
+
+, and any missing components testifies to Gozani's lack of detail.
+ The calculations provided have been done as transparently as possible and
+ show the performance factor developed for each component.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pulsed Fast Neutron Analysis
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PFNA Schematic.svg
+	width 9.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+PFNA Detector Schematic
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PFNA-Detector-Schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[!h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{PFNA Bill of Materials}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:PFNA-Bill-of-Materials}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="6cm">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Part
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Assembly
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Neutron Accelerator (
+\begin_inset Formula $8.5\, MeV$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Collimator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Neutron Chopper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gantry
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation/ Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Detector (
+\begin_inset Formula $NaI$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amplifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multi Channel Analyzer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Acquisition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection/ Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Processor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{BOM,PFNA}=1-\frac{n_{PFNA}}{n_{max}}=1-\frac{9}{104}=0.913
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{eff,PFNA}\equiv\eta_{eff,PFNA}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda_{res,i}\equiv\frac{res_{i}}{res_{max}}=\frac{3.22\, voxel/in^{2}}{3.22\, voxel/in^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 1"
+key "Micklich1995"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{PFNA}=w_{BOM,PFNA}(\lambda_{BOM,PFNA})+w_{eff,PFNA}(\lambda_{eff,PFNA})+w_{res,PFNA}(\lambda_{res,PFNA})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{PFNA}=(0.913)^{2}+\lambda_{eff,PFNA}+1=1.834+\lambda_{eff,PFNA}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Added Value:
+\series default
+ Temporal Resolution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Nuclear Resonance Fluorescence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename NRF Schematic.svg
+	width 9.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Nuclear Resonance Fluorescence Schematic
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Nuclear-Resonance-Fluorescence-Schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[!h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{NRF Bill of Materials}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:NRF-Bill-of-Materials}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="6cm">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Part
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Assembly
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bremsstrahlung CW Electron Based X-Ray Source Accelerator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Collimator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Neutron Chopper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Detector (
+\begin_inset Formula $Ge$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amplifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multi Channel Analyzer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Acquisition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection/ Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Processor (Compare Bremsstrahlung Peaks)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{BOM,NRF}=1-\frac{n_{NRF}}{n_{max}}=1-\frac{104}{104}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda_{eff,NRF}\equiv\eta_{eff,NRF}=\frac{28\, counts}{1\times10^{5}\,\frac{\gamma}{s}\cdot3600\, s}=7.78\times10^{-8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 015103-3"
+key "Shizuma2012"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda_{res,NRF}\equiv\frac{res_{NRF}}{res_{max}}=\frac{0.654\, voxel/in^{2}}{3.22\, voxel/in^{2}}=0.203$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 2"
+key "CanberraIndustries2008"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{NRF}=w_{BOM,NRF}(\lambda_{BOM,NRF})+w_{eff,NRF}(\lambda_{eff,NRF})+w_{res,NRF}(\lambda_{res,NRF})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{NRF}=0+2\cdot(7.78\times10^{-8})+2\cdot(0.203)=0.406
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dual X-Ray Radiography
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DEXR Schematic.svg
+	width 9.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dual X-Ray Radiography Schematic
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dual-X-Ray-Radiography-Schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[!h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Dual X-Ray Radiography Bill of Materials}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:Dual-X-Ray-Radiography-Bill-of-Materials}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="6cm">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Part
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Assembly
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Electron Accelerator (
+\begin_inset Formula $6\, MV$
+\end_inset
+
+ or 
+\begin_inset Formula $4.5\, MV$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Second Electron Accelerator (
+\begin_inset Formula $9\, MV$
+\end_inset
+
+ or 
+\begin_inset Formula $6\, MV$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Attenuators
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Attenuators
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Detectors (
+\begin_inset Formula $NaI$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amplifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multi Channel Analyzer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Acquisition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection/ Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Processor (Compare Bremsstrahlung Peaks)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{BOM,DXR}=1-\frac{n_{DXR}}{n_{max}}=1-\frac{104}{104}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{eff,DXR}\equiv\eta_{eff,DXR}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda_{res,DXR}\equiv\frac{res_{DXR}}{res_{max}}=\frac{1\, voxel/in^{2}}{3.22\, voxel/in^{2}}=0.311$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 98"
+key "Imagawa2004"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{DXR}=w_{BOM,DXR}(\lambda_{BOM,DXR})+w_{eff,DXR}(\lambda_{eff,DXR})+w_{res,DXR}(\lambda_{res,DXR})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{DXR}=0+2\cdot(\lambda_{eff,DXR})+2\cdot(0.311)=0.622+2\cdot\lambda_{eff,DXR}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+High Energy Bremsstrahlung Backscattering
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename HEBB Schematic.svg
+	width 9.3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+High Energy Bremsstrahlung Backscattering Schematic
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:High-Energy-Bremsstrahlung-Backscattering-Schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[!h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{High Energy Bremsstrahlung Backscattering}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:High-Energy-Bremsstrahlung-Backscattering}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="6cm">
+<column alignment="center" valignment="middle" width="1cm">
+<column alignment="center" valignment="middle" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Part
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Assembly
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Neutron Accelerator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Collimator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Neutron Chopper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Detector (
+\begin_inset Formula $Ge$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amplifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multi Channel Analyzer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Acquisition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Detection/ Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Processor (Compare Bremsstrahlung Peaks)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{BOM,HEBB}=1-\frac{n_{HEBB}}{n_{max}}=1-\frac{104}{104}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{eff,HEBB}\equiv\eta_{eff,HEBB}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda_{res,HEBB}\equiv\frac{res_{HEBB}}{res_{max}}=\frac{0.645\, voxel/in^{2}}{3.22\, voxel/in^{2}}=0.203$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 2"
+key "CanberraIndustries2008"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{HEBB}=w_{BOM,HEBB}(\lambda_{BOM,HEBB})+w_{eff,HEBB}(\lambda_{eff,HEBB})+w_{res,HEBB}(\lambda_{res,HEBB})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{HEBB}=0+2\cdot(\lambda_{eff,HEBB})+2\cdot(0.203)=0.406+2\cdot\lambda_{eff,HEBB}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Overall
+\end_layout
+
+\begin_layout Standard
+The overall factors are given below in one table.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Overall Factor Scores of Techniques
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Overall-Factor-Scores-of-Techniques"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technique
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Overall Performance Factor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PFNA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.834+\lambda_{eff,PFNA}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NRF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.0412$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DXR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.0967+\lambda_{eff,DXR}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HEBB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.0412+\lambda_{eff,HEBB}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+White pages for each different technique have been created, with an overall
+ factor scheme created to compare the techniques against each other.
+ It is quite difficult to create this scheme.
+ As an academic exercise, a scheme was created.
+ In practice, a scheme using MCNP to model the efficiency of each detector,
+ and interviews or a neural network to determine the importance of each
+ identified factor to the portal monitoring industry.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Gozani outlines only several methods: those that he and his colleagues have
+ been involved with.
+ These methods are Pulsed Fast Neutron Analysis, Nuclear Resonance Fluorescence,
+ Dual X-Ray Radiography, and High Energy Bremsstrahlung Backscattering.
+ The PFNA is an active interrogation technique which utilizes the inelastic
+ neutron scattering cross section of SNM.
+ The advantages of this technique are that it achieves spatial resonance
+ without using multiple detectors.
+ NRF takes advantage of a fluorescent reaction in SNM during 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ irradiation, and an array of detectors provides spatial resolution.
+ The disadvantage of NRF is that it requires very high resolution detectors
+ such as Germanium.
+ Dual X-Ray Radiography compares the difference of attenuation between two
+ different X-Ray sources and is able to back out high resolution images
+ from this process.
+ The difficulty in this process is the deconvolution of the spatial distribution
+ of attenuators.
+ Large assumptions of the geometry and composition must be made.
+ Finally, High Energy Bremsstrahlung Backscattering takes advantage of a
+ peak of Bremsstrahlung in the backward directions in SNM.
+ Again, this requires a high resolution detector such as Germanium, and
+ also has extremely low efficiency because of the requirement of backscattering
+ for detection.
+\end_layout
+
+\begin_layout Standard
+Overall, Gozani does not diversify the techniques reviewed well.
+ Many of the materials he offers are those of his and his colleagues research.
+ While this is expected for papers published about certain technical areas,
+ Gozani bills his paper as a summary of techniques.
+ Finally, the end result of a comparison table Gozani promised is provided,
+ but only provides succinct descriptions of each factor.
+ If one were to use this table as a tool to compare these techniques, very
+ little information would be able to be determined.
+\end_layout
+
+\begin_layout Standard
+To extend this article, a process was created by which the techniques could
+ be compared on a portal administrator sophistication level.
+ This process culminates in a overall performance factor, given by the expressio
+n 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{i}=w_{BOM,i}(\lambda_{BOM,i})+w_{eff,i}(\lambda_{eff,i})+w_{res,i}(\lambda_{res,i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w(\lambda)=\begin{cases}
+\lambda_{BOM},2\cdot\lambda_{eff},2\cdot\lambda_{res} & \lambda_{BOM}<0.50\\
+\lambda_{BOM}^{2},\lambda_{eff},\lambda_{res} & \lambda_{BOM}\geq0.50
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Without efficiency values for each technique, the comparison of the techniques
+ is impossible.
+ MCNP modeling could be used to determine efficiencies for the techniques
+ in which the efficiency was not found.
+ Currently, the results of this weighting are found in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Overall-Factor-Scores-of-Techniques"
+
+\end_inset
+
+.
+ They show that PFNA, Gozani's own work, is likely so advantaged by it's
+ simple BOM, that for reasonable efficiencies of other detector, it would
+ be the preferable detector.
+\end_layout
+
+\end_body
+\end_document

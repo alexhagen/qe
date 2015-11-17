@@ -1,0 +1,16 @@
+clc; close all; clear;
+T=linspace(0,100,100);
+Y=gaussmf(T,[3 10])/10;
+Y2=gaussmf(T,[6 22])/20;
+Y3=gaussmf(T,[12 42])/40;
+Y4=gaussmf(T,[18 60])/60;
+Y5=gaussmf(T,[24 80])/80;
+plot(T,Y,'k-',T,Y2,'k--',T,Y3,'k:',T,Y4,'k-.',T,Y5,'kd-');
+xlabel('Depth');ylabel('Fractions of Voids per Length');
+h=legend('9 dpa','22 dpa','42 dpa','60 dpa','80 dpa');
+set(h,'interpreter','latex');
+%set(gca,'xtick',[0 2 4 6 8 10],'xticklabel',{'0','200','400','600','800','1000'});
+axis([0 100 0 0.125]);
+set(gcf,'Position',[50 50 1000 450],'PaperPositionMode','auto');
+set(gca,'Color','none');
+plot2svg('Fraction_Voids_vs_Depth_Plot.svg');

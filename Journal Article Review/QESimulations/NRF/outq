@@ -1,0 +1,649 @@
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+ +--------------------------------------------------------------------+
+ |   This program was prepared by the Regents of the University of    |
+ |California at Los Alamos National Laboratory (the University) under |
+ |  contract number W-7405-ENG-36 with the U.S. Department of Energy  |
+ |(DoE).  The University has certain rights in the program pursuant to|
+ |  the contract and the program should not be copied or distributed  |
+ | outside your organization.  All rights in the program are reserved |
+ |by the DoE and the University.  Neither the U.S. Government nor the |
+ | University makes any warranty, express or implied, or assumes any  |
+ |     liability or responsibility for the use of this software.      |
+ +--------------------------------------------------------------------+
+  
+1mcnp     version 5     ld=11112005                     02/12/13 23:46:39 
+ *************************************************************************                 probid =  02/12/13 23:46:39 
+                                                                                 
+
+    1-       c     Created on: Tuesday, February 12, 2013 at 23:36                           
+    2-           1     0         (-1 -2 -3 -4 -5 -6 )                                        
+    3-           2     0         (-7 -8 -9 )                                                 
+    4-           3     0         (-10 )                                                      
+    5-           4     0         (-11 6 -13 -14 -15 -16 )                                    
+    6-           5     0         (-13 5 -11 -20 -15 -16 )                                    
+    7-           6     0         (-7 -8 -25 )                                                
+    8-           7     0         (-7 -8 -28 )                                                
+    9-           8     0         (-7 -8 -31 )                                                
+   10-           9     0         (-7 -8 -34 )                                                
+   11-          10     0         (-7 -8 -37 )                                                
+   12-          11     0         (-7 -8 -40 )                                                
+   13-          12     0         (-7 -8 -43 )                                                
+   14-          13     0         (-7 -8 -46 )                                                
+   15-          14     0         (-7 -8 -49 )                                                
+   16-          15     0         (-7 -8 -52 )                                                
+   17-          16     0         (-7 -8 -55 )                                                
+   18-          17     0         (-7 -8 -58 )                                                
+   19-          18     0         (-7 -8 -61 )                                                
+   20-          19     0         (-7 -8 -64 )                                                
+   21-          20     0         (-7 -8 -67 )                                                
+   22-          21     0         (-7 -8 -70 )                                                
+   23-          22     0         (-7 -8 -73 )                                                
+   24-          23     0         (-7 -8 -76 )                                                
+   25-          24     0         (-7 -8 -79 )                                                
+   26-          25     0         (-7 -8 -82 )                                                
+   27-          26     0         (-7 -8 -85 )                                                
+   28-          27     0         (-7 -8 -88 )                                                
+   29-          28     0         (-7 -8 -91 )                                                
+   30-          29     0         (-7 -8 -94 )                                                
+   31-          30     0         (1 :2 :3 :4 :5 :6 )(7 :8 :9 )(10 )(11 :-6 :13 :14 :15 :16 ) 
+   32-                   (13 :-5 :11 :20 :15 :16 )(7 :8 :25 )(7 :8 :28 )(7 :8 :31 )          
+   33-                   (7 :8 :34 )(7 :8 :37 )(7 :8 :40 )(7 :8 :43 )(7 :8 :46 )(7 :8 :49 )  
+   34-                   (7 :8 :52 )(7 :8 :55 )(7 :8 :58 )(7 :8 :61 )(7 :8 :64 )(7 :8 :67 )  
+   35-                   (7 :8 :70 )(7 :8 :73 )(7 :8 :76 )(7 :8 :79 )(7 :8 :82 )(7 :8 :85 )  
+   36-                   (7 :8 :88 )(7 :8 :91 )(7 :8 :94 )                                   
+   37-                                                                                       
+   38-           1         p 1 0 0 -25                                                       
+ warning. this surface has been replaced by a surface of type px 
+   39-           2         p 0 1 0 2.5                                                       
+ warning. this surface has been replaced by a surface of type py 
+   40-           3         p -1 0 0 35                                                       
+   41-           4         p 0 -1 0 2.5                                                      
+   42-           5         p 0 0 1 2.5                                                       
+ warning. this surface has been replaced by a surface of type pz 
+   43-           6         p 0 0 -1 2.5                                                      
+   44-           7         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   45-           8         p -1 0 0 -59.17                                                   
+   46-           9       c/x 0 0 1.55                                                        
+ warning. this surface has been replaced by a surface of type cx 
+   47-          10         s 29.585 0 0 5.585                                                
+ warning. this surface has been replaced by a surface of type sx 
+   48-          11         p -1 0 1.2490009027033e-016 1                                     
+   49-          12         p 0 0 1 -2.5                                                      
+ warning. this surface has been replaced by a surface of type pz 
+   50-          13         p 1 0 -1.1796119636642e-016 1                                     
+   51-          14         p 0 0 -1 27.5                                                     
+   52-          15         p 0 1 0 5                                                         
+ warning. this surface has been replaced by a surface of type py 
+   53-          16         p 0 -1 0 5                                                        
+   54-          17         p 1 0 1.1796119636642e-016 1                                      
+   55-          18         p 0 0 -1 -2.5                                                     
+   56-          19         p -1 0 -1.2490009027033e-016 1                                    
+   57-          20         p 0 0 1 27.5                                                      
+ warning. this surface has been replaced by a surface of type pz 
+   58-          21         p 0 1 0 5                                                         
+ warning. this surface has been replaced by a surface of type py 
+   59-          22         p 0 -1 0 5                                                        
+   60-          23         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   61-          24         p -1 0 0 -59.17                                                   
+   62-          25       c/x 0 3.5 1.55                                                      
+   63-          26         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   64-          27         p -1 0 0 -59.17                                                   
+   65-          28       c/x 0 7 1.55                                                        
+   66-          29         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   67-          30         p -1 0 0 -59.17                                                   
+   68-          31       c/x 3.5 0 1.55                                                      
+   69-          32         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   70-          33         p -1 0 0 -59.17                                                   
+   71-          34       c/x 3.5 3.5 1.55                                                    
+   72-          35         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   73-          36         p -1 0 0 -59.17                                                   
+   74-          37       c/x 3.5 7 1.55                                                      
+   75-          38         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   76-          39         p -1 0 0 -59.17                                                   
+   77-          40       c/x 7 0 1.55                                                        
+   78-          41         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   79-          42         p -1 0 0 -59.17                                                   
+   80-          43       c/x 7 3.5 1.55                                                      
+   81-          44         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   82-          45         p -1 0 0 -59.17                                                   
+   83-          46       c/x 7 7 1.55                                                        
+   84-          47         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   85-          48         p -1 0 0 -59.17                                                   
+   86-          49       c/x 7 -3.5 1.55                                                     
+   87-          50         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   88-          51         p -1 0 0 -59.17                                                   
+   89-          52       c/x 3.5 -3.5 1.55                                                   
+   90-          53         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   91-          54         p -1 0 0 -59.17                                                   
+   92-          55       c/x 0 -3.5 1.55                                                     
+   93-          56         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   94-          57         p -1 0 0 -59.17                                                   
+   95-          58       c/x 0 -7 1.55                                                       
+   96-          59         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+   97-          60         p -1 0 0 -59.17                                                   
+   98-          61       c/x 3.5 -7 1.55                                                     
+   99-          62         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  100-          63         p -1 0 0 -59.17                                                   
+  101-          64       c/x 7 -7 1.55                                                       
+  102-          65         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  103-          66         p -1 0 0 -59.17                                                   
+  104-          67       c/x -7 -7 1.55                                                      
+  105-          68         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  106-          69         p -1 0 0 -59.17                                                   
+  107-          70       c/x -7 -3.5 1.55                                                    
+  108-          71         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  109-          72         p -1 0 0 -59.17                                                   
+  110-          73       c/x -7 0 1.55                                                       
+  111-          74         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  112-          75         p -1 0 0 -59.17                                                   
+  113-          76       c/x -7 3.5 1.55                                                     
+  114-          77         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  115-          78         p -1 0 0 -59.17                                                   
+  116-          79       c/x -7 7 1.55                                                       
+  117-          80         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  118-          81         p -1 0 0 -59.17                                                   
+  119-          82       c/x -3.5 7 1.55                                                     
+  120-          83         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  121-          84         p -1 0 0 -59.17                                                   
+  122-          85       c/x -3.5 3.5 1.55                                                   
+  123-          86         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  124-          87         p -1 0 0 -59.17                                                   
+  125-          88       c/x -3.5 0 1.55                                                     
+  126-          89         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  127-          90         p -1 0 0 -59.17                                                   
+  128-          91       c/x -3.5 -3.5 1.55                                                  
+  129-          92         p 1 0 0 61.17                                                     
+ warning. this surface has been replaced by a surface of type px 
+  130-          93         p -1 0 0 -59.17                                                   
+  131-          94       c/x -3.5 -7 1.55                                                    
+  132-                                                                                       
+  133-       mode  n p                                                                       
+ comment. photonuclear physics may be needed (phys:p).
+  134-       sdef pos=-10 0 0 X=0 Y=0 Z=0 erg=1.00 par=2                                     
+  135-       si1 -10 10                                                                      
+  136-       sp1 0 1                                                                         
+  137-       si3 -10 10                                                                      
+  138-       sp3 0 1                                                                         
+ 
+ fatal error.  neutron  importances are all zero.
+ 
+ fatal error.  photon   importances are all zero.
+
+ surface      5   and surface     18   are the same.     18   will be deleted.
+
+ surface      6   and surface     12   are the same.     12   will be deleted.
+
+ surface      7   and surface     23   are the same.     23   will be deleted.
+
+ surface      7   and surface     26   are the same.     26   will be deleted.
+
+ surface      7   and surface     29   are the same.     29   will be deleted.
+
+ surface      7   and surface     32   are the same.     32   will be deleted.
+
+ surface      7   and surface     35   are the same.     35   will be deleted.
+
+ surface      7   and surface     38   are the same.     38   will be deleted.
+
+ surface      7   and surface     41   are the same.     41   will be deleted.
+
+ surface      7   and surface     44   are the same.     44   will be deleted.
+
+ surface      7   and surface     47   are the same.     47   will be deleted.
+
+ surface      7   and surface     50   are the same.     50   will be deleted.
+
+ surface      7   and surface     53   are the same.     53   will be deleted.
+
+ surface      7   and surface     56   are the same.     56   will be deleted.
+
+ surface      7   and surface     59   are the same.     59   will be deleted.
+
+ surface      7   and surface     62   are the same.     62   will be deleted.
+
+ surface      7   and surface     65   are the same.     65   will be deleted.
+
+ surface      7   and surface     68   are the same.     68   will be deleted.
+
+ surface      7   and surface     71   are the same.     71   will be deleted.
+
+ surface      7   and surface     74   are the same.     74   will be deleted.
+
+ surface      7   and surface     77   are the same.     77   will be deleted.
+
+ surface      7   and surface     80   are the same.     80   will be deleted.
+
+ surface      7   and surface     83   are the same.     83   will be deleted.
+
+ surface      7   and surface     86   are the same.     86   will be deleted.
+
+ surface      7   and surface     89   are the same.     89   will be deleted.
+
+ surface      7   and surface     92   are the same.     92   will be deleted.
+
+ surface      8   and surface     24   are the same.     24   will be deleted.
+
+ surface      8   and surface     27   are the same.     27   will be deleted.
+
+ surface      8   and surface     30   are the same.     30   will be deleted.
+
+ surface      8   and surface     33   are the same.     33   will be deleted.
+
+ surface      8   and surface     36   are the same.     36   will be deleted.
+
+ surface      8   and surface     39   are the same.     39   will be deleted.
+
+ surface      8   and surface     42   are the same.     42   will be deleted.
+
+ surface      8   and surface     45   are the same.     45   will be deleted.
+
+ surface      8   and surface     48   are the same.     48   will be deleted.
+
+ surface      8   and surface     51   are the same.     51   will be deleted.
+
+ surface      8   and surface     54   are the same.     54   will be deleted.
+
+ surface      8   and surface     57   are the same.     57   will be deleted.
+
+ surface      8   and surface     60   are the same.     60   will be deleted.
+
+ surface      8   and surface     63   are the same.     63   will be deleted.
+
+ surface      8   and surface     66   are the same.     66   will be deleted.
+
+ surface      8   and surface     69   are the same.     69   will be deleted.
+
+ surface      8   and surface     72   are the same.     72   will be deleted.
+
+ surface      8   and surface     75   are the same.     75   will be deleted.
+
+ surface      8   and surface     78   are the same.     78   will be deleted.
+
+ surface      8   and surface     81   are the same.     81   will be deleted.
+
+ surface      8   and surface     84   are the same.     84   will be deleted.
+
+ surface      8   and surface     87   are the same.     87   will be deleted.
+
+ surface      8   and surface     90   are the same.     90   will be deleted.
+
+ surface      8   and surface     93   are the same.     93   will be deleted.
+
+ surface     15   and surface     21   are the same.     21   will be deleted.
+
+ surface     16   and surface     22   are the same.     22   will be deleted.
+ 
+ comment.   52 surfaces were deleted for being the same as others.
+1source                                                                                                 print table 10
+
+ values of defaulted or explicitly defined source variables
+
+    cel        0.0000E+00
+    sur        0.0000E+00
+    erg        1.0000E+00
+    tme        0.0000E+00
+    dir        isotropic 
+    pos       -1.0000E+01   0.0000E+00   0.0000E+00
+    x          0.0000E+00
+    y          0.0000E+00
+    z          0.0000E+00
+    rad        0.0000E+00
+    ext        0.0000E+00
+    axs        0.0000E+00   0.0000E+00   0.0000E+00
+    vec        0.0000E+00   0.0000E+00   0.0000E+00
+    ccc        0.0000E+00
+    nrm        1.0000E+00
+    ara        0.0000E+00
+    wgt        1.0000E+00
+    eff        1.0000E-02
+    par        2.0000E+00
+    tr         0.0000E+00
+ 
+ warning. source distribution   1 is not used in this problem.
+ 
+ warning. source distribution   3 is not used in this problem.
+
+
+ order of sampling source variables.
+ x   y   z   pos erg tme
+ 
+ warning. there are no tallies in this problem.
+ 
+ warning. no cross-section tables are called for in this problem.
+1cell volumes and masses                                                                                print table 50
+
+        cell     atom          gram         input       calculated                            reason volume
+                density       density       volume        volume         mass       pieces    not calculated
+
+     1     1  0.00000E+00   0.00000E+00   0.00000E+00   2.50000E+02   0.00000E+00      0                      
+     2     2  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+     3     3  0.00000E+00   0.00000E+00   0.00000E+00   7.29723E+02   0.00000E+00      1                      
+     4     4  0.00000E+00   0.00000E+00   0.00000E+00   5.00000E+02   0.00000E+00      0                      
+     5     5  0.00000E+00   0.00000E+00   0.00000E+00   5.00000E+02   0.00000E+00      0                      
+     6     6  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+     7     7  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+     8     8  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+     9     9  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    10    10  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    11    11  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    12    12  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    13    13  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    14    14  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    15    15  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    16    16  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    17    17  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    18    18  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    19    19  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    20    20  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    21    21  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    22    22  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    23    23  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    24    24  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    25    25  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    26    26  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    27    27  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    28    28  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    29    29  0.00000E+00   0.00000E+00   0.00000E+00   1.50954E+01   0.00000E+00      1                      
+    30    30  0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      asymmetric      
+1surface areas                                                                                          print table 50
+
+         surface    input      calculated    reason area
+                    area          area       not calculated
+
+     1        1  0.00000E+00   2.50000E+01                   
+     2        2  0.00000E+00   5.00000E+01                   
+     3        3  0.00000E+00   2.50000E+01                   
+     4        4  0.00000E+00   5.00000E+01                   
+     5        5  0.00000E+00   0.00000E+00   asymmetric      
+     6        6  0.00000E+00   0.00000E+00   asymmetric      
+     7        7  0.00000E+00   1.88692E+02                   
+     8        8  0.00000E+00   1.88692E+02                   
+     9        9  0.00000E+00   1.94779E+01                   
+    10       10  0.00000E+00   3.91973E+02                   
+    11       11  0.00000E+00   5.00000E+02                   
+    13       13  0.00000E+00   5.00000E+02                   
+    14       14  0.00000E+00   2.00000E+01                   
+    15       15  0.00000E+00   1.00000E+02                   
+    16       16  0.00000E+00   1.00000E+02                   
+    17       17  0.00000E+00   0.00000E+00   not a boundary  
+    19       19  0.00000E+00   0.00000E+00   not a boundary  
+    20       20  0.00000E+00   2.00000E+01                   
+    25       25  0.00000E+00   1.94779E+01                   
+    28       28  0.00000E+00   1.94779E+01                   
+    31       31  0.00000E+00   1.94779E+01                   
+    34       34  0.00000E+00   1.94779E+01                   
+    37       37  0.00000E+00   1.94779E+01                   
+    40       40  0.00000E+00   1.94779E+01                   
+    43       43  0.00000E+00   1.94779E+01                   
+    46       46  0.00000E+00   1.94779E+01                   
+    49       49  0.00000E+00   1.94779E+01                   
+    52       52  0.00000E+00   1.94779E+01                   
+    55       55  0.00000E+00   1.94779E+01                   
+    58       58  0.00000E+00   1.94779E+01                   
+    61       61  0.00000E+00   1.94779E+01                   
+    64       64  0.00000E+00   1.94779E+01                   
+    67       67  0.00000E+00   1.94779E+01                   
+    70       70  0.00000E+00   1.94779E+01                   
+    73       73  0.00000E+00   1.94779E+01                   
+    76       76  0.00000E+00   1.94779E+01                   
+    79       79  0.00000E+00   1.94779E+01                   
+    82       82  0.00000E+00   1.94779E+01                   
+    85       85  0.00000E+00   1.94779E+01                   
+    88       88  0.00000E+00   1.94779E+01                   
+    91       91  0.00000E+00   1.94779E+01                   
+    94       94  0.00000E+00   1.94779E+01                   
+1cells                                                                                                  print table 60
+
+                      atom        gram                                     neutron    photon     photon wt             
+        cell  mat    density     density     volume       mass     pieces importance importance generation             
+
+     1     1    0  0.00000E+00 0.00000E+00 2.50000E+02 0.00000E+00     0  0.0000E+00 0.0000E+00 -1.000E+00             
+     2     2    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+     3     3    0  0.00000E+00 0.00000E+00 7.29723E+02 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+     4     4    0  0.00000E+00 0.00000E+00 5.00000E+02 0.00000E+00     0  0.0000E+00 0.0000E+00 -1.000E+00             
+     5     5    0  0.00000E+00 0.00000E+00 5.00000E+02 0.00000E+00     0  0.0000E+00 0.0000E+00 -1.000E+00             
+     6     6    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+     7     7    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+     8     8    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+     9     9    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    10    10    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    11    11    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    12    12    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    13    13    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    14    14    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    15    15    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    16    16    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    17    17    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    18    18    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    19    19    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    20    20    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    21    21    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    22    22    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    23    23    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    24    24    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    25    25    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    26    26    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    27    27    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    28    28    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    29    29    0  0.00000E+00 0.00000E+00 1.50954E+01 0.00000E+00     1  0.0000E+00 0.0000E+00 -1.000E+00             
+    30    30    0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00     0  0.0000E+00 0.0000E+00 -1.000E+00             
+
+ total                                     2.35711E+03 0.00000E+00
+1surfaces                                                                                               print table 70
+
+         surface     trans  type   surface coefficients
+
+     1      1                px   -2.5000000E+01
+     2      2                py    2.5000000E+00
+     3      3                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00   3.5000000E+01
+     4      4                p     0.0000000E+00  -1.0000000E+00   0.0000000E+00   2.5000000E+00
+     5      5                pz    2.5000000E+00
+     6      6                p     0.0000000E+00   0.0000000E+00  -1.0000000E+00   2.5000000E+00
+     7      7                px    6.1170000E+01
+     8      8                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+     9      9                cx    1.5500000E+00
+    10     10                sx    2.9585000E+01   5.5850000E+00
+    11     11                p    -1.0000000E+00   0.0000000E+00   1.2490009E-16   1.0000000E+00
+    13     13                p     1.0000000E+00   0.0000000E+00  -1.1796120E-16   1.0000000E+00
+    14     14                p     0.0000000E+00   0.0000000E+00  -1.0000000E+00   2.7500000E+01
+    15     15                py    5.0000000E+00
+    16     16                p     0.0000000E+00  -1.0000000E+00   0.0000000E+00   5.0000000E+00
+    17     17                p     1.0000000E+00   0.0000000E+00   1.1796120E-16   1.0000000E+00
+    19     19                p    -1.0000000E+00   0.0000000E+00  -1.2490009E-16   1.0000000E+00
+    20     20                pz    2.7500000E+01
+    25     25                c/x   0.0000000E+00   3.5000000E+00   1.5500000E+00
+    28     28                c/x   0.0000000E+00   7.0000000E+00   1.5500000E+00
+    31     31                c/x   3.5000000E+00   0.0000000E+00   1.5500000E+00
+    34     34                c/x   3.5000000E+00   3.5000000E+00   1.5500000E+00
+    37     37                c/x   3.5000000E+00   7.0000000E+00   1.5500000E+00
+    40     40                c/x   7.0000000E+00   0.0000000E+00   1.5500000E+00
+    43     43                c/x   7.0000000E+00   3.5000000E+00   1.5500000E+00
+    46     46                c/x   7.0000000E+00   7.0000000E+00   1.5500000E+00
+    49     49                c/x   7.0000000E+00  -3.5000000E+00   1.5500000E+00
+    52     52                c/x   3.5000000E+00  -3.5000000E+00   1.5500000E+00
+    55     55                c/x   0.0000000E+00  -3.5000000E+00   1.5500000E+00
+    58     58                c/x   0.0000000E+00  -7.0000000E+00   1.5500000E+00
+    61     61                c/x   3.5000000E+00  -7.0000000E+00   1.5500000E+00
+    64     64                c/x   7.0000000E+00  -7.0000000E+00   1.5500000E+00
+    67     67                c/x  -7.0000000E+00  -7.0000000E+00   1.5500000E+00
+    70     70                c/x  -7.0000000E+00  -3.5000000E+00   1.5500000E+00
+    73     73                c/x  -7.0000000E+00   0.0000000E+00   1.5500000E+00
+    76     76                c/x  -7.0000000E+00   3.5000000E+00   1.5500000E+00
+    79     79                c/x  -7.0000000E+00   7.0000000E+00   1.5500000E+00
+    82     82                c/x  -3.5000000E+00   7.0000000E+00   1.5500000E+00
+    85     85                c/x  -3.5000000E+00   3.5000000E+00   1.5500000E+00
+    88     88                c/x  -3.5000000E+00   0.0000000E+00   1.5500000E+00
+    91     91                c/x  -3.5000000E+00  -3.5000000E+00   1.5500000E+00
+    94     94                c/x  -3.5000000E+00  -7.0000000E+00   1.5500000E+00
+1  identical surfaces                                                                                   print table 70
+
+   master surface     identical surfaces
+
+        5                18                                                                                            
+        6                12                                                                                            
+        7                23        26        29        32        35        38        41        44        47        50  
+                         53        56        59        62        65        68        71        74        77        80  
+                         83        86        89        92                                                              
+        8                24        27        30        33        36        39        42        45        48        51  
+                         54        57        60        63        66        69        72        75        78        81  
+                         84        87        90        93                                                              
+       15                21                                                                                            
+       16                22                                                                                            
+
+
+   surface coefficients for identical surfaces not used.
+
+         surface     trans  type   surface coefficients
+
+    18     18                p     0.0000000E+00   0.0000000E+00  -1.0000000E+00  -2.5000000E+00
+    12     12                pz   -2.5000000E+00
+    23     23                px    6.1170000E+01
+    26     26                px    6.1170000E+01
+    29     29                px    6.1170000E+01
+    32     32                px    6.1170000E+01
+    35     35                px    6.1170000E+01
+    38     38                px    6.1170000E+01
+    41     41                px    6.1170000E+01
+    44     44                px    6.1170000E+01
+    47     47                px    6.1170000E+01
+    50     50                px    6.1170000E+01
+    53     53                px    6.1170000E+01
+    56     56                px    6.1170000E+01
+    59     59                px    6.1170000E+01
+    62     62                px    6.1170000E+01
+    65     65                px    6.1170000E+01
+    68     68                px    6.1170000E+01
+    71     71                px    6.1170000E+01
+    74     74                px    6.1170000E+01
+    77     77                px    6.1170000E+01
+    80     80                px    6.1170000E+01
+    83     83                px    6.1170000E+01
+    86     86                px    6.1170000E+01
+    89     89                px    6.1170000E+01
+    92     92                px    6.1170000E+01
+    24     24                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    27     27                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    30     30                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    33     33                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    36     36                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    39     39                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    42     42                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    45     45                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    48     48                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    51     51                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    54     54                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    57     57                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    60     60                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    63     63                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    66     66                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    69     69                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    72     72                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    75     75                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    78     78                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    81     81                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    84     84                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    87     87                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    90     90                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    93     93                p    -1.0000000E+00   0.0000000E+00   0.0000000E+00  -5.9170000E+01
+    21     21                py    5.0000000E+00
+    22     22                p     0.0000000E+00  -1.0000000E+00   0.0000000E+00   5.0000000E+00
+ 
+ warning. surface     17 is not used for anything.
+ 
+ warning. surface     19 is not used for anything.
+
+    minimum source weight = 1.0000E+00    maximum source weight = 1.0000E+00
+
+ ***************************************************
+ * Random Number Generator  =                    1 *
+ * Random Number Seed       =       19073486328125 *
+ * Random Number Multiplier =       19073486328125 *
+ * Random Number Adder      =                    0 *
+ * Random Number Bits Used  =                   48 *
+ * Random Number Stride     =               152917 *
+ ***************************************************
+
+
+        40 warning messages so far.
+
+         2 fatal errors so far.
+1physical constants                                                                                     print table 98
+
+
+   name                    value     description
+
+   huge      1.0000000000000E+36     infinity
+    pie      3.1415926535898E+00     pi
+  euler      5.7721566490153E-01     euler constant
+ avogad      6.0220434469282E+23     avogadro number (molecules/mole)
+  aneut      1.0086649670000E+00     neutron mass (amu)
+  avgdn      5.9703109000000E-01     avogadro number/neutron mass (1.e-24*molecules/mole/amu)
+  slite      2.9979250000000E+02     speed of light (cm/shake)
+ planck      4.1357320000000E-13     planck constant (mev shake)
+  fscon      1.3703930000000E+02     inverse fine structure constant h*c/(2*pi*e**2)
+ gpt(1)      9.3958000000000E+02     neutron mass (mev)
+ gpt(3)      5.1100800000000E-01     electron mass (mev)
+
+
+ fission q-values:     nuclide    q(mev)   nuclide    q(mev)
+                         90232    171.91     91233    175.57
+                         92233    180.84     92234    179.45
+                         92235    180.88     92236    179.50
+                         92237    180.40     92238    181.31
+                         92239    180.40     92240    180.40
+                         93237    183.67     94238    186.65
+                         94239    189.44     94240    186.36
+                         94241    188.99     94242    185.98
+                         94243    187.48     95241    190.83
+                         95242    190.54     95243    190.25
+                         96242    190.49     96244    190.49
+                         other    180.00
+
+
+ the following compilation options were used:
+
+     cheap
+     dec
+     plot
+     mcplot
+     default datapath: C:\MCNP\mcnp_data                                                               
+                       c:\Progra~1\LANL\MCNP5\data                                                     
+
+        40 warning messages so far.
+
+         2 fatal errors so far.
+
+
+ run terminated because of fatal errors.
+
+ computer time =    0.06 minutes
+
+ mcnp     version 5     11112005                     02/12/13 23:46:39                     probid =  02/12/13 23:46:39 

@@ -1,0 +1,620 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\setlength{\columnsep}{1cm}
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+\def\thepart{\Roman{part}}
+\def\thesection{\thepart|\Alph{section}}
+\def\thesubsection{\thesection.\arabic{subsection}}
+\usepackage{etoolbox}
+\usepackage[off]{auto-pst-pdf}
+\usepackage{float}
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{1.5em}{3.5em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{4.0em}{5.0em}}
+\renewcommand{\l@subsubsection}{\@dottedtocline{3}{6.5em}{6.5em}}
+\makeatother
+\usepackage{indentfirst}
+\usepackage[compact]{titlesec}
+
+\titleformat{\part}
+[block]
+  {\normalfont\bfseries\LARGE\centering}
+  {\Large{Part \thepart}\\*}
+  {0em}
+  {}
+  [{\titlerule[2pt]\vspace{2pt}\titlerule[1pt]}]
+
+\titleformat{\section}
+[block]
+  {\normalfont\bfseries\Large\centering}
+  {\thesection\quad}
+  {0em}
+  {}
+  []
+
+\titleformat{\subsection}
+[block]
+  {\large\bfseries\normalsize\centering}
+  {\thesubsection\quad}
+  {0em}
+  {}
+  [\titlerule]
+
+\titleformat{\subsubsection}
+[block]
+  {\normalsize\bfseries\normalsize\centering}
+  {\thesubsubsection\quad}
+  {0em}
+  {}
+  []
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans helvet
+\font_typewriter cmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\headsep 0.1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 2 34 -1
+\bullet 1 0 35 -1
+\bullet 2 2 6 -1
+\bullet 3 2 7 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+normalsize 
+\backslash
+textbf{Purdue University Nuclear Engineering Qualifying Exam Journal Article
+ Review}}
+\backslash
+
+\backslash
+[0.1cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+hrule}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.3cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge 
+\backslash
+textbf{Conventional and Non-Conventional Nuclear Material Signatures}}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Large 
+\backslash
+textbf{Summary, Review, and Analysis of Five Special Nuclear Material Detection
+ Techniques}}
+\backslash
+
+\backslash
+[0.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+hrule}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.4cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Large Alex Hagen}
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{February 13th, 2013}
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{Based on the paper:}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{Gozani, T., McDaniel, F.
+ D., 
+\backslash
+& Doyle, B.
+ L.
+ (2009).
+ Conventional and Non-Conventional Nuclear Material Signatures.
+ AIP Conference Proceedings, 599(1), 599-605.
+ doi:10.1063/1.3120108}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{part}{Front Matter}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{Abstract}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Tsahi Gozani presents a discussion of accelerator applications in the field
+ of special nuclear material detection.
+ The paper is motivated by the current need for a fail-safe and hard-to-defeat
+ detection methods for national security.
+ Gozani discusses the detection of nuclear material by the presence of fissionab
+le material or by other methods.
+ A companion paper presents those methods using fission of these materials
+ to identify them
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gozani2009"
+
+\end_inset
+
+.
+ In this paper, Gozani uses other qualities to detect nuclear material presence,
+ and presents four methods (and one method of combining existing methods).
+ The four methods are split into two groups: detection of nuclear material
+ by their nuclear levels and shells, and detection of nuclear materials
+ by their high 
+\begin_inset Formula $Z$
+\end_inset
+
+ number.
+ Pulsed Fast Neutron Analysis (PFNA) and Nuclear Resonance Fluorescence
+ (NRF), the two methods utilizing their shell structure, take advantage
+ of inelastic scattering and fluorescence when excited by a 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ They differ in that PFNA is able to provide spatial resolution without
+ an array of detectors.
+ The methods of detecting the high 
+\begin_inset Formula $Z$
+\end_inset
+
+ number of the nuclear materials are Dual X-Ray Radiography and High Energy
+ Bremsstrahlung Backscattering.
+ These use the attenuation and backscattering of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s in high 
+\begin_inset Formula $Z$
+\end_inset
+
+ materials as a method for detection.
+\end_layout
+
+\begin_layout Abstract
+Gozani's summary of these methods is cursory and hardly comprehensive.
+ Despite providing only this cursory description, one does not get a good
+ perspective on the possible applications of any of these techniques.
+ Gozani would have been better served providing more details that could
+ help a technical reader, or to provide economical or implementation details
+ to help a non-technical reader that may have to choose between technologies.
+ In general, though Gozani's motivation for this paper is noble, his discussion
+ of these methods provides little use to the reader.
+\end_layout
+
+\begin_layout Abstract
+To extend the paper, a better comparison of the methods was attempted.
+ This comparison was done by utilizing four factors: the complexity of the
+ design, the efficiency of detection vs.
+ number of particles accelerated, the spatial resolution of the technique,
+ and added value of the techniques.
+ To determine the efficiencies of these methods is beyond the scope of this
+ paper, but for those that have efficiencies stated in the literature, the
+ overall factor was calculated.
+ The overall performance factor for PFNA, NRF, Dual X-Ray Radiography, and
+ High Energy Bremsstrahlung Backscattering are 
+\begin_inset Formula $1.834+\lambda_{eff,PFNA}$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $0.406$
+\end_inset
+
+, 
+\begin_inset Formula $0.622+2\cdot\lambda_{eff,DXR}$
+\end_inset
+
+, and 
+\begin_inset Formula $0.406+2\cdot\lambda_{eff,HEBB}$
+\end_inset
+
+, respectively.
+ It can be seen that with realistic values for the efficiency, it is likely
+ that PFNA is the most advantageous method presented.
+\end_layout
+
+\begin_layout Abstract
+Overall, Gozani provides a succinct view of the current state of interrogation
+ techniques.
+ His paper has not largely contributed to the literature on any of these
+ methods, and would need a novel expansion to create a paper with any real
+ impact.
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{Table of Contents}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{List of Figures}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{List of Tables}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{Nomenclature}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Journal Article Review Content.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Y:/BPFS Documents/Bibliographies/Qualifying Exam 2013,Z:/BPFS Documents/Bibliographies/Qualifying Exam 2013"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

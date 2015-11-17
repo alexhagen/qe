@@ -1,0 +1,170 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\makeatletter
+\@addtoreset{section}{part}
+\makeatother
+\def\thesection{\arabic{section}}
+\def\thesubsection{\thesection.\arabic{subsection}}
+\usepackage{etoolbox}
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{1.5em}{3.5em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{4.0em}{5.0em}}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headsep 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction to Nuclear Thermal-hydraulics Systems
+\end_layout
+
+\begin_layout Section
+General Balance Equation
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Single-Phase Flow Conservation Equations and Constitutive Relations
+\end_layout
+
+\begin_layout Section
+Non-dimensional Analysis and Scaling Parameters
+\end_layout
+
+\begin_layout Section
+Heat Conduction in Solid
+\end_layout
+
+\begin_layout Section
+Viscous Stress and Laminar Flow Velocity Profile
+\end_layout
+
+\begin_layout Section
+Transient Diffusion Problem for Momentum and Energy and Penetration Depth
+ Concept
+\end_layout
+
+\begin_layout Section
+Turbulent Flow Formulation and Reynolds Stress
+\end_layout
+
+\begin_layout Section
+Viscous and Turbulent Stress Distribution in Pipe Flow
+\end_layout
+
+\begin_layout Section
+Prandtl Mixing Length Model and Universal Velocity Profile for Turbulent
+ Flow
+\end_layout
+
+\begin_layout Section
+Prandtl Number Effect on Temperature Profile in Turbulent Flow
+\end_layout
+
+\begin_layout Section
+One Dimensional Formulation and Closure Relations
+\end_layout
+
+\begin_layout Section
+Forced Convection Transient Flow Analysis using Integral Momentum Equation
+\end_layout
+
+\begin_layout Section
+Natural Circulation Flow Analysis using Integral Momentum Equation
+\end_layout
+
+\begin_layout Section
+Control Volume Analysis for Nuclear Reactor System and Application to Various
+ Accident Analyses
+\end_layout
+
+\begin_layout Section
+Two-phase Flow Regimes and Boiling Flow Regimes in Terms of Heat Transfer
+\end_layout
+
+\begin_layout Section
+Local Instant Formulation of Two-phase Flow Based on Single-Phase Flow Formulati
+on and Jump Conditions
+\end_layout
+
+\begin_layout Section
+Basic Concept and Parameters in Two-phase Flow such as Void Fraction
+\end_layout
+
+\begin_layout Section
+Derivation of Two-phase Flow Equations Based on Averaging
+\end_layout
+
+\begin_layout Section
+Closure Relations and Correlations for Two-phase Flow
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,10 @@
+clc; close all; clear;
+plot([15 15],[0 100],'k--',[70 70],[0 100],'k--');
+h(1)=xlabel('Time');
+h(2)=ylabel('Strain ($\varepsilon$)');
+set(h,'interpreter','latex');
+set(gca,'xtick',[],'xticklabel',{},'ytick',[],'yticklabel',{});
+axis([0 100 0 0.125]);
+set(gcf,'Position',[50 50 600 450],'PaperPositionMode','auto');
+set(gca,'Color','none');
+plot2svg('Strain_vs_Time_Plot.svg');

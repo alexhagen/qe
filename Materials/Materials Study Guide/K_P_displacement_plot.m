@@ -1,0 +1,10 @@
+x=[2 2 5 10 12];
+y=[0 1 1 10 10];
+h(1:4)=plot(x,y,'k-',[2 2],[0 15],'k--',[5 5],[0 15],'k--',[10 10],[0 15],'k--');
+set(h(1),'LineWidth',2);
+set(gca,'xtick',[2 5 10],'xticklabel',{'E_d','2E_d','E_c'},'ytick',[1]);
+xlabel('T');ylabel('V(T)');
+axis([0 12 0 11]);
+set(gcf,'Position',[50 50 1000 450],'PaperPositionMode','auto');
+set(gca,'Color','none');
+plot2svg('K-P_Displacement_Plot.svg');
