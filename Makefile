@@ -23,7 +23,7 @@ docs: FORCE
 	for f in th/*.ipynb;	do \
 		echo "$$f"; \
 		rm $${f%.ipynb}.md; \
-	done
+	done \
 	#pandoc README.md -o docs/README.rst; \
 	#cd docs/; \
 	#sphinx-apidoc -e -f -M -o ./ ../; \
