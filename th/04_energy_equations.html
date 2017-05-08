@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [["$","$"]],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+            <h1 id="energy-equations">Energy Equations</h1>
+<p>This material is from (<a href="#Bird2007">Bird, et. al. 2007</a>). We will finish up our derivation of the conservation equations with the conservation of energy. This equation is significantly more complicated, and is given in many forms without the assumptions required to simplify it.</p>
+<h2 id="energy-equation">Energy equation</h2>
+<p>Applying the GBE with <span class="math inline">$\psi=\rho\left(u+\frac{\vec{v}^{2}}{2}\right)$</span>, <span class="math inline">$\mathbb{J}=\vec{q}+\mathbb{T}\vec{v}$</span> and <span class="math inline">$\dot{\psi_{g}}=\rho\vec{v}\cdot\vec{g}+\dot{q}$</span>. We can recognize that these simply the assumptions for the momentum equation multiplied by velocity, with an extra term <span class="math inline">$\dot{q}$</span> in the generation term, which corresponds to volumetric heat generation in the flux. This is possible through chemical reactions, radiant heat absorption, or fission/nuclear reactions. This gives us the equation <br /><span class="math display">$$\underbrace{\frac{\partial\left(\rho\left(u+\frac{\vec{v}^{2}}{2}\right)\right)}{\partial t}}_{\substack{\text{rate of energy change}\\
+\text{per unit volume}
+}
+}+\underbrace{\nabla\cdot\rho\vec{v}\left(u+\frac{\vec{v}^{2}}{2}\right)}_{\substack{\text{rate of energy change}\\
+\text{by convection per unit}\\
+\text{volume}
+}
+}\\=-\underbrace{\nabla\cdot\vec{q}}_{\substack{\text{conduction}}
+}-\underbrace{\nabla\cdot\left(p\vec{v}\right)}_{\substack{\text{work done by}\\
+\text{pressure}
+}
+}-\underbrace{\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)}_{\substack{\text{work done by}\\
+\text{viscous force}
+}
+}+\underbrace{\rho\left(\vec{v}\cdot\vec{g}\right)}_{\substack{\text{work done}\\
+\text{by gravity}
+}
+}+\underbrace{\dot{q}}_{\substack{\text{heat}\\
+\text{generation}
+}
+}$$</span><br /> and we want to put this in a more usable form. We split these into kinetic energy and internal energy forms, by FOIL-ing the flux terms: <br /><span class="math display">$$-\nabla\cdot\left(p\vec{v}\right)=-\underbrace{p\nabla\cdot\vec{v}}_{\substack{\text{reversible}\\
+\text{\ensuremath{pdV} work}
+}
+}-\underbrace{\vec{v}\cdot\nabla p}_{\substack{\text{kinetic}\\
+\text{energy}
+}
+}$$</span><br /> <br /><span class="math display">$$-\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)=-\underbrace{\boldsymbol{\tau}:\nabla\vec{v}}_{\substack{\text{irreversible}\\
+\text{viscous work}
+}
+}-\underbrace{\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{kinetic}\\
+\text{energy}
+}
+}$$</span><br />. Then our forms are:</p>
+<ul>
+<li>Internal Energy: <br /><span class="math display">$$\frac{Du}{Dt}=-\nabla\cdot\vec{q}-p\nabla\cdot\vec{v}-\boldsymbol{\tau}:\nabla\vec{v}+\dot{q}$$</span><br /></li>
+<li>Kinetic Energy: <br /><span class="math display">$$\frac{D\frac{\vec{v}^{2}}{2}}{Dt}=-\vec{v}\cdot\nabla p-\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}+\rho\vec{v}\cdot\vec{g}$$</span><br /></li>
+</ul>
+<p>These are not <strong>basic balance equations</strong>, though, because they don't follow the form <span class="math inline">∇( )</span>.</p>
+<p>Some other equations to remember, which are created though assumptions and simplification of the energy equations are:</p>
+<ul>
+<li>Poisson's Heat Equation: <br /><span class="math display">$$\rho c_{p}\frac{\partial T}{\partial t}=\nabla\cdot\left(k\nabla T\right)+\dot{q}$$</span><br /></li>
+<li>Temperature Equation: <br /><span class="math display">$$\rho c_{v}\frac{DT}{Dt}=\rho c_{v}\frac{\partial T}{\partial t}+\rho c_{v}\vec{v}\nabla\cdot T=k\nabla^{2}T-\boldsymbol{\tau}:\nabla\vec{v}+T\left.\frac{\partial p}{\partial T}\right)_{\rho}\nabla\cdot\vec{v}+\dot{q}$$</span><br /></li>
+</ul>
+<h2>
+Bibliography
+</h2>
+<ol>
+<li name="Bird2007">
+<!-- This document was automatically generated with bibtex2html 1.98
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmplfE2Cn.bib  -->
+<p>
+<p><a name="Bird2007"></a></p>
+<p>R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p>
+</p>
+</li>
+</ol>
+            </div>
+    </div>
+  </div>
+</body>
+</html>
