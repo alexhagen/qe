@@ -30,7 +30,7 @@ docs: FORCE
 	#git add *.rst; \
 	#git commit -am "$(shell git log -1 --pretty=%B | tr -d '\n')"; \
 	#mkdir -p ~/pages/pyg/docs; \
-	cd ~/pages/pyg/qe/; \
+	cd ~/pages/qe/; \
 	git pull; \
 	git rm -r *; \
 	cp -r ~/code/qe/_site/* ~/pages/qe/; \
