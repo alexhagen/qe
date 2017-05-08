@@ -16,7 +16,7 @@ docs: FORCE
 	mkdir -p _site/th/; \
 	for f in th/*.ipynb;	do \
 		echo "$$f"; \
-		jupyter nbconvert --to Markdown "$$f"; \
+		jupyter nbconvert --to Markdown --template css/simplemd.tplx "$$f"; \
 		pandoc $${f%.ipynb}.md --to HTML --css ../css/bootstrap.css --template css/template.html > _site/$${f%.ipynb}.html; \
 	done; \
 	sleep 1; \
@@ -30,16 +30,13 @@ docs: FORCE
 	#git add *.rst; \
 	#git commit -am "$(shell git log -1 --pretty=%B | tr -d '\n')"; \
 	#mkdir -p ~/pages/pyg/docs; \
-	#cd ~/pages/pyg/docs/; \
-	#git rm -r *; \
-	#mkdir -p ~/pages/pyg/docs; \
-	#cd ~/code/pyg/docs/; \
-	#make html; \
-	#cp -r .build/html/* ~/pages/pyg/docs/; \
-	#cd ~/pages/pyg/docs; \
-	#git add *; \
-	#git commit -am "$(shell git log -1 --pretty=%B | tr -d '\n')"; \
-	#git push origin gh-pages; \
-	#cd ~/code/pyg
+	cd ~/pages/pyg/qe/; \
+	git pull; \
+	git rm -r *; \
+	cp -r ~/code/qe/_site/ ~/pages/qe/; \
+	git add *; \
+	git commit -am "$(shell git log -1 --pretty=%B | tr -d '\n')"; \
+	git push origin gh-pages; \
+	cd ~/code/qe
 
 FORCE:
