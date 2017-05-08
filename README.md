@@ -27,9 +27,9 @@ the tutorials, but still, I think it's a good tactic.
 
 - Thermal Hydraulics
   - General Balance Equations and Basic Heat Transfer
-    - [Vector Operators](th/01_vector_operations.html)
+    - [Vector Operators](th/01_vector_operators.html)
     - [General Balance Equation and Continuity Equation](th/02_general_balance_equations_and_continuity_equation.html)
-    - [Momentum Equation and Boussinesq Assumptions](th/03momentum_equation_and_boussinesq_assumption.html)
+    - [Momentum Equation and Boussinesq Assumptions](th/03_momentum_equation_and_boussinesq_assumption.html)
     - [Energy Equations](th/04_energy_equations.html)
     - Non-Dimensional Parameters
     - Friction Factor and Heat Transfer Coefficient

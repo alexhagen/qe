@@ -35,7 +35,7 @@ docs: FORCE
 	git rm -r *; \
 	cp -r ~/code/qe/_site/* ~/pages/qe/; \
 	touch .nojekyll; \
-	git add *; \
+	git add * .nojekyll; \
 	git commit -am "$(shell git log -1 --pretty=%B | tr -d '\n')"; \
 	git push origin gh-pages; \
 	cd ~/code/qe
