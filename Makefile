@@ -3,6 +3,8 @@ all: docs
 docs: FORCE
 	MSG="$(shell git log -1 --pretty=%B | tr -d '\n')"
 	@echo $(MSG)
+	# clean the site
+	rm -rf _site/; \
 	# make a folder
 	mkdir -p _site/; \
 	# make an index file
@@ -10,11 +12,18 @@ docs: FORCE
 	# copy the css over
 	mkdir -p _site/css; \
 	cp css/bootstrap.css _site/css/; \
-	# now go to th
-	cd th; \
-	# make a site folder
-	mkdir -p ../_site/th; \
-	for f in *.ipynb; do jupyter nbconvert $f --to HTML; pandoc --to HTML --css css/bootstrap.css --template ../css/template.html > ../_site/th/${f%.ipynb}.html; done; \
+	# make a site folder for th
+	mkdir -p _site/th/; \
+	for f in th/*.ipynb;	do \
+		echo "$$f"; \
+		jupyter nbconvert --to Markdown "$$f"; \
+		pandoc $${f%.ipynb}.md --to HTML --css ../css/bootstrap.css --template css/template.html > _site/$${f%.ipynb}.html; \
+	done; \
+	sleep 1; \
+	for f in th/*.ipynb;	do \
+		echo "$$f"; \
+		rm $${f%.ipynb}.md; \
+	done
 	#pandoc README.md -o docs/README.rst; \
 	#cd docs/; \
 	#sphinx-apidoc -e -f -M -o ./ ../; \

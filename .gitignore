@@ -1,6 +1,8 @@
+# site folder
+_site/
+
 # Mac Files
 .DS_Store
 
 # LaTeX Files
 *.lyx~
-
