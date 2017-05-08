@@ -16,11 +16,64 @@
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 </head>
 <body>
-    <div class="container">
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <a href="/" class="navbar-brand">Purdue PhDNE Quals</a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-main">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Thermal Hydraulics <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="th">
+          <li><a href="/th/01_vector_operators.html">Vector Operators</a></li>
+          <li><a href="/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
+          <li><a href="/th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
+          <li><a href="/th/04_energy_equations.html">Energy Equations</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Neutronics <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="neu">
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Materials <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="mat">
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Interactions <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="int">
+        </ul>
+      </li>
+      <li>
+        <a href="../help/">Help</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
+    </ul>
+
+  </div>
+</div>
+</div>
+  <div class="container">
     <div class="row">
             <div class="span12">
             <h1 id="purdue-nuclear-engineering-phd-qualification-exams">Purdue Nuclear Engineering PhD Qualification Exams</h1>
