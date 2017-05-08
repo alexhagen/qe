@@ -33,7 +33,7 @@ docs: FORCE
 	cd ~/pages/pyg/qe/; \
 	git pull; \
 	git rm -r *; \
-	cp -r ~/code/qe/_site/ ~/pages/qe/; \
+	cp -r ~/code/qe/_site/* ~/pages/qe/; \
 	git add *; \
 	git commit -am "$(shell git log -1 --pretty=%B | tr -d '\n')"; \
 	git push origin gh-pages; \
