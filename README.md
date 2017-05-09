@@ -25,6 +25,17 @@ the tutorials below $15\times$ as a way to memorize them, and that worked
 incredibly well. It may have been that I had to pour over material to generate
 the tutorials, but still, I think it's a good tactic.
 
+<!--
+<div id="menu">
+<div class="panel list-group">
+<a href="#" class="list-group-item" data-toggle="collapse" data-target="#th" data-parent="#menu">Thermal Hydraulics</a>
+<div id="th" class="sublinks collapse">
+<a class='list-group-item small' href='th/01_vector_operators.html'>Vector Operators</a>
+</div>
+</div>
+</div>
+-->
+
 - Thermal Hydraulics
   - General Balance Equations and Basic Heat Transfer
     - [Vector Operators](th/01_vector_operators.html)
