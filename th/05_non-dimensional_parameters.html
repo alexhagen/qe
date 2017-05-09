@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
 </head>
 <body>
+
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
   <div class="navbar-header">
@@ -72,157 +73,149 @@
     </ul>
   </div>
   </div>
-  <div class="container">
-    <div class="row" style="padding-top:70px;">
-            <div class="span12">
-            <h1 id="non-dimensional-parameters">Non-Dimensional Parameters</h1>
-<p>This material is taken from (<a href="#Bird2007">Bird, et. al. 2007</a>). The non-dimensional parameters are all over the field of fluids and thermal hydraulics. Their importance is, in my opinion, overstated. Any paper worth its salt will describe the non-dimensional number and its calculation before using it as a parameter. However, the idea that one can create parameters comparing effects without some sort of unit change is important, and several numbers, such as <span class="math inline"><em>R</em><em>e</em></span> and <span class="math inline"><em>P</em><em>r</em></span> are seen a lot in the literature.</p>
-<pre><code>        &lt;div class=&#39;table&#39; style=&#39;align: center; margin-left: auto; margin-right: auto;&#39;&gt;
-            &lt;div style=&#39;margin: auto; text-align: center;&#39; class=&#39;tablecaption&#39; name=&#39;nondim&#39;&gt;&lt;b&gt;Table 1:&lt;/b&gt; Non-Dimensional Parameters and their definitions&lt;/div&gt;
-            &lt;table&gt;</code></pre>
-<tr>
-<th style="text-align: center;">
-Symbol
-</th>
-<th style="text-align: center;">
-Name
-</th>
-<th style="text-align: center;">
-<pre><code>            Formula                &lt;/th&gt;&lt;th style=&quot;text-align: center;&quot;&gt;                                     Physical Meaning                                      &lt;/th&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>R</em><em>e</em></span>
-</td>
-<td style="text-align: center;">
-Reynold's
-</td>
-<td style="text-align: center;">
-<pre><code>     $\frac{\rho vD}{\mu}$         &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                   $\frac{\text{inertial force}}{\text{viscous force}}$                    &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>P</em><em>r</em></span>
-</td>
-<td style="text-align: center;">
-Prandtl
-</td>
-<td style="text-align: center;">
-<span class="math inline">$\frac{\nu}{\alpha}=\frac{c_{p}\mu}{k}$</span>
-</td>
-<td style="text-align: center;">
-<pre><code>                                        --                                             &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>G</em><em>r</em></span>
-</td>
-<td style="text-align: center;">
-Grashof
-</td>
-<td style="text-align: center;">
-<span class="math inline">$\frac{g\beta\Delta TD^{3}}{\nu^{2}}$</span>
-</td>
-<td style="text-align: center;">
-<pre><code>                                        --                                             &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>B</em><em>r</em></span>
-</td>
-<td style="text-align: center;">
-Brinkman
-</td>
-<td style="text-align: center;">
-<pre><code> $\frac{\mu v^{2}}{k\Delta T}$     &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;$\frac{\text{heat production by viscous dissipation}}{\text{heat transport by conduction}}$&lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>P</em><em>e</em></span>
-</td>
-<td style="text-align: center;">
-Peclet
-</td>
-<td style="text-align: center;">
-<pre><code>            $RePr$                 &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;        $\frac{\text{convection heat transport}}{\text{conduction heat transport}}$        &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>R</em><em>a</em></span>
-</td>
-<td style="text-align: center;">
-Rayleigh
-</td>
-<td style="text-align: center;">
-<pre><code>            $GrPr$                 &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                                            --                                             &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>E</em><em>c</em></span>
-</td>
-<td style="text-align: center;">
-Eckert
-</td>
-<td style="text-align: center;">
-<pre><code>        $\frac{Br}{Pr}$            &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                                            --                                             &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>F</em><em>r</em></span>
-</td>
-<td style="text-align: center;">
-Froude
-</td>
-<td style="text-align: center;">
-<pre><code>     $\frac{\rho v}{pgD}$          &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                $\frac{\text{inertial force}}{\text{gravitational force}}$                 &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
---
-</td>
-<td style="text-align: center;">
---
-</td>
-<td style="text-align: center;">
-<pre><code>      $\frac{Gr}{Re^{2}}$          &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                   $\frac{\text{buoyant force}}{\text{inertial force}}$                    &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>M</em><em>a</em></span>
-</td>
-<td style="text-align: center;">
-Mach
-</td>
-<td style="text-align: center;">
-<pre><code>         $\frac{v}{c}$             &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                                            --                                             &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>N</em><em>u</em></span>
-</td>
-<td style="text-align: center;">
-Nusselt
-</td>
-<td style="text-align: center;">
-<pre><code>        $\frac{hD}{k}$             &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                       $\frac{\text{convection}}{\text{conduction}}$                       &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>W</em><em>e</em></span>
-</td>
-<td style="text-align: center;">
-Weber
-</td>
-<td style="text-align: center;">
-<pre><code>  $\frac{Dv^{2}\rho}{\sigma}$      &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                  $\frac{\text{inertial force}}{\text{surface tension}}$                   &lt;/td&gt;&lt;/tr&gt;</code></pre>
-<tr>
-<td style="text-align: center;">
-<span class="math inline"><em>B</em><em>i</em></span>
-</td>
-<td style="text-align: center;">
-Biot
-</td>
-<td style="text-align: center;">
-<pre><code>        $\frac{hD}{k}$             &lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;                       $\frac{\text{convection}}{\text{conduction}}$                       &lt;/td&gt;&lt;/tr&gt;</code></pre>
-</table>
-<pre><code>        &lt;/div&gt;
-    </code></pre>
-<h2>
-Bibliography
-</h2>
-<ol>
-</ol>
-            </div>
+</div>
+<div class="container">
+  <div class="row" style="padding-top:70px;">
+    <div class="cell border-box-sizing code_cell rendered">
+    
+    </div>
+    <div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    
+    </div>
+    <div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <h1 id="Non-Dimensional-Parameters">Non-Dimensional Parameters<a href="#Non-Dimensional-Parameters" class="anchor-link">¶</a></h1>
+    <p>This material is taken from (<a href="#Bird2007">Bird, et. al. 2007</a>). The non-dimensional parameters are all over the field of fluids and thermal hydraulics. Their importance is, in my opinion, overstated. Any paper worth its salt will describe the non-dimensional number and its calculation before using it as a parameter. However, the idea that one can create parameters comparing effects without some sort of unit change is important, and several numbers, such as $Re$ and $Pr$ are seen a lot in the literature.</p>
+    </div>
+    </div>
+    </div>
+    <div class="cell border-box-sizing code_cell rendered">
+    <div class="output_wrapper">
+    <div class="output">
+    <div class="output_area">
+    <div class="prompt">
+    
+    </div>
+    <div class="output_html rendered_html output_subarea">
+    <div class="table" style="align: center; margin-left: auto; margin-right: auto;">
+    <div class="tablecaption" style="margin: auto; text-align: center;" name="nondim">
+    <strong>Table 1:</strong> Non-Dimensional Parameters and their definitions
+    </div>
+    <table>
+    <thead>
+    <tr class="header">
+    <th align="left">Symbol</th>
+    <th align="left">Name</th>
+    <th align="left">Formula</th>
+    <th align="left">Physical Meaning</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left">$Re$</td>
+    <td align="left">Reynold's</td>
+    <td align="left">$\frac{\rho vD}{\mu}$</td>
+    <td align="left">$\frac{\text{inertial force}}{\text{viscous force}}$</td>
+    </tr>
+    <tr class="even">
+    <td align="left">$Pr$</td>
+    <td align="left">Prandtl</td>
+    <td align="left">$\frac{\nu}{\alpha}=\frac{c_{p}\mu}{k}$</td>
+    <td align="left">--</td>
+    </tr>
+    <tr class="odd">
+    <td align="left">$Gr$</td>
+    <td align="left">Grashof</td>
+    <td align="left">$\frac{g\beta\Delta TD^{3}}{\nu^{2}}$</td>
+    <td align="left">--</td>
+    </tr>
+    <tr class="even">
+    <td align="left">$Br$</td>
+    <td align="left">Brinkman</td>
+    <td align="left">$\frac{\mu v^{2}}{k\Delta T}$</td>
+    <td align="left">$\frac{\text{heat production by viscous dissipation}}{\text{heat transport by conduction}}$</td>
+    </tr>
+    <tr class="odd">
+    <td align="left">$Pe$</td>
+    <td align="left">Peclet</td>
+    <td align="left">$RePr$</td>
+    <td align="left">$\frac{\text{convection heat transport}}{\text{conduction heat transport}}$</td>
+    </tr>
+    <tr class="even">
+    <td align="left">$Ra$</td>
+    <td align="left">Rayleigh</td>
+    <td align="left">$GrPr$</td>
+    <td align="left">--</td>
+    </tr>
+    <tr class="odd">
+    <td align="left">$Ec$</td>
+    <td align="left">Eckert</td>
+    <td align="left">$\frac{Br}{Pr}$</td>
+    <td align="left">--</td>
+    </tr>
+    <tr class="even">
+    <td align="left">$Fr$</td>
+    <td align="left">Froude</td>
+    <td align="left">$\frac{\rho v}{pgD}$</td>
+    <td align="left">$\frac{\text{inertial force}}{\text{gravitational force}}$</td>
+    </tr>
+    <tr class="odd">
+    <td align="left">--</td>
+    <td align="left">--</td>
+    <td align="left">$\frac{Gr}{Re^{2}}$</td>
+    <td align="left">$\frac{\text{buoyant force}}{\text{inertial force}}$</td>
+    </tr>
+    <tr class="even">
+    <td align="left">$Ma$</td>
+    <td align="left">Mach</td>
+    <td align="left">$\frac{v}{c}$</td>
+    <td align="left">--</td>
+    </tr>
+    <tr class="odd">
+    <td align="left">$Nu$</td>
+    <td align="left">Nusselt</td>
+    <td align="left">$\frac{hD}{k}$</td>
+    <td align="left">$\frac{\text{convection}}{\text{conduction}}$</td>
+    </tr>
+    <tr class="even">
+    <td align="left">$We$</td>
+    <td align="left">Weber</td>
+    <td align="left">$\frac{Dv^{2}\rho}{\sigma}$</td>
+    <td align="left">$\frac{\text{inertial force}}{\text{surface tension}}$</td>
+    </tr>
+    <tr class="odd">
+    <td align="left">$Bi$</td>
+    <td align="left">Biot</td>
+    <td align="left">$\frac{hD}{k}$</td>
+    <td align="left">$\frac{\text{convection}}{\text{conduction}}$</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="cell border-box-sizing code_cell rendered">
+    <div class="output_wrapper">
+    <div class="output">
+    <div class="output_area">
+    <div class="prompt">
+    
+    </div>
+    <div class="output_html rendered_html output_subarea">
+    <h2 id="bibliography">Bibliography</h2>
+    <ol>
+    <li><p><a href=""></a> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
+    </ol>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
   </div>
-  </div>
+</div>
 </body>
 </html>
