@@ -16,7 +16,7 @@ docs: FORCE
 	mkdir -p _site/th/; \
 	for f in th/*.ipynb;	do \
 		echo "$$f"; \
-		jupyter nbconvert --to Markdown --template css/simplemd.tplx "$$f"; \
+		jupyter nbconvert --to Markdown --execute --template css/simplemd.tplx "$$f"; \
 		pandoc $${f%.ipynb}.md --to HTML --css ../css/bootstrap.css --template css/template.html > _site/$${f%.ipynb}.html; \
 	done; \
 	sleep 1; \

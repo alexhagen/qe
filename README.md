@@ -31,7 +31,7 @@ the tutorials, but still, I think it's a good tactic.
     - [General Balance Equation and Continuity Equation](th/02_general_balance_equations_and_continuity_equation.html)
     - [Momentum Equation and Boussinesq Assumptions](th/03_momentum_equation_and_boussinesq_assumption.html)
     - [Energy Equations](th/04_energy_equations.html)
-    - Non-Dimensional Parameters
+    - [Non-Dimensional Parameters](th/05_non-dimensional_parameters.html)
     - Friction Factor and Heat Transfer Coefficient
   - Applications of General Balance Equations
     - Pipe Flow
