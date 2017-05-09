@@ -1,5 +1,6 @@
 # site folder
 _site/
+.ipynb_checkpoints/
 
 # Mac Files
 .DS_Store
