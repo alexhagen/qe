@@ -12,6 +12,7 @@ docs: FORCE
 	# copy the css over
 	mkdir -p _site/css; \
 	cp css/bootstrap.css _site/css/; \
+	cp css/*.svg _site/css/; \
 	# make a site folder for th
 	mkdir -p _site/th/; \
 	for f in th/*.ipynb;	do \
