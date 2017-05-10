@@ -99,7 +99,7 @@ the tutorials, but still, I think it's a good tactic.
     - Neutronics Bibliography
 - Interactions and Detection
     - Internal Conversion versus Electron Capture
-    - Decay Situations
+    - [Decay and Transmutation](int/01_decay.html)
     - Stopping Power
     - Binding Energy
     - Relativistic Particle Wavelength
