@@ -135,9 +135,7 @@
     </div>
     <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-    <h1 id="General-Balance-Equations-and-Continuity-Equation">General Balance Equations and Continuity Equation<a href="#General-Balance-Equations-and-Continuity-Equation" class="anchor-link">¶</a></h1>
-    <p>Based on the derivation in (<a href="#Bird2007">Bird, et. al. 2007</a>).</p>
-    <p>The general balance equations (GBE) are the main tennets of continuum mechanics. Proper derivation of these equations is absolutely essential to theral-hydraulics. They are also incredibly useful for other physical systems, and when coupled with the electronic charge conservation equation, could (ostensibly) solve any non-quantum mechanical problem.</p>
+    <h1 id="Radioactive-Decay">Radioactive Decay<a href="#Radioactive-Decay" class="anchor-link">¶</a></h1>
     </div>
     </div>
     </div>
@@ -147,13 +145,7 @@
     </div>
     <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="General-Balance-Equation">General Balance Equation<a href="#General-Balance-Equation" class="anchor-link">¶</a></h2>
-    <p>The general balance equation for any property is given by:</p>
-    $$\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\ \text{per unit time}\\ \text{in volume }V_{m} } }=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\ \text{surface }S_{m} } }+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\ \text{in volume }V_{m} } }$$
-    <p>We can use Reynold's Transport theorem, which states that $\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV$ and Greene Theorem, which thats $\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV$. Inputting these two expressions to first convert the material derivative to time and spatial derivative and to convert the surface integral to a volume integral, respectively. With these two changes and combining volume integrals, we then get</p>
-    $$\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV$$
-    <p>and after differentiating:</p>
-    $$\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\ \text{per unit time}\\ \text{per unit volume} } }\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\ \text{material motion}\\ \text{per unit volume} } }=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\ \text{surface }S_{m}\text{ per}\\ \text{unit volume} } }+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\ \text{per unit volume} } }$$
+    <p>This material comes from everywhere, but I guess I'll just say that it comes from (<a href="#Lamarsh2001a">Lamarsh, et. al. 2001</a>) or (<a href="#Cember2012a">Cember, 2012</a>); both of these are great introductory texts for Nuclear Engineering.</p>
     </div>
     </div>
     </div>
@@ -163,14 +155,26 @@
     </div>
     <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Continuity-Equation">Continuity Equation<a href="#Continuity-Equation" class="anchor-link">¶</a></h2>
-    <p>Apply the GBE, using $\psi = \rho$, $\mathbb{J} = 0$, and $\dot{\psi_{g}} = 0$, we get</p>
-    $$\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0$$
-    <p>which is equivalent to (by FOIL): $\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}$ and using the material derivative's definition: $\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho$ in the above equation, we get:</p>
-    $$\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}$$
-    <p>and assuming incompressible: $\frac{D\rho}{Dt}=0$, it is apparent that:</p>
-    $$\nabla\cdot\vec{v}=0$$
-    <p>which is the continuity equation.</p>
+    <p>It seems silly to say, but a lot of graduate nuclear engineers have to <em>think</em> about what decay means what as far as transmutation goes. And we all know the problems with people thinking... It's important to <strong>know</strong> the transmutation situations for at least the most common modes of decay.</p>
+    </div>
+    </div>
+    </div>
+    <div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    
+    </div>
+    <div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <p>Given an atom of isotope $\mathrm{\sideset{^{A}_{Z}}{_{N}}X}$ where $A$ is the atomic number, $Z$ is the number of protons, and $N$ is the number of neutrons, and $X$ is the atom's symbol, we have the neutron atomic mass $M\left(Z,A\right)$. We can use the definition $1\mathrm{amu} \equiv 931.5\mathrm{MeV}$ to convert this to our modified $cgs$ units system.</p>
+    <p><strong>Positron Decay</strong></p>
+    <p>A proton in the nucleus turns into a neutron, emitting a positron (positively charged particle with mass of an electron) and a neutrino.</p>
+    $$\mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A}_{Z-1}}{_{N+1}}Y + \beta^{+} + \nu}$$
+    <p><strong>Beta Decay</strong></p>
+    <p>A neutron in the nucleus turns into a proton, emitting a $\beta$ (negative charged particle with mass of an electron - basically an electron) and an anti-neutrino.</p>
+    $$\mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A}_{Z+1}}{_{N-1}}Y + \beta^{-} + \overline{\nu}}$$
+    <p><strong>Alpha Decay</strong></p>
+    <p>A helium nucleus within the full nucleus is ejected.</p>
+    $$\mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A-4}_{Z-2}}{_{N-2}}Y + \sideset{^{4}_{2}}{_{2}}\alpha}$$
     </div>
     </div>
     </div>
@@ -184,15 +188,13 @@
     <div class="output_html rendered_html output_subarea">
     <h2 id="bibliography">Bibliography</h2>
     <ol>
-    <li><p><a href=""></a> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
+    <li><p><a href=""></a> John R Lamarsh and Anthony J Baratta. <em>Introduction to Nuclear Engineering</em>. Upper Saddle River, New Jersey, third edition, 2001.</p></li>
+    <li><p><a href=""></a> H. Cember. <em>Introduction to Health Physics</em>. McGraw Medical, New York, 4th edition, 2012.</p></li>
     </ol>
     </div>
     </div>
     </div>
     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    
     </div>
   </div>
 </div>

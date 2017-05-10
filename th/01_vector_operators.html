@@ -78,7 +78,7 @@
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
   <div class="navbar-header">
-    <a href="/qe/" class="navbar-brand"><img src='css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
+    <a href="/qe/" class="navbar-brand"><img src='/qe/css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -88,7 +88,7 @@
   <div class="navbar-collapse collapse" id="navbar-main">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Thermal Hydraulics <span class="caret"></span></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="th">Thermal Hydraulics <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="th">
           <li><a href="/qe/th/01_vector_operators.html">Vector Operators</a></li>
           <li><a href="/qe/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
@@ -98,18 +98,19 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Neutronics <span class="caret"></span></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="neu">Neutronics <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="neu">
         </ul>
       </li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Materials <span class="caret"></span></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="mat">
         </ul>
       </li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Interactions <span class="caret"></span></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="int">Interactions <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="int">
+          <li><a href="/qe/int/01_decay.html">Decay and Transmutation</a></li>
         </ul>
       </li>
       <li>
@@ -159,26 +160,26 @@
     <table>
     <thead>
     <tr class="header">
-    <th>Property</th>
-    <th>Expression</th>
+    <th align="left">Property</th>
+    <th align="left">Expression</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Commutative</td>
-    <td>$\nabla\left(fg\right)=f\nabla g+g\nabla f$</td>
+    <td align="left">Commutative</td>
+    <td align="left">$\nabla\left(fg\right)=f\nabla g+g\nabla f$</td>
     </tr>
     <tr class="even">
-    <td>Cartesian</td>
-    <td>$\nabla f=\frac{\partial f}{\partial x}\hat{x}+\frac{\partial f}{\partial y}\hat{y}+\frac{\partial f}{\partial z}\hat{z}$</td>
+    <td align="left">Cartesian</td>
+    <td align="left">$\nabla f=\frac{\partial f}{\partial x}\hat{x}+\frac{\partial f}{\partial y}\hat{y}+\frac{\partial f}{\partial z}\hat{z}$</td>
     </tr>
     <tr class="odd">
-    <td>Cylindrical</td>
-    <td>$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$</td>
+    <td align="left">Cylindrical</td>
+    <td align="left">$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$</td>
     </tr>
     <tr class="even">
-    <td>Spherical</td>
-    <td>$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial f}{\partial\phi}\hat{\phi}$</td>
+    <td align="left">Spherical</td>
+    <td align="left">$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial f}{\partial\phi}\hat{\phi}$</td>
     </tr>
     </tbody>
     </table>
@@ -204,26 +205,26 @@
     <table>
     <thead>
     <tr class="header">
-    <th>Property</th>
-    <th>Expression</th>
+    <th align="left">Property</th>
+    <th align="left">Expression</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Commutative</td>
-    <td>$\nabla\cdot\left(f\vec{v}\right)=f\left(\nabla\cdot\vec{v}\right)+\vec{v}\cdot\left(\nabla\cdot f\right)$</td>
+    <td align="left">Commutative</td>
+    <td align="left">$\nabla\cdot\left(f\vec{v}\right)=f\left(\nabla\cdot\vec{v}\right)+\vec{v}\cdot\left(\nabla\cdot f\right)$</td>
     </tr>
     <tr class="even">
-    <td>Cartesian</td>
-    <td>$\nabla\cdot f=\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}$</td>
+    <td align="left">Cartesian</td>
+    <td align="left">$\nabla\cdot f=\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}$</td>
     </tr>
     <tr class="odd">
-    <td>Cylindrical</td>
-    <td>$\nabla\cdot f=\frac{1}{r}\frac{\partial\left(rv_{r}\right)}{\partial r}+\frac{1}{r}\frac{\partial v_{\theta}}{\partial\theta}+\frac{\partial v_{z}}{\partial z}$</td>
+    <td align="left">Cylindrical</td>
+    <td align="left">$\nabla\cdot f=\frac{1}{r}\frac{\partial\left(rv_{r}\right)}{\partial r}+\frac{1}{r}\frac{\partial v_{\theta}}{\partial\theta}+\frac{\partial v_{z}}{\partial z}$</td>
     </tr>
     <tr class="even">
-    <td>Spherical</td>
-    <td>$\nabla\cdot f=\frac{1}{r^{2}}\frac{\partial\left(r^{2}v_{r}\right)}{\partial r}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial\left(\sin\left(\theta\right)v_{\theta}\right)}{\partial\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial v_{\phi}}{\partial\phi}$</td>
+    <td align="left">Spherical</td>
+    <td align="left">$\nabla\cdot f=\frac{1}{r^{2}}\frac{\partial\left(r^{2}v_{r}\right)}{\partial r}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial\left(\sin\left(\theta\right)v_{\theta}\right)}{\partial\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial v_{\phi}}{\partial\phi}$</td>
     </tr>
     </tbody>
     </table>
@@ -249,22 +250,22 @@
     <table>
     <thead>
     <tr class="header">
-    <th>Property</th>
-    <th>Expression</th>
+    <th align="left">Property</th>
+    <th align="left">Expression</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Cartesian</td>
-    <td>$\nabla^{2}f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
+    <td align="left">Cartesian</td>
+    <td align="left">$\nabla^{2}f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
     </tr>
     <tr class="even">
-    <td>Cylindrical</td>
-    <td>$\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
+    <td align="left">Cylindrical</td>
+    <td align="left">$\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
     </tr>
     <tr class="odd">
-    <td>Spherical</td>
-    <td>$\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$</td>
+    <td align="left">Spherical</td>
+    <td align="left">$\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$</td>
     </tr>
     </tbody>
     </table>
@@ -281,7 +282,7 @@
     <div class="output_html rendered_html output_subarea">
     <h2 id="bibliography">Bibliography</h2>
     <ol>
-    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
+    <li><p><a href=""></a> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
     </ol>
     </div>
     </div>
