@@ -112,7 +112,7 @@ the tutorials, but still, I think it's a good tactic.
     - Binding Energy Calculation
     - Nuclear Structure Calculations
 - Materials
-    - Recoil Energy Calculation
+    - [Recoil Energy Calculation](mat/01_recoil_kinematics.html)
     - Swelling and Creep
     - Sputtering
     - Range Integration
