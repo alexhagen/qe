@@ -22,6 +22,40 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var MML = MathJax.ElementJax.mml,
+        TeX = MathJax.InputJax.TeX;
+
+    TeX.Definitions.macros.nicefrac = "myBevelFraction";
+    TeX.Definitions.macros.unit = "myUnit";
+    TeX.Definitions.macros.ce = "myCe";
+
+    TeX.Parse.Augment({
+      myBevelFraction: function (name) {
+        var num = this.ParseArg(name),
+            den = this.ParseArg(name);
+        this.Push(MML.mfrac(num,den).With({bevelled: true}));
+      },
+      myUnit: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      },
+      myCe: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      }
+    });
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+        cancel: ["Extension","cancel"],
+        bcancel: ["Extension","cancel"],
+        xcancel: ["Extension","cancel"],
+        cancelto: ["Extension","cancel"]
+      });
+    });
+  </script>
   <style type="text/css">code{white-space: pre;}</style>
       <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <style>
@@ -105,6 +139,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="mat">
+          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -235,7 +270,7 @@
     </ul></li>
     <li>Materials
     <ul>
-    <li>Recoil Energy Calculation</li>
+    <li><a href="mat/01_recoil_kinematics.html">Recoil Energy Calculation</a></li>
     <li>Swelling and Creep</li>
     <li>Sputtering</li>
     <li>Range Integration</li>

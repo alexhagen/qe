@@ -162,7 +162,21 @@
 <div class="container">
   <div class="row" style="padding-top:70px;">
     <div class="cell border-box-sizing code_cell rendered">
+    <div class="output_wrapper">
+    <div class="output">
+    <div class="output_area">
+    <div class="prompt">
     
+    </div>
+    <div id="f57cfd34-b326-4ddd-a6a3-9f0b8b21430c">
+    
+    </div>
+    <div class="output_subarea output_javascript">
+    
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     <div class="cell border-box-sizing text_cell rendered">
     <div class="prompt input_prompt">
@@ -170,116 +184,52 @@
     </div>
     <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-    <h1 id="Non-Dimensional-Parameters">Non-Dimensional Parameters<a href="#Non-Dimensional-Parameters" class="anchor-link">¶</a></h1>
-    <p>This material is taken from (<a href="#Bird2007">Bird, et. al. 2007</a>). The non-dimensional parameters are all over the field of fluids and thermal hydraulics. Their importance is, in my opinion, overstated. Any paper worth its salt will describe the non-dimensional number and its calculation before using it as a parameter. However, the idea that one can create parameters comparing effects without some sort of unit change is important, and several numbers, such as $Re$ and $Pr$ are seen a lot in the literature.</p>
+    <h1 id="Recoil-Kinematics">Recoil Kinematics<a href="#Recoil-Kinematics" class="anchor-link">¶</a></h1>
+    <p>Again, this material is really common, but problably comes from (<a href="#Lamarsh2001a">Lamarsh, et. al. 2001</a>).</p>
+    <p><strong>Given an $\alpha$ of energy $E$ incident on $\mathrm{\sideset{^{9}}{}{Be}}$, what is the identity and energy of the recoil?</strong></p>
     </div>
     </div>
     </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
+    <div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
     
     </div>
-    <div class="output_html rendered_html output_subarea">
-    <div class="table" style="align: center; margin-left: auto; margin-right: auto;">
-    <div class="tablecaption" style="margin: auto; text-align: center;" name="nondim">
-    <strong>Table 1:</strong> Non-Dimensional Parameters and their definitions
-    </div>
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Symbol</th>
-    <th>Name</th>
-    <th>Formula</th>
-    <th>Physical Meaning</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>$Re$</td>
-    <td>Reynold's</td>
-    <td>$\frac{\rho vD}{\mu}$</td>
-    <td>$\frac{\text{inertial force}}{\text{viscous force}}$</td>
-    </tr>
-    <tr class="even">
-    <td>$Pr$</td>
-    <td>Prandtl</td>
-    <td>$\frac{\nu}{\alpha}=\frac{c_{p}\mu}{k}$</td>
-    <td>--</td>
-    </tr>
-    <tr class="odd">
-    <td>$Gr$</td>
-    <td>Grashof</td>
-    <td>$\frac{g\beta\Delta TD^{3}}{\nu^{2}}$</td>
-    <td>--</td>
-    </tr>
-    <tr class="even">
-    <td>$Br$</td>
-    <td>Brinkman</td>
-    <td>$\frac{\mu v^{2}}{k\Delta T}$</td>
-    <td>$\frac{\text{heat production by viscous dissipation}}{\text{heat transport by conduction}}$</td>
-    </tr>
-    <tr class="odd">
-    <td>$Pe$</td>
-    <td>Peclet</td>
-    <td>$RePr$</td>
-    <td>$\frac{\text{convection heat transport}}{\text{conduction heat transport}}$</td>
-    </tr>
-    <tr class="even">
-    <td>$Ra$</td>
-    <td>Rayleigh</td>
-    <td>$GrPr$</td>
-    <td>--</td>
-    </tr>
-    <tr class="odd">
-    <td>$Ec$</td>
-    <td>Eckert</td>
-    <td>$\frac{Br}{Pr}$</td>
-    <td>--</td>
-    </tr>
-    <tr class="even">
-    <td>$Fr$</td>
-    <td>Froude</td>
-    <td>$\frac{\rho v}{pgD}$</td>
-    <td>$\frac{\text{inertial force}}{\text{gravitational force}}$</td>
-    </tr>
-    <tr class="odd">
-    <td>--</td>
-    <td>--</td>
-    <td>$\frac{Gr}{Re^{2}}$</td>
-    <td>$\frac{\text{buoyant force}}{\text{inertial force}}$</td>
-    </tr>
-    <tr class="even">
-    <td>$Ma$</td>
-    <td>Mach</td>
-    <td>$\frac{v}{c}$</td>
-    <td>--</td>
-    </tr>
-    <tr class="odd">
-    <td>$Nu$</td>
-    <td>Nusselt</td>
-    <td>$\frac{hD}{k}$</td>
-    <td>$\frac{\text{convection}}{\text{conduction}}$</td>
-    </tr>
-    <tr class="even">
-    <td>$We$</td>
-    <td>Weber</td>
-    <td>$\frac{Dv^{2}\rho}{\sigma}$</td>
-    <td>$\frac{\text{inertial force}}{\text{surface tension}}$</td>
-    </tr>
-    <tr class="odd">
-    <td>$Bi$</td>
-    <td>Biot</td>
-    <td>$\frac{hD}{k}$</td>
-    <td>$\frac{\text{convection}}{\text{conduction}}$</td>
-    </tr>
-    </tbody>
-    </table>
+    <div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <p>First, we can write up our reaction $$\mathrm{\sideset{^{9}_{4}}{}{Be}} + \alpha \rightarrow \mathrm{\sideset{^{13}_{6}}{}C} + \gamma$$, then we have to apply energy and momentum conservation and solve.</p>
     </div>
     </div>
     </div>
+    <div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    
+    </div>
+    <div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <h3 id="Energy-Conservation">Energy Conservation<a href="#Energy-Conservation" class="anchor-link">¶</a></h3>
+    $$T_{\alpha} + m_{\alpha}c^{2} + m_{Be}c^{2} = T_{\gamma} + m_{C}c^{2} + T_{C}$$
+    </div>
+    </div>
+    </div>
+    <div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    
+    </div>
+    <div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <h3 id="Momentum-Conservation">Momentum Conservation<a href="#Momentum-Conservation" class="anchor-link">¶</a></h3>
+    $$p_{\alpha} = p_{\gamma} + p_{C}$$
+    </div>
+    </div>
+    </div>
+    <div class="cell border-box-sizing text_cell rendered">
+    <div class="prompt input_prompt">
+    
+    </div>
+    <div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+    <h3 id="Solve">Solve<a href="#Solve" class="anchor-link">¶</a></h3>
+    $$T_{\alpha} + \left[ m_{\alpha}c^{2} + m_{Be}c^{2} - m_{C}c^{2} = T_{\gamma} + T_{C}\right]$$$$5.3\unit{MeV} + 931.5\unit{\nicefrac{MeV}{amu}} \left[9\unit{amu}+4\unit{amu}-13\unit{amu}\right] = T_{\gamma} + T_{C}$$$$\frac{1}{c}\sqrt{\left(T_{\alpha}+2m_{\alpha}c^{2}\right)T_{\alpha}}=\frac{E_{\gamma}}{c}+\frac{1}{c}\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}$$$$\sqrt{\left(T_{\alpha}+2m_{\alpha}c^{2}\right)T_{\alpha}}=E_{\gamma}+\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}$$$$T_{\gamma}=15.55\unit{MeV}-T_{C}$$$$\sqrt{\left(T_{\alpha}+2m_{\alpha}c^{2}\right)T_{\alpha}}=15.55\unit{MeV}-T_{C}+\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}$$$$198.85\unit{MeV}-15.55\unit{MeV}=\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}-T_{C}$$$$\left(T_{C}+183.3\unit{MeV}\right)^{2}=\left(T_{C}^{2}+T_{C}2m_{C}c^{2}\right)$$$$\cancel{T_{c}^{2}}+\left(2\cdot183.3\unit{MeV}\right)T_{C}+\left(183.3\unit{MeV}\right)^{2}=\cancel{T_{C}^{2}}+T_{C}2m_{C}c^{2}$$$$T_{C}=-\frac{\left(183.3\unit{MeV}\right)^{2}}{\left(2\cdot183.3\unit{MeV}\right)-2m_{C}c^{2}}$$$$T_{C}=1.408\unit{MeV}$$
     </div>
     </div>
     </div>
@@ -293,7 +243,7 @@
     <div class="output_html rendered_html output_subarea">
     <h2 id="bibliography">Bibliography</h2>
     <ol>
-    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
+    <li><p><span id="Lamarsh2001a"></span> John R Lamarsh and Anthony J Baratta. <em>Introduction to Nuclear Engineering</em>. Upper Saddle River, New Jersey, third edition, 2001.</p></li>
     </ol>
     </div>
     </div>

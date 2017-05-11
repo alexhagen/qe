@@ -22,6 +22,40 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var MML = MathJax.ElementJax.mml,
+        TeX = MathJax.InputJax.TeX;
+
+    TeX.Definitions.macros.nicefrac = "myBevelFraction";
+    TeX.Definitions.macros.unit = "myUnit";
+    TeX.Definitions.macros.ce = "myCe";
+
+    TeX.Parse.Augment({
+      myBevelFraction: function (name) {
+        var num = this.ParseArg(name),
+            den = this.ParseArg(name);
+        this.Push(MML.mfrac(num,den).With({bevelled: true}));
+      },
+      myUnit: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      },
+      myCe: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      }
+    });
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+        cancel: ["Extension","cancel"],
+        bcancel: ["Extension","cancel"],
+        xcancel: ["Extension","cancel"],
+        cancelto: ["Extension","cancel"]
+      });
+    });
+  </script>
   <style type="text/css">code{white-space: pre;}</style>
       <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <style>
@@ -105,6 +139,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="mat">
+          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -160,26 +195,26 @@
     <table>
     <thead>
     <tr class="header">
-    <th align="left">Property</th>
-    <th align="left">Expression</th>
+    <th>Property</th>
+    <th>Expression</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left">Commutative</td>
-    <td align="left">$\nabla\left(fg\right)=f\nabla g+g\nabla f$</td>
+    <td>Commutative</td>
+    <td>$\nabla\left(fg\right)=f\nabla g+g\nabla f$</td>
     </tr>
     <tr class="even">
-    <td align="left">Cartesian</td>
-    <td align="left">$\nabla f=\frac{\partial f}{\partial x}\hat{x}+\frac{\partial f}{\partial y}\hat{y}+\frac{\partial f}{\partial z}\hat{z}$</td>
+    <td>Cartesian</td>
+    <td>$\nabla f=\frac{\partial f}{\partial x}\hat{x}+\frac{\partial f}{\partial y}\hat{y}+\frac{\partial f}{\partial z}\hat{z}$</td>
     </tr>
     <tr class="odd">
-    <td align="left">Cylindrical</td>
-    <td align="left">$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$</td>
+    <td>Cylindrical</td>
+    <td>$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$</td>
     </tr>
     <tr class="even">
-    <td align="left">Spherical</td>
-    <td align="left">$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial f}{\partial\phi}\hat{\phi}$</td>
+    <td>Spherical</td>
+    <td>$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial f}{\partial\phi}\hat{\phi}$</td>
     </tr>
     </tbody>
     </table>
@@ -205,26 +240,26 @@
     <table>
     <thead>
     <tr class="header">
-    <th align="left">Property</th>
-    <th align="left">Expression</th>
+    <th>Property</th>
+    <th>Expression</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left">Commutative</td>
-    <td align="left">$\nabla\cdot\left(f\vec{v}\right)=f\left(\nabla\cdot\vec{v}\right)+\vec{v}\cdot\left(\nabla\cdot f\right)$</td>
+    <td>Commutative</td>
+    <td>$\nabla\cdot\left(f\vec{v}\right)=f\left(\nabla\cdot\vec{v}\right)+\vec{v}\cdot\left(\nabla\cdot f\right)$</td>
     </tr>
     <tr class="even">
-    <td align="left">Cartesian</td>
-    <td align="left">$\nabla\cdot f=\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}$</td>
+    <td>Cartesian</td>
+    <td>$\nabla\cdot f=\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}$</td>
     </tr>
     <tr class="odd">
-    <td align="left">Cylindrical</td>
-    <td align="left">$\nabla\cdot f=\frac{1}{r}\frac{\partial\left(rv_{r}\right)}{\partial r}+\frac{1}{r}\frac{\partial v_{\theta}}{\partial\theta}+\frac{\partial v_{z}}{\partial z}$</td>
+    <td>Cylindrical</td>
+    <td>$\nabla\cdot f=\frac{1}{r}\frac{\partial\left(rv_{r}\right)}{\partial r}+\frac{1}{r}\frac{\partial v_{\theta}}{\partial\theta}+\frac{\partial v_{z}}{\partial z}$</td>
     </tr>
     <tr class="even">
-    <td align="left">Spherical</td>
-    <td align="left">$\nabla\cdot f=\frac{1}{r^{2}}\frac{\partial\left(r^{2}v_{r}\right)}{\partial r}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial\left(\sin\left(\theta\right)v_{\theta}\right)}{\partial\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial v_{\phi}}{\partial\phi}$</td>
+    <td>Spherical</td>
+    <td>$\nabla\cdot f=\frac{1}{r^{2}}\frac{\partial\left(r^{2}v_{r}\right)}{\partial r}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial\left(\sin\left(\theta\right)v_{\theta}\right)}{\partial\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial v_{\phi}}{\partial\phi}$</td>
     </tr>
     </tbody>
     </table>
@@ -250,22 +285,22 @@
     <table>
     <thead>
     <tr class="header">
-    <th align="left">Property</th>
-    <th align="left">Expression</th>
+    <th>Property</th>
+    <th>Expression</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left">Cartesian</td>
-    <td align="left">$\nabla^{2}f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
+    <td>Cartesian</td>
+    <td>$\nabla^{2}f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
     </tr>
     <tr class="even">
-    <td align="left">Cylindrical</td>
-    <td align="left">$\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
+    <td>Cylindrical</td>
+    <td>$\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
     </tr>
     <tr class="odd">
-    <td align="left">Spherical</td>
-    <td align="left">$\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$</td>
+    <td>Spherical</td>
+    <td>$\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$</td>
     </tr>
     </tbody>
     </table>
@@ -282,7 +317,7 @@
     <div class="output_html rendered_html output_subarea">
     <h2 id="bibliography">Bibliography</h2>
     <ol>
-    <li><p><a href=""></a> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
+    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
     </ol>
     </div>
     </div>

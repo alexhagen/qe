@@ -22,6 +22,40 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var MML = MathJax.ElementJax.mml,
+        TeX = MathJax.InputJax.TeX;
+
+    TeX.Definitions.macros.nicefrac = "myBevelFraction";
+    TeX.Definitions.macros.unit = "myUnit";
+    TeX.Definitions.macros.ce = "myCe";
+
+    TeX.Parse.Augment({
+      myBevelFraction: function (name) {
+        var num = this.ParseArg(name),
+            den = this.ParseArg(name);
+        this.Push(MML.mfrac(num,den).With({bevelled: true}));
+      },
+      myUnit: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      },
+      myCe: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      }
+    });
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+        cancel: ["Extension","cancel"],
+        bcancel: ["Extension","cancel"],
+        xcancel: ["Extension","cancel"],
+        cancelto: ["Extension","cancel"]
+      });
+    });
+  </script>
   <style type="text/css">code{white-space: pre;}</style>
       <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <style>
@@ -105,6 +139,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="mat">
+          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -184,7 +219,7 @@
     <div class="output_html rendered_html output_subarea">
     <h2 id="bibliography">Bibliography</h2>
     <ol>
-    <li><p><a href=""></a> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
+    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
     </ol>
     </div>
     </div>
