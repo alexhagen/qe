@@ -1,6 +1,6 @@
 # Purdue Nuclear Engineering PhD Qualification Exams - Example Problems, Study Guides, and Tutorials
 
-<img src="css/q.svg" style="position: absolute; top: -100px; left: -150px; width: 400px; opacity: 0.5; z-index: 0;" />
+<img src="css/q.svg" style="position: absolute; top: -100px; left: -150px; width: 400px; opacity: 0.5; fill-opacity: 0.5; z-index: 0;" />
 
 Alex Hagen | PhDNE - 2017 (hopefully!)
 
