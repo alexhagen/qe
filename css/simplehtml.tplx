@@ -1,5 +1,21 @@
 {% extends 'basic.tpl' %}
 
+{% block header %}
+<div class='breadcrumb'>
+<ol>
+  <li><a href='/qe/'>Home</a></li>
+    {% if nb.metadata.get('breadcrumb'): %}
+    {% for bc in nb.metadata.get('breadcrumb'): %}
+      <li>{% if bc.get('link'): %}<a href="{{bc.get('link', {})}}">{% endif %}{{ bc.get('title', {}) }}{% if bc.get('link'): %}</a>{% endif %}</li>
+    {% endfor %}
+    {% endif %}
+  {% if nb.metadata.get('title'): %}
+  <li class='active'>{{ nb.metadata.get('title', {}) }}</a>
+  {% endif %}
+</ol>
+</div>
+{% endblock header %}
+
 {% block input_group %}
     {% if cell.metadata.get('nbconvert', {}).get('show_code', False) %}
         {{ super() }}
