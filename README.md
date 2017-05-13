@@ -101,7 +101,7 @@ the tutorials, but still, I think it's a good tactic.
     - Internal Conversion versus Electron Capture
     - [Decay and Transmutation](int/01_decay.html)
     - Stopping Power
-    - Binding Energy
+    - [Binding Energy](int/02_binding_energy.html)
     - Relativistic Particle Wavelength
     - Compton Scattering of $\gamma$ Beam
     - Two particle Trajectories
