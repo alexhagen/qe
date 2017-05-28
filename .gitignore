@@ -8,3 +8,9 @@ _site/
 # LaTeX Files
 *.lyx~
 *-lyxformat-474.lyx
+
+build/*
+source/int/*.rst
+source/mat/*.rst
+source/th/*.rst
+source/readme.rst
