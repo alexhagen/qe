@@ -54,7 +54,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Purdue Nuclear Engineering Qualification Exams'
+project = u'PUNEQE'
 copyright = u'2017, Alex Hagen'
 author = u'Alex Hagen'
 
@@ -92,10 +92,10 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ['_static']
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    #'navbar_title': "Demo",
+    #'navbar_title': "PUNEQE",
 
     # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Alex Hagen",
+    'navbar_site_name': "Tutorials",
 
     # A list of tuples containing pages or urls to link to.
     # Valid tuples should be in the following forms:
@@ -108,17 +108,17 @@ html_theme_options = {
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
-    'navbar_sidebarrel': True,
+    'navbar_sidebarrel': False,
 
     # Render the current pages TOC in the navbar. (Default: true)
-    'navbar_pagenav': True,
+    'navbar_pagenav': False,
 
     # Tab name for the current pages TOC. (Default: "Page")
     'navbar_pagenav_name': "",
 
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
-    'globaltoc_depth': 2,
+    'globaltoc_depth': -1,
 
     # Include hidden TOCs in Site navbar?
     #
@@ -127,7 +127,7 @@ html_theme_options = {
     # will break.
     #
     # Values: "true" (default) or "false"
-    'globaltoc_includehidden': "true",
+    'globaltoc_includehidden': "false",
 
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"

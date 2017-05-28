@@ -3,18 +3,35 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Purdue Nuclear Engineering Qualification Exams's documentation!
-==========================================================================
+.. include:: readme.rst
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :glob:
+   :name: Thermal Hydraulics
+   :caption: Thermal Hydraulics
+
+   th/*
 
 
+.. toctree::
+  :glob:
+  :name: Materials
+  :caption: Materials
 
-Indices and tables
-==================
+  mat/*
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+.. toctree::
+  :glob:
+  :name: Interactions
+  :caption: Interactions
+
+  int/*
+
+
+.. toctree::
+  :glob:
+  :name: Neutronics
+  :caption: Neutronics
+
+  neu/*

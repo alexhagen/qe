@@ -28,4 +28,7 @@
   .anchor-link {
     display: none;
   }
+  .caption-text{
+    padding-left: 10px;
+  }
 </style>
