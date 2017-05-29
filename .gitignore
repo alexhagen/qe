@@ -9,8 +9,8 @@ _site/
 *.lyx~
 *-lyxformat-474.lyx
 
-build/*
-source/int/*.rst
-source/mat/*.rst
-source/th/*.rst
-source/readme.rst
+docs/build/*
+docs/source/int/*.rst
+docs/source/mat/*.rst
+docs/source/th/*.rst
+docs/source/readme.rst

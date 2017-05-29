@@ -1,0 +1,58 @@
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+
+{# Add some extra stuff before and use existing with 'super()' call. #}
+{%- block content %}
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ pathto(master_doc) }}">Docs</a></li>
+      {% for doc in parents %}
+          <li class="breadcrumb-item"><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+      {% endfor %}
+      <li class="breadcrumb-item active"><a>{{ title }}</a></li>
+    </ol>
+  {{ super() }}
+{%- endblock %}
+
+{%- block extrahead %}
+  {{ super() }}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [["$$","$$"], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var MML = MathJax.ElementJax.mml,
+        TeX = MathJax.InputJax.TeX;
+
+    TeX.Definitions.macros.nicefrac = "myBevelFraction";
+    TeX.Definitions.macros.unit = "myUnit";
+    TeX.Definitions.macros.ce = "myCe";
+
+    TeX.Parse.Augment({
+      myBevelFraction: function (name) {
+        var num = this.ParseArg(name),
+            den = this.ParseArg(name);
+        this.Push(MML.mfrac(num,den).With({bevelled: true}));
+      },
+      myUnit: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      },
+      myCe: function(name) {
+        var num = this.ParseArg(name);
+        var den = 2;
+        this.Push(MML.mtext(num).With({variant: 'normal'}));
+      }
+    });
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+        cancel: ["Extension","cancel"],
+        bcancel: ["Extension","cancel"],
+        xcancel: ["Extension","cancel"],
+        cancelto: ["Extension","cancel"]
+      });
+    });
+  </script>
+{%- endblock %}
