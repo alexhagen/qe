@@ -4,11 +4,13 @@
 {# Add some extra stuff before and use existing with 'super()' call. #}
 {%- block content %}
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="{{ pathto(master_doc) }}">Docs</a></li>
-      {% for doc in parents %}
+      <li class="breadcrumb-item"><a href="{{ pathto(master_doc) }}">PUNEQE</a></li>
+      {% for doc in parents: %}
           <li class="breadcrumb-item"><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
       {% endfor %}
-      <li class="breadcrumb-item active"><a>{{ title }}</a></li>
+      {% if not master_doc: %}
+        <li class="breadcrumb-item active"><a>{{ title }}</a></li>
+      {% endif %}
     </ol>
   {{ super() }}
 {%- endblock %}

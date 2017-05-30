@@ -1,3 +1,5 @@
+all: docs publish
+
 docs: FORCE
 	pandoc README.md --to rst -o docs/source/readme.rst
 	# make a site folder for th
