@@ -41,6 +41,18 @@ docs: FORCE
 		rm -f $${f%.ipynb}.md; \
 		rm -f $${f%.ipynb}.html; \
 	done; \
+	mkdir -p docs/source/neu/; \
+	for f in neu/*.ipynb;	do \
+		echo "$$f"; \
+		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
+	done; \
+	sleep 1; \
+	mv mat/*.rst docs/source/neu/; \
+	for f in neu/*.ipynb;	do \
+		echo "$$f"; \
+		rm -f $${f%.ipynb}.md; \
+		rm -f $${f%.ipynb}.html; \
+	done; \
 	cd ~/code/qe/docs; \
 	make html
 
