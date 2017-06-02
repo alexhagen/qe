@@ -5,7 +5,7 @@ Flux and current in a spherical fusion chamber
 ==============================================
 
 This problem is from NUCL 510, but plays off of the material in
-:raw-latex:`\cite{Lamarsh}`.
+(Lamarsh, 2002).
 
 Neutrons are produced uniformly and isotropically throughout a spherical
 chamber containing a fixture of :math:`\ce{^3}{H}` and
@@ -47,7 +47,7 @@ For current, we need to apply the solid angle
 
 .. math:: \vec{J} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi r^{2}} \vec{\Omega} r^{2}\sin \theta d\varphi dr d\theta
 
- and with
+and with
 :math:`\int_{0}^{2\pi} \cos \varphi d\varphi=\int_{0}^{2\pi} \sin \varphi d\varphi=0`,
 therefore :math:`J_{x} = 0` and :math:`J_{y}=0`
 
@@ -61,9 +61,10 @@ therefore :math:`J_{x} = 0` and :math:`J_{y}=0`
 
 
 
+.. raw:: html
 
-.. math::
-
-    \bibliographystyle{unsrt} \bibliography{/home/ahagen/bibs/qe.bib}
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
 
 

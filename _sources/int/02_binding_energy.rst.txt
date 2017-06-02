@@ -1,13 +1,6 @@
 
     
 
-
-
-.. parsed-literal::
-
-    <IPython.core.display.Javascript object>
-
-
 Binding Energy and Mass Defect
 ==============================
 
@@ -61,23 +54,6 @@ neutron plus the rest mass of an unbound neutron:
 
     <h2>Bibliography</h2>
     <ol>
-    <li name="Lamarsh2001a">
-    <!-- This document was automatically generated with bibtex2html 1.98
-         (see http://www.lri.fr/~filliatr/bibtex2html/),
-         with the following command:
-         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpBEybDE.bib  -->
-    
-    
-    
-    
-    <p><a name="Lamarsh2001a"></a>
-    
-    John&nbsp;R Lamarsh and Anthony&nbsp;J Baratta.
-     <em>Introduction to Nuclear Engineering</em>.
-     Upper Saddle River, New Jersey, third edition, 2001.
-    
-    </p>
-    </li>
     </ol>
 
 

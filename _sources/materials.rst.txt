@@ -1,4 +1,5 @@
-.. title:: Materials
+Materials
+~~~~~~~~~
 
 .. toctree::
   :glob:

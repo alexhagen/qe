@@ -1,4 +1,5 @@
-.. title:: Interactions
+Interactions
+~~~~~~~~~~~~
 
 .. toctree::
   :glob:

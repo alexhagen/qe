@@ -40,23 +40,6 @@ To find the current, we must integrate :math:`\phi \Omega` over
 
     <h2>Bibliography</h2>
     <ol>
-    <li name="Lamarsh">
-    <!-- This document was automatically generated with bibtex2html 1.98
-         (see http://www.lri.fr/~filliatr/bibtex2html/),
-         with the following command:
-         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpeE0i67.bib  -->
-    
-    
-    
-    
-    <p><a name="Lamarsh"></a>
-    
-    John&nbsp;R Lamarsh.
-     <em>Introduction to Nuclear Reactor Theory</em>.
-     American Nuclear Society, La Grange Park, IL, 2002.
-    
-    </p>
-    </li>
     </ol>
 
 

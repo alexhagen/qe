@@ -1,13 +1,6 @@
 
     
 
-
-
-.. parsed-literal::
-
-    <IPython.core.display.Javascript object>
-
-
 Energy Equations
 ================
 
@@ -108,23 +101,6 @@ and simplification of the energy equations are:
 
     <h2>Bibliography</h2>
     <ol>
-    <li name="Bird2007">
-    <!-- This document was automatically generated with bibtex2html 1.98
-         (see http://www.lri.fr/~filliatr/bibtex2html/),
-         with the following command:
-         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpMVVZtg.bib  -->
-    
-    
-    
-    
-    <p><a name="Bird2007"></a>
-    
-    R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
-     <em>Transport Phenomena</em>.
-     John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
-    
-    </p>
-    </li>
     </ol>
 
 

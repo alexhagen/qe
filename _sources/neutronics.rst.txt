@@ -1,4 +1,5 @@
-.. title:: Neutronics
+Neutronics
+~~~~~~~~~~
 
 .. toctree::
   :glob:

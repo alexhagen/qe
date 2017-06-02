@@ -1,4 +1,5 @@
-.. title:: Thermal Hydraulics
+Thermal Hydraulics
+~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :glob:
