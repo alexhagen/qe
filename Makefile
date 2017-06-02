@@ -3,7 +3,7 @@ all: docs publish
 docs: FORCE
 	pandoc README.md --to rst -o docs/source/readme.rst
 	# make a site folder for th
-	mkdir -p source/th/; \
+	mkdir -p docs/source/th/; \
 	for f in th/*.ipynb;	do \
 		echo "$$f"; \
 		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
@@ -47,7 +47,7 @@ docs: FORCE
 		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
 	done; \
 	sleep 1; \
-	mv mat/*.rst docs/source/neu/; \
+	mv neu/*.rst docs/source/neu/; \
 	for f in neu/*.ipynb;	do \
 		echo "$$f"; \
 		rm -f $${f%.ipynb}.md; \

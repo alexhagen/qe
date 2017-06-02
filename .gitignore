@@ -13,4 +13,9 @@ docs/build/*
 docs/source/int/*.rst
 docs/source/mat/*.rst
 docs/source/th/*.rst
+docs/source/neu/*.rst
+docs/source/int/*.html
+docs/source/mat/*.html
+docs/source/th/*.html
+docs/source/neu/*.html
 docs/source/readme.rst

@@ -4,7 +4,6 @@ Neutronics
 .. toctree::
   :glob:
   :maxdepth: 1
-  :name: neu
-  :caption: Neutronics
+  :name: neutronics
 
   neu/*

@@ -8,7 +8,7 @@
   :hidden:
 
   interactions
-  th
+  thermalhydraulics
   materials
   neutronics
 
