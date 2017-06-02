@@ -6,7 +6,7 @@ docs: FORCE
 	mkdir -p docs/source/th/; \
 	for f in th/*.ipynb;	do \
 		echo "$$f"; \
-		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
+		jupyter nbconvert --to RST --template css/simplerst.tplx --execute "$$f"; \
 	done; \
 	sleep 1; \
 	mv th/*.rst docs/source/th/; \
@@ -19,7 +19,7 @@ docs: FORCE
 	mkdir -p docs/source/int/; \
 	for f in int/*.ipynb;	do \
 		echo "$$f"; \
-		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
+		jupyter nbconvert --to RST --template css/simplerst.tplx --execute "$$f"; \
 	done; \
 	sleep 1; \
 	mv int/*.rst docs/source/int/; \
@@ -32,7 +32,7 @@ docs: FORCE
 	mkdir -p docs/source/mat/; \
 	for f in mat/*.ipynb;	do \
 		echo "$$f"; \
-		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
+		jupyter nbconvert --to RST --template css/simplerst.tplx --execute "$$f"; \
 	done; \
 	sleep 1; \
 	mv mat/*.rst docs/source/mat/; \
@@ -44,7 +44,7 @@ docs: FORCE
 	mkdir -p docs/source/neu/; \
 	for f in neu/*.ipynb;	do \
 		echo "$$f"; \
-		jupyter nbconvert --to RST --template css/simplerst.tplx "$$f"; \
+		jupyter nbconvert --to RST --template css/simplerst.tplx --execute "$$f"; \
 	done; \
 	sleep 1; \
 	mv neu/*.rst docs/source/neu/; \
