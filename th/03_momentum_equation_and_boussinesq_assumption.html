@@ -1,19 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alex Hagen" />
-  <title>Purdue PhDNE Quals</title>
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Momentum Equation and Boussinesq Assumption &#8212; PUNEQE  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Energy Equations" href="04_energy_equations.html" />
+    <link rel="prev" title="General Balance Equations and Continuity Equation" href="02_general_balance_equations_and_continuity_equation.html" />
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
-        inlineMath: [["$","$"]],
+        inlineMath: [["$$","$$"], ['\\(','\\)']],
         processEscapes: true
       }
     });
@@ -50,208 +80,225 @@
       });
     });
   </script>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">PUNEQE</a></li>
+      
+      
+    </ol>
+  
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <style type="text/css">code{white-space: pre;}</style>
-      <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <style>
-    .anchor-link {
-      visibility: hidden;
-    }
-    table > tbody > tr:nth-of-type(odd) {
-      background-color: #f5f5f5;
-    }
-    .table {
-      text-align: center;
-    }
-    table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    table > thead > tr > th,
-    table > tbody > tr > th,
-    table > tfoot > tr > th,
-    table > thead > tr > td,
-    table > tbody > tr > td,
-    table > tfoot > tr > td {
-      text-align: center;
-    }
-    table > thead > tr:first-of-type {
-      border-top: 1px solid #555;
-    }
-    table > thead > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > tbody > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > thead > tr > th,
-    table > thead > tr > td {
-      font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-      font-weight: 700;
-      line-height: 1.1;
-      color: #142735;
-    }
-    table {
-      margin-top: 10px;
-    }
-    @media screen and (max-width: 767px){
-      .row {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
-    .breadcrumb > ol{
-      padding: 8px 15px;
-      margin-bottom: 21px;
-      list-style: none;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-    }
-    .breadcrumb > ol > li {
-      display: inline-block;
-    }
-    .breadcrumb > ol > li + li:before {
-      content: "/\00a0";
-      padding: 0 5px;
-      color: #cccccc;
-    }
-    .breadcrumb > ol > .active {
-      color: #a0c2db;
-    }
-  </style>
-</head>
-<body>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-  <div class="navbar-header">
-    <a href="/qe/" class="navbar-brand"><img src='/qe/css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse" id="navbar-main">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="th">Thermal Hydraulics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="th">
-          <li><a href="/qe/th/01_vector_operators.html">Vector Operators</a></li>
-          <li><a href="/qe/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
-          <li><a href="/qe/th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
-          <li><a href="/qe/th/04_energy_equations.html">Energy Equations</a></li>
-          <li><a href="/qe/th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="neu">Neutronics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="neu">
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="mat">
-          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="int">Interactions <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="int">
-          <li><a href="/qe/int/01_decay.html">Decay and Transmutation</a></li>
-          <li><a href="/qe/int/02_binding_energy.html">Binding Energy and Mass Defect</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../help/">Help</a>
-      </li>
-    </ul>
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><span><img src="../_static/q_small.svg"></span>
+        PUNEQE</a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
-    </ul>
-  </div>
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Tutorials <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_vector_operators.html">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boussinesq-assumption">Boussinesq Assumption</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_energy_equations.html">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_energy_equations.html#energy-equation">Energy equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Interactions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Neutronics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+</ul>
+</ul>
+</li>
+            
+          
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
+        </ul>
+      </div>
   </div>
 </div>
+
 <div class="container">
-  <div class="row" style="padding-top:70px;">
-    <div class="breadcrumb">
-    <ol>
-    <li><a href="/qe/">Home</a></li>
-    <li>Thermal Hydraulics</li>
-    <li>General Balance Equations and Basic Heat Transfer</li>
-    <li>Momentum Equation and Boussinesq Assumption</li>
-    </ol>
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="momentum-equation-and-boussinesq-assumption">
+<h1>Momentum Equation and Boussinesq Assumption<a class="headerlink" href="#momentum-equation-and-boussinesq-assumption" title="Permalink to this headline">¶</a></h1>
+<p>Based on information from (Bird, et. al. 2007). Continuing with the
+derivation of the conservation equations, again we use the GBE to derive
+a conservation equation that defines the conservation of momentum.</p>
+<div class="section" id="momentum-equation">
+<h2>Momentum Equation<a class="headerlink" href="#momentum-equation" title="Permalink to this headline">¶</a></h2>
+<p>Applying the GBE with <span class="math">\(\psi = \rho \vec{v}\)</span>,
+<span class="math">\(\mathbb{J} = \mathbb{T} = p\mathbb{I} + \tau\)</span>, and
+<span class="math">\(\dot{\psi}_{g} = \rho\vec{f}_{b} = \rho\vec{g}\)</span>, which is to say:
+the conservation quantity we will use is momentum, which when normalized
+per unit volume, becomes <span class="math">\(\rho \vec{v}\)</span>. Note that this is a
+vector quantity. The current of momentum across a boundary is a tensor
+which involves a symmetric tensor for the pressure in a system (which is
+isotropic), and the torque applied to the system. And finally, that the
+only generation of momentum is due to body forces, of which gravity is
+the only concern (unless we’re working with magnetohydrodynamics). With
+these, we get</p>
+<div class="math">
+\[\begin{split}\underbrace{\frac{\partial\left(\rho\vec{v}\right)}{\partial t}}_{\substack{\text{rate of change}\\
+\text{of momentum}\\
+\text{per unit volume}
+}
+}+\underbrace{\nabla\cdot\left(\rho\vec{v}\vec{v}\right)}_{\substack{\text{momentum change}\\
+\text{by convection}\\
+\text{per unit volume}
+}
+}=-\underbrace{\nabla p}_{\substack{\text{pressure}\\
+\text{force}
+}
+}-\underbrace{\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{viscous}\\
+\text{force}
+}
+}+\underbrace{\rho\vec{v}}_{\substack{\text{gravity}\\
+\text{force}
+}
+}\end{split}\]</div>
+<p>By again using the definition of the substantial derivative, we can
+create Cauchy’s Equation of motion as</p>
+<div class="math">
+\[\rho\frac{D\vec{v}}{Dt}=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}\]</div>
+<p>and by inspection, we can see that this matches Newton’s Second Law of
+Motion:</p>
+<div class="math">
+\[\rho\vec{a}=\sum\vec{F}\]</div>
+</div>
+<div class="section" id="boussinesq-assumption">
+<h2>Boussinesq Assumption<a class="headerlink" href="#boussinesq-assumption" title="Permalink to this headline">¶</a></h2>
+<p>When gravity is important, we use the Boussinesq assumption(s):</p>
+<ul>
+<li><p class="first">Thermal expansion (<span class="math">\(\beta\)</span>) causes density change.</p>
+</li>
+<li><p class="first">This happens by the thermal expansion coefficient, <span class="math">\(\beta\)</span>,
+such that</p>
+<div class="math">
+\[\beta\equiv\frac{1}{\nu}\left.\frac{\partial\nu}{\partial T}\right)_{p}=\frac{1}{\rho}\left.\frac{\partial\rho}{\partial T}\right)_{p}\]</div>
+</li>
+<li><p class="first">This density change is only important in the gravity term.</p>
+</li>
+</ul>
+<p>Applying those assumptions, we get</p>
+<div class="math">
+\[dp=-\rho\beta dT\;\;\therefore\;\;\rho-\overline{\rho}=-\overline{\rho}\beta\left(T-\overline{T}\right)\]</div>
+<p>and putting that into the momentum equations, we get</p>
+<div class="math">
+\[\overline{\rho}\frac{D\vec{v}}{Dt}=-\cancelto{\nabla p_{dyn}}{\nabla p}-\nabla\cdot\boldsymbol{\tau}+\left[\cancelto{0}{\overline{\rho}}-\overline{\rho}\beta\left(T-\overline{T}\right)\right]\vec{g}\]</div>
+<p>.</p>
+<h2>Bibliography</h2>
+<ol>
+<li name="Bird2007">
+<!-- This document was automatically generated with bibtex2html 1.98
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpI8lRwB.bib  -->
+
+
+
+
+<p><a name="Bird2007"></a>
+
+R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+ <em>Transport Phenomena</em>.
+ John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+
+</p>
+</li>
+</ol></div>
+</div>
+
+
     </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h1 id="Momentum-Equation-and-Boussinesq-Assumption">Momentum Equation and Boussinesq Assumption<a href="#Momentum-Equation-and-Boussinesq-Assumption" class="anchor-link">¶</a></h1>
-    <p>Based on information from (<a href="#Bird2007">Bird, et. al. 2007</a>). Continuing with the derivation of the conservation equations, again we use the GBE to derive a conservation equation that defines the conservation of momentum.</p>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Momentum-Equation">Momentum Equation<a href="#Momentum-Equation" class="anchor-link">¶</a></h2>
-    <p>Applying the GBE with $\psi = \rho \vec{v}$, $\mathbb{J} = \mathbb{T} = p\mathbb{I} + \tau$, and $\dot{\psi}_{g} = \rho\vec{f}_{b} = \rho\vec{g}$, which is to say: the conservation quantity we will use is momentum, which when normalized per unit volume, becomes $\rho \vec{v}$. Note that this is a vector quantity. The current of momentum across a boundary is a tensor which involves a symmetric tensor for the pressure in a system (which is isotropic), and the torque applied to the system. And finally, that the only generation of momentum is due to body forces, of which gravity is the only concern (unless we're working with magnetohydrodynamics). With these, we get $$\underbrace{\frac{\partial\left(\rho\vec{v}\right)}{\partial t}}_{\substack{\text{rate of change}\\ \text{of momentum}\\ \text{per unit volume} } }+\underbrace{\nabla\cdot\left(\rho\vec{v}\vec{v}\right)}_{\substack{\text{momentum change}\\ \text{by convection}\\ \text{per unit volume} } }=-\underbrace{\nabla p}_{\substack{\text{pressure}\\ \text{force} } }-\underbrace{\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{viscous}\\ \text{force} } }+\underbrace{\rho\vec{v}}_{\substack{\text{gravity}\\ \text{force} } }$$</p>
-    <p>By again using the definition of the substantial derivative, we can create Cauchy's Equation of motion as</p>
-    $$\rho\frac{D\vec{v}}{Dt}=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}$$
-    <p>and by inspection, we can see that this matches Newton's Second Law of Motion:</p>
-    $$\rho\vec{a}=\sum\vec{F}$$
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Boussinesq-Assumption">Boussinesq Assumption<a href="#Boussinesq-Assumption" class="anchor-link">¶</a></h2>
-    <p>When gravity is important, we use the Boussinesq assumption(s):</p>
-    <ul>
-    <li>Thermal expansion ($\beta$) causes density change.</li>
-    <li>This happens by the thermal expansion coefficient, $\beta$, such that $$\beta\equiv\frac{1}{\nu}\left.\frac{\partial\nu}{\partial T}\right)_{p}=\frac{1}{\rho}\left.\frac{\partial\rho}{\partial T}\right)_{p}$$</li>
-    <li>This density change is only important in the gravity term.</li>
-    </ul>
-    <p>Applying those assumptions, we get $$dp=-\rho\beta dT\;\;\therefore\;\;\rho-\overline{\rho}=-\overline{\rho}\beta\left(T-\overline{T}\right)$$ and putting that into the momentum equations, we get $$\overline{\rho}\frac{D\vec{v}}{Dt}=-\cancelto{\nabla p_{dyn}}{\nabla p}-\nabla\cdot\boldsymbol{\tau}+\left[\cancelto{0}{\overline{\rho}}-\overline{\rho}\beta\left(T-\overline{T}\right)\right]\vec{g}$$.</p>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
-    
-    </div>
-    <div class="output_html rendered_html output_subarea">
-    <h2 id="bibliography">Bibliography</h2>
-    <ol>
-    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
-    </ol>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+      
   </div>
 </div>
-</body>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Alex Hagen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

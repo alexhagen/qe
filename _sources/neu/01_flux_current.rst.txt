@@ -1,0 +1,62 @@
+
+    
+
+Flux, Current, and Directional Current
+======================================
+
+This material is taken from (Lamarsh, 2002). Note that in neutronics,
+the integrals are often written backwards, so
+
+.. math:: \int\overbrace{\mathscr{f}\left(x, y, \dots \right)}^{\text{integrand}} \underbrace{dx dy \dots}_{\text{differential}} \equiv \int \overbrace{dx dy \dots}^{\text{differential}} \underbrace{\mathscr{f}\left(x, y, \dots \right)}_{\text{integrand}}
+
+ This can be confusing, but it's how it is.
+
+Also, often the integration of the polar angle :math:`\theta` is done by
+substitution, so
+
+.. math:: \int_{0}^{\pi}\mathscr{f}\left(\theta \right)\sin \theta d\theta \equiv \int_{-1}^{1} \mathscr{f} \left( \mu \right) d\mu
+
+Given a differential flux of :math:`\psi = a + b \cos \theta`, find the
+flux, current, and each directions partial current.
+
+To find the flux, we must integrate the differential flux over the solid
+angle :math:`\Omega`. In spherical coordinates,
+:math:`d\Omega = \sin \theta d\theta_{0}^{\pi} d\phi_{0}^{2\pi}`
+
+.. math:: \phi\left(\vec{r}\right) = \int_{0}^{2\pi}\int_{0}^{\pi}\left(a + b \cos \theta \right) \sin \theta d\theta d\varphi
+
+.. math:: \phi\left(\vec{r}\right) = 2\pi \int_{-1}^{1}\left(a + b \mu \right) d \mu = 4\pi a
+
+To find the current, we must integrate :math:`\phi \Omega` over
+:math:`\Omega`, so we have
+
+.. math:: J=\int_{0}^{2\pi}\int_{0}^{\pi}\left( a + b \cos \theta\right) \sin \theta \Omega d\theta d\varphi
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Lamarsh">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpeE0i67.bib  -->
+    
+    
+    
+    
+    <p><a name="Lamarsh"></a>
+    
+    John&nbsp;R Lamarsh.
+     <em>Introduction to Nuclear Reactor Theory</em>.
+     American Nuclear Society, La Grange Park, IL, 2002.
+    
+    </p>
+    </li>
+    </ol>
+
+

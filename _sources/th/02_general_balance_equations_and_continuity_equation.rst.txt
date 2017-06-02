@@ -1,0 +1,118 @@
+
+    
+
+General Balance Equations and Continuity Equation
+=================================================
+
+Based on the derivation in (Bird, et. al. 2007).
+
+The general balance equations (GBE) are the main tennets of continuum
+mechanics. Proper derivation of these equations is absolutely essential
+to theral-hydraulics. They are also incredibly useful for other physical
+systems, and when coupled with the electronic charge conservation
+equation, could (ostensibly) solve any non-quantum mechanical problem.
+
+General Balance Equation
+------------------------
+
+The general balance equation for any property is given by:
+
+.. math::
+
+   \underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
+   \text{per unit time}\\
+   \text{in volume }V_{m}
+   }
+   }=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
+   \text{surface }S_{m}
+   }
+   }+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
+   \text{in volume }V_{m}
+   }
+   }
+
+We can use Reynold's Transport theorem, which states that
+:math:`\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV`
+and Greene Theorem, which thats
+:math:`\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV`.
+Inputting these two expressions to first convert the material derivative
+to time and spatial derivative and to convert the surface integral to a
+volume integral, respectively. With these two changes and combining
+volume integrals, we then get
+
+.. math:: \int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV
+
+and after differentiating:
+
+.. math::
+
+   \underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
+   \text{per unit time}\\
+   \text{per unit volume}
+   }
+   }\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
+   \text{material motion}\\
+   \text{per unit volume}
+   }
+   }=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
+   \text{surface }S_{m}\text{ per}\\
+   \text{unit volume}
+   }
+   }+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
+   \text{per unit volume}
+   }
+   }
+
+Continuity Equation
+-------------------
+
+Apply the GBE, using :math:`\psi = \rho`, :math:`\mathbb{J} = 0`, and
+:math:`\dot{\psi_{g}} = 0`, we get
+
+.. math:: \frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0
+
+which is equivalent to (by FOIL):
+:math:`\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}`
+and using the material derivative's definition:
+:math:`\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho`
+in the above equation, we get:
+
+.. math:: \frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}
+
+and assuming incompressible: :math:`\frac{D\rho}{Dt}=0`, it is apparent
+that:
+
+.. math:: \nabla\cdot\vec{v}=0
+
+which is the continuity equation.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Bird2007">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmptftond.bib  -->
+    
+    
+    
+    
+    <p><a name="Bird2007"></a>
+    
+    R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+     <em>Transport Phenomena</em>.
+     John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+    
+    </p>
+    </li>
+    </ol>
+
+
+
+    

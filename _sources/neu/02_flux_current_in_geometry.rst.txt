@@ -1,0 +1,69 @@
+
+    
+
+Flux and current in a spherical fusion chamber
+==============================================
+
+This problem is from NUCL 510, but plays off of the material in
+:raw-latex:`\cite{Lamarsh}`.
+
+Neutrons are produced uniformly and isotropically throughout a spherical
+chamber containing a fixture of :math:`\ce{^3}{H}` and
+:math:`\ce{^{2}H}` gasses at :math:`1\times 10^{8} \unit{K}`. Calculate
+the flux and current in the chamber.
+
+    
+
+We know that there are fusion reactions
+
+.. math:: \ce{T}\left(d, n\right) \ce{^{4}He}
+
+and
+
+.. math:: \ce{D}\left(d, n\right)\ce{^{3}He}
+
+.
+
+First we set up the geometry. We have a sphere with its :math:`z` axis
+through point :math:`A`. :math:`dV` is the volume of the skirt
+:math:`\overline{AB}`. so we have
+
+.. math:: d\psi = \frac{S}{4 \pi r^{2}} dV
+
+We know that :math:`\phi = \int_{V} d\psi`, so we integrate from
+:math:`0` to :math:`2R \cos \theta`.
+
+.. math:: \phi = \int_{0}^{\nicefrac{pi}{2}} \int_{0}^{2R\cos \theta} \frac{S}{4\pi r^{2}} \underbrace{r^{2} \sin \theta dr d\theta d\varphi}_{\text{spherical lagrangian}}
+
+.. math:: \phi = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} drd\mu
+
+.. math:: \phi = SR\int_{0}^{1}\mu d\mu
+
+.. math:: \phi = \frac{SR}{2}
+
+For current, we need to apply the solid angle
+
+.. math:: \vec{\Omega} = \left( \sin \theta \cos \varphi, \sin \theta \sin \varphi, \cos \theta \right)
+
+.. math:: \vec{J} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi r^{2}} \vec{\Omega} r^{2}\sin \theta d\varphi dr d\theta
+
+ and with
+:math:`\int_{0}^{2\pi} \cos \varphi d\varphi=\int_{0}^{2\pi} \sin \varphi d\varphi=0`,
+therefore :math:`J_{x} = 0` and :math:`J_{y}=0`
+
+.. math:: J_{z} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi } \cos \theta \sin \theta d\varphi dr d\theta
+
+.. math:: J_{z} = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} \mu dr d\mu
+
+.. math:: J_{z} = \frac{SR}{3}\times \vec{e_{z}} = \frac{SR}{3}\times \vec{e_{r}}
+
+    
+
+
+
+
+.. math::
+
+    \bibliographystyle{unsrt} \bibliography{/home/ahagen/bibs/qe.bib}
+
+

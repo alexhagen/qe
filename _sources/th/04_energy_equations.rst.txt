@@ -1,0 +1,130 @@
+
+    
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
+Energy Equations
+================
+
+This material is from (Bird, et. al. 2007). We will finish up our
+derivation of the conservation equations with the conservation of
+energy. This equation is significantly more complicated, and is given in
+many forms without the assumptions required to simplify it.
+
+Energy equation
+---------------
+
+Applying the GBE with
+:math:`\psi=\rho\left(u+\frac{\vec{v}^{2}}{2}\right)`,
+:math:`\mathbb{J}=\vec{q}+\mathbb{T}\vec{v}` and
+:math:`\dot{\psi_{g}}=\rho\vec{v}\cdot\vec{g}+\dot{q}`. We can recognize
+that these simply the assumptions for the momentum equation multiplied
+by velocity, with an extra term :math:`\dot{q}` in the generation term,
+which corresponds to volumetric heat generation in the flux. This is
+possible through chemical reactions, radiant heat absorption, or
+fission/nuclear reactions. This gives us the equation
+
+.. math::
+
+   \underbrace{\frac{\partial\left(\rho\left(u+\frac{\vec{v}^{2}}{2}\right)\right)}{\partial t}}_{\substack{\text{rate of energy change}\\
+   \text{per unit volume}
+   }
+   }+\underbrace{\nabla\cdot\rho\vec{v}\left(u+\frac{\vec{v}^{2}}{2}\right)}_{\substack{\text{rate of energy change}\\
+   \text{by convection per unit}\\
+   \text{volume}
+   }
+   }\\=-\underbrace{\nabla\cdot\vec{q}}_{\substack{\text{conduction}}
+   }-\underbrace{\nabla\cdot\left(p\vec{v}\right)}_{\substack{\text{work done by}\\
+   \text{pressure}
+   }
+   }-\underbrace{\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)}_{\substack{\text{work done by}\\
+   \text{viscous force}
+   }
+   }+\underbrace{\rho\left(\vec{v}\cdot\vec{g}\right)}_{\substack{\text{work done}\\
+   \text{by gravity}
+   }
+   }+\underbrace{\dot{q}}_{\substack{\text{heat}\\
+   \text{generation}
+   }
+   }
+
+and we want to put this in a more usable form. We split these into
+kinetic energy and internal energy forms, by FOIL-ing the flux terms:
+
+.. math::
+
+   -\nabla\cdot\left(p\vec{v}\right)=-\underbrace{p\nabla\cdot\vec{v}}_{\substack{\text{reversible}\\
+   \text{\ensuremath{pdV} work}
+   }
+   }-\underbrace{\vec{v}\cdot\nabla p}_{\substack{\text{kinetic}\\
+   \text{energy}
+   }
+   }
+
+.. math::
+
+   -\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)=-\underbrace{\boldsymbol{\tau}:\nabla\vec{v}}_{\substack{\text{irreversible}\\
+   \text{viscous work}
+   }
+   }-\underbrace{\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{kinetic}\\
+   \text{energy}
+   }
+   }
+
+. Then our forms are:
+
+-  Internal Energy:
+
+   .. math:: \frac{Du}{Dt}=-\nabla\cdot\vec{q}-p\nabla\cdot\vec{v}-\boldsymbol{\tau}:\nabla\vec{v}+\dot{q}
+
+-  Kinetic Energy:
+
+   .. math:: \frac{D\frac{\vec{v}^{2}}{2}}{Dt}=-\vec{v}\cdot\nabla p-\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}+\rho\vec{v}\cdot\vec{g}
+
+These are not **basic balance equations**, though, because they don't
+follow the form :math:`\nabla \left(\;\right)`.
+
+Some other equations to remember, which are created though assumptions
+and simplification of the energy equations are:
+
+-  Poisson's Heat Equation:
+
+   .. math:: \rho c_{p}\frac{\partial T}{\partial t}=\nabla\cdot\left(k\nabla T\right)+\dot{q}
+
+-  Temperature Equation:
+
+   .. math:: \rho c_{v}\frac{DT}{Dt}=\rho c_{v}\frac{\partial T}{\partial t}+\rho c_{v}\vec{v}\nabla\cdot T=k\nabla^{2}T-\boldsymbol{\tau}:\nabla\vec{v}+T\left.\frac{\partial p}{\partial T}\right)_{\rho}\nabla\cdot\vec{v}+\dot{q}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Bird2007">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpMVVZtg.bib  -->
+    
+    
+    
+    
+    <p><a name="Bird2007"></a>
+    
+    R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+     <em>Transport Phenomena</em>.
+     John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+    
+    </p>
+    </li>
+    </ol>
+
+

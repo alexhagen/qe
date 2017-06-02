@@ -1,0 +1,90 @@
+
+    
+
+Radioactive Decay
+=================
+
+This material comes from everywhere, but I guess I'll just say that it
+comes from (Lamarsh, et. al. 2001) or (Cember, 2012); both of these are
+great introductory texts for Nuclear Engineering.
+
+It seems silly to say, but a lot of graduate nuclear engineers have to
+*think* about what decay means what as far as transmutation goes. And we
+all know the problems with people thinking... It's important to **know**
+the transmutation situations for at least the most common modes of
+decay.
+
+Given an atom of isotope :math:`\mathrm{\sideset{^{A}_{Z}}{_{N}}X}`
+where :math:`A` is the atomic number, :math:`Z` is the number of
+protons, and :math:`N` is the number of neutrons, and :math:`X` is the
+atom's symbol, we have the neutron atomic mass
+:math:`M\left(Z,A\right)`. We can use the definition
+:math:`1\mathrm{amu} \equiv 931.5\mathrm{MeV}` to convert this to our
+modified :math:`cgs` units system.
+
+**Positron Decay**
+
+A proton in the nucleus turns into a neutron, emitting a positron
+(positively charged particle with mass of an electron) and a neutrino.
+
+.. math:: \mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A}_{Z-1}}{_{N+1}}Y + \beta^{+} + \nu}
+
+**Beta Decay**
+
+A neutron in the nucleus turns into a proton, emitting a :math:`\beta`
+(negative charged particle with mass of an electron - basically an
+electron) and an anti-neutrino.
+
+.. math:: \mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A}_{Z+1}}{_{N-1}}Y + \beta^{-} + \overline{\nu}}
+
+**Alpha Decay**
+
+A helium nucleus within the full nucleus is ejected.
+
+.. math:: \mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A-4}_{Z-2}}{_{N-2}}Y + \sideset{^{4}_{2}}{_{2}}\alpha}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Lamarsh2001a">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpHO4Gr4.bib  -->
+    
+    
+    
+    
+    <p><a name="Lamarsh2001a"></a>
+    
+    John&nbsp;R Lamarsh and Anthony&nbsp;J Baratta.
+     <em>Introduction to Nuclear Engineering</em>.
+     Upper Saddle River, New Jersey, third edition, 2001.
+    
+    </p>
+    </li>
+    <li name="Cember2012a">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpMqXtHC.bib  -->
+    
+    
+    
+    
+    <p><a name="Cember2012a"></a>
+    
+    H.&nbsp;Cember.
+     <em>Introduction to Health Physics</em>.
+     McGraw Medical, New York, 4th edition, 2012.
+    
+    </p>
+    </li>
+    </ol>
+
+

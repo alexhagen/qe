@@ -1,19 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alex Hagen" />
-  <title>Purdue PhDNE Quals</title>
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Binding Energy and Mass Defect &#8212; PUNEQE  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Radioactive Decay" href="01_decay.html" />
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
-        inlineMath: [["$","$"]],
+        inlineMath: [["$$","$$"], ['\\(','\\)']],
         processEscapes: true
       }
     });
@@ -50,194 +80,194 @@
       });
     });
   </script>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">PUNEQE</a></li>
+      
+      
+    </ol>
+  
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <style type="text/css">code{white-space: pre;}</style>
-      <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <style>
-    .anchor-link {
-      visibility: hidden;
-    }
-    table > tbody > tr:nth-of-type(odd) {
-      background-color: #f5f5f5;
-    }
-    .table {
-      text-align: center;
-    }
-    table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    table > thead > tr > th,
-    table > tbody > tr > th,
-    table > tfoot > tr > th,
-    table > thead > tr > td,
-    table > tbody > tr > td,
-    table > tfoot > tr > td {
-      text-align: center;
-    }
-    table > thead > tr:first-of-type {
-      border-top: 1px solid #555;
-    }
-    table > thead > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > tbody > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > thead > tr > th,
-    table > thead > tr > td {
-      font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-      font-weight: 700;
-      line-height: 1.1;
-      color: #142735;
-    }
-    table {
-      margin-top: 10px;
-    }
-    @media screen and (max-width: 767px){
-      .row {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
-    .breadcrumb > ol{
-      padding: 8px 15px;
-      margin-bottom: 21px;
-      list-style: none;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-    }
-    .breadcrumb > ol > li {
-      display: inline-block;
-    }
-    .breadcrumb > ol > li + li:before {
-      content: "/\00a0";
-      padding: 0 5px;
-      color: #cccccc;
-    }
-    .breadcrumb > ol > .active {
-      color: #a0c2db;
-    }
-  </style>
-</head>
-<body>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-  <div class="navbar-header">
-    <a href="/qe/" class="navbar-brand"><img src='/qe/css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse" id="navbar-main">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="th">Thermal Hydraulics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="th">
-          <li><a href="/qe/th/01_vector_operators.html">Vector Operators</a></li>
-          <li><a href="/qe/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
-          <li><a href="/qe/th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
-          <li><a href="/qe/th/04_energy_equations.html">Energy Equations</a></li>
-          <li><a href="/qe/th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="neu">Neutronics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="neu">
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="mat">
-          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="int">Interactions <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="int">
-          <li><a href="/qe/int/01_decay.html">Decay and Transmutation</a></li>
-          <li><a href="/qe/int/02_binding_energy.html">Binding Energy and Mass Defect</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../help/">Help</a>
-      </li>
-    </ul>
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><span><img src="../_static/q_small.svg"></span>
+        PUNEQE</a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
-    </ul>
-  </div>
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Tutorials <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../th/01_vector_operators.html">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../th/04_energy_equations.html">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/04_energy_equations.html#energy-equation">Energy equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Interactions</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#binding-energy">Binding energy</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Neutronics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+</ul>
+</ul>
+</li>
+            
+          
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
+        </ul>
+      </div>
   </div>
 </div>
+
 <div class="container">
-  <div class="row" style="padding-top:70px;">
-    <div class="breadcrumb">
-    <ol>
-    <li><a href="/qe/">Home</a></li>
-    <li>Interactions</li>
-    <li>Binding Energy and Mass Defect</li>
-    </ol>
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">IPython</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Javascript</span> <span class="nb">object</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="binding-energy-and-mass-defect">
+<h1>Binding Energy and Mass Defect<a class="headerlink" href="#binding-energy-and-mass-defect" title="Permalink to this headline">¶</a></h1>
+<p>This material is referenced from (Lamarsh, et. al. 2001).</p>
+<p>Einstein postulated that the <em>rest mass energy</em> of an atom was defined
+by</p>
+<div class="math">
+\[E_{rest}=m_{o}c^{2}\]</div>
+<p>where <span class="math">\(c\)</span> is the speed of light, and <span class="math">\(m_{o}\)</span> is the atomic
+mass of the atom. This establishes the equivalence of mass and energy.</p>
+<p>Consequently, the kinetic energy (<strong>KE</strong>) is the difference between
+total and rest mass energy</p>
+<div class="math">
+\[E=mc^{2}-m_{o}c^{2}=m_{o}c^{2}\left[ \frac{1}{\sqrt{1-\beta^{2}}} - 1 \right]\]</div>
+<p>and this, when non-relativistics (<span class="math">\(v\ll c\)</span>), leads to</p>
+<div class="math">
+\[E=\frac{1}{2}mv^{2}\]</div>
+<div class="section" id="binding-energy">
+<h2>Binding energy<a class="headerlink" href="#binding-energy" title="Permalink to this headline">¶</a></h2>
+<p>We can remember that the mass defect is defined by</p>
+<div class="math">
+\[Q=\left[\left(M_{a}+M_{b}\right) - \left(M_{c}+M_{d}\right)\right]\underbrace{\left(931.5\unit{\nicefrac{MeV}{amu}}\right)}_{c^{2}}\]</div>
+<p>so the mass defect is the difference between the constituents and the
+actual atom</p>
+<div class="math">
+\[ \begin{align}\begin{aligned}\Delta=ZM_{p}+NM_{n}-M_{A}\\which leads to\end{aligned}\end{align} \]</div>
+<div class="math">
+\[BE\left( a \right) = Z_{a}M\left(\ce{^{1}H}\right) - N_{a}\left(M_{n}\right) - M_{a}\]</div>
+<p>To determine the binding energy of the <strong>last</strong> neutron, we determine
+the least bound neutron - i.e. the difference in binding energy between
+the isotope of interest and the isotope of interest with one less
+neutron plus the rest mass of an unbound neutron:</p>
+<div class="math">
+\[E_{s}=\left[M_{n}+M\left(\ce{^{A-1}Z}\right) - M\left(\ce{^{A}Z}\right)\right]931.5\unit{\nicefrac{MeV}{amu}}\]</div>
+<h2>Bibliography</h2>
+<ol>
+<li name="Lamarsh2001a">
+<!-- This document was automatically generated with bibtex2html 1.98
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpBEybDE.bib  -->
+
+
+
+
+<p><a name="Lamarsh2001a"></a>
+
+John&nbsp;R Lamarsh and Anthony&nbsp;J Baratta.
+ <em>Introduction to Nuclear Engineering</em>.
+ Upper Saddle River, New Jersey, third edition, 2001.
+
+</p>
+</li>
+</ol></div>
+</div>
+
+
     </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
-    
-    </div>
-    <div id="8ff312bb-f2bd-498a-9d3b-1a280265f2a2">
-    
-    </div>
-    <div class="output_subarea output_javascript">
-    
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h1 id="Binding-Energy-and-Mass-Defect">Binding Energy and Mass Defect<a href="#Binding-Energy-and-Mass-Defect" class="anchor-link">¶</a></h1>
-    <p>This material is referenced from (<a href="#Lamarsh2001a">Lamarsh, et. al. 2001</a>).</p>
-    <p>Einstein postulated that the <em>rest mass energy</em> of an atom was defined by $$E_{rest}=m_{o}c^{2}$$ where $c$ is the speed of light, and $m_{o}$ is the atomic mass of the atom. This establishes the equivalence of mass and energy.</p>
-    <p>Consequently, the kinetic energy (<strong>KE</strong>) is the difference between total and rest mass energy $$E=mc^{2}-m_{o}c^{2}=m_{o}c^{2}\left[ \frac{1}{\sqrt{1-\beta^{2}}} - 1 \right]$$ and this, when non-relativistics ($v\ll c$), leads to $$E=\frac{1}{2}mv^{2}$$</p>
-    <h2 id="Binding-energy">Binding energy<a href="#Binding-energy" class="anchor-link">¶</a></h2>
-    <p>We can remember that the mass defect is defined by $$Q=\left[\left(M_{a}+M_{b}\right) - \left(M_{c}+M_{d}\right)\right]\underbrace{\left(931.5\unit{\nicefrac{MeV}{amu}}\right)}_{c^{2}}$$ so the mass defect is the difference between the constituents and the actual atom $$\Delta=ZM_{p}+NM_{n}-M_{A}$$ which leads to $$BE\left( a \right) = Z_{a}M\left(\ce{^{1}H}\right) - N_{a}\left(M_{n}\right) - M_{a}$$</p>
-    <p>To determine the binding energy of the <strong>last</strong> neutron, we determine the least bound neutron - i.e. the difference in binding energy between the isotope of interest and the isotope of interest with one less neutron plus the rest mass of an unbound neutron: $$E_{s}=\left[M_{n}+M\left(\ce{^{A-1}Z}\right) - M\left(\ce{^{A}Z}\right)\right]931.5\unit{\nicefrac{MeV}{amu}}$$</p>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
-    
-    </div>
-    <div class="output_html rendered_html output_subarea">
-    <h2 id="bibliography">Bibliography</h2>
-    <ol>
-    <li><p><span id="Lamarsh2001a"></span> John R Lamarsh and Anthony J Baratta. <em>Introduction to Nuclear Engineering</em>. Upper Saddle River, New Jersey, third edition, 2001.</p></li>
-    </ol>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+      
   </div>
 </div>
-</body>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Alex Hagen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

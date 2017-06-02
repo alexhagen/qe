@@ -1,0 +1,83 @@
+
+    
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
+Non-Dimensional Parameters
+==========================
+
+This material is taken from (Bird, et. al. 2007). The non-dimensional
+parameters are all over the field of fluids and thermal hydraulics.
+Their importance is, in my opinion, overstated. Any paper worth its salt
+will describe the non-dimensional number and its calculation before
+using it as a parameter. However, the idea that one can create
+parameters comparing effects without some sort of unit change is
+important, and several numbers, such as :math:`Re` and :math:`Pr` are
+seen a lot in the literature.
+
+    
+
+
+
+.. raw:: html
+
+    
+                <div class='table' style='align: center; margin-left: auto; margin-right: auto;'>
+                    <div style='margin: auto; text-align: center;' class='tablecaption' name='nondim'><b>Table 1:</b> Non-Dimensional Parameters and their definitions</div>
+                    <table>
+    <thead>
+    <tr><th style="text-align: center;"> Symbol </th><th style="text-align: center;">  Name   </th><th style="text-align: center;">                Formula                </th><th style="text-align: center;">                                     Physical Meaning                                      </th></tr>
+    </thead>
+    <tbody>
+    <tr><td style="text-align: center;">  $Re$  </td><td style="text-align: center;">Reynold's</td><td style="text-align: center;">         $\frac{\rho vD}{\mu}$         </td><td style="text-align: center;">                   $\frac{\text{inertial force}}{\text{viscous force}}$                    </td></tr>
+    <tr><td style="text-align: center;">  $Pr$  </td><td style="text-align: center;"> Prandtl </td><td style="text-align: center;">$\frac{\nu}{\alpha}=\frac{c_{p}\mu}{k}$</td><td style="text-align: center;">                                            --                                             </td></tr>
+    <tr><td style="text-align: center;">  $Gr$  </td><td style="text-align: center;"> Grashof </td><td style="text-align: center;"> $\frac{g\beta\Delta TD^{3}}{\nu^{2}}$ </td><td style="text-align: center;">                                            --                                             </td></tr>
+    <tr><td style="text-align: center;">  $Br$  </td><td style="text-align: center;">Brinkman </td><td style="text-align: center;">     $\frac{\mu v^{2}}{k\Delta T}$     </td><td style="text-align: center;">$\frac{\text{heat production by viscous dissipation}}{\text{heat transport by conduction}}$</td></tr>
+    <tr><td style="text-align: center;">  $Pe$  </td><td style="text-align: center;"> Peclet  </td><td style="text-align: center;">                $RePr$                 </td><td style="text-align: center;">        $\frac{\text{convection heat transport}}{\text{conduction heat transport}}$        </td></tr>
+    <tr><td style="text-align: center;">  $Ra$  </td><td style="text-align: center;">Rayleigh </td><td style="text-align: center;">                $GrPr$                 </td><td style="text-align: center;">                                            --                                             </td></tr>
+    <tr><td style="text-align: center;">  $Ec$  </td><td style="text-align: center;"> Eckert  </td><td style="text-align: center;">            $\frac{Br}{Pr}$            </td><td style="text-align: center;">                                            --                                             </td></tr>
+    <tr><td style="text-align: center;">  $Fr$  </td><td style="text-align: center;"> Froude  </td><td style="text-align: center;">         $\frac{\rho v}{pgD}$          </td><td style="text-align: center;">                $\frac{\text{inertial force}}{\text{gravitational force}}$                 </td></tr>
+    <tr><td style="text-align: center;">   --   </td><td style="text-align: center;">   --    </td><td style="text-align: center;">          $\frac{Gr}{Re^{2}}$          </td><td style="text-align: center;">                   $\frac{\text{buoyant force}}{\text{inertial force}}$                    </td></tr>
+    <tr><td style="text-align: center;">  $Ma$  </td><td style="text-align: center;">  Mach   </td><td style="text-align: center;">             $\frac{v}{c}$             </td><td style="text-align: center;">                                            --                                             </td></tr>
+    <tr><td style="text-align: center;">  $Nu$  </td><td style="text-align: center;"> Nusselt </td><td style="text-align: center;">            $\frac{hD}{k}$             </td><td style="text-align: center;">                       $\frac{\text{convection}}{\text{conduction}}$                       </td></tr>
+    <tr><td style="text-align: center;">  $We$  </td><td style="text-align: center;">  Weber  </td><td style="text-align: center;">      $\frac{Dv^{2}\rho}{\sigma}$      </td><td style="text-align: center;">                  $\frac{\text{inertial force}}{\text{surface tension}}$                   </td></tr>
+    <tr><td style="text-align: center;">  $Bi$  </td><td style="text-align: center;">  Biot   </td><td style="text-align: center;">            $\frac{hD}{k}$             </td><td style="text-align: center;">                       $\frac{\text{convection}}{\text{conduction}}$                       </td></tr>
+    </tbody>
+    </table>
+                </div>
+            
+
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Bird2007">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpN6Sxck.bib  -->
+    
+    
+    
+    
+    <p><a name="Bird2007"></a>
+    
+    R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+     <em>Transport Phenomena</em>.
+     John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+    
+    </p>
+    </li>
+    </ol>
+
+

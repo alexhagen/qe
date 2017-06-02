@@ -1,0 +1,89 @@
+
+    
+
+Differential Scattering Cross Section
+=====================================
+
+Conversion of the differential scattering cross section to an actual
+cross section is essential, and can be found in (Lamarsh, 2002) or
+really any other neutronics textbook.
+
+We start with the differential elastic scattering cross section. For
+:math:`\ce{^{4}He}`, it's
+
+.. math:: \sigma_{s} \left(\theta_{c}\right)=\frac{\sigma_{s}}{4\pi}\left( 1 + \cos \theta_{c}\right)
+
+Note that the second :math:`\sigma_{s}` is a constant. As always, the
+neutronics community has some strange notation conventions.
+
+From here, we need to determine the full cross section
+:math:`\sigma_{s}`. We start by integrating over the solid angle.
+
+.. math:: \sigma_{s}    =\int_{4\pi}\sigma_{s}\left(\theta_{c}\right)d\Omega\left(\theta_{c}\right)
+
+.. math::
+
+
+       \sigma_{s}=\int_{0}^{2\pi}\int_{0}^{\pi}\frac{\sigma_{s}}{4\pi}\left(1+\cos\theta_{c}\right)\sin\theta_{c}d\theta_{c}d\varphi
+
+Now, we use :math:`\mu` substitution, and from there it is just
+integration and algbra.
+
+.. math:: \sigma_{s}=2\pi\int_{-1}^{1}\frac{\sigma_{s}}{4\pi}\left(1+\mu_{c}\right)d\mu_{c}
+
+.. math:: \sigma_{s}=2\pi\left[\frac{2\sigma_{s}}{4\pi}\right]=\sigma_{s}
+
+So this exercise was a little dumb. Of course
+:math:`\sigma_{s}=\sigma_{s}`, but we can use this to determine more
+difficult things, like what fraction of elastically scattered neutrons
+appear at angles greater than :math:`90^{\circ}` in the center of mass
+frame.
+
+To do this, we start with the same scattering cross section, but we only
+integrate through angles :math:`90^{\circ}` to :math:`180^{\circ}`. So
+we have
+
+.. math:: \sigma_{>90^{\circ}}=\int_{0}^{2\pi}\int_{\frac{\pi}{2}}^{\pi}\frac{\sigma_{s}}{4\pi}\left(1+\cos\theta_{c}\right)\sin\theta_{c}d\theta_{c}d\varphi
+
+Then we do our typical :math:`\mu` substitution. Note that the
+:math:`\mu` substitution goes from :math:`-1` to :math:`0` because those
+are the :math:`\cos` values at :math:`\nicefrac{\pi}{2}` and
+:math:`\pi`, reversed. The reversal comes because
+:math:`d\mu = - \sin \theta d\theta`, so the reversal removes the
+negative sign. Then, we can do the algebra and find
+
+.. math:: \sigma_{>90^{\circ}}=2\pi\int_{-1}^{0}\frac{\sigma_{s}}{4\pi}\left(1+\mu_{c}\right)d\mu_{c}
+
+.. math:: \sigma_{>90^{\circ}}=\frac{\sigma_{s}}{4}
+
+Which shows that :math:`\nicefrac{1}{4}` of the neutrons are scattered
+through those high angles (backscattered).
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Lamarsh">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpazKfKO.bib  -->
+    
+    
+    
+    
+    <p><a name="Lamarsh"></a>
+    
+    John&nbsp;R Lamarsh.
+     <em>Introduction to Nuclear Reactor Theory</em>.
+     American Nuclear Society, La Grange Park, IL, 2002.
+    
+    </p>
+    </li>
+    </ol>
+
+

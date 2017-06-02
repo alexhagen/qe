@@ -1,19 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alex Hagen" />
-  <title>Purdue PhDNE Quals</title>
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Neutronics &#8212; PUNEQE  documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Vector Operators" href="th/01_vector_operators.html" />
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
-        inlineMath: [["$","$"]],
+        inlineMath: [["$$","$$"], ['\\(','\\)']],
         processEscapes: true
       }
     });
@@ -50,258 +79,207 @@
       });
     });
   </script>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">PUNEQE</a></li>
+      
+      
+    </ol>
+  
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <style type="text/css">code{white-space: pre;}</style>
-      <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <style>
-    .anchor-link {
-      visibility: hidden;
-    }
-    table > tbody > tr:nth-of-type(odd) {
-      background-color: #f5f5f5;
-    }
-    .table {
-      text-align: center;
-    }
-    table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    table > thead > tr > th,
-    table > tbody > tr > th,
-    table > tfoot > tr > th,
-    table > thead > tr > td,
-    table > tbody > tr > td,
-    table > tfoot > tr > td {
-      text-align: center;
-    }
-    table > thead > tr:first-of-type {
-      border-top: 1px solid #555;
-    }
-    table > thead > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > tbody > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > thead > tr > th,
-    table > thead > tr > td {
-      font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-      font-weight: 700;
-      line-height: 1.1;
-      color: #142735;
-    }
-    table {
-      margin-top: 10px;
-    }
-    @media screen and (max-width: 767px){
-      .row {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
-    .breadcrumb > ol{
-      padding: 8px 15px;
-      margin-bottom: 21px;
-      list-style: none;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-    }
-    .breadcrumb > ol > li {
-      display: inline-block;
-    }
-    .breadcrumb > ol > li + li:before {
-      content: "/\00a0";
-      padding: 0 5px;
-      color: #cccccc;
-    }
-    .breadcrumb > ol > .active {
-      color: #a0c2db;
-    }
-  </style>
-</head>
-<body>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-  <div class="navbar-header">
-    <a href="/qe/" class="navbar-brand"><img src='/qe/css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse" id="navbar-main">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="th">Thermal Hydraulics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="th">
-          <li><a href="/qe/th/01_vector_operators.html">Vector Operators</a></li>
-          <li><a href="/qe/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
-          <li><a href="/qe/th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
-          <li><a href="/qe/th/04_energy_equations.html">Energy Equations</a></li>
-          <li><a href="/qe/th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="neu">Neutronics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="neu">
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="mat">
-          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="int">Interactions <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="int">
-          <li><a href="/qe/int/01_decay.html">Decay and Transmutation</a></li>
-          <li><a href="/qe/int/02_binding_energy.html">Binding Energy and Mass Defect</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../help/">Help</a>
-      </li>
-    </ul>
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span><img src="_static/q_small.svg"></span>
+        PUNEQE</a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
-    </ul>
-  </div>
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Tutorials <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="th/01_vector_operators.html">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="th/01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="th/01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="th/01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="th/02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="th/02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="th/03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="th/03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="th/04_energy_equations.html">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="th/04_energy_equations.html#energy-equation">Energy equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mat/01_recoil_kinematics.html#solve">Solve</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Interactions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int/01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Neutronics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+</ul>
+</ul>
+</li>
+            
+          
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
+        </ul>
+      </div>
   </div>
 </div>
+
 <div class="container">
-  <div class="row" style="padding-top:70px;">
-    <h1 id="purdue-nuclear-engineering-phd-qualification-exams---example-problems-study-guides-and-tutorials">Purdue Nuclear Engineering PhD Qualification Exams - Example Problems, Study Guides, and Tutorials</h1>
-    <p><img src="css/q.svg" style="position: absolute; top: -100px; left: -150px; width: 400px; opacity: 0.5; fill-opacity: 0.5; z-index: 0;" /></p>
-    <p>Alex Hagen | PhDNE - 2017 (hopefully!)</p>
-    <p>What follows is the product of two years of work and collaboration from several students around the department, all of which successfully completed their PhDNE qualifying exams. The cornerstone of the material is ~50 &quot;tutorials&quot;, which are one page white papers on very specific topics that <em>were</em> favorite topics on the qualifying exams during the time of writing (2012-2015). I also include study guides, which are simply cursory coverage of the textbooks assigned, and I may provide &quot;example problems&quot;, which are similar to problems that have been asked on past exams. My goal is to provide <strong>directed</strong>, sound, and comprehensive advice on what to study and how in depth to go, as well as to provide more material (in the way that Texas A&amp;M has) for students studying for the exam. I feel that directing students as they prepare will make the students better engineers. I, for one, feel I am a better engineer for having learned to pass the Purdue PhDNE qualification exams.</p>
-    <h2 id="tutorials">Tutorials</h2>
-    <p>These tutorials were the corner stone of my studying for qualification exams. I intend them to be used as <em>extended</em> flashcards. I personally copied each of the tutorials below <span class="math inline">15×</span> as a way to memorize them, and that worked incredibly well. It may have been that I had to pour over material to generate the tutorials, but still, I think it's a good tactic.</p>
-    <!--
-    <div id="menu">
-    <div class="panel list-group">
-    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#th" data-parent="#menu">Thermal Hydraulics</a>
-    <div id="th" class="sublinks collapse">
-    <a class='list-group-item small' href='th/01_vector_operators.html'>Vector Operators</a>
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="purdue-nuclear-engineering-phd-qualification-exams-example-problems-study-guides-and-tutorials">
+<h1>Purdue Nuclear Engineering PhD Qualification Exams - Example Problems, Study Guides, and Tutorials<a class="headerlink" href="#purdue-nuclear-engineering-phd-qualification-exams-example-problems-study-guides-and-tutorials" title="Permalink to this headline">¶</a></h1>
+<p>Alex Hagen | PhDNE - 2017 (hopefully!)</p>
+<p>What follows is the product of two years of work and collaboration from
+several students around the department, all of which successfully
+completed their PhDNE qualifying exams. The cornerstone of the material
+is ~50 “tutorials”, which are one page white papers on very specific
+topics that <em>were</em> favorite topics on the qualifying exams during the
+time of writing (2012-2015). I also include study guides, which are
+simply cursory coverage of the textbooks assigned, and I may provide
+“example problems”, which are similar to problems that have been asked
+on past exams. My goal is to provide <strong>directed</strong>, sound, and
+comprehensive advice on what to study and how in depth to go, as well as
+to provide more material (in the way that Texas A&amp;M has) for students
+studying for the exam. I feel that directing students as they prepare
+will make the students better engineers. I, for one, feel I am a better
+engineer for having learned to pass the Purdue PhDNE qualification
+exams.</p>
+<div class="section" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<p>These tutorials were the corner stone of my studying for qualification
+exams. I intend them to be used as <em>extended</em> flashcards. I personally
+copied each of the tutorials below <span class="math">\(15\times\)</span> as a way to memorize
+them, and that worked incredibly well. It may have been that I had to
+pour over material to generate the tutorials, but still, I think it’s a
+good tactic.</p>
+<!--
+<div id="menu">
+<div class="panel list-group">
+<a href="#" class="list-group-item" data-toggle="collapse" data-target="#th" data-parent="#menu">Thermal Hydraulics</a>
+<div id="th" class="sublinks collapse">
+<a class='list-group-item small' href='th/01_vector_operators.html'>Vector Operators</a>
+</div>
+</div>
+</div>
+--><div class="toctree-wrapper compound" id="th">
+<p class="caption"><span class="caption-text">Thermal Hydraulics</span><a class="headerlink" href="#th" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="th/01_vector_operators.html">Vector Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="th/04_energy_equations.html">Energy Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="materials">
+<p class="caption"><span class="caption-text">Materials</span><a class="headerlink" href="#materials" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="interactionstoc">
+<p class="caption"><span class="caption-text">Interactions</span><a class="headerlink" href="#interactionstoc" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int/01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int/02_binding_energy.html">Binding Energy and Mass Defect</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="neutronics">
+<p class="caption"><span class="caption-text">Neutronics</span><a class="headerlink" href="#neutronics" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="mastertoc">
+</div>
+</div>
+</div>
+
+
     </div>
-    </div>
-    </div>
-    -->
-    <ul>
-    <li>Thermal Hydraulics
-    <ul>
-    <li>General Balance Equations and Basic Heat Transfer
-    <ul>
-    <li><a href="th/01_vector_operators.html">Vector Operators</a></li>
-    <li><a href="th/02_general_balance_equations_and_continuity_equation.html">General Balance Equation and Continuity Equation</a></li>
-    <li><a href="th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumptions</a></li>
-    <li><a href="th/04_energy_equations.html">Energy Equations</a></li>
-    <li><a href="th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-    <li>Friction Factor and Heat Transfer Coefficient</li>
-    </ul></li>
-    <li>Applications of General Balance Equations
-    <ul>
-    <li>Pipe Flow</li>
-    <li>Laminar Film</li>
-    <li>Sudden Motion</li>
-    <li>Fuel Plate</li>
-    <li>Sudden Heating</li>
-    <li>BWR Boiling</li>
-    <li>Bernoullis Equation</li>
-    </ul></li>
-    <li>System Level Analyses
-    <ul>
-    <li>LWR System Diagrams</li>
-    <li>Control Volume Analysis</li>
-    <li>Integral Momentum Equation</li>
-    <li>Loss of Coolant Accident Phenomenology</li>
-    <li>Critical Heat Flux</li>
-    </ul></li>
-    <li>Turbulence
-    <ul>
-    <li>Turbulent Flow</li>
-    <li>Prandtl Mixing Length</li>
-    <li>Turbulent Heat Transfer</li>
-    </ul></li>
-    <li>Two Phase Flow
-    <ul>
-    <li>Two Phase Regimes</li>
-    <li>Averaging</li>
-    <li>Two Phase Flow Parameters</li>
-    <li>Two Fluid Model</li>
-    <li>Drift Flux Model</li>
-    <li>Drag Force on a Fluid Particle</li>
-    <li>Kelvin Helmholtz Instability</li>
-    <li>Rayleigh Taylor Instability</li>
-    </ul></li>
-    <li>Thermal Hydraulics Bibliography</li>
-    </ul></li>
-    <li>Neutronics
-    <ul>
-    <li>Slowing down probability to miss an energy range</li>
-    <li>Lab coordinates versus center of mass coordinates</li>
-    <li>Neutron decay versus absorption</li>
-    <li>Resonance Escape Integral</li>
-    <li>Boron Trifluoride Counter</li>
-    <li>Slowing down via elastic scattering</li>
-    <li>Compton Scattering</li>
-    <li>Reflector Savings</li>
-    <li>Optimization of critical parallelpiped</li>
-    <li>Diffusion through water slab</li>
-    <li>Buckling and Critical Radius</li>
-    <li>Source multiplication factor</li>
-    <li>Diffusion equation in matrix form and in energy vector form</li>
-    <li>Differential elastic scattering to cross section</li>
-    <li>Spherical Fusion Chamber</li>
-    <li>Flux, Current, and directional current</li>
-    <li>Reactivity</li>
-    <li>Xenon concentration in reactor</li>
-    <li>Reactor Dynamics equations</li>
-    <li>Reactor Feedbacks and Transient Behavior</li>
-    <li>Delayed Neutrons and Reactor Control</li>
-    <li>Point Kinetics and Solution Methods</li>
-    <li>Neutronics Bibliography</li>
-    </ul></li>
-    <li>Interactions and Detection
-    <ul>
-    <li>Internal Conversion versus Electron Capture</li>
-    <li><a href="int/01_decay.html">Decay and Transmutation</a></li>
-    <li>Stopping Power</li>
-    <li><a href="int/02_binding_energy.html">Binding Energy</a></li>
-    <li>Relativistic Particle Wavelength</li>
-    <li>Compton Scattering of <span class="math inline"><em>γ</em></span> Beam</li>
-    <li>Two particle Trajectories</li>
-    <li>Calculation of half-life and half-life uncertainty</li>
-    <li>Semi-Realistic Detection Rate Calculation</li>
-    <li>Pulse height spectra Phenomenology</li>
-    <li>Radioactive Decay and Activity</li>
-    <li>Binding Energy Calculation</li>
-    <li>Nuclear Structure Calculations</li>
-    </ul></li>
-    <li>Materials
-    <ul>
-    <li><a href="mat/01_recoil_kinematics.html">Recoil Energy Calculation</a></li>
-    <li>Swelling and Creep</li>
-    <li>Sputtering</li>
-    <li>Range Integration</li>
-    <li>Maximum Energy Transfer and Weighted Average Recoil Spectrum</li>
-    <li>Potential Forms</li>
-    <li>Ductile to Brittle Transition Temperature</li>
-    <li>Macroscopic Parameters relation to Potential Well Shapes</li>
-    <li>Calculation of Displacements per Atom</li>
-    <li>Stopping Power</li>
-    </ul></li>
-    </ul>
+      
   </div>
 </div>
-</body>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Alex Hagen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

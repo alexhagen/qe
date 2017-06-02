@@ -1,19 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alex Hagen" />
-  <title>Purdue PhDNE Quals</title>
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Vector Operators &#8212; PUNEQE  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="General Balance Equations and Continuity Equation" href="02_general_balance_equations_and_continuity_equation.html" />
+    <link rel="prev" title="Purdue Nuclear Engineering PhD Qualification Exams - Example Problems, Study Guides, and Tutorials" href="../index.html" />
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
-        inlineMath: [["$","$"]],
+        inlineMath: [["$$","$$"], ['\\(','\\)']],
         processEscapes: true
       }
     });
@@ -50,311 +80,411 @@
       });
     });
   </script>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">PUNEQE</a></li>
+      
+      
+    </ol>
+  
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <style type="text/css">code{white-space: pre;}</style>
-      <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <style>
-    .anchor-link {
-      visibility: hidden;
-    }
-    table > tbody > tr:nth-of-type(odd) {
-      background-color: #f5f5f5;
-    }
-    .table {
-      text-align: center;
-    }
-    table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    table > thead > tr > th,
-    table > tbody > tr > th,
-    table > tfoot > tr > th,
-    table > thead > tr > td,
-    table > tbody > tr > td,
-    table > tfoot > tr > td {
-      text-align: center;
-    }
-    table > thead > tr:first-of-type {
-      border-top: 1px solid #555;
-    }
-    table > thead > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > tbody > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > thead > tr > th,
-    table > thead > tr > td {
-      font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-      font-weight: 700;
-      line-height: 1.1;
-      color: #142735;
-    }
-    table {
-      margin-top: 10px;
-    }
-    @media screen and (max-width: 767px){
-      .row {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
-    .breadcrumb > ol{
-      padding: 8px 15px;
-      margin-bottom: 21px;
-      list-style: none;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-    }
-    .breadcrumb > ol > li {
-      display: inline-block;
-    }
-    .breadcrumb > ol > li + li:before {
-      content: "/\00a0";
-      padding: 0 5px;
-      color: #cccccc;
-    }
-    .breadcrumb > ol > .active {
-      color: #a0c2db;
-    }
-  </style>
-</head>
-<body>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-  <div class="navbar-header">
-    <a href="/qe/" class="navbar-brand"><img src='/qe/css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse" id="navbar-main">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="th">Thermal Hydraulics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="th">
-          <li><a href="/qe/th/01_vector_operators.html">Vector Operators</a></li>
-          <li><a href="/qe/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
-          <li><a href="/qe/th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
-          <li><a href="/qe/th/04_energy_equations.html">Energy Equations</a></li>
-          <li><a href="/qe/th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="neu">Neutronics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="neu">
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="mat">
-          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="int">Interactions <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="int">
-          <li><a href="/qe/int/01_decay.html">Decay and Transmutation</a></li>
-          <li><a href="/qe/int/02_binding_energy.html">Binding Energy and Mass Defect</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../help/">Help</a>
-      </li>
-    </ul>
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><span><img src="../_static/q_small.svg"></span>
+        PUNEQE</a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
-    </ul>
-  </div>
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Tutorials <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_energy_equations.html">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_energy_equations.html#energy-equation">Energy equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Interactions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Neutronics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+</ul>
+</ul>
+</li>
+            
+          
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
+        </ul>
+      </div>
   </div>
 </div>
+
 <div class="container">
-  <div class="row" style="padding-top:70px;">
-    <div class="breadcrumb">
-    <ol>
-    <li><a href="/qe/">Home</a></li>
-    <li>Thermal Hydraulics</li>
-    <li>General Balance Equations and Basic Heat Transfer</li>
-    <li>Vector Operations</li>
-    </ol>
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="vector-operators">
+<h1>Vector Operators<a class="headerlink" href="#vector-operators" title="Permalink to this headline">¶</a></h1>
+<p>Based on material from (Bird, et. al. 2007).</p>
+<p>The vector operators are tensor math operators that are used throughout
+continuum mechanics. These identities are prerequisite to many of the
+continuum mechanics problems (e.g. the falling film problem). They
+should be remembered and used. I personally used flashcards to remember
+the expressions, although many of them can be determined through use of
+the gradient (<span class="math">\(\nabla\)</span>) operator and the inner product operator
+(<span class="math">\(\cdot\)</span>).</p>
+<div class="section" id="gradient">
+<h2>Gradient (<span class="math">\(\nabla\)</span>)<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property</th>
+<th class="head">Expression</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Commutative</td>
+<td><p class="first">:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>nabl
+aleft(fgri
+ght)=fnabla</p>
+<blockquote>
+<div>g+gnabla f</div></blockquote>
+<p class="last"><a href="#id3"><span class="problematic" id="id4">`</span></a></p>
+</td>
+</tr>
+<tr class="row-odd"><td>Cartesian</td>
+<td><span class="math">\(\nabl
+a f=\frac{\p
+artial f}{\p
+artial x}\ha
+t{x}+\frac{\
+partial f}{\
+partial y}\h
+at{y}+\frac{
+\partial f}{
+\partial z}\
+hat{z}\)</span></td>
+</tr>
+<tr class="row-even"><td>Cylindrical</td>
+<td><span class="math">\(\nabl
+a f=\frac{\p
+artial f}{\p
+artial r}\ha
+t{r}+\frac{1
+}{r}\frac{\p
+artial f}{\p
+artial\theta
+}\hat{\theta
+}+\frac{\par
+tial f}{\par
+tial z}\hat{
+z}\)</span></td>
+</tr>
+<tr class="row-odd"><td>Spherical</td>
+<td><span class="math">\(\nabl
+a f=\frac{\p
+artial f}{\p
+artial r}\ha
+t{r}+\frac{1
+}{r}\frac{\p
+artial f}{\p
+artial\theta
+}\hat{\theta
+}+\frac{1}{r
+\sin\left(\t
+heta\right)}
+\frac{\parti
+al f}{\parti
+al\phi}\hat{
+\phi}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="divergence">
+<h2>Divergence (<span class="math">\(\nabla \cdot\)</span>)<a class="headerlink" href="#divergence" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property</th>
+<th class="head">Expression</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Commutati
+ve</td>
+<td><span class="math">\(\nab
+la\cdot\lef
+t(f\vec{v}\
+right)=f\le
+ft(\nabla\c
+dot\vec{v}\
+right)+\vec
+{v}\cdot\le
+ft(\nabla\c
+dot f\right
+)\)</span></td>
+</tr>
+<tr class="row-odd"><td>Cartesian</td>
+<td><span class="math">\(\nab
+la\cdot f=\
+frac{\parti
+al v_{x}}{\
+partial x}+
+\frac{\part
+ial v_{y}}{
+\partial y}
++\frac{\par
+tial v_{z}}
+{\partial z
+}\)</span></td>
+</tr>
+<tr class="row-even"><td>Cylindric
+al</td>
+<td><span class="math">\(\nab
+la\cdot f=\
+frac{1}{r}\
+frac{\parti
+al\left(rv_
+{r}\right)}
+{\partial r
+}+\frac{1}{
+r}\frac{\pa
+rtial v_{\t
+heta}}{\par
+tial\theta}
++\frac{\par
+tial v_{z}}
+{\partial z
+}\)</span></td>
+</tr>
+<tr class="row-odd"><td>Spherical</td>
+<td><span class="math">\(\nab
+la\cdot f=\
+frac{1}{r^{
+2}}\frac{\p
+artial\left
+(r^{2}v_{r}
+\right)}{\p
+artial r}+\
+frac{1}{r\s
+in\left(\th
+eta\right)}
+\frac{\part
+ial\left(\s
+in\left(\th
+eta\right)v
+_{\theta}\r
+ight)}{\par
+tial\theta}
++\frac{1}{r
+\sin\left(\
+theta\right
+)}\frac{\pa
+rtial v_{\p
+hi}}{\parti
+al\phi}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="laplacian">
+<h2>Laplacian (<span class="math">\(\nabla^{2}\)</span>)<a class="headerlink" href="#laplacian" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property</th>
+<th class="head">Expression</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Cartesian</td>
+<td><span class="math">\(\nab
+la^{2}f=\fr
+ac{\partial
+^{2}f}{\par
+tial x^{2}}
++\frac{\par
+tial^{2}f}{
+\partial y^
+{2}}+\frac{
+\partial^{2
+}f}{\partia
+l z^{2}}\)</span></td>
+</tr>
+<tr class="row-odd"><td>Cylindric
+al</td>
+<td><span class="math">\(\nab
+la^{2}f=\fr
+ac{1}{r}\fr
+ac{\partial
+}{\partial
+r}\left(r\f
+rac{\partia
+l f}{\parti
+al r}\right
+)+\frac{1}{
+r^{2}}\frac
+{\partial^{
+2}f}{\parti
+al\theta^{2
+}}+\frac{\p
+artial^{2}f
+}{\partial
+z^{2}}\)</span></td>
+</tr>
+<tr class="row-even"><td>Spherical</td>
+<td><span class="math">\(\nab
+la^{2}f=\fr
+ac{1}{r^{2}
+}\frac{\par
+tial}{\part
+ial r}\left
+(r^{2}\frac
+{\partial f
+}{\partial
+r}\right)+\
+frac{1}{r^{
+2}\sin\left
+(\theta\rig
+ht)}\frac{\
+partial}{\p
+artial\thet
+a}\left(\si
+n\left(\the
+ta\right)\f
+rac{\partia
+l f}{\parti
+al\theta}\r
+ight)+\frac
+{1}{r^{2}\s
+in^{2}\left
+(\theta\rig
+ht)}\frac{\
+partial f}{
+\partial\ph
+i}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2>Bibliography</h2>
+<ol>
+<li name="Bird2007">
+<!-- This document was automatically generated with bibtex2html 1.98
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpn8Qxz_.bib  -->
+
+
+
+
+<p><a name="Bird2007"></a>
+
+R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+ <em>Transport Phenomena</em>.
+ John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+
+</p>
+</li>
+</ol></div>
+</div>
+
+
     </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h1 id="Vector-Operators">Vector Operators<a href="#Vector-Operators" class="anchor-link">¶</a></h1>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <p>Based on material from (<a href="#Bird2007">Bird, et. al. 2007</a>).</p>
-    <p>The vector operators are tensor math operators that are used throughout continuum mechanics. These identities are prerequisite to many of the continuum mechanics problems (e.g. the falling film problem). They should be remembered and used. I personally used flashcards to remember the expressions, although many of them can be determined through use of the gradient ($\nabla$) operator and the inner product operator ($\cdot$).</p>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Gradient-($\nabla$)">Gradient ($\nabla$)<a href="#Gradient-($\nabla$)" class="anchor-link">¶</a></h2>
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Property</th>
-    <th>Expression</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Commutative</td>
-    <td>$\nabla\left(fg\right)=f\nabla g+g\nabla f$</td>
-    </tr>
-    <tr class="even">
-    <td>Cartesian</td>
-    <td>$\nabla f=\frac{\partial f}{\partial x}\hat{x}+\frac{\partial f}{\partial y}\hat{y}+\frac{\partial f}{\partial z}\hat{z}$</td>
-    </tr>
-    <tr class="odd">
-    <td>Cylindrical</td>
-    <td>$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$</td>
-    </tr>
-    <tr class="even">
-    <td>Spherical</td>
-    <td>$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial f}{\partial\phi}\hat{\phi}$</td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Divergence-($\nabla-\cdot$)">Divergence ($\nabla \cdot$)<a href="#Divergence-($\nabla-\cdot$)" class="anchor-link">¶</a></h2>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Property</th>
-    <th>Expression</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Commutative</td>
-    <td>$\nabla\cdot\left(f\vec{v}\right)=f\left(\nabla\cdot\vec{v}\right)+\vec{v}\cdot\left(\nabla\cdot f\right)$</td>
-    </tr>
-    <tr class="even">
-    <td>Cartesian</td>
-    <td>$\nabla\cdot f=\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}$</td>
-    </tr>
-    <tr class="odd">
-    <td>Cylindrical</td>
-    <td>$\nabla\cdot f=\frac{1}{r}\frac{\partial\left(rv_{r}\right)}{\partial r}+\frac{1}{r}\frac{\partial v_{\theta}}{\partial\theta}+\frac{\partial v_{z}}{\partial z}$</td>
-    </tr>
-    <tr class="even">
-    <td>Spherical</td>
-    <td>$\nabla\cdot f=\frac{1}{r^{2}}\frac{\partial\left(r^{2}v_{r}\right)}{\partial r}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial\left(\sin\left(\theta\right)v_{\theta}\right)}{\partial\theta}+\frac{1}{r\sin\left(\theta\right)}\frac{\partial v_{\phi}}{\partial\phi}$</td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Laplacian-($\nabla^{2}$)">Laplacian ($\nabla^{2}$)<a href="#Laplacian-($\nabla%5E%7B2%7D$)" class="anchor-link">¶</a></h2>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Property</th>
-    <th>Expression</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cartesian</td>
-    <td>$\nabla^{2}f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
-    </tr>
-    <tr class="even">
-    <td>Cylindrical</td>
-    <td>$\nabla^{2}f=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}}\frac{\partial^{2}f}{\partial\theta^{2}}+\frac{\partial^{2}f}{\partial z^{2}}$</td>
-    </tr>
-    <tr class="odd">
-    <td>Spherical</td>
-    <td>$\nabla^{2}f=\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial f}{\partial r}\right)+\frac{1}{r^{2}\sin\left(\theta\right)}\frac{\partial}{\partial\theta}\left(\sin\left(\theta\right)\frac{\partial f}{\partial\theta}\right)+\frac{1}{r^{2}\sin^{2}\left(\theta\right)}\frac{\partial f}{\partial\phi}$</td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
-    
-    </div>
-    <div class="output_html rendered_html output_subarea">
-    <h2 id="bibliography">Bibliography</h2>
-    <ol>
-    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
-    </ol>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    
-    </div>
+      
   </div>
 </div>
-</body>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Alex Hagen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

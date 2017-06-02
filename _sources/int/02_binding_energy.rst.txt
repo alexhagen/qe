@@ -1,0 +1,83 @@
+
+    
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
+Binding Energy and Mass Defect
+==============================
+
+This material is referenced from (Lamarsh, et. al. 2001).
+
+Einstein postulated that the *rest mass energy* of an atom was defined
+by
+
+.. math:: E_{rest}=m_{o}c^{2}
+
+where :math:`c` is the speed of light, and :math:`m_{o}` is the atomic
+mass of the atom. This establishes the equivalence of mass and energy.
+
+Consequently, the kinetic energy (**KE**) is the difference between
+total and rest mass energy
+
+.. math:: E=mc^{2}-m_{o}c^{2}=m_{o}c^{2}\left[ \frac{1}{\sqrt{1-\beta^{2}}} - 1 \right]
+
+and this, when non-relativistics (:math:`v\ll c`), leads to
+
+.. math:: E=\frac{1}{2}mv^{2}
+
+Binding energy
+--------------
+
+We can remember that the mass defect is defined by
+
+.. math:: Q=\left[\left(M_{a}+M_{b}\right) - \left(M_{c}+M_{d}\right)\right]\underbrace{\left(931.5\unit{\nicefrac{MeV}{amu}}\right)}_{c^{2}}
+
+so the mass defect is the difference between the constituents and the
+actual atom
+
+.. math:: \Delta=ZM_{p}+NM_{n}-M_{A}
+
+ which leads to
+
+.. math:: BE\left( a \right) = Z_{a}M\left(\ce{^{1}H}\right) - N_{a}\left(M_{n}\right) - M_{a}
+
+To determine the binding energy of the **last** neutron, we determine
+the least bound neutron - i.e. the difference in binding energy between
+the isotope of interest and the isotope of interest with one less
+neutron plus the rest mass of an unbound neutron:
+
+.. math:: E_{s}=\left[M_{n}+M\left(\ce{^{A-1}Z}\right) - M\left(\ce{^{A}Z}\right)\right]931.5\unit{\nicefrac{MeV}{amu}}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Lamarsh2001a">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpBEybDE.bib  -->
+    
+    
+    
+    
+    <p><a name="Lamarsh2001a"></a>
+    
+    John&nbsp;R Lamarsh and Anthony&nbsp;J Baratta.
+     <em>Introduction to Nuclear Engineering</em>.
+     Upper Saddle River, New Jersey, third edition, 2001.
+    
+    </p>
+    </li>
+    </ol>
+
+

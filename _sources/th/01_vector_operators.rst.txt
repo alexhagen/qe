@@ -1,0 +1,247 @@
+
+    
+
+Vector Operators
+================
+
+Based on material from (Bird, et. al. 2007).
+
+The vector operators are tensor math operators that are used throughout
+continuum mechanics. These identities are prerequisite to many of the
+continuum mechanics problems (e.g. the falling film problem). They
+should be remembered and used. I personally used flashcards to remember
+the expressions, although many of them can be determined through use of
+the gradient (:math:`\nabla`) operator and the inner product operator
+(:math:`\cdot`).
+
+Gradient (:math:`\nabla`)
+-------------------------
+
++--------------+--------------+
+| Property     | Expression   |
++==============+==============+
+| Commutative  | :math:`\nabl |
+|              | a\left(fg\ri |
+|              | ght)=f\nabla |
+|              |  g+g\nabla f |
+|              | `            |
++--------------+--------------+
+| Cartesian    | :math:`\nabl |
+|              | a f=\frac{\p |
+|              | artial f}{\p |
+|              | artial x}\ha |
+|              | t{x}+\frac{\ |
+|              | partial f}{\ |
+|              | partial y}\h |
+|              | at{y}+\frac{ |
+|              | \partial f}{ |
+|              | \partial z}\ |
+|              | hat{z}`      |
++--------------+--------------+
+| Cylindrical  | :math:`\nabl |
+|              | a f=\frac{\p |
+|              | artial f}{\p |
+|              | artial r}\ha |
+|              | t{r}+\frac{1 |
+|              | }{r}\frac{\p |
+|              | artial f}{\p |
+|              | artial\theta |
+|              | }\hat{\theta |
+|              | }+\frac{\par |
+|              | tial f}{\par |
+|              | tial z}\hat{ |
+|              | z}`          |
++--------------+--------------+
+| Spherical    | :math:`\nabl |
+|              | a f=\frac{\p |
+|              | artial f}{\p |
+|              | artial r}\ha |
+|              | t{r}+\frac{1 |
+|              | }{r}\frac{\p |
+|              | artial f}{\p |
+|              | artial\theta |
+|              | }\hat{\theta |
+|              | }+\frac{1}{r |
+|              | \sin\left(\t |
+|              | heta\right)} |
+|              | \frac{\parti |
+|              | al f}{\parti |
+|              | al\phi}\hat{ |
+|              | \phi}`       |
++--------------+--------------+
+
+Divergence (:math:`\nabla \cdot`)
+---------------------------------
+
++-----------+-------------+
+| Property  | Expression  |
++===========+=============+
+| Commutati | :math:`\nab |
+| ve        | la\cdot\lef |
+|           | t(f\vec{v}\ |
+|           | right)=f\le |
+|           | ft(\nabla\c |
+|           | dot\vec{v}\ |
+|           | right)+\vec |
+|           | {v}\cdot\le |
+|           | ft(\nabla\c |
+|           | dot f\right |
+|           | )`          |
++-----------+-------------+
+| Cartesian | :math:`\nab |
+|           | la\cdot f=\ |
+|           | frac{\parti |
+|           | al v_{x}}{\ |
+|           | partial x}+ |
+|           | \frac{\part |
+|           | ial v_{y}}{ |
+|           | \partial y} |
+|           | +\frac{\par |
+|           | tial v_{z}} |
+|           | {\partial z |
+|           | }`          |
++-----------+-------------+
+| Cylindric | :math:`\nab |
+| al        | la\cdot f=\ |
+|           | frac{1}{r}\ |
+|           | frac{\parti |
+|           | al\left(rv_ |
+|           | {r}\right)} |
+|           | {\partial r |
+|           | }+\frac{1}{ |
+|           | r}\frac{\pa |
+|           | rtial v_{\t |
+|           | heta}}{\par |
+|           | tial\theta} |
+|           | +\frac{\par |
+|           | tial v_{z}} |
+|           | {\partial z |
+|           | }`          |
++-----------+-------------+
+| Spherical | :math:`\nab |
+|           | la\cdot f=\ |
+|           | frac{1}{r^{ |
+|           | 2}}\frac{\p |
+|           | artial\left |
+|           | (r^{2}v_{r} |
+|           | \right)}{\p |
+|           | artial r}+\ |
+|           | frac{1}{r\s |
+|           | in\left(\th |
+|           | eta\right)} |
+|           | \frac{\part |
+|           | ial\left(\s |
+|           | in\left(\th |
+|           | eta\right)v |
+|           | _{\theta}\r |
+|           | ight)}{\par |
+|           | tial\theta} |
+|           | +\frac{1}{r |
+|           | \sin\left(\ |
+|           | theta\right |
+|           | )}\frac{\pa |
+|           | rtial v_{\p |
+|           | hi}}{\parti |
+|           | al\phi}`    |
++-----------+-------------+
+
+Laplacian (:math:`\nabla^{2}`)
+------------------------------
+
++-----------+-------------+
+| Property  | Expression  |
++===========+=============+
+| Cartesian | :math:`\nab |
+|           | la^{2}f=\fr |
+|           | ac{\partial |
+|           | ^{2}f}{\par |
+|           | tial x^{2}} |
+|           | +\frac{\par |
+|           | tial^{2}f}{ |
+|           | \partial y^ |
+|           | {2}}+\frac{ |
+|           | \partial^{2 |
+|           | }f}{\partia |
+|           | l z^{2}}`   |
++-----------+-------------+
+| Cylindric | :math:`\nab |
+| al        | la^{2}f=\fr |
+|           | ac{1}{r}\fr |
+|           | ac{\partial |
+|           | }{\partial  |
+|           | r}\left(r\f |
+|           | rac{\partia |
+|           | l f}{\parti |
+|           | al r}\right |
+|           | )+\frac{1}{ |
+|           | r^{2}}\frac |
+|           | {\partial^{ |
+|           | 2}f}{\parti |
+|           | al\theta^{2 |
+|           | }}+\frac{\p |
+|           | artial^{2}f |
+|           | }{\partial  |
+|           | z^{2}}`     |
++-----------+-------------+
+| Spherical | :math:`\nab |
+|           | la^{2}f=\fr |
+|           | ac{1}{r^{2} |
+|           | }\frac{\par |
+|           | tial}{\part |
+|           | ial r}\left |
+|           | (r^{2}\frac |
+|           | {\partial f |
+|           | }{\partial  |
+|           | r}\right)+\ |
+|           | frac{1}{r^{ |
+|           | 2}\sin\left |
+|           | (\theta\rig |
+|           | ht)}\frac{\ |
+|           | partial}{\p |
+|           | artial\thet |
+|           | a}\left(\si |
+|           | n\left(\the |
+|           | ta\right)\f |
+|           | rac{\partia |
+|           | l f}{\parti |
+|           | al\theta}\r |
+|           | ight)+\frac |
+|           | {1}{r^{2}\s |
+|           | in^{2}\left |
+|           | (\theta\rig |
+|           | ht)}\frac{\ |
+|           | partial f}{ |
+|           | \partial\ph |
+|           | i}`         |
++-----------+-------------+
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Bird2007">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpn8Qxz_.bib  -->
+    
+    
+    
+    
+    <p><a name="Bird2007"></a>
+    
+    R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+     <em>Transport Phenomena</em>.
+     John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+    
+    </p>
+    </li>
+    </ol>
+
+
+
+    

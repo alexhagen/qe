@@ -1,0 +1,89 @@
+
+    
+
+
+
+.. parsed-literal::
+
+    <IPython.core.display.Javascript object>
+
+
+Recoil Kinematics
+=================
+
+Again, this material is really common, but problably comes from
+(Lamarsh, et. al. 2001).
+
+**Given an :math:`\alpha` of energy :math:`E` incident on
+:math:`\mathrm{\sideset{^{9}}{}{Be}}`, what is the identity and energy
+of the recoil?**
+
+First, we can write up our reaction
+
+.. math:: \mathrm{\sideset{^{9}_{4}}{}{Be}} + \alpha \rightarrow \mathrm{\sideset{^{13}_{6}}{}C} + \gamma
+
+, then we have to apply energy and momentum conservation and solve.
+
+Energy Conservation
+~~~~~~~~~~~~~~~~~~~
+
+.. math:: T_{\alpha} + m_{\alpha}c^{2} + m_{Be}c^{2} = T_{\gamma} + m_{C}c^{2} + T_{C}
+
+Momentum Conservation
+~~~~~~~~~~~~~~~~~~~~~
+
+.. math:: p_{\alpha} = p_{\gamma} + p_{C}
+
+Solve
+~~~~~
+
+.. math:: T_{\alpha} + \left[ m_{\alpha}c^{2} + m_{Be}c^{2} - m_{C}c^{2} = T_{\gamma} + T_{C}\right]
+
+.. math:: 5.3\unit{MeV} + 931.5\unit{\nicefrac{MeV}{amu}} \left[9\unit{amu}+4\unit{amu}-13\unit{amu}\right] = T_{\gamma} + T_{C}
+
+.. math:: \frac{1}{c}\sqrt{\left(T_{\alpha}+2m_{\alpha}c^{2}\right)T_{\alpha}}=\frac{E_{\gamma}}{c}+\frac{1}{c}\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}
+
+.. math:: \sqrt{\left(T_{\alpha}+2m_{\alpha}c^{2}\right)T_{\alpha}}=E_{\gamma}+\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}
+
+.. math:: T_{\gamma}=15.55\unit{MeV}-T_{C}
+
+.. math:: \sqrt{\left(T_{\alpha}+2m_{\alpha}c^{2}\right)T_{\alpha}}=15.55\unit{MeV}-T_{C}+\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}
+
+.. math:: 198.85\unit{MeV}-15.55\unit{MeV}=\sqrt{\left(T_{C}+2m_{C}c^{2}\right)T_{C}}-T_{C}
+
+.. math:: \left(T_{C}+183.3\unit{MeV}\right)^{2}=\left(T_{C}^{2}+T_{C}2m_{C}c^{2}\right)
+
+.. math:: \cancel{T_{c}^{2}}+\left(2\cdot183.3\unit{MeV}\right)T_{C}+\left(183.3\unit{MeV}\right)^{2}=\cancel{T_{C}^{2}}+T_{C}2m_{C}c^{2}
+
+.. math:: T_{C}=-\frac{\left(183.3\unit{MeV}\right)^{2}}{\left(2\cdot183.3\unit{MeV}\right)-2m_{C}c^{2}}
+
+.. math:: T_{C}=1.408\unit{MeV}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Lamarsh2001a">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpK1EyO7.bib  -->
+    
+    
+    
+    
+    <p><a name="Lamarsh2001a"></a>
+    
+    John&nbsp;R Lamarsh and Anthony&nbsp;J Baratta.
+     <em>Introduction to Nuclear Engineering</em>.
+     Upper Saddle River, New Jersey, third edition, 2001.
+    
+    </p>
+    </li>
+    </ol>
+
+

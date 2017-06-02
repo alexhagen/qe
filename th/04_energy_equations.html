@@ -1,19 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alex Hagen" />
-  <title>Purdue PhDNE Quals</title>
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Energy Equations &#8212; PUNEQE  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/extra.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Non-Dimensional Parameters" href="05_non-dimensional_parameters.html" />
+    <link rel="prev" title="Momentum Equation and Boussinesq Assumption" href="03_momentum_equation_and_boussinesq_assumption.html" />
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
-        inlineMath: [["$","$"]],
+        inlineMath: [["$$","$$"], ['\\(','\\)']],
         processEscapes: true
       }
     });
@@ -50,220 +80,243 @@
       });
     });
   </script>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">PUNEQE</a></li>
+      
+      
+    </ol>
+  
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <style type="text/css">code{white-space: pre;}</style>
-      <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <style>
-    .anchor-link {
-      visibility: hidden;
-    }
-    table > tbody > tr:nth-of-type(odd) {
-      background-color: #f5f5f5;
-    }
-    .table {
-      text-align: center;
-    }
-    table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    table > thead > tr > th,
-    table > tbody > tr > th,
-    table > tfoot > tr > th,
-    table > thead > tr > td,
-    table > tbody > tr > td,
-    table > tfoot > tr > td {
-      text-align: center;
-    }
-    table > thead > tr:first-of-type {
-      border-top: 1px solid #555;
-    }
-    table > thead > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > tbody > tr:last-of-type {
-      border-bottom: 1px solid #555;
-    }
-    table > thead > tr > th,
-    table > thead > tr > td {
-      font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-      font-weight: 700;
-      line-height: 1.1;
-      color: #142735;
-    }
-    table {
-      margin-top: 10px;
-    }
-    @media screen and (max-width: 767px){
-      .row {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
-    .breadcrumb > ol{
-      padding: 8px 15px;
-      margin-bottom: 21px;
-      list-style: none;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-    }
-    .breadcrumb > ol > li {
-      display: inline-block;
-    }
-    .breadcrumb > ol > li + li:before {
-      content: "/\00a0";
-      padding: 0 5px;
-      color: #cccccc;
-    }
-    .breadcrumb > ol > .active {
-      color: #a0c2db;
-    }
-  </style>
-</head>
-<body>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-  <div class="navbar-header">
-    <a href="/qe/" class="navbar-brand"><img src='/qe/css/q_small.svg' style="position: relative; top:-9.5px; height:40px;" /></a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse" id="navbar-main">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="th">Thermal Hydraulics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="th">
-          <li><a href="/qe/th/01_vector_operators.html">Vector Operators</a></li>
-          <li><a href="/qe/th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a></li>
-          <li><a href="/qe/th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a></li>
-          <li><a href="/qe/th/04_energy_equations.html">Energy Equations</a></li>
-          <li><a href="/qe/th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="neu">Neutronics <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="neu">
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mat">Materials <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="mat">
-          <li><a href="/qe/mat/01_recoil_kinematics.html">Recoil Kinematics</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="int">Interactions <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="int">
-          <li><a href="/qe/int/01_decay.html">Decay and Transmutation</a></li>
-          <li><a href="/qe/int/02_binding_energy.html">Binding Energy and Mass Defect</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../help/">Help</a>
-      </li>
-    </ul>
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><span><img src="../_static/q_small.svg"></span>
+        PUNEQE</a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
-    </ul>
-  </div>
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Tutorials <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_vector_operators.html">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#energy-equation">Energy equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Materials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Interactions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Neutronics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+</ul>
+</ul>
+</li>
+            
+          
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://alexhagen.github.io/" target="_blank">Alex Hagen</a></li>
+        </ul>
+      </div>
   </div>
 </div>
+
 <div class="container">
-  <div class="row" style="padding-top:70px;">
-    <div class="breadcrumb">
-    <ol>
-    <li><a href="/qe/">Home</a></li>
-    <li>Thermal Hydraulics</li>
-    <li>General Balance Equations and Basic Heat Transfer</li>
-    <li>Energy Equations</li>
-    </ol>
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">IPython</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Javascript</span> <span class="nb">object</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="energy-equations">
+<h1>Energy Equations<a class="headerlink" href="#energy-equations" title="Permalink to this headline">¶</a></h1>
+<p>This material is from (Bird, et. al. 2007). We will finish up our
+derivation of the conservation equations with the conservation of
+energy. This equation is significantly more complicated, and is given in
+many forms without the assumptions required to simplify it.</p>
+<div class="section" id="energy-equation">
+<h2>Energy equation<a class="headerlink" href="#energy-equation" title="Permalink to this headline">¶</a></h2>
+<p>Applying the GBE with
+<span class="math">\(\psi=\rho\left(u+\frac{\vec{v}^{2}}{2}\right)\)</span>,
+<span class="math">\(\mathbb{J}=\vec{q}+\mathbb{T}\vec{v}\)</span> and
+<span class="math">\(\dot{\psi_{g}}=\rho\vec{v}\cdot\vec{g}+\dot{q}\)</span>. We can recognize
+that these simply the assumptions for the momentum equation multiplied
+by velocity, with an extra term <span class="math">\(\dot{q}\)</span> in the generation term,
+which corresponds to volumetric heat generation in the flux. This is
+possible through chemical reactions, radiant heat absorption, or
+fission/nuclear reactions. This gives us the equation</p>
+<div class="math">
+\[\begin{split}\underbrace{\frac{\partial\left(\rho\left(u+\frac{\vec{v}^{2}}{2}\right)\right)}{\partial t}}_{\substack{\text{rate of energy change}\\
+\text{per unit volume}
+}
+}+\underbrace{\nabla\cdot\rho\vec{v}\left(u+\frac{\vec{v}^{2}}{2}\right)}_{\substack{\text{rate of energy change}\\
+\text{by convection per unit}\\
+\text{volume}
+}
+}\\=-\underbrace{\nabla\cdot\vec{q}}_{\substack{\text{conduction}}
+}-\underbrace{\nabla\cdot\left(p\vec{v}\right)}_{\substack{\text{work done by}\\
+\text{pressure}
+}
+}-\underbrace{\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)}_{\substack{\text{work done by}\\
+\text{viscous force}
+}
+}+\underbrace{\rho\left(\vec{v}\cdot\vec{g}\right)}_{\substack{\text{work done}\\
+\text{by gravity}
+}
+}+\underbrace{\dot{q}}_{\substack{\text{heat}\\
+\text{generation}
+}
+}\end{split}\]</div>
+<p>and we want to put this in a more usable form. We split these into
+kinetic energy and internal energy forms, by FOIL-ing the flux terms:</p>
+<div class="math">
+\[\begin{split}-\nabla\cdot\left(p\vec{v}\right)=-\underbrace{p\nabla\cdot\vec{v}}_{\substack{\text{reversible}\\
+\text{\ensuremath{pdV} work}
+}
+}-\underbrace{\vec{v}\cdot\nabla p}_{\substack{\text{kinetic}\\
+\text{energy}
+}
+}\end{split}\]</div>
+<div class="math">
+\[\begin{split}-\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)=-\underbrace{\boldsymbol{\tau}:\nabla\vec{v}}_{\substack{\text{irreversible}\\
+\text{viscous work}
+}
+}-\underbrace{\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{kinetic}\\
+\text{energy}
+}
+}\end{split}\]</div>
+<p>. Then our forms are:</p>
+<ul>
+<li><p class="first">Internal Energy:</p>
+<div class="math">
+\[\frac{Du}{Dt}=-\nabla\cdot\vec{q}-p\nabla\cdot\vec{v}-\boldsymbol{\tau}:\nabla\vec{v}+\dot{q}\]</div>
+</li>
+<li><p class="first">Kinetic Energy:</p>
+<div class="math">
+\[\frac{D\frac{\vec{v}^{2}}{2}}{Dt}=-\vec{v}\cdot\nabla p-\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}+\rho\vec{v}\cdot\vec{g}\]</div>
+</li>
+</ul>
+<p>These are not <strong>basic balance equations</strong>, though, because they don’t
+follow the form <span class="math">\(\nabla \left(\;\right)\)</span>.</p>
+<p>Some other equations to remember, which are created though assumptions
+and simplification of the energy equations are:</p>
+<ul>
+<li><p class="first">Poisson’s Heat Equation:</p>
+<div class="math">
+\[\rho c_{p}\frac{\partial T}{\partial t}=\nabla\cdot\left(k\nabla T\right)+\dot{q}\]</div>
+</li>
+<li><p class="first">Temperature Equation:</p>
+<div class="math">
+\[\rho c_{v}\frac{DT}{Dt}=\rho c_{v}\frac{\partial T}{\partial t}+\rho c_{v}\vec{v}\nabla\cdot T=k\nabla^{2}T-\boldsymbol{\tau}:\nabla\vec{v}+T\left.\frac{\partial p}{\partial T}\right)_{\rho}\nabla\cdot\vec{v}+\dot{q}\]</div>
+</li>
+</ul>
+<h2>Bibliography</h2>
+<ol>
+<li name="Bird2007">
+<!-- This document was automatically generated with bibtex2html 1.98
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpMVVZtg.bib  -->
+
+
+
+
+<p><a name="Bird2007"></a>
+
+R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+ <em>Transport Phenomena</em>.
+ John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+
+</p>
+</li>
+</ol></div>
+</div>
+
+
     </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
-    
-    </div>
-    <div id="d8babab3-963c-44c5-8ad8-fd9ceeaa0fa8">
-    
-    </div>
-    <div class="output_subarea output_javascript">
-    
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h1 id="Energy-Equations">Energy Equations<a href="#Energy-Equations" class="anchor-link">¶</a></h1>
-    <p>This material is from (<a href="#Bird2007">Bird, et. al. 2007</a>). We will finish up our derivation of the conservation equations with the conservation of energy. This equation is significantly more complicated, and is given in many forms without the assumptions required to simplify it.</p>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <h2 id="Energy-equation">Energy equation<a href="#Energy-equation" class="anchor-link">¶</a></h2>
-    <p>Applying the GBE with $\psi=\rho\left(u+\frac{\vec{v}^{2}}{2}\right)$, $\mathbb{J}=\vec{q}+\mathbb{T}\vec{v}$ and $\dot{\psi_{g}}=\rho\vec{v}\cdot\vec{g}+\dot{q}$. We can recognize that these simply the assumptions for the momentum equation multiplied by velocity, with an extra term $\dot{q}$ in the generation term, which corresponds to volumetric heat generation in the flux. This is possible through chemical reactions, radiant heat absorption, or fission/nuclear reactions. This gives us the equation $$\underbrace{\frac{\partial\left(\rho\left(u+\frac{\vec{v}^{2}}{2}\right)\right)}{\partial t}}_{\substack{\text{rate of energy change}\\ \text{per unit volume} } }+\underbrace{\nabla\cdot\rho\vec{v}\left(u+\frac{\vec{v}^{2}}{2}\right)}_{\substack{\text{rate of energy change}\\ \text{by convection per unit}\\ \text{volume} } }\\=-\underbrace{\nabla\cdot\vec{q}}_{\substack{\text{conduction}} }-\underbrace{\nabla\cdot\left(p\vec{v}\right)}_{\substack{\text{work done by}\\ \text{pressure} } }-\underbrace{\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)}_{\substack{\text{work done by}\\ \text{viscous force} } }+\underbrace{\rho\left(\vec{v}\cdot\vec{g}\right)}_{\substack{\text{work done}\\ \text{by gravity} } }+\underbrace{\dot{q}}_{\substack{\text{heat}\\ \text{generation} } }$$ and we want to put this in a more usable form. We split these into kinetic energy and internal energy forms, by FOIL-ing the flux terms: $$-\nabla\cdot\left(p\vec{v}\right)=-\underbrace{p\nabla\cdot\vec{v}}_{\substack{\text{reversible}\\ \text{\ensuremath{pdV} work} } }-\underbrace{\vec{v}\cdot\nabla p}_{\substack{\text{kinetic}\\ \text{energy} } }$$ $$-\nabla\cdot\left(\boldsymbol{\tau}\cdot\vec{v}\right)=-\underbrace{\boldsymbol{\tau}:\nabla\vec{v}}_{\substack{\text{irreversible}\\ \text{viscous work} } }-\underbrace{\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{kinetic}\\ \text{energy} } }$$. Then our forms are:</p>
-    <ul>
-    <li>Internal Energy: $$\frac{Du}{Dt}=-\nabla\cdot\vec{q}-p\nabla\cdot\vec{v}-\boldsymbol{\tau}:\nabla\vec{v}+\dot{q}$$</li>
-    <li>Kinetic Energy: $$\frac{D\frac{\vec{v}^{2}}{2}}{Dt}=-\vec{v}\cdot\nabla p-\vec{v}\cdot\nabla\cdot\boldsymbol{\tau}+\rho\vec{v}\cdot\vec{g}$$</li>
-    </ul>
-    <p>These are not <strong>basic balance equations</strong>, though, because they don't follow the form $\nabla \left(\;\right)$.</p>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-    <div class="prompt input_prompt">
-    
-    </div>
-    <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-    <p>Some other equations to remember, which are created though assumptions and simplification of the energy equations are:</p>
-    <ul>
-    <li>Poisson's Heat Equation: $$\rho c_{p}\frac{\partial T}{\partial t}=\nabla\cdot\left(k\nabla T\right)+\dot{q}$$</li>
-    <li>Temperature Equation: $$\rho c_{v}\frac{DT}{Dt}=\rho c_{v}\frac{\partial T}{\partial t}+\rho c_{v}\vec{v}\nabla\cdot T=k\nabla^{2}T-\boldsymbol{\tau}:\nabla\vec{v}+T\left.\frac{\partial p}{\partial T}\right)_{\rho}\nabla\cdot\vec{v}+\dot{q}$$</li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-    <div class="output_wrapper">
-    <div class="output">
-    <div class="output_area">
-    <div class="prompt">
-    
-    </div>
-    <div class="output_html rendered_html output_subarea">
-    <h2 id="bibliography">Bibliography</h2>
-    <ol>
-    <li><p><span id="Bird2007"></span> R. B. Bird, W. E. Stewart, and E. N. Lightfoot. <em>Transport Phenomena</em>. John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.</p></li>
-    </ol>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+      
   </div>
 </div>
-</body>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Alex Hagen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

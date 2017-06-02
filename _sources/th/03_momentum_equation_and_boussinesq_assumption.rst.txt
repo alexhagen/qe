@@ -1,0 +1,107 @@
+
+    
+
+Momentum Equation and Boussinesq Assumption
+===========================================
+
+Based on information from (Bird, et. al. 2007). Continuing with the
+derivation of the conservation equations, again we use the GBE to derive
+a conservation equation that defines the conservation of momentum.
+
+Momentum Equation
+-----------------
+
+Applying the GBE with :math:`\psi = \rho \vec{v}`,
+:math:`\mathbb{J} = \mathbb{T} = p\mathbb{I} + \tau`, and
+:math:`\dot{\psi}_{g} = \rho\vec{f}_{b} = \rho\vec{g}`, which is to say:
+the conservation quantity we will use is momentum, which when normalized
+per unit volume, becomes :math:`\rho \vec{v}`. Note that this is a
+vector quantity. The current of momentum across a boundary is a tensor
+which involves a symmetric tensor for the pressure in a system (which is
+isotropic), and the torque applied to the system. And finally, that the
+only generation of momentum is due to body forces, of which gravity is
+the only concern (unless we're working with magnetohydrodynamics). With
+these, we get
+
+.. math::
+
+   \underbrace{\frac{\partial\left(\rho\vec{v}\right)}{\partial t}}_{\substack{\text{rate of change}\\
+   \text{of momentum}\\
+   \text{per unit volume}
+   }
+   }+\underbrace{\nabla\cdot\left(\rho\vec{v}\vec{v}\right)}_{\substack{\text{momentum change}\\
+   \text{by convection}\\
+   \text{per unit volume}
+   }
+   }=-\underbrace{\nabla p}_{\substack{\text{pressure}\\
+   \text{force}
+   }
+   }-\underbrace{\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{viscous}\\
+   \text{force}
+   }
+   }+\underbrace{\rho\vec{v}}_{\substack{\text{gravity}\\
+   \text{force}
+   }
+   }
+
+By again using the definition of the substantial derivative, we can
+create Cauchy's Equation of motion as
+
+.. math:: \rho\frac{D\vec{v}}{Dt}=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}
+
+and by inspection, we can see that this matches Newton's Second Law of
+Motion:
+
+.. math:: \rho\vec{a}=\sum\vec{F}
+
+Boussinesq Assumption
+---------------------
+
+When gravity is important, we use the Boussinesq assumption(s):
+
+-  Thermal expansion (:math:`\beta`) causes density change.
+-  This happens by the thermal expansion coefficient, :math:`\beta`,
+   such that
+
+   .. math:: \beta\equiv\frac{1}{\nu}\left.\frac{\partial\nu}{\partial T}\right)_{p}=\frac{1}{\rho}\left.\frac{\partial\rho}{\partial T}\right)_{p}
+
+-  This density change is only important in the gravity term.
+
+Applying those assumptions, we get
+
+.. math:: dp=-\rho\beta dT\;\;\therefore\;\;\rho-\overline{\rho}=-\overline{\rho}\beta\left(T-\overline{T}\right)
+
+and putting that into the momentum equations, we get
+
+.. math:: \overline{\rho}\frac{D\vec{v}}{Dt}=-\cancelto{\nabla p_{dyn}}{\nabla p}-\nabla\cdot\boldsymbol{\tau}+\left[\cancelto{0}{\overline{\rho}}-\overline{\rho}\beta\left(T-\overline{T}\right)\right]\vec{g}
+
+.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Bird2007">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         bibtex2html -nokeys -o - -s plain -nodoc -q /var/folders/cy/f4wwjss96p34f35b2w98ynk80000gp/T/tmpI8lRwB.bib  -->
+    
+    
+    
+    
+    <p><a name="Bird2007"></a>
+    
+    R.&nbsp;B. Bird, W.&nbsp;E. Stewart, and E.&nbsp;N. Lightfoot.
+     <em>Transport Phenomena</em>.
+     John Wiley &amp; Sons, Inc., New York, NY, 2nd edition, 2007.
+    
+    </p>
+    </li>
+    </ol>
+
+
