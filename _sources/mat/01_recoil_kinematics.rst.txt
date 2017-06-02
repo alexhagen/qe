@@ -7,9 +7,9 @@ Recoil Kinematics
 Again, this material is really common, but problably comes from
 (Lamarsh, et. al. 2001).
 
-**Given an :math:`\alpha` of energy :math:`E` incident on
+Given an :math:`\alpha` of energy :math:`E` incident on
 :math:`\mathrm{\sideset{^{9}}{}{Be}}`, what is the identity and energy
-of the recoil?**
+of the recoil?
 
 First, we can write up our reaction
 
