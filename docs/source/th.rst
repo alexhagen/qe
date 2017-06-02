@@ -1,9 +1,9 @@
-Thermal Hydraulics
-==================
+.. title:: Thermal Hydraulics
 
 .. toctree::
    :glob:
    :maxdepth: 1
-   :name: thermalhydraulics
+   :name: th
+   :caption: Thermal Hydraulics
 
    th/*

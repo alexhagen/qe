@@ -3,16 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. toctree::
-  :name: mastertoc
-  :hidden:
-
-  interactions
-  thermalhydraulics
-  materials
-  neutronics
-
-
 .. include:: readme.rst
 
 .. include:: th.rst
@@ -22,3 +12,12 @@
 .. include:: interactions.rst
 
 .. include:: neutronics.rst
+
+.. toctree::
+  :name: mastertoc
+  :hidden:
+
+  interactions
+  th
+  materials
+  neutronics
