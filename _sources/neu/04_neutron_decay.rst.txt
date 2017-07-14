@@ -1,0 +1,62 @@
+
+    
+
+Neutron Decay before Absorption
+===============================
+
+Dr. Yang (my professor for neutronics) considered it absolutely
+essential to prove that the probability of the neutron itself decaying
+was negligible for common applications of neutronics. I believe the
+cross sections and half lives come from (Lamarsh, 2002), but I'm not
+sure where this idea is fleshed out first.
+
+We start with the half life of a neutron, which is :math:`12\unit{min}`,
+and we compare that to a thermal neutron traveling through water. The
+water has an absorption cross section of
+:math:`\Sigma_{a}=0.022\unit{cm}`. So, as a general analysis point, we
+want to find out the average lifetime of a neutron subject to decay, and
+the average lifetime of a neutron subject to absorption.
+
+Determination of the lifetime due to decay is straightforward. We simply
+use the halflife formula to convert the half life to a lifetime.
+
+.. math:: T_{\nicefrac{1}{2}} = \frac{\ln \left( 2 \right)}{\lambda}
+
+.. math:: \lambda = \frac{1}{\tau_{d}}
+
+.. math:: \tau_{d} = \frac{T_{\nicefrac{1}{2}}}{\ln \left( 2 \right)}=1038.74\unit{s}
+
+The calculation of the lifetime of an absorbed neutron is only slightly
+more complicated. First, we'll determine its "mean free path" (which is
+denoted by :math:`\lambda` in usual nomenclature like decay rate from
+above, so we'll use :math:`\Lambda`), and then, using the velocity of a
+thermal neutron, we'll convert that to a lifetime.
+
+.. math:: \Lambda = \frac{1}{\Sigma_{a}}
+
+.. math:: v=\sqrt{\frac{E}{2m}}=\sqrt{\frac{0.0257\unit{eV}}{2\cdot 938\unit{\frac{MeV}{c^2}}}}
+
+.. math:: \tau_{a}=\frac{\Lambda}{v}=\frac{50\unit{cm}}{2200\unit{\nicefrac{cm}{s}}}=2\times 10^{-4}\unit{s}
+
+So, following the above calculation, the mean lifetime of a neutron
+before absorption is :math:`10^{7}` shorter than that of a neutron
+before its own decay. Note that the cross section is conservative, there
+are larger absorbers; the speed of the neutron is also conservative,
+thermal neutrons are the slowest without going to great lengths
+(anything slower are called "cold" neutrons and do not happen
+naturally). Therefore the probability of decay is very small, and is
+negligible to our current uncertainties in neutrons.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
+
+    

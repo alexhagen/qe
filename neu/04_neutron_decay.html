@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Radioactive Decay &#8212; PUNEQE  documentation</title>
+    <title>Neutron Decay before Absorption &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Binding Energy and Mass Defect" href="02_binding_energy.html" />
-    <link rel="prev" title="Recoil Kinematics" href="../mat/01_recoil_kinematics.html" />
+    <link rel="next" title="Interactions" href="../interactions.html" />
+    <link rel="prev" title="Differential Scattering Cross Section" href="03_differential_scattering_xs.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -150,19 +150,19 @@
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Radioactive Decay</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="02_binding_energy.html#binding-energy">Binding energy</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../neu/04_neutron_decay.html">Neutron Decay before Absorption</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Neutron Decay before Absorption</a></li>
 </ul>
 </ul>
 </li>
@@ -195,38 +195,46 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="radioactive-decay">
-<h1>Radioactive Decay<a class="headerlink" href="#radioactive-decay" title="Permalink to this headline">¶</a></h1>
-<p>This material comes from everywhere, but I guess I’ll just say that it
-comes from (Lamarsh, et. al. 2001) or (Cember, 2012); both of these are
-great introductory texts for Nuclear Engineering.</p>
-<p>It seems silly to say, but a lot of graduate nuclear engineers have to
-<em>think</em> about what decay means what as far as transmutation goes. And we
-all know the problems with people thinking… It’s important to <strong>know</strong>
-the transmutation situations for at least the most common modes of
-decay.</p>
-<p>Given an atom of isotope <span class="math">\(\mathrm{\sideset{^{A}_{Z}}{_{N}}X}\)</span>
-where <span class="math">\(A\)</span> is the atomic number, <span class="math">\(Z\)</span> is the number of
-protons, and <span class="math">\(N\)</span> is the number of neutrons, and <span class="math">\(X\)</span> is the
-atom’s symbol, we have the neutron atomic mass
-<span class="math">\(M\left(Z,A\right)\)</span>. We can use the definition
-<span class="math">\(1\mathrm{amu} \equiv 931.5\mathrm{MeV}\)</span> to convert this to our
-modified <span class="math">\(cgs\)</span> units system.</p>
-<p><strong>Positron Decay</strong></p>
-<p>A proton in the nucleus turns into a neutron, emitting a positron
-(positively charged particle with mass of an electron) and a neutrino.</p>
+  <div class="section" id="neutron-decay-before-absorption">
+<h1>Neutron Decay before Absorption<a class="headerlink" href="#neutron-decay-before-absorption" title="Permalink to this headline">¶</a></h1>
+<p>Dr. Yang (my professor for neutronics) considered it absolutely
+essential to prove that the probability of the neutron itself decaying
+was negligible for common applications of neutronics. I believe the
+cross sections and half lives come from (Lamarsh, 2002), but I’m not
+sure where this idea is fleshed out first.</p>
+<p>We start with the half life of a neutron, which is <span class="math">\(12\unit{min}\)</span>,
+and we compare that to a thermal neutron traveling through water. The
+water has an absorption cross section of
+<span class="math">\(\Sigma_{a}=0.022\unit{cm}\)</span>. So, as a general analysis point, we
+want to find out the average lifetime of a neutron subject to decay, and
+the average lifetime of a neutron subject to absorption.</p>
+<p>Determination of the lifetime due to decay is straightforward. We simply
+use the halflife formula to convert the half life to a lifetime.</p>
 <div class="math">
-\[\mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A}_{Z-1}}{_{N+1}}Y + \beta^{+} + \nu}\]</div>
-<p><strong>Beta Decay</strong></p>
-<p>A neutron in the nucleus turns into a proton, emitting a <span class="math">\(\beta\)</span>
-(negative charged particle with mass of an electron - basically an
-electron) and an anti-neutrino.</p>
+\[T_{\nicefrac{1}{2}} = \frac{\ln \left( 2 \right)}{\lambda}\]</div>
 <div class="math">
-\[\mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A}_{Z+1}}{_{N-1}}Y + \beta^{-} + \overline{\nu}}\]</div>
-<p><strong>Alpha Decay</strong></p>
-<p>A helium nucleus within the full nucleus is ejected.</p>
+\[\lambda = \frac{1}{\tau_{d}}\]</div>
 <div class="math">
-\[\mathrm{\sideset{^{A}_{Z}}{_{N}}X \rightarrow \sideset{^{A-4}_{Z-2}}{_{N-2}}Y + \sideset{^{4}_{2}}{_{2}}\alpha}\]</div>
+\[\tau_{d} = \frac{T_{\nicefrac{1}{2}}}{\ln \left( 2 \right)}=1038.74\unit{s}\]</div>
+<p>The calculation of the lifetime of an absorbed neutron is only slightly
+more complicated. First, we’ll determine its “mean free path” (which is
+denoted by <span class="math">\(\lambda\)</span> in usual nomenclature like decay rate from
+above, so we’ll use <span class="math">\(\Lambda\)</span>), and then, using the velocity of a
+thermal neutron, we’ll convert that to a lifetime.</p>
+<div class="math">
+\[\Lambda = \frac{1}{\Sigma_{a}}\]</div>
+<div class="math">
+\[v=\sqrt{\frac{E}{2m}}=\sqrt{\frac{0.0257\unit{eV}}{2\cdot 938\unit{\frac{MeV}{c^2}}}}\]</div>
+<div class="math">
+\[\tau_{a}=\frac{\Lambda}{v}=\frac{50\unit{cm}}{2200\unit{\nicefrac{cm}{s}}}=2\times 10^{-4}\unit{s}\]</div>
+<p>So, following the above calculation, the mean lifetime of a neutron
+before absorption is <span class="math">\(10^{7}\)</span> shorter than that of a neutron
+before its own decay. Note that the cross section is conservative, there
+are larger absorbers; the speed of the neutron is also conservative,
+thermal neutrons are the slowest without going to great lengths
+(anything slower are called “cold” neutrons and do not happen
+naturally). Therefore the probability of decay is very small, and is
+negligible to our current uncertainties in neutrons.</p>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>
