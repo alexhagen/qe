@@ -1,0 +1,37 @@
+
+    
+
+Range Integration
+=================
+
+One important aspect of materials science as it relates to nuclear
+energy is the range or stopping power of a material. This is a
+straightforward integration determination, however the knowledge of the
+dependencies will help you determine relative differences in materials.
+The textbook I learned it from was [Nastasi1996].
+
+The calculation of the range of a particle is defined by the integral
+from the incident energy to zero of the reciprocal of its energy
+deposition function.
+
+.. math:: R=\int_{E_{i}}^{0} \frac{dE}{\nicefrac{dE}{dx}}
+
+In general, the nuclear energy deposition follows the equation
+
+.. math:: \left.\frac{dE}{dx}\right|_{n}=N_{\Pi} \frac{Z_{1}^{2}Z_{2}^{2}e^{4}M_{1}}{E_{i}M_{2}} \ln \frac{\Lambda E_{i}}{E_{a}}
+
+and the electrical energy deposition is
+
+.. math:: \left.\frac{dE}{dx}\right|_{e}=\frac{dE}{k\sqrt{E_{i}}}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
