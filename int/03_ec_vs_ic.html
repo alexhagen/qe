@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Neutron Decay before Absorption &#8212; PUNEQE  documentation</title>
+    <title>Internal Conversion versus Electron Capture &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Interactions" href="../interactions.html" />
-    <link rel="prev" title="Differential Scattering Cross Section" href="03_differential_scattering_xs.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Binding Energy and Mass Defect" href="02_binding_energy.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -151,24 +151,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../mat/02_range_integration.html">Range Integration</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_binding_energy.html#binding-energy">Binding energy</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Internal Conversion versus Electron Capture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#electron-capture">Electron Capture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#internal-conversion">Internal Conversion</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_flux_current.html">Flux, Current, and Directional Current</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Neutron Decay before Absorption</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/04_neutron_decay.html">Neutron Decay before Absorption</a></li>
 </ul>
 </ul>
 </li>
@@ -201,49 +201,34 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="neutron-decay-before-absorption">
-<h1>Neutron Decay before Absorption<a class="headerlink" href="#neutron-decay-before-absorption" title="Permalink to this headline">¶</a></h1>
-<p>Dr. Yang (my professor for neutronics) considered it absolutely
-essential to prove that the probability of the neutron itself decaying
-was negligible for common applications of neutronics. I believe the
-cross sections and half lives come from (Lamarsh, 2002), but I’m not
-sure where this idea is fleshed out first.</p>
-<p>We start with the half life of a neutron, which is <span class="math">\(12\unit{min}\)</span>,
-and we compare that to a thermal neutron traveling through water. The
-water has an absorption cross section of
-<span class="math">\(\Sigma_{a}=0.022\unit{cm}\)</span>. So, as a general analysis point, we
-want to find out the average lifetime of a neutron subject to decay, and
-the average lifetime of a neutron subject to absorption.</p>
-<p>Determination of the lifetime due to decay is straightforward. We simply
-use the halflife formula to convert the half life to a lifetime.</p>
+  <div class="section" id="internal-conversion-versus-electron-capture">
+<h1>Internal Conversion versus Electron Capture<a class="headerlink" href="#internal-conversion-versus-electron-capture" title="Permalink to this headline">¶</a></h1>
+<p>This material is very common, so a basic textbook such as (Lamarsh, et.
+al. 2001) would have it. For a more physics based approach, a textbook
+such as (Krane, 1988) would be good.</p>
+<div class="section" id="electron-capture">
+<h2>Electron Capture<a class="headerlink" href="#electron-capture" title="Permalink to this headline">¶</a></h2>
+<p>Electron capture is a process where an orbital electron accelerates into
+the nucleus, where it is “captured”. The acceleration results in an
+X-ray, whos power depends on the <span class="math">\(Q\)</span> value of electron capture.
+Then, the reaction proceeds as</p>
 <div class="math">
-\[T_{\nicefrac{1}{2}} = \frac{\ln \left( 2 \right)}{\lambda}\]</div>
+\[\mathrm{\sideset{^{A}_{Z}}{^{*}}X} \rightarrow \mathrm{\sideset{^{A}_{Z-1}}{}Y} + \nu\]</div>
+</div>
+<div class="section" id="internal-conversion">
+<h2>Internal Conversion<a class="headerlink" href="#internal-conversion" title="Permalink to this headline">¶</a></h2>
+<p>Internal conversion is a process where an excited nucleus transfers its
+energy to an orbital electron. The energy transfer is monoenergetic
+because the excitation levels of a nucleus are quantized. The energy
+transfer effected is</p>
 <div class="math">
-\[\lambda = \frac{1}{\tau_{d}}\]</div>
-<div class="math">
-\[\tau_{d} = \frac{T_{\nicefrac{1}{2}}}{\ln \left( 2 \right)}=1038.74\unit{s}\]</div>
-<p>The calculation of the lifetime of an absorbed neutron is only slightly
-more complicated. First, we’ll determine its “mean free path” (which is
-denoted by <span class="math">\(\lambda\)</span> in usual nomenclature like decay rate from
-above, so we’ll use <span class="math">\(\Lambda\)</span>), and then, using the velocity of a
-thermal neutron, we’ll convert that to a lifetime.</p>
-<div class="math">
-\[\Lambda = \frac{1}{\Sigma_{a}}\]</div>
-<div class="math">
-\[v=\sqrt{\frac{E}{2m}}=\sqrt{\frac{0.0257\unit{eV}}{2\cdot 938\unit{\frac{MeV}{c^2}}}}\]</div>
-<div class="math">
-\[\tau_{a}=\frac{\Lambda}{v}=\frac{50\unit{cm}}{2200\unit{\nicefrac{cm}{s}}}=2\times 10^{-4}\unit{s}\]</div>
-<p>So, following the above calculation, the mean lifetime of a neutron
-before absorption is <span class="math">\(10^{7}\)</span> shorter than that of a neutron
-before its own decay. Note that the cross section is conservative, there
-are larger absorbers; the speed of the neutron is also conservative,
-thermal neutrons are the slowest without going to great lengths
-(anything slower are called “cold” neutrons and do not happen
-naturally). Therefore the probability of decay is very small, and is
-negligible to our current uncertainties in neutrons.</p>
+\[E_{e^{-}}=E_{ex}-E_{b}\]</div>
+<p>where <span class="math">\(E_{b}\)</span> is the shell binding energy. The energy transfer
+causes the orbital electron to accelerate, which also causes an X-ray.</p>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>
+</div>
 
 
     </div>

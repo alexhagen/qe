@@ -1,0 +1,44 @@
+
+    
+
+Internal Conversion versus Electron Capture
+===========================================
+
+This material is very common, so a basic textbook such as (Lamarsh, et.
+al. 2001) would have it. For a more physics based approach, a textbook
+such as (Krane, 1988) would be good.
+
+Electron Capture
+----------------
+
+Electron capture is a process where an orbital electron accelerates into
+the nucleus, where it is "captured". The acceleration results in an
+X-ray, whos power depends on the :math:`Q` value of electron capture.
+Then, the reaction proceeds as
+
+.. math:: \mathrm{\sideset{^{A}_{Z}}{^{*}}X} \rightarrow \mathrm{\sideset{^{A}_{Z-1}}{}Y} + \nu
+
+Internal Conversion
+-------------------
+
+Internal conversion is a process where an excited nucleus transfers its
+energy to an orbital electron. The energy transfer is monoenergetic
+because the excitation levels of a nucleus are quantized. The energy
+transfer effected is
+
+.. math:: E_{e^{-}}=E_{ex}-E_{b}
+
+where :math:`E_{b}` is the shell binding energy. The energy transfer
+causes the orbital electron to accelerate, which also causes an X-ray.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
