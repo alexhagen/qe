@@ -1,0 +1,46 @@
+
+    
+
+Particle Wavelengths
+====================
+
+The idea of particles having wavelengths is pretty central to a lot of
+modern physics, and (Krane, 1988) is a good reference for the idea, but
+I would assume that most physics textbooks have this to come degree.
+
+De Broglie hypothesized that every particle is also a wave (and the
+converse), and that we could assign them a wavelength depending on their
+rest mass and kinetic energy.
+
+Mass Bearing
+------------
+
+For mass bearing particles, the pythagorean distance of between the
+particle's kinetic energy and rest mass energy is the total energy.
+Thus, we can solve the equation
+
+.. math:: E = \frac{hc}{\lambda}
+
+with :math:`h = 4.135\times 10^{-5}\unit{eV\cdot s}` as
+
+.. math:: \lambda = \frac{hc}{\sqrt{E_{total}^{2} - E_{rest}^{2}}}
+
+Non Mass Bearing
+----------------
+
+For non mass bearing particles (photons), the rest mass energy is non
+sensical, so we get the simple result that
+
+.. math:: \lambda=\frac{hc}{E}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+

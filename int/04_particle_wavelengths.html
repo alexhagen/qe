@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Flux and current in a spherical fusion chamber &#8212; PUNEQE  documentation</title>
+    <title>Particle Wavelengths &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Differential Scattering Cross Section" href="03_differential_scattering_xs.html" />
-    <link rel="prev" title="Flux, Current, and Directional Current" href="01_flux_current.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Internal Conversion versus Electron Capture" href="03_ec_vs_ic.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -151,30 +151,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../mat/02_range_integration.html">Range Integration</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_binding_energy.html#binding-energy">Binding energy</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/04_particle_wavelengths.html">Particle Wavelengths</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/04_particle_wavelengths.html#mass-bearing">Mass Bearing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/04_particle_wavelengths.html#non-mass-bearing">Non Mass Bearing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Particle Wavelengths</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mass-bearing">Mass Bearing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#non-mass-bearing">Non Mass Bearing</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_flux_current.html">Flux, Current, and Directional Current</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Flux and current in a spherical fusion chamber</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_neutron_decay.html">Neutron Decay before Absorption</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_lab_vs_com.html">Lab Frame versus COM</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/04_neutron_decay.html">Neutron Decay before Absorption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/05_lab_vs_com.html">Lab Frame versus COM</a></li>
 </ul>
 </ul>
 </li>
@@ -207,53 +207,35 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="flux-and-current-in-a-spherical-fusion-chamber">
-<h1>Flux and current in a spherical fusion chamber<a class="headerlink" href="#flux-and-current-in-a-spherical-fusion-chamber" title="Permalink to this headline">¶</a></h1>
-<p>This problem is from NUCL 510, but plays off of the material in
-(Lamarsh, 2002).</p>
-<p>Neutrons are produced uniformly and isotropically throughout a spherical
-chamber containing a fixture of <span class="math">\(\ce{^3}{H}\)</span> and
-<span class="math">\(\ce{^{2}H}\)</span> gasses at <span class="math">\(1\times 10^{8} \unit{K}\)</span>. Calculate
-the flux and current in the chamber.</p>
-<p>We know that there are fusion reactions</p>
+  <div class="section" id="particle-wavelengths">
+<h1>Particle Wavelengths<a class="headerlink" href="#particle-wavelengths" title="Permalink to this headline">¶</a></h1>
+<p>The idea of particles having wavelengths is pretty central to a lot of
+modern physics, and (Krane, 1988) is a good reference for the idea, but
+I would assume that most physics textbooks have this to come degree.</p>
+<p>De Broglie hypothesized that every particle is also a wave (and the
+converse), and that we could assign them a wavelength depending on their
+rest mass and kinetic energy.</p>
+<div class="section" id="mass-bearing">
+<h2>Mass Bearing<a class="headerlink" href="#mass-bearing" title="Permalink to this headline">¶</a></h2>
+<p>For mass bearing particles, the pythagorean distance of between the
+particle’s kinetic energy and rest mass energy is the total energy.
+Thus, we can solve the equation</p>
 <div class="math">
-\[\ce{T}\left(d, n\right) \ce{^{4}He}\]</div>
-<p>and</p>
+\[E = \frac{hc}{\lambda}\]</div>
+<p>with <span class="math">\(h = 4.135\times 10^{-5}\unit{eV\cdot s}\)</span> as</p>
 <div class="math">
-\[\ce{D}\left(d, n\right)\ce{^{3}He}\]</div>
-<p>.</p>
-<p>First we set up the geometry. We have a sphere with its <span class="math">\(z\)</span> axis
-through point <span class="math">\(A\)</span>. <span class="math">\(dV\)</span> is the volume of the skirt
-<span class="math">\(\overline{AB}\)</span>. so we have</p>
+\[\lambda = \frac{hc}{\sqrt{E_{total}^{2} - E_{rest}^{2}}}\]</div>
+</div>
+<div class="section" id="non-mass-bearing">
+<h2>Non Mass Bearing<a class="headerlink" href="#non-mass-bearing" title="Permalink to this headline">¶</a></h2>
+<p>For non mass bearing particles (photons), the rest mass energy is non
+sensical, so we get the simple result that</p>
 <div class="math">
-\[d\psi = \frac{S}{4 \pi r^{2}} dV\]</div>
-<p>We know that <span class="math">\(\phi = \int_{V} d\psi\)</span>, so we integrate from
-<span class="math">\(0\)</span> to <span class="math">\(2R \cos \theta\)</span>.</p>
-<div class="math">
-\[\phi = \int_{0}^{\nicefrac{pi}{2}} \int_{0}^{2R\cos \theta} \frac{S}{4\pi r^{2}} \underbrace{r^{2} \sin \theta dr d\theta d\varphi}_{\text{spherical lagrangian}}\]</div>
-<div class="math">
-\[\phi = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} drd\mu\]</div>
-<div class="math">
-\[\phi = SR\int_{0}^{1}\mu d\mu\]</div>
-<div class="math">
-\[\phi = \frac{SR}{2}\]</div>
-<p>For current, we need to apply the solid angle</p>
-<div class="math">
-\[\vec{\Omega} = \left( \sin \theta \cos \varphi, \sin \theta \sin \varphi, \cos \theta \right)\]</div>
-<div class="math">
-\[\vec{J} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi r^{2}} \vec{\Omega} r^{2}\sin \theta d\varphi dr d\theta\]</div>
-<p>and with
-<span class="math">\(\int_{0}^{2\pi} \cos \varphi d\varphi=\int_{0}^{2\pi} \sin \varphi d\varphi=0\)</span>,
-therefore <span class="math">\(J_{x} = 0\)</span> and <span class="math">\(J_{y}=0\)</span></p>
-<div class="math">
-\[J_{z} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi } \cos \theta \sin \theta d\varphi dr d\theta\]</div>
-<div class="math">
-\[J_{z} = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} \mu dr d\mu\]</div>
-<div class="math">
-\[J_{z} = \frac{SR}{3}\times \vec{e_{z}} = \frac{SR}{3}\times \vec{e_{r}}\]</div>
+\[\lambda=\frac{hc}{E}\]</div>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>
+</div>
 
 
     </div>

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Flux and current in a spherical fusion chamber &#8212; PUNEQE  documentation</title>
+    <title>Lab Frame versus COM &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Differential Scattering Cross Section" href="03_differential_scattering_xs.html" />
-    <link rel="prev" title="Flux, Current, and Directional Current" href="01_flux_current.html" />
+    <link rel="next" title="Interactions" href="../interactions.html" />
+    <link rel="prev" title="Neutron Decay before Absorption" href="04_neutron_decay.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -171,10 +171,10 @@
 <p class="caption"><span class="caption-text">Neutronics</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_flux_current.html">Flux, Current, and Directional Current</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_neutron_decay.html">Neutron Decay before Absorption</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_lab_vs_com.html">Lab Frame versus COM</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lab Frame versus COM</a></li>
 </ul>
 </ul>
 </li>
@@ -207,53 +207,57 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="flux-and-current-in-a-spherical-fusion-chamber">
-<h1>Flux and current in a spherical fusion chamber<a class="headerlink" href="#flux-and-current-in-a-spherical-fusion-chamber" title="Permalink to this headline">¶</a></h1>
-<p>This problem is from NUCL 510, but plays off of the material in
-(Lamarsh, 2002).</p>
-<p>Neutrons are produced uniformly and isotropically throughout a spherical
-chamber containing a fixture of <span class="math">\(\ce{^3}{H}\)</span> and
-<span class="math">\(\ce{^{2}H}\)</span> gasses at <span class="math">\(1\times 10^{8} \unit{K}\)</span>. Calculate
-the flux and current in the chamber.</p>
-<p>We know that there are fusion reactions</p>
+  <div class="section" id="lab-frame-versus-com">
+<h1>Lab Frame versus COM<a class="headerlink" href="#lab-frame-versus-com" title="Permalink to this headline">¶</a></h1>
+<p>An important distinction in neutronics is the lab frame versus the
+center-of-mass frame, and how to convert between the two.</p>
+<p>The central conversion is simple, defined as</p>
 <div class="math">
-\[\ce{T}\left(d, n\right) \ce{^{4}He}\]</div>
-<p>and</p>
+\[\cos \theta_{s} = \frac{1 + A \cos \theta_{c}}{\sqrt{A^{2}+2A\cos \theta_{c}+1}}\]</div>
+<p>However, applying this can prove more difficult.</p>
+<p>For example, we can try to show that scattered neutrons are always
+forward directional in the lab frame
+(<span class="math">\(0\leq \theta_{s} \leq \nicefrac{\pi}{2}\)</span>).</p>
+<p>We start with the above correlation between lab and COM frame, and since
+this is a neutron, <span class="math">\(A=1\)</span>, so</p>
 <div class="math">
-\[\ce{D}\left(d, n\right)\ce{^{3}He}\]</div>
-<p>.</p>
-<p>First we set up the geometry. We have a sphere with its <span class="math">\(z\)</span> axis
-through point <span class="math">\(A\)</span>. <span class="math">\(dV\)</span> is the volume of the skirt
-<span class="math">\(\overline{AB}\)</span>. so we have</p>
+\[\cos \theta_{s} = \frac{1+\cos \theta_{c}}{\sqrt{2+2\cos \theta_{c}}} = \sqrt{\frac{1+\cos \theta_{c}}{2}}\]</div>
+<p>And from there, we can square both sides and perform algebraic
+simplification.</p>
 <div class="math">
-\[d\psi = \frac{S}{4 \pi r^{2}} dV\]</div>
-<p>We know that <span class="math">\(\phi = \int_{V} d\psi\)</span>, so we integrate from
-<span class="math">\(0\)</span> to <span class="math">\(2R \cos \theta\)</span>.</p>
+\[2\cos^{s} \theta_{s}=\cos \theta_{c} + 1 \therefore 2\cos^{2} \theta_{s} -1 = \cos \theta_{c}\]</div>
+<p>and using identities,</p>
 <div class="math">
-\[\phi = \int_{0}^{\nicefrac{pi}{2}} \int_{0}^{2R\cos \theta} \frac{S}{4\pi r^{2}} \underbrace{r^{2} \sin \theta dr d\theta d\varphi}_{\text{spherical lagrangian}}\]</div>
+\[\cos \left( 2\theta_{s}\right) = \cos \theta_{c} \therefore 2\theta_{s} = \theta_{c}\]</div>
+<p>This leads to the conclusion that the lab frame angle is always half of
+the center of mass angle. So, even if the the center of mass angle was
+<span class="math">\(180^{\circ}\)</span>, the lab angle would only be <span class="math">\(90^{\circ}\)</span>,
+which is to say that a neutron can never backscatter.</p>
+<p>Another example is to find the scattering cross section as a function of
+<span class="math">\(\mu_{c}=\cos \theta_{c}\)</span>. We start with the definition of the
+differential cross section</p>
 <div class="math">
-\[\phi = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} drd\mu\]</div>
+\[\sigma_{s} \left( \theta_{c}, \phi_{c}\right) = \frac{\sigma_{s}}{4 \pi}\]</div>
+<p>and then we integrate this over the whole range of <span class="math">\(\phi_{c}\)</span></p>
 <div class="math">
-\[\phi = SR\int_{0}^{1}\mu d\mu\]</div>
+\[ \begin{align}\begin{aligned}\sigma_{s} \left( \theta_{c}\right) = \int_{0}^{2\pi} \frac{\sigma_{s}}{4\pi}d\phi = 2\pi \frac{\sigma_{s}}{4\pi}\\And convert to :math:`\mu_{c}` (which requires no manipulation since\end{aligned}\end{align} \]</div>
+<p><span class="math">\(\theta_{c}\)</span> does not appear in the expression). So, finally, we
+have</p>
 <div class="math">
-\[\phi = \frac{SR}{2}\]</div>
-<p>For current, we need to apply the solid angle</p>
+\[\sigma_{s}\left( \mu_{c}\right)=\frac{\sigma_{s}}{2}\]</div>
+<p>The last example is, using the above, to find the cross section in the
+lab frame. We start with the conversion from
+<span class="math">\(\mu_{c}\rightarrow \mu_{s}\)</span>.</p>
 <div class="math">
-\[\vec{\Omega} = \left( \sin \theta \cos \varphi, \sin \theta \sin \varphi, \cos \theta \right)\]</div>
+\[\sigma_{s}\left( \mu_{s}\right) = \sigma_{s}\left(\mu_{c}\right) \left| \frac{d\mu_{c}}{d\mu_{s}}\right|\]</div>
+<p>and, since</p>
 <div class="math">
-\[\vec{J} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi r^{2}} \vec{\Omega} r^{2}\sin \theta d\varphi dr d\theta\]</div>
-<p>and with
-<span class="math">\(\int_{0}^{2\pi} \cos \varphi d\varphi=\int_{0}^{2\pi} \sin \varphi d\varphi=0\)</span>,
-therefore <span class="math">\(J_{x} = 0\)</span> and <span class="math">\(J_{y}=0\)</span></p>
+\[\mu_{s} = \sqrt{\frac{1+\mu_{c}}{2}}\]</div>
 <div class="math">
-\[J_{z} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi } \cos \theta \sin \theta d\varphi dr d\theta\]</div>
+\[ \begin{align}\begin{aligned}d\mu_{s}=\frac{1}{2\sqrt{2\left(1+\mu_{c}\right)}} d\mu_{c}\\we can now plug this in\end{aligned}\end{align} \]</div>
 <div class="math">
-\[J_{z} = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} \mu dr d\mu\]</div>
-<div class="math">
-\[J_{z} = \frac{SR}{3}\times \vec{e_{z}} = \frac{SR}{3}\times \vec{e_{r}}\]</div>
-<h2>Bibliography</h2>
-<ol>
-</ol></div>
+\[\sigma_{s}\left( \mu_{s}\right)= \sigma_{s}\sqrt{2\left(1 + \mu_{c}\right)}=2\sigma_{s}\mu_{s}\]</div>
+</div>
 
 
     </div>

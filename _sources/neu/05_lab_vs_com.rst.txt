@@ -1,0 +1,69 @@
+
+    
+
+Lab Frame versus COM
+====================
+
+An important distinction in neutronics is the lab frame versus the
+center-of-mass frame, and how to convert between the two.
+
+The central conversion is simple, defined as
+
+.. math:: \cos \theta_{s} = \frac{1 + A \cos \theta_{c}}{\sqrt{A^{2}+2A\cos \theta_{c}+1}}
+
+However, applying this can prove more difficult.
+
+For example, we can try to show that scattered neutrons are always
+forward directional in the lab frame
+(:math:`0\leq \theta_{s} \leq \nicefrac{\pi}{2}`).
+
+We start with the above correlation between lab and COM frame, and since
+this is a neutron, :math:`A=1`, so
+
+.. math:: \cos \theta_{s} = \frac{1+\cos \theta_{c}}{\sqrt{2+2\cos \theta_{c}}} = \sqrt{\frac{1+\cos \theta_{c}}{2}}
+
+And from there, we can square both sides and perform algebraic
+simplification.
+
+.. math:: 2\cos^{s} \theta_{s}=\cos \theta_{c} + 1 \therefore 2\cos^{2} \theta_{s} -1 = \cos \theta_{c}
+
+and using identities,
+
+.. math:: \cos \left( 2\theta_{s}\right) = \cos \theta_{c} \therefore 2\theta_{s} = \theta_{c}
+
+This leads to the conclusion that the lab frame angle is always half of
+the center of mass angle. So, even if the the center of mass angle was
+:math:`180^{\circ}`, the lab angle would only be :math:`90^{\circ}`,
+which is to say that a neutron can never backscatter.
+
+Another example is to find the scattering cross section as a function of
+:math:`\mu_{c}=\cos \theta_{c}`. We start with the definition of the
+differential cross section
+
+.. math:: \sigma_{s} \left( \theta_{c}, \phi_{c}\right) = \frac{\sigma_{s}}{4 \pi}
+
+and then we integrate this over the whole range of :math:`\phi_{c}`
+
+.. math:: \sigma_{s} \left( \theta_{c}\right) = \int_{0}^{2\pi} \frac{\sigma_{s}}{4\pi}d\phi = 2\pi \frac{\sigma_{s}}{4\pi}
+
+ And convert to :math:`\mu_{c}` (which requires no manipulation since
+:math:`\theta_{c}` does not appear in the expression). So, finally, we
+have
+
+.. math:: \sigma_{s}\left( \mu_{c}\right)=\frac{\sigma_{s}}{2}
+
+The last example is, using the above, to find the cross section in the
+lab frame. We start with the conversion from
+:math:`\mu_{c}\rightarrow \mu_{s}`.
+
+.. math:: \sigma_{s}\left( \mu_{s}\right) = \sigma_{s}\left(\mu_{c}\right) \left| \frac{d\mu_{c}}{d\mu_{s}}\right|
+
+and, since
+
+.. math:: \mu_{s} = \sqrt{\frac{1+\mu_{c}}{2}}
+
+.. math:: d\mu_{s}=\frac{1}{2\sqrt{2\left(1+\mu_{c}\right)}} d\mu_{c}
+
+ we can now plug this in
+
+.. math:: \sigma_{s}\left( \mu_{s}\right)= \sigma_{s}\sqrt{2\left(1 + \mu_{c}\right)}=2\sigma_{s}\mu_{s}
