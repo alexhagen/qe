@@ -1,0 +1,12 @@
+
+    
+
+Reflector Savings
+=================
+
+For a slab geometry, the savings are found by
+
+.. math:: s=\frac{1}{B_{m}}\arctan\left[\frac{D_{c}B_{m}}{D_{r}\kappa}\tanh\left(\kappa\tau\right)\right]
+
+and can be used in conjunction with the critical dimension to find the
+difference in dimension.
