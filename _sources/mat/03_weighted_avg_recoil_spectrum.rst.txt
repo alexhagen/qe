@@ -1,0 +1,41 @@
+
+    
+
+Maximum Energy Transfer and the Weighted Average Recoil Spectrum
+================================================================
+
+Understanding of nuclear stopping requires the understanding of how much
+energy transfer is possible and the weighted average spectrum of the
+recoil. This material is present in [Nastasi1996].
+
+The maximum energy transfer to a knock on is usually expressed as
+:math:`T`, as the transfer, and it is related to the masses of the
+particles involved.
+
+.. math:: T_{max}=\Lambda E_{i} = \frac{4M_{1}M_{2}}{\left( M_{1} + M_{2}\right)^{2}}
+
+From that maximum energy, we can then look into the average spectrum,
+which will start at the top end from the maximum energy transfer and
+drop from there. This is defined as
+
+.. math:: \overline{T}=\frac{1}{2}\Lambda E_{i}=\frac{\int_{0}^{E_{i}}T\sigma\left(E,T\right)dT}{\int_{0}^{E_{i}}\sigma\left(E,T\right)dT}
+
+.. math:: \sigma=\frac{\pi}{4}\frac{\left(Z_{1}Z_{2}e^{2}\right)^{2}}{E_{i}^{2}}\left(\frac{T_{m}}{E_{d}}-1\right)
+
+.. math:: \widetilde{T}=E_{d}\ln\frac{\Lambda E_{i}}{E_{d}}\;E_{d}\ll\Lambda E_{i}
+
+Then, we can find the weighted average recoil spectrum as defined above.
+For higher mass, there is a harder spectrum. There are more
+displacements at a higher recoil energy and higher primary atom energy.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+

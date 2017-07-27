@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Flux and current in a spherical fusion chamber &#8212; PUNEQE  documentation</title>
+    <title>Maximum Energy Transfer and the Weighted Average Recoil Spectrum &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Differential Scattering Cross Section" href="03_differential_scattering_xs.html" />
-    <link rel="prev" title="Flux, Current, and Directional Current" href="01_flux_current.html" />
+    <link rel="next" title="Radioactive Decay" href="../int/01_decay.html" />
+    <link rel="prev" title="Range Integration" href="02_range_integration.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -141,15 +141,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Materials</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#solve">Solve</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/02_range_integration.html">Range Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/03_weighted_avg_recoil_spectrum.html">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_range_integration.html">Range Integration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
 <ul>
@@ -170,12 +170,12 @@
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_flux_current.html">Flux, Current, and Directional Current</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Flux and current in a spherical fusion chamber</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_neutron_decay.html">Neutron Decay before Absorption</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_lab_vs_com.html">Lab Frame versus COM</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../neu/01_flux_current.html">Flux, Current, and Directional Current</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/02_flux_current_in_geometry.html">Flux and current in a spherical fusion chamber</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/04_neutron_decay.html">Neutron Decay before Absorption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neu/05_lab_vs_com.html">Lab Frame versus COM</a></li>
 </ul>
 </ul>
 </li>
@@ -208,50 +208,28 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="flux-and-current-in-a-spherical-fusion-chamber">
-<h1>Flux and current in a spherical fusion chamber<a class="headerlink" href="#flux-and-current-in-a-spherical-fusion-chamber" title="Permalink to this headline">¶</a></h1>
-<p>This problem is from NUCL 510, but plays off of the material in
-(Lamarsh, 2002).</p>
-<p>Neutrons are produced uniformly and isotropically throughout a spherical
-chamber containing a fixture of <span class="math">\(\ce{^3}{H}\)</span> and
-<span class="math">\(\ce{^{2}H}\)</span> gasses at <span class="math">\(1\times 10^{8} \unit{K}\)</span>. Calculate
-the flux and current in the chamber.</p>
-<p>We know that there are fusion reactions</p>
+  <div class="section" id="maximum-energy-transfer-and-the-weighted-average-recoil-spectrum">
+<h1>Maximum Energy Transfer and the Weighted Average Recoil Spectrum<a class="headerlink" href="#maximum-energy-transfer-and-the-weighted-average-recoil-spectrum" title="Permalink to this headline">¶</a></h1>
+<p>Understanding of nuclear stopping requires the understanding of how much
+energy transfer is possible and the weighted average spectrum of the
+recoil. This material is present in [Nastasi1996].</p>
+<p>The maximum energy transfer to a knock on is usually expressed as
+<span class="math">\(T\)</span>, as the transfer, and it is related to the masses of the
+particles involved.</p>
 <div class="math">
-\[\ce{T}\left(d, n\right) \ce{^{4}He}\]</div>
-<p>and</p>
+\[T_{max}=\Lambda E_{i} = \frac{4M_{1}M_{2}}{\left( M_{1} + M_{2}\right)^{2}}\]</div>
+<p>From that maximum energy, we can then look into the average spectrum,
+which will start at the top end from the maximum energy transfer and
+drop from there. This is defined as</p>
 <div class="math">
-\[\ce{D}\left(d, n\right)\ce{^{3}He}\]</div>
-<p>.</p>
-<p>First we set up the geometry. We have a sphere with its <span class="math">\(z\)</span> axis
-through point <span class="math">\(A\)</span>. <span class="math">\(dV\)</span> is the volume of the skirt
-<span class="math">\(\overline{AB}\)</span>. so we have</p>
+\[\overline{T}=\frac{1}{2}\Lambda E_{i}=\frac{\int_{0}^{E_{i}}T\sigma\left(E,T\right)dT}{\int_{0}^{E_{i}}\sigma\left(E,T\right)dT}\]</div>
 <div class="math">
-\[d\psi = \frac{S}{4 \pi r^{2}} dV\]</div>
-<p>We know that <span class="math">\(\phi = \int_{V} d\psi\)</span>, so we integrate from
-<span class="math">\(0\)</span> to <span class="math">\(2R \cos \theta\)</span>.</p>
+\[\sigma=\frac{\pi}{4}\frac{\left(Z_{1}Z_{2}e^{2}\right)^{2}}{E_{i}^{2}}\left(\frac{T_{m}}{E_{d}}-1\right)\]</div>
 <div class="math">
-\[\phi = \int_{0}^{\nicefrac{pi}{2}} \int_{0}^{2R\cos \theta} \frac{S}{4\pi r^{2}} \underbrace{r^{2} \sin \theta dr d\theta d\varphi}_{\text{spherical lagrangian}}\]</div>
-<div class="math">
-\[\phi = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} drd\mu\]</div>
-<div class="math">
-\[\phi = SR\int_{0}^{1}\mu d\mu\]</div>
-<div class="math">
-\[\phi = \frac{SR}{2}\]</div>
-<p>For current, we need to apply the solid angle</p>
-<div class="math">
-\[\vec{\Omega} = \left( \sin \theta \cos \varphi, \sin \theta \sin \varphi, \cos \theta \right)\]</div>
-<div class="math">
-\[\vec{J} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi r^{2}} \vec{\Omega} r^{2}\sin \theta d\varphi dr d\theta\]</div>
-<p>and with
-<span class="math">\(\int_{0}^{2\pi} \cos \varphi d\varphi=\int_{0}^{2\pi} \sin \varphi d\varphi=0\)</span>,
-therefore <span class="math">\(J_{x} = 0\)</span> and <span class="math">\(J_{y}=0\)</span></p>
-<div class="math">
-\[J_{z} = \int_{0}{\nicefrac{\pi}{2}} \int_{0}{2R\cos \theta} \int_{0}^{2\pi} \frac{S}{4\pi } \cos \theta \sin \theta d\varphi dr d\theta\]</div>
-<div class="math">
-\[J_{z} = \frac{S}{2}\int_{0}^{1} \int_{0}^{2R\mu} \mu dr d\mu\]</div>
-<div class="math">
-\[J_{z} = \frac{SR}{3}\times \vec{e_{z}} = \frac{SR}{3}\times \vec{e_{r}}\]</div>
+\[\widetilde{T}=E_{d}\ln\frac{\Lambda E_{i}}{E_{d}}\;E_{d}\ll\Lambda E_{i}\]</div>
+<p>Then, we can find the weighted average recoil spectrum as defined above.
+For higher mass, there is a harder spectrum. There are more
+displacements at a higher recoil energy and higher primary atom energy.</p>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>
