@@ -55,10 +55,10 @@ docs: FORCE
 	done; \
 	cd ~/code/qe/docs; \
 	make html; \
-	cp th/*.svg docs/build/html/th/; \
-	cp int/*.svg docs/build/html/int/; \
-	cp mat/*.svg docs/build/html/mat/; \
-	cp neu/*.svg docs/build/html/neu/; \
+	cp ../th/*.svg build/html/th/; \
+	cp ../int/*.svg build/html/int/; \
+	cp ../mat/*.svg build/html/mat/; \
+	cp ../neu/*.svg build/html/neu/; \
 
 publish: FORCE
 	cd ~/pages/qe/; \
