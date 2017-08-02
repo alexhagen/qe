@@ -10,6 +10,7 @@ docs: FORCE
 	done; \
 	sleep 1; \
 	mv th/*.rst docs/source/th/; \
+	cp th/*.svg docs/source/th/; \
 	for f in th/*.ipynb;	do \
 		echo "$$f"; \
 		rm -f $${f%.ipynb}.md; \
@@ -23,6 +24,7 @@ docs: FORCE
 	done; \
 	sleep 1; \
 	mv int/*.rst docs/source/int/; \
+	cp int/*.svg docs/source/int/; \
 	for f in int/*.ipynb;	do \
 		echo "$$f"; \
 		rm -f $${f%.ipynb}.md; \
@@ -36,6 +38,7 @@ docs: FORCE
 	done; \
 	sleep 1; \
 	mv mat/*.rst docs/source/mat/; \
+	cp mat/*.svg docs/source/mat/; \
 	for f in mat/*.ipynb;	do \
 		echo "$$f"; \
 		rm -f $${f%.ipynb}.md; \
@@ -48,6 +51,7 @@ docs: FORCE
 	done; \
 	sleep 1; \
 	mv neu/*.rst docs/source/neu/; \
+	cp neu/*.svg docs/source/neu/; \
 	for f in neu/*.ipynb;	do \
 		echo "$$f"; \
 		rm -f $${f%.ipynb}.md; \
