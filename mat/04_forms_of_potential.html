@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Momentum Equation and Boussinesq Assumption &#8212; PUNEQE  documentation</title>
+    <title>Forms of the potential function &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Energy Equations" href="04_energy_equations.html" />
-    <link rel="prev" title="General Balance Equations and Continuity Equation" href="02_general_balance_equations_and_continuity_equation.html" />
+    <link rel="next" title="Radioactive Decay" href="../int/01_decay.html" />
+    <link rel="prev" title="Maximum Energy Transfer and the Weighted Average Recoil Spectrum" href="03_weighted_avg_recoil_spectrum.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -117,44 +117,44 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_vector_operators.html">Vector Operators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../th/01_vector_operators.html">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Momentum Equation and Boussinesq Assumption</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#momentum-equation">Momentum Equation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#boussinesq-assumption">Boussinesq Assumption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="04_energy_equations.html">Energy Equations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04_energy_equations.html#energy-equation">Energy equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/04_energy_equations.html">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/04_energy_equations.html#energy-equation">Energy equation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Materials</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#solve">Solve</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/02_range_integration.html">Range Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/03_weighted_avg_recoil_spectrum.html">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/04_forms_of_potential.html">Forms of the potential function</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#hard-sphere">Hard Sphere</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#square-well-potential">Square Well Potential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#inverse-power-potential">Inverse Power Potential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#lennard-jones-potential">Lennard-Jones Potential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_range_integration.html">Range Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_weighted_avg_recoil_spectrum.html">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Forms of the potential function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hard-sphere">Hard Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#square-well-potential">Square Well Potential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inverse-power-potential">Inverse Power Potential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lennard-jones-potential">Lennard-Jones Potential</a></li>
 </ul>
 </li>
 </ul>
@@ -216,74 +216,62 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="momentum-equation-and-boussinesq-assumption">
-<h1>Momentum Equation and Boussinesq Assumption<a class="headerlink" href="#momentum-equation-and-boussinesq-assumption" title="Permalink to this headline">¶</a></h1>
-<p>Based on information from (Bird, et. al. 2007). Continuing with the
-derivation of the conservation equations, again we use the GBE to derive
-a conservation equation that defines the conservation of momentum.</p>
-<div class="section" id="momentum-equation">
-<h2>Momentum Equation<a class="headerlink" href="#momentum-equation" title="Permalink to this headline">¶</a></h2>
-<p>Applying the GBE with <span class="math">\(\psi = \rho \vec{v}\)</span>,
-<span class="math">\(\mathbb{J} = \mathbb{T} = p\mathbb{I} + \tau\)</span>, and
-<span class="math">\(\dot{\psi}_{g} = \rho\vec{f}_{b} = \rho\vec{g}\)</span>, which is to say:
-the conservation quantity we will use is momentum, which when normalized
-per unit volume, becomes <span class="math">\(\rho \vec{v}\)</span>. Note that this is a
-vector quantity. The current of momentum across a boundary is a tensor
-which involves a symmetric tensor for the pressure in a system (which is
-isotropic), and the torque applied to the system. And finally, that the
-only generation of momentum is due to body forces, of which gravity is
-the only concern (unless we’re working with magnetohydrodynamics). With
-these, we get</p>
+  <div class="section" id="forms-of-the-potential-function">
+<h1>Forms of the potential function<a class="headerlink" href="#forms-of-the-potential-function" title="Permalink to this headline">¶</a></h1>
+<p>Most of nuclear materials is dependent upon the use of different forms
+of interatomic/internucleonic potential. These forms are used throughout
+the field. This material is present in [Nastasi1996].</p>
+<div class="section" id="hard-sphere">
+<h2>Hard Sphere<a class="headerlink" href="#hard-sphere" title="Permalink to this headline">¶</a></h2>
+<p>The hard sphere states that another nucleon has no probability of
+existings within a certain radius <span class="math">\(\Gamma_{r}\)</span>, and is given</p>
 <div class="math">
-\[\begin{split}\underbrace{\frac{\partial\left(\rho\vec{v}\right)}{\partial t}}_{\substack{\text{rate of change}\\
-\text{of momentum}\\
-\text{per unit volume}
-}
-}+\underbrace{\nabla\cdot\left(\rho\vec{v}\vec{v}\right)}_{\substack{\text{momentum change}\\
-\text{by convection}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla p}_{\substack{\text{pressure}\\
-\text{force}
-}
-}-\underbrace{\nabla\cdot\boldsymbol{\tau}}_{\substack{\text{viscous}\\
-\text{force}
-}
-}+\underbrace{\rho\vec{v}}_{\substack{\text{gravity}\\
-\text{force}
-}
-}\end{split}\]</div>
-<p>By again using the definition of the substantial derivative, we can
-create Cauchy’s Equation of motion as</p>
+\[\begin{split}V\left(r\right)=\begin{cases}
+\infty &amp; r&lt;\Gamma_{r}\\
+0 &amp; r&gt;\Gamma_{r}
+\end{cases}\end{split}\]</div>
+<div class='pygfigure' name='hardsphere' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='hardsphere.svg?193934566' />
+        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Shape of the hard sphere potential</div>
+</div></div>
+<div class="section" id="square-well-potential">
+<h2>Square Well Potential<a class="headerlink" href="#square-well-potential" title="Permalink to this headline">¶</a></h2>
+<p>The square well potential allows there to be some certain attractive
+force when the other nucleon is near enough to the nucleus, but still
+has the inifite potential at close range</p>
 <div class="math">
-\[\rho\frac{D\vec{v}}{Dt}=-\nabla p-\nabla\cdot\boldsymbol{\tau}+\rho\vec{g}\]</div>
-<p>and by inspection, we can see that this matches Newton’s Second Law of
-Motion:</p>
+\[\begin{split}V\left(r\right)=\begin{cases}
+\infty &amp; r&lt;\Gamma_{r}\\
+-\varepsilon &amp; \Gamma_{r}&lt;r&lt;R\\
+0 &amp; r&gt;R
+\end{cases}\end{split}\]</div>
+<div class='pygfigure' name='squarewell' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='squarewell.svg?1399861416' />
+        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 2:</b> Shape of the square well potential</div>
+</div></div>
+<div class="section" id="inverse-power-potential">
+<h2>Inverse Power Potential<a class="headerlink" href="#inverse-power-potential" title="Permalink to this headline">¶</a></h2>
+<p>The potential is obviously not discrete as has been shown above, so one
+way to retain the infinite potential at zero but have it continuous is
+the inverse power potential</p>
 <div class="math">
-\[\rho\vec{a}=\sum\vec{F}\]</div>
-</div>
-<div class="section" id="boussinesq-assumption">
-<h2>Boussinesq Assumption<a class="headerlink" href="#boussinesq-assumption" title="Permalink to this headline">¶</a></h2>
-<p>When gravity is important, we use the Boussinesq assumption(s):</p>
-<ul>
-<li><p class="first">Thermal expansion (<span class="math">\(\beta\)</span>) causes density change.</p>
-</li>
-<li><p class="first">This happens by the thermal expansion coefficient, <span class="math">\(\beta\)</span>,
-such that</p>
+\[V\left(r\right)=\varepsilon\left(\frac{\Gamma_{r}}{r}\right)^{n}\]</div>
+<div class='pygfigure' name='inversepow' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='inversepow.svg?125243570' />
+        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 3:</b> Shape of the inverse power potential</div>
+</div></div>
+<div class="section" id="lennard-jones-potential">
+<h2>Lennard-Jones Potential<a class="headerlink" href="#lennard-jones-potential" title="Permalink to this headline">¶</a></h2>
+<p>Finally, combining everything, we have the most accurate description of
+the potential yet, the Lennard-Jones potential. This potential preserves
+the infinite potential at zero, and the attraction between a certain
+distance. It is given by</p>
 <div class="math">
-\[\beta\equiv\frac{1}{\nu}\left.\frac{\partial\nu}{\partial T}\right)_{p}=\frac{1}{\rho}\left.\frac{\partial\rho}{\partial T}\right)_{p}\]</div>
-</li>
-<li><p class="first">This density change is only important in the gravity term.</p>
-</li>
-</ul>
-<p>Applying those assumptions, we get</p>
-<div class="math">
-\[dp=-\rho\beta dT\;\;\therefore\;\;\rho-\overline{\rho}=-\overline{\rho}\beta\left(T-\overline{T}\right)\]</div>
-<p>and putting that into the momentum equations, we get</p>
-<div class="math">
-\[\overline{\rho}\frac{D\vec{v}}{Dt}=-\cancelto{\nabla p_{dyn}}{\nabla p}-\nabla\cdot\boldsymbol{\tau}+\left[\cancelto{0}{\overline{\rho}}-\overline{\rho}\beta\left(T-\overline{T}\right)\right]\vec{g}\]</div>
-<p>.</p>
-<h2>Bibliography</h2>
+\[V\left(r\right)=\varepsilon\left[\left(\frac{\Gamma_{r}}{r}\right)^{m}-\left(\frac{\Gamma_{r}}{r}\right)^{n}\right]\]</div>
+<div class='pygfigure' name='lennardjones' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='lennardjones.svg?1486473102' />
+        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 4:</b> Shape of the Lennard-Jones potential</div>
+</div><h2>Bibliography</h2>
 <ol>
 </ol></div>
 </div>
