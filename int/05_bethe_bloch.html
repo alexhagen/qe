@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Maximum Energy Transfer and the Weighted Average Recoil Spectrum &#8212; PUNEQE  documentation</title>
+    <title>Bethe-Block stopping power &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Forms of the potential function" href="04_forms_of_potential.html" />
-    <link rel="prev" title="Range Integration" href="02_range_integration.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Particle Wavelengths" href="04_particle_wavelengths.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -141,41 +141,41 @@
 <li class="toctree-l1"><a class="reference internal" href="../th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Materials</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_recoil_kinematics.html">Recoil Kinematics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_recoil_kinematics.html#solve">Solve</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mat/01_recoil_kinematics.html">Recoil Kinematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#energy-conservation">Energy Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#momentum-conservation">Momentum Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/01_recoil_kinematics.html#solve">Solve</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="02_range_integration.html">Range Integration</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_forms_of_potential.html">Forms of the potential function</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#hard-sphere">Hard Sphere</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#square-well-potential">Square Well Potential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#inverse-power-potential">Inverse Power Potential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#lennard-jones-potential">Lennard-Jones Potential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mat/02_range_integration.html">Range Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mat/03_weighted_avg_recoil_spectrum.html">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mat/04_forms_of_potential.html">Forms of the potential function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#hard-sphere">Hard Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#square-well-potential">Square Well Potential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#inverse-power-potential">Inverse Power Potential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#lennard-jones-potential">Lennard-Jones Potential</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_binding_energy.html#binding-energy">Binding energy</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/04_particle_wavelengths.html">Particle Wavelengths</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/04_particle_wavelengths.html#mass-bearing">Mass Bearing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/04_particle_wavelengths.html#non-mass-bearing">Non Mass Bearing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_particle_wavelengths.html">Particle Wavelengths</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_particle_wavelengths.html#mass-bearing">Mass Bearing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_particle_wavelengths.html#non-mass-bearing">Non Mass Bearing</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/05_bethe_bloch.html">Bethe-Block stopping power</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bethe-Block stopping power</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
 <ul>
@@ -218,29 +218,32 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="maximum-energy-transfer-and-the-weighted-average-recoil-spectrum">
-<h1>Maximum Energy Transfer and the Weighted Average Recoil Spectrum<a class="headerlink" href="#maximum-energy-transfer-and-the-weighted-average-recoil-spectrum" title="Permalink to this headline">¶</a></h1>
-<p>Understanding of nuclear stopping requires the understanding of how much
-energy transfer is possible and the weighted average spectrum of the
-recoil. This material is present in [Nastasi1996].</p>
-<p>The maximum energy transfer to a knock on is usually expressed as
-<span class="math">\(T\)</span>, as the transfer, and it is related to the masses of the
-particles involved.</p>
+  <div class="section" id="bethe-block-stopping-power">
+<h1>Bethe-Block stopping power<a class="headerlink" href="#bethe-block-stopping-power" title="Permalink to this headline">¶</a></h1>
+<p>Understanding stopping power is crucial to understanding of ion
+transport through matter. This material is reasonably common and spread
+out, but I’m referencing [Knoll2000] and ({Nastasi, et. al. 1996)</p>
+<p>The general understanding of total stopping power, which includes
+nuclear and atomic stopping is often given through the following
+equation:</p>
 <div class="math">
-\[T_{max}=\Lambda E_{i} = \frac{4M_{1}M_{2}}{\left( M_{1} + M_{2}\right)^{2}}\]</div>
-<p>From that maximum energy, we can then look into the average spectrum,
-which will start at the top end from the maximum energy transfer and
-drop from there. This is defined as</p>
+\[\frac{DE}{Dx}=c\left(\frac{Z}{v}\right)^{2}\]</div>
+<p>This is particularly useful for deuterons, protons, and alphas. Notice
+that the stopping power is proportional to <span class="math">\(Z^{2}\)</span> and
+<span class="math">\(v^{2}\therefore E\)</span>. This comes from the total <em>Bethe Equation</em></p>
 <div class="math">
-\[\overline{T}=\frac{1}{2}\Lambda E_{i}=\frac{\int_{0}^{E_{i}}T\sigma\left(E,T\right)dT}{\int_{0}^{E_{i}}\sigma\left(E,T\right)dT}\]</div>
+\[-\frac{dE}{dx}=\frac{4\pi Z^{2}e^{4}}{m_{0}v^{2}}NZ\left[\ln\frac{2m_{0}v^{2}}{I}-\ln\left(1-\frac{v^{2}}{c^{2}}\right)-\frac{v^{2}}{c^{2}}\right]\]</div>
+<p>A more involved Bethe-Bloch formulation uses the nuclear and the atomic
+stopping power, given respectively as</p>
 <div class="math">
-\[\sigma=\frac{\pi}{4}\frac{\left(Z_{1}Z_{2}e^{2}\right)^{2}}{E_{i}^{2}}\left(\frac{T_{m}}{E_{d}}-1\right)\]</div>
+\[-\left.\frac{dE}{dx}\right|_{e}=\frac{4\pi Z_{1}^{2}e^{4}n_{e}}{m_{e}v^{2}}\ln\left[\frac{b_{max}}{b_{min}}\right]\]</div>
 <div class="math">
-\[\widetilde{T}=E_{d}\ln\frac{\Lambda E_{i}}{E_{d}}\;E_{d}\ll\Lambda E_{i}\]</div>
-<p>Then, we can find the weighted average recoil spectrum as defined above.
-For higher mass, there is a harder spectrum. There are more
-displacements at a higher recoil energy and higher primary atom energy.</p>
-<h2>Bibliography</h2>
+\[ \begin{align}\begin{aligned}-\left.\frac{dE}{dx}\right|_{n}=\frac{4\pi Z^{2}e^{4}}{m_{0}v^{2}}\frac{NZ_{1}Z_{2}}{\left(\sqrt{Z_{1}}+\sqrt{Z_{2}}\right)^{\nicefrac{2}{3}}}\frac{M_{1}}{M_{1}+M_{2}}\\where :math:`b` is the collision parameter, and all other nomenclature\end{aligned}\end{align} \]</div>
+<p>is as usual.</p>
+<div class='pygfigure' name='stoppingpower' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='stoppingpower.svg?6087728' />
+        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Electronic and nuclear stopping power as a function of $\varepsilon$</div>
+</div><h2>Bibliography</h2>
 <ol>
 </ol></div>
 

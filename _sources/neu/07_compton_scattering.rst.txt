@@ -1,0 +1,68 @@
+
+    
+
+Compton Scattering
+==================
+
+The derivation of Compton Scattering informs many uses of both the
+result and the technique used to derive it.
+
+We start with the knowledge that a photon has the momentum
+
+.. math:: p = \frac{E}{c}
+
+and we must apply special relativity to that, as an electron. Thus the
+kinetic energy of that photon is
+
+.. math:: T_{\gamma}=\sqrt{p_{e}^{2}c^{2}+m_{e}^{2}c^{4}}-m_{e}c^{2}
+
+ It should be noted that the last two terms will cancel each other out.
+
+We then apply elastic scattering, knowing that the total energy is the
+initial energy of the photon and the sum of its kinetic energy and the
+secondary energy of the electron
+
+.. math:: E=E^{'}+T
+
+Now we get into the real math (algebra). We find the momentum of the
+scattered photon and the momentum of the electron.
+
+.. math:: \left(p^{'}\right)^{2}=\left|\vec{p}-\vec{p}_{e}\right|^{2}-2pp_{e}\cos\theta_{r}
+
+.. math:: \left(p_{e}\right)^{2}=\left|\vec{p}-\vec{p}^{'}\right|^{2}=p^{2}+\left(p^{'}\right)^{2}-2pp^{'}\cos\theta_{s}
+
+ Note that the last terms are from the law of cosines from the
+scattering angles.
+
+We then continue with our balances, this time doing an energy balance on
+the two particles.
+
+.. math:: \left(E^{'}\right)^{2}=E^{2}+T\left(T+2m_{e}c^{2}\right)-2E\sqrt{T\left(T+2m_{e}c^{2}\right)}\cos\theta_{r}
+
+.. math:: T\left(T+2m_{e}c^{2}\right)=E^{2}+\left(E^{'}\right)^{2}-2EE^{'}\cos\theta_{s}
+
+ and our energy conservation is simply stated earlier, and restated as
+
+.. math:: T=E-E^{'}
+
+Performing this energy balance, we get
+
+.. math:: E^{2}+\left(E^{'}\right)^{2}-2EE^{'}\cos\theta_{s} =\left(E-E^{'}\right)\left(E-E^{'}+2m_{e}c^{2}\right)
+
+.. math:: \left[\left(1-\cos\theta_{s}\right)E+m_{e}c^{2}\right]E^{'}   =m_{e}c^{2}E
+
+ which gives us
+
+.. math:: E^{'}=\frac{E}{1+\left(\frac{E}{m_{e}c^{2}}\right)\left(1-\cos\theta_{s}\right)},\quad0\leq\theta_{s}\leq\pi
+
+Finally, we complete this using the momentum equations we wrote earlier
+
+.. math:: E^{2}+T\left(T+2m_{e}c^{2}\right)-2E\sqrt{T\left(T+2m_{e}c^{2}\right)}\cos\theta_{r}=\left(E-T\right)^{2}
+
+.. math:: \left[\left(E+m_{e}c^{2}\right)-E^{2}\cos^{2}\theta_{r}\right]T=2m_{e}c^{2}E^{2}\cos^{2}\theta_{r}
+
+ which yields the result
+
+.. math:: T=\frac{2m_{e}c^{2}E^{2}\cos^{2}\theta_{r}}{\left(E+m_{e}c^{2}\right)^{2}-E^{2}\cos^{2}\theta_{r}},\quad0\leq\theta_{r}\leq\frac{\pi}{2}
+
+    
