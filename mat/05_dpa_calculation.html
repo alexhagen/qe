@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Maximum Energy Transfer and the Weighted Average Recoil Spectrum &#8212; PUNEQE  documentation</title>
+    <title>DPA Calculations &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Forms of the potential function" href="04_forms_of_potential.html" />
-    <link rel="prev" title="Range Integration" href="02_range_integration.html" />
+    <link rel="next" title="Radioactive Decay" href="../int/01_decay.html" />
+    <link rel="prev" title="Forms of the potential function" href="04_forms_of_potential.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -154,7 +154,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="02_range_integration.html">Range Integration</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_weighted_avg_recoil_spectrum.html">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_forms_of_potential.html">Forms of the potential function</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#hard-sphere">Hard Sphere</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#square-well-potential">Square Well Potential</a></li>
@@ -162,7 +162,7 @@
 <li class="toctree-l2"><a class="reference internal" href="04_forms_of_potential.html#lennard-jones-potential">Lennard-Jones Potential</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="05_dpa_calculation.html">DPA Calculations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DPA Calculations</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
 <ul>
@@ -224,30 +224,57 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="maximum-energy-transfer-and-the-weighted-average-recoil-spectrum">
-<h1>Maximum Energy Transfer and the Weighted Average Recoil Spectrum<a class="headerlink" href="#maximum-energy-transfer-and-the-weighted-average-recoil-spectrum" title="Permalink to this headline">¶</a></h1>
-<p>Understanding of nuclear stopping requires the understanding of how much
-energy transfer is possible and the weighted average spectrum of the
-recoil. This material is present in [Nastasi1996].</p>
-<p>The maximum energy transfer to a knock on is usually expressed as
-<span class="math">\(T\)</span>, as the transfer, and it is related to the masses of the
-particles involved.</p>
+  <div class="section" id="dpa-calculations">
+<h1>DPA Calculations<a class="headerlink" href="#dpa-calculations" title="Permalink to this headline">¶</a></h1>
+<p>Calculation of displacements per atom (DPA) is crucial to the
+characterization of radiation damage in material. The chart below is
+most informative in the rate of displacement creation based on the
+energy of the incident ion. Basically, below a certain energy, the ion
+cannot displace an atom. Past twice that energy, it can displace an
+increasing number of ions with increasing energy until reaching an
+energy at which it can only displace <span class="math">\(\frac{E_{c}}{2E_{d}}\)</span> atoms
+per ion.</p>
+<div class='pygfigure' name='dpa' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='dpa.svg?1206260235' />
+        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Rate of displatement generation versus energy of primary knock on (<a href="#Nastasi1996">{Nastasi,  et. al. 1996</a>)</div>
+</div><p>We can use this to determine the displacement rate. We start by defining
+the maximum energy transfered, which is <span class="math">\(T_{max}=\Lambda E\)</span>, with</p>
 <div class="math">
-\[T_{max}=\Lambda E_{i} = \frac{4M_{1}M_{2}}{\left( M_{1} + M_{2}\right)^{2}}\]</div>
-<p>From that maximum energy, we can then look into the average spectrum,
-which will start at the top end from the maximum energy transfer and
-drop from there. This is defined as</p>
+\[\Lambda=\frac{4M_{1}M_{2}}{M_{1}+M_{2}}\]</div>
+<p>. Then, we can define the displacement rate as</p>
 <div class="math">
-\[\overline{T}=\frac{1}{2}\Lambda E_{i}=\frac{\int_{0}^{E_{i}}T\sigma\left(E,T\right)dT}{\int_{0}^{E_{i}}\sigma\left(E,T\right)dT}\]</div>
+\[\dot{\nu}=\int_{E_{d}}^{\Lambda E}\phi\left(E\right)\sigma_{d}\left(E,T\right)dE\]</div>
+<p>. We can see that the displacement cross section <span class="math">\(\sigma_{d}\)</span>, so
+we can define that as</p>
 <div class="math">
-\[\sigma=\frac{\pi}{4}\frac{\left(Z_{1}Z_{2}e^{2}\right)^{2}}{E_{i}^{2}}\left(\frac{T_{m}}{E_{d}}-1\right)\]</div>
+\[ \begin{align}\begin{aligned}\sigma_{d}=\int_{E_{d}}^{\Lambda E}\nu\left(T\right)\sigma\left(E,T\right)dT\\This in turn requires a cross section, for which we will use the hard\end{aligned}\end{align} \]</div>
+<p>sphere cross section</p>
 <div class="math">
-\[\widetilde{T}=E_{d}\ln\frac{\Lambda E_{i}}{E_{d}}\;E_{d}\ll\Lambda E_{i}\]</div>
-<p>Then, we can find the weighted average recoil spectrum as defined above.
-For higher mass, there is a harder spectrum. There are more
-displacements at a higher recoil energy and higher primary atom energy.</p>
+\[ \begin{align}\begin{aligned}\sigma\left(E,T\right)=\frac{\sigma_{p}}{\Lambda E}=\frac{c}{E}\\Then, all that's left to do is math\end{aligned}\end{align} \]</div>
+<div class="math">
+\[\sigma_{d}=\int_{0}^{E_{d}}\left[\left(0\right)\frac{\sigma_{p}}{\Lambda E}+\left(1\right)\frac{\sigma_{p}}{\Lambda E}+\left(\frac{T}{2E_{d}}\right)\frac{\sigma_{p}}{\Lambda E}\right]dT\]</div>
+<div class="math">
+\[ \begin{align}\begin{aligned}\sigma_{d}=\left(\frac{\sigma_{p}}{\Lambda E}\right)\left(\Lambda E_{d}-E_{d}\right)+\left(\frac{\sigma_{p}}{2\Lambda E_{d}}\right)\left(\frac{\left(\Lambda E\right)^{2}}{2}-\frac{E_{d}^{2}}{2}\right)\\From the last result, and the first definition, we can find\end{aligned}\end{align} \]</div>
+<p><span class="math">\(\dot{\nu}\)</span> in <span class="math">\(\frac{\mathrm{dpa}}{\mathrm{s}}\)</span></p>
 <h2>Bibliography</h2>
 <ol>
+<li name="Nastasi1996">
+<!-- This document was automatically generated with bibtex2html 1.98
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpPZYW3E.bib  -->
+
+
+
+
+<p><a name="Nastasi1996"></a>
+
+J.&nbsp;K. Nastasi, M., Mayer, J. W., Hirvonen.
+ <em>Ion-Solid Interactions: Fundamentals and Applications</em>.
+ Cambridge University Press, 1996.
+
+</p>
+</li>
 </ol></div>
 
 

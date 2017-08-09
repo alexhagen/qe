@@ -1,0 +1,85 @@
+
+    
+
+DPA Calculations
+================
+
+Calculation of displacements per atom (DPA) is crucial to the
+characterization of radiation damage in material. The chart below is
+most informative in the rate of displacement creation based on the
+energy of the incident ion. Basically, below a certain energy, the ion
+cannot displace an atom. Past twice that energy, it can displace an
+increasing number of ions with increasing energy until reaching an
+energy at which it can only displace :math:`\frac{E_{c}}{2E_{d}}` atoms
+per ion.
+
+    
+
+
+
+.. raw:: html
+
+    
+    				<div class='pygfigure' name='dpa' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='dpa.svg?1206260235' />
+    					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Rate of displatement generation versus energy of primary knock on (<a href="#Nastasi1996">{Nastasi,  et. al. 1996</a>)</div>
+    				</div>
+    			
+
+
+We can use this to determine the displacement rate. We start by defining
+the maximum energy transfered, which is :math:`T_{max}=\Lambda E`, with
+
+.. math:: \Lambda=\frac{4M_{1}M_{2}}{M_{1}+M_{2}}
+
+. Then, we can define the displacement rate as
+
+.. math:: \dot{\nu}=\int_{E_{d}}^{\Lambda E}\phi\left(E\right)\sigma_{d}\left(E,T\right)dE
+
+. We can see that the displacement cross section :math:`\sigma_{d}`, so
+we can define that as
+
+.. math:: \sigma_{d}=\int_{E_{d}}^{\Lambda E}\nu\left(T\right)\sigma\left(E,T\right)dT
+
+ This in turn requires a cross section, for which we will use the hard
+sphere cross section
+
+.. math:: \sigma\left(E,T\right)=\frac{\sigma_{p}}{\Lambda E}=\frac{c}{E}
+
+ Then, all that's left to do is math
+
+.. math:: \sigma_{d}=\int_{0}^{E_{d}}\left[\left(0\right)\frac{\sigma_{p}}{\Lambda E}+\left(1\right)\frac{\sigma_{p}}{\Lambda E}+\left(\frac{T}{2E_{d}}\right)\frac{\sigma_{p}}{\Lambda E}\right]dT
+
+.. math:: \sigma_{d}=\left(\frac{\sigma_{p}}{\Lambda E}\right)\left(\Lambda E_{d}-E_{d}\right)+\left(\frac{\sigma_{p}}{2\Lambda E_{d}}\right)\left(\frac{\left(\Lambda E\right)^{2}}{2}-\frac{E_{d}^{2}}{2}\right)
+
+ From the last result, and the first definition, we can find
+:math:`\dot{\nu}` in :math:`\frac{\mathrm{dpa}}{\mathrm{s}}`
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    <li name="Nastasi1996">
+    <!-- This document was automatically generated with bibtex2html 1.98
+         (see http://www.lri.fr/~filliatr/bibtex2html/),
+         with the following command:
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpPZYW3E.bib  -->
+    
+    
+    
+    
+    <p><a name="Nastasi1996"></a>
+    
+    J.&nbsp;K. Nastasi, M., Mayer, J. W., Hirvonen.
+     <em>Ion-Solid Interactions: Fundamentals and Applications</em>.
+     Cambridge University Press, 1996.
+    
+    </p>
+    </li>
+    </ol>
+
+

@@ -1,0 +1,117 @@
+
+    
+
+Prandtl's Mixing Length
+=======================
+
+Remember turbulent momentum equation
+
+.. math:: \frac{\partial\rho\overline{v}}{\partial t}+\nabla\cdot\rho\overline{vv}=-\nabla\overline{p}-\nabla\cdot\tau^{T}+\rho\vec{g}
+
+We can use two models for the turbulent viscosity: Eddy Viscosity and
+Prandtl's Mixing Length Model.
+
+Eddy Viscosity
+--------------
+
+Using Newton's viscosity model
+
+.. math:: \tau_{xy}^{t}=-\mu^{t}\frac{\partial\overline{v_{x}}}{\partial y}
+
+but unfortunately, :math:`\mu=\mu\left(\vec{x}\right)` and non-linear,
+so instead we use PML
+
+Prandtl's Mixing Length Model
+-----------------------------
+
+Momentum transfer at discrete intervals only after the eddy mass
+(:math:`\delta m`) has moved an entire length (:math:`l`).
+
+.. math::
+
+   \underbrace{\delta m\delta v_{x}}_{\substack{\text{momentum}\\
+   \text{gain in the x}\\
+   \text{direction}
+   }
+   }\;\;\Longrightarrow\;\;\underbrace{\frac{\delta m}{\delta t}\delta v_{x}}_{\substack{\text{force}}
+   }\;\;\Longrightarrow\;\;\tau^{t}=\frac{F}{A}=\underbrace{-\frac{1}{A}\frac{\delta m}{\delta t}\delta v_{x}}_{\substack{\text{shear stress}\\
+   \text{acting against}\\
+   \delta v_{x}\text{ over area }A
+   }
+   }
+
+By assuming that :math:`l` is very small:
+
+.. math:: \delta v_{x}\approx\frac{\delta\overline{v_{x}}}{\delta y}l
+
+ and applying continuity (or matching units)
+
+.. math:: \frac{1}{A}\frac{\delta m}{\delta t}=\rho\left|v_{y}^{'}\right|
+
+ And therefore we have
+
+.. math:: \frac{\tau^{t}}{\rho}=-l\left|v_{y}^{'}\right|\frac{d\overline{v_{x}}}{dy}=-\varepsilon_{M}\frac{d\overline{v_{x}}}{dy}
+
+ Applying Prandtl's Assumptions:
+
+-  perpendicular velocity is proportional to the flow velocity
+
+   .. math:: \left|v_{y}^{'}\right|=k_{1}\left|v_{x}^{'}\right|
+
+-  fluctuation in x direction velocity is propotional to the rate of
+   change of x direction velocity times the length moved
+
+   .. math:: v_{x}^{'}=k_{2}\delta v_{x}=k_{2}l\frac{d\overline{v_{x}}}{dy}
+
+   and, minorly, :math:`l=ky`
+
+   .. math:: \frac{\tau^{t}}{\rho}=-\left(ky\right)\left|k_{1}\left|k_{2}\left(ky\right)\frac{d\overline{v_{x}}}{dy}\right|\right|\frac{d\overline{v_{x}}}{dy}=-k^{2}y^{2}\left(\frac{d\overline{v_{x}}}{dy}\right)^{2}
+
+therefore
+
+.. math:: \frac{d\overline{v_{x}}}{dy}=-\frac{1}{ky}\sqrt{\frac{\tau^{t}}{\rho}}
+
+and we can assume that all of the turbulent stress comes from the wall
+(:math:`\tau^{t}=\tau^{w}`).
+
+By non dimensionalizing with
+
+.. math:: v^{*}=\frac{v_{x}}{\sqrt{\nicefrac{\tau^{t}}{\rho}}}\;\;\&\;\;y^{*}=\frac{y\sqrt{\nicefrac{\tau^{t}}{\rho}}}{v}
+
+we get
+
+.. math:: \frac{dv^{*}}{dy^{*}}=\frac{1}{ky^{*}}\;\;\therefore\;\;v^{*}=\frac{1}{R}\ln\left(y^{*}\right)+C
+
+    
+
+
+
+.. raw:: html
+
+    
+    				<div class='pygfigure' name='ultp' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='universallogprofile.svg?1613939435' />
+    					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Universal log turbulent profile</div>
+    				</div>
+    			
+
+
+and we can evaluate how much this is using Fanning's friction factor
+
+.. math:: \tau^{w}=\frac{1}{2}f_{i}\rho u^{2}\;\;\therefore\;\;\sqrt{\frac{\tau^{w}}{\rho}}=\sqrt{\frac{1}{2}f_{i}}u
+
+and
+
+.. math:: y^{*}=Re\frac{\sqrt{\nicefrac{\tau^{w}}{\rho}}}{\nu}\frac{y}{D}\approx Re\frac{1}{40}\frac{y}{R}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
