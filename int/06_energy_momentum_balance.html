@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Bethe-Block stopping power &#8212; PUNEQE  documentation</title>
+    <title>Energy and momenta balances &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="next" title="Energy and momenta balances" href="07_decay_amount.html" />
     <link rel="prev" title="Particle Wavelengths" href="04_particle_wavelengths.html" />
   
 <meta charset='utf-8'>
@@ -139,11 +139,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../th/22_prandtl_mixing_length.html">Prandtl’s Mixing Length</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../th/22_prandtl_mixing_length.html#eddy-viscosity">Eddy Viscosity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../th/22_prandtl_mixing_length.html#prandtl-s-mixing-length-model">Prandtl’s Mixing Length Model</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption"><span class="caption-text">Materials</span></p>
 <ul>
@@ -155,14 +150,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../mat/02_range_integration.html">Range Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mat/03_weighted_avg_recoil_spectrum.html">Maximum Energy Transfer and the Weighted Average Recoil Spectrum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/04_forms_of_potential.html">Forms of the potential function</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#hard-sphere">Hard Sphere</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#square-well-potential">Square Well Potential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#inverse-power-potential">Inverse Power Potential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mat/04_forms_of_potential.html#lennard-jones-potential">Lennard-Jones Potential</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../mat/05_dpa_calculation.html">DPA Calculations</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
 <ul class="current">
@@ -181,7 +168,8 @@
 <li class="toctree-l2"><a class="reference internal" href="04_particle_wavelengths.html#non-mass-bearing">Non Mass Bearing</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Bethe-Block stopping power</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Energy and momenta balances</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_decay_amount.html">Energy and momenta balances</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
 <ul>
@@ -224,32 +212,23 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="bethe-block-stopping-power">
-<h1>Bethe-Block stopping power<a class="headerlink" href="#bethe-block-stopping-power" title="Permalink to this headline">¶</a></h1>
-<p>Understanding stopping power is crucial to understanding of ion
-transport through matter. This material is reasonably common and spread
-out, but I’m referencing [Knoll2000] and ({Nastasi, et. al. 1996)</p>
-<p>The general understanding of total stopping power, which includes
-nuclear and atomic stopping is often given through the following
-equation:</p>
+  <div class="section" id="energy-and-momenta-balances">
+<h1>Energy and momenta balances<a class="headerlink" href="#energy-and-momenta-balances" title="Permalink to this headline">¶</a></h1>
+<p>Understanding energy and momentum balances is crucial to understanding
+of ion transport through matter. This material is reasonably common and
+spread out, but I’m referencing [Knoll2000] and ({Nastasi, et. al. 1996)</p>
+<p>Consider the reaction <span class="math">\(\ce{_{4}^{9}Be\left(p,\alpha\right)}\)</span> with
+<span class="math">\(T_{p}\)</span> and <span class="math">\(T_{\alpha}\)</span> given, and <span class="math">\(\alpha\)</span> emerges
+at an angle of <span class="math">\(90^{\circ}\)</span>. Find <span class="math">\(T_{R}\)</span> for the recoil.</p>
+<p>First, we want to figure out the recoil. The recoil will have a
+<span class="math">\(Z=4+1-2=3\)</span> and an <span class="math">\(A=9+1-4=6\)</span> and is therefore
+<span class="math">\(\ce{^{6}Li}\)</span>. Then we move on to our energy conservation with</p>
 <div class="math">
-\[\frac{DE}{Dx}=c\left(\frac{Z}{v}\right)^{2}\]</div>
-<p>This is particularly useful for deuterons, protons, and alphas. Notice
-that the stopping power is proportional to <span class="math">\(Z^{2}\)</span> and
-<span class="math">\(v^{2}\therefore E\)</span>. This comes from the total <em>Bethe Equation</em></p>
+\[\cancelto{0}{T_{Be}}+m_{Be}c^{2}+T_{p}+m_{p}c^{2}=T_{R}+m_{R}c^{2}+T_{\alpha}+m_{\alpha}c^{2}T_{R}=T_{\alpha}-T_{p}+\left(m_{R}+m_{\alpha}-m_{p}-m_{Be}\right)c^{2}\]</div>
+<p>And we follow this up with a momentum conservation</p>
 <div class="math">
-\[-\frac{dE}{dx}=\frac{4\pi Z^{2}e^{4}}{m_{0}v^{2}}NZ\left[\ln\frac{2m_{0}v^{2}}{I}-\ln\left(1-\frac{v^{2}}{c^{2}}\right)-\frac{v^{2}}{c^{2}}\right]\]</div>
-<p>A more involved Bethe-Bloch formulation uses the nuclear and the atomic
-stopping power, given respectively as</p>
-<div class="math">
-\[-\left.\frac{dE}{dx}\right|_{e}=\frac{4\pi Z_{1}^{2}e^{4}n_{e}}{m_{e}v^{2}}\ln\left[\frac{b_{max}}{b_{min}}\right]\]</div>
-<div class="math">
-\[ \begin{align}\begin{aligned}-\left.\frac{dE}{dx}\right|_{n}=\frac{4\pi Z^{2}e^{4}}{m_{0}v^{2}}\frac{NZ_{1}Z_{2}}{\left(\sqrt{Z_{1}}+\sqrt{Z_{2}}\right)^{\nicefrac{2}{3}}}\frac{M_{1}}{M_{1}+M_{2}}\\where :math:`b` is the collision parameter, and all other nomenclature\end{aligned}\end{align} \]</div>
-<p>is as usual.</p>
-<div class='pygfigure' name='stoppingpower' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
-        <img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='stoppingpower.svg?1293471894' />
-        <div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Electronic and nuclear stopping power as a function of $\varepsilon$</div>
-</div><h2>Bibliography</h2>
+\[ \begin{align}\begin{aligned}\cancelto{0}{p_{Be}}+p_{p}=p_{R}+p_{\alpha}\frac{1}{c}\sqrt{T_{p}\left(T_{p}+2m_{p}c^{2}\right)}=\frac{1}{c}\sqrt{T_{R}\left(T_{R}+2m_{R}c^{2}\right)}+\frac{1}{c}\sqrt{T_{\alpha}\left(T_{\alpha}+2m_{\alpha}c^{2}\right)}\\and solve this, for :math:`T_{R}`.\end{aligned}\end{align} \]</div>
+<h2>Bibliography</h2>
 <ol>
 </ol></div>
 
@@ -266,7 +245,7 @@ stopping power, given respectively as</p>
     </p>
     <p>
         &copy; Copyright 2017, Alex Hagen.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.1.<br/>
     </p>
   </div>
 </footer>

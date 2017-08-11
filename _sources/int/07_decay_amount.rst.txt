@@ -1,0 +1,37 @@
+
+    
+
+Energy and momenta balances
+===========================
+
+Understanding decay is instrumental to detection. This material is
+reasonably common and spread out, but I'm referencing [Knoll2000] and
+({Nastasi, et. al. 1996)
+
+.. math:: \Delta t=24\unit{hr}
+
+.. math:: N_{0}=\frac{1683\unit{counts}}{10\unit{min}}
+
+.. math:: N_{1}=\frac{1683\unit{counts}}{20\unit{min}}
+
+.. math:: \frac{N_{0}}{N_{1}}=\exp\left(-\lambda\Delta t\right)
+
+.. math:: \lambda=\frac{1}{\Delta t}\ln\left(\frac{N_{1}}{N_{0}}\right)
+
+.. math:: t_{\nicefrac{1}{2}}=\ln\left(2\right)\Delta t\frac{1}{\ln\left(N_{1}\right)-\ln\left(N_{1}\right)}
+
+.. math:: \sigma_{t_{\nicefrac{1}{2}}}=\sqrt{\cancelto{0}{\left(\frac{\partial t_{\nicefrac{1}{2}}}{\partial\Delta t}\right)^{2}\sigma_{\Delta t}}+\left(\frac{\partial t_{\nicefrac{1}{2}}}{\partial N_{1}}\right)^{2}\sigma_{N_{1}}+\left(\frac{\partial t_{\nicefrac{1}{2}}}{\partial N_{0}}\right)^{2}\sigma_{N_{0}}}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
+
+    

@@ -1,0 +1,39 @@
+
+    
+
+Energy and momenta balances
+===========================
+
+Understanding energy and momentum balances is crucial to understanding
+of ion transport through matter. This material is reasonably common and
+spread out, but I'm referencing [Knoll2000] and ({Nastasi, et. al. 1996)
+
+Consider the reaction :math:`\ce{_{4}^{9}Be\left(p,\alpha\right)}` with
+:math:`T_{p}` and :math:`T_{\alpha}` given, and :math:`\alpha` emerges
+at an angle of :math:`90^{\circ}`. Find :math:`T_{R}` for the recoil.
+
+First, we want to figure out the recoil. The recoil will have a
+:math:`Z=4+1-2=3` and an :math:`A=9+1-4=6` and is therefore
+:math:`\ce{^{6}Li}`. Then we move on to our energy conservation with
+
+.. math:: \cancelto{0}{T_{Be}}+m_{Be}c^{2}+T_{p}+m_{p}c^{2}=T_{R}+m_{R}c^{2}+T_{\alpha}+m_{\alpha}c^{2}T_{R}=T_{\alpha}-T_{p}+\left(m_{R}+m_{\alpha}-m_{p}-m_{Be}\right)c^{2}
+
+And we follow this up with a momentum conservation
+
+.. math:: \cancelto{0}{p_{Be}}+p_{p}=p_{R}+p_{\alpha}\frac{1}{c}\sqrt{T_{p}\left(T_{p}+2m_{p}c^{2}\right)}=\frac{1}{c}\sqrt{T_{R}\left(T_{R}+2m_{R}c^{2}\right)}+\frac{1}{c}\sqrt{T_{\alpha}\left(T_{\alpha}+2m_{\alpha}c^{2}\right)}
+
+ and solve this, for :math:`T_{R}`.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
+
+    
