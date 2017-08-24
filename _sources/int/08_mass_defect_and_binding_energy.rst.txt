@@ -1,0 +1,39 @@
+
+    
+
+Binding Energy for Atoms and Nucleii
+====================================
+
+Understanding the nuclear structure and atomic structure (Lamarsh, 2002)
+is (obviously) crucial to nuclear engineering and detection. One of the
+main concepts is the idea of mass defect. The *mass defect* is the
+difference between the measured atomic mass and mass the atom would have
+if it were simply the sum of the constituent proton and neutron masses.
+
+.. math:: Q=\left[ \left( M_{a}+M_{b} \right) - \left(M_{c} + M_{d} \right)\right] \underbrace{931 \frac{\mathrm{MeV}}{\mathrm{amu}}}_{c^{2}}
+
+and so the mass defect is
+
+.. math:: \Delta = ZM_{p} + NM_{n} - M_{A}
+
+ so the binding energy is the conversion from this to energy
+
+.. math:: BE\left(a\right)=Z_{a}M\left(^{1}H\right) + N_{a}\left(M_{n}\right) - M_{a}
+
+ and the Last neutron is the least bound neutron
+
+.. math:: E_{s}=\left[M_{n}+M\left(^{A-1}Z\right)- M\left(^{A}Z\right)\right]931 \frac{\mathrm{MeV}}{\mathrm{amu}}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
+
+    

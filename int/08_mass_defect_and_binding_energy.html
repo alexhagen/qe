@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Internal Conversion versus Electron Capture &#8212; PUNEQE  documentation</title>
+    <title>Binding Energy for Atoms and Nucleii &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Particle Wavelengths" href="04_particle_wavelengths.html" />
-    <link rel="prev" title="Binding Energy and Mass Defect" href="02_binding_energy.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Energy and momenta balances" href="07_decay_amount.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -158,9 +158,9 @@
 <li class="toctree-l2"><a class="reference internal" href="02_binding_energy.html#binding-energy">Binding energy</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Internal Conversion versus Electron Capture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#electron-capture">Electron Capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#internal-conversion">Internal Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="04_particle_wavelengths.html">Particle Wavelengths</a><ul>
@@ -170,7 +170,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="06_energy_momentum_balance.html">Energy and momenta balances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_decay_amount.html">Energy and momenta balances</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_mass_defect_and_binding_energy.html">Binding Energy for Atoms and Nucleii</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Binding Energy for Atoms and Nucleii</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
 <ul>
@@ -213,34 +213,25 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="internal-conversion-versus-electron-capture">
-<h1>Internal Conversion versus Electron Capture<a class="headerlink" href="#internal-conversion-versus-electron-capture" title="Permalink to this headline">¶</a></h1>
-<p>This material is very common, so a basic textbook such as (Lamarsh, et.
-al. 2001) would have it. For a more physics based approach, a textbook
-such as (Krane, 1988) would be good.</p>
-<div class="section" id="electron-capture">
-<h2>Electron Capture<a class="headerlink" href="#electron-capture" title="Permalink to this headline">¶</a></h2>
-<p>Electron capture is a process where an orbital electron accelerates into
-the nucleus, where it is “captured”. The acceleration results in an
-X-ray, whos power depends on the <span class="math">\(Q\)</span> value of electron capture.
-Then, the reaction proceeds as</p>
+  <div class="section" id="binding-energy-for-atoms-and-nucleii">
+<h1>Binding Energy for Atoms and Nucleii<a class="headerlink" href="#binding-energy-for-atoms-and-nucleii" title="Permalink to this headline">¶</a></h1>
+<p>Understanding the nuclear structure and atomic structure (Lamarsh, 2002)
+is (obviously) crucial to nuclear engineering and detection. One of the
+main concepts is the idea of mass defect. The <em>mass defect</em> is the
+difference between the measured atomic mass and mass the atom would have
+if it were simply the sum of the constituent proton and neutron masses.</p>
 <div class="math">
-\[\mathrm{\sideset{^{A}_{Z}}{^{*}}X} \rightarrow \mathrm{\sideset{^{A}_{Z-1}}{}Y} + \nu\]</div>
-</div>
-<div class="section" id="internal-conversion">
-<h2>Internal Conversion<a class="headerlink" href="#internal-conversion" title="Permalink to this headline">¶</a></h2>
-<p>Internal conversion is a process where an excited nucleus transfers its
-energy to an orbital electron. The energy transfer is monoenergetic
-because the excitation levels of a nucleus are quantized. The energy
-transfer effected is</p>
+\[Q=\left[ \left( M_{a}+M_{b} \right) - \left(M_{c} + M_{d} \right)\right] \underbrace{931 \frac{\mathrm{MeV}}{\mathrm{amu}}}_{c^{2}}\]</div>
+<p>and so the mass defect is</p>
 <div class="math">
-\[E_{e^{-}}=E_{ex}-E_{b}\]</div>
-<p>where <span class="math">\(E_{b}\)</span> is the shell binding energy. The energy transfer
-causes the orbital electron to accelerate, which also causes an X-ray.</p>
+\[ \begin{align}\begin{aligned}\Delta = ZM_{p} + NM_{n} - M_{A}\\so the binding energy is the conversion from this to energy\end{aligned}\end{align} \]</div>
+<div class="math">
+\[ \begin{align}\begin{aligned}BE\left(a\right)=Z_{a}M\left(^{1}H\right) + N_{a}\left(M_{n}\right) - M_{a}\\and the Last neutron is the least bound neutron\end{aligned}\end{align} \]</div>
+<div class="math">
+\[E_{s}=\left[M_{n}+M\left(^{A-1}Z\right)- M\left(^{A}Z\right)\right]931 \frac{\mathrm{MeV}}{\mathrm{amu}}\]</div>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>
-</div>
 
 
     </div>
