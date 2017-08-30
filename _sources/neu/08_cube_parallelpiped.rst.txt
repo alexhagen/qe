@@ -1,0 +1,61 @@
+
+    
+
+Optimization of Reactor Design
+==============================
+
+Much of reactor design uses optimization techniques to determine the
+best theoretical design before engineering considerations are then
+tackled. The optimization of a parallelpiped for the best shape is a
+very simple example of this, but is instructive.
+
+To prove that a cube is the best parallelpiped for minimal critical
+volume, we start knowing the buckling and the volume equations for the
+parallelpiped.
+
+.. math:: V=abc
+
+.. math:: B^{2}=\left(\frac{\pi}{a}\right)^{2}+\left(\frac{\pi}{b}\right)^{2}+\left(\frac{\pi}{c}\right)^{2}
+
+Now, we want to pose the problem with a Lagrange multiplier,
+:math:`\lambda`.
+
+.. math:: V\left(a,b,c,\lambda\right)=abc+\lambda\left[B^{2}-\left(\frac{\pi}{a}\right)^{2}-\left(\frac{\pi}{b}\right)^{2}-\left(\frac{\pi}{c}\right)^{2}\right]
+
+This gives us an equation in four dimensions, where the minimum of that
+hyperplane is the location where the volume is minimized and the
+buckling criteria is satisfied. So, we take the derivatives and set them
+equal to zero
+
+.. math::
+
+   \begin{align*}
+   \frac{\partial V}{\partial a}=0 & =bc-\frac{2\pi^{2}\lambda}{a^{3}}\\
+   \frac{\partial V}{\partial b}=0 & =ac-\frac{2\pi^{2}\lambda}{b^{3}}\\
+   \frac{\partial V}{\partial c}=0 & =ab-\frac{2\pi^{2}\lambda}{c^{3}}
+   \end{align*}
+
+Manipulation of these three equations leads us to another set of
+equations
+
+.. math::
+
+   \begin{align*}
+   abc & =2\lambda\frac{\pi^{2}}{a^{2}}\\
+   abc & =2\lambda\frac{\pi^{2}}{b^{2}}\\
+   abc & =2\lambda\frac{\pi^{2}}{c^{2}}
+   \end{align*}
+
+for which the only solution (this can be solved with substitution if it
+is not apparent) is
+
+.. math:: a=b=c
+
+Which shows that the minimal volume for a parallelpiped critical reactor
+is a cube, and volume is
+
+.. math:: V=a^{3}
+
+and buckling is
+
+.. math:: B^{2}=3\left(\frac{\pi}{a}\right)^{2}

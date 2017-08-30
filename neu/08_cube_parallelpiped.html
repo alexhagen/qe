@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Reflector Savings &#8212; PUNEQE  documentation</title>
+    <title>Optimization of Reactor Design &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Compton Scattering" href="07_compton_scattering.html" />
-    <link rel="prev" title="Lab Frame versus COM" href="05_lab_vs_com.html" />
+    <link rel="next" title="Interactions" href="../interactions.html" />
+    <link rel="prev" title="Compton Scattering" href="07_compton_scattering.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -193,9 +193,9 @@
 <li class="toctree-l1"><a class="reference internal" href="03_differential_scattering_xs.html">Differential Scattering Cross Section</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_neutron_decay.html">Neutron Decay before Absorption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_lab_vs_com.html">Lab Frame versus COM</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Reflector Savings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_reflector_savings.html">Reflector Savings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_compton_scattering.html">Compton Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_cube_parallelpiped.html">Optimization of Reactor Design</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Optimization of Reactor Design</a></li>
 </ul>
 </ul>
 </li>
@@ -228,13 +228,52 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="reflector-savings">
-<h1>Reflector Savings<a class="headerlink" href="#reflector-savings" title="Permalink to this headline">¶</a></h1>
-<p>For a slab geometry, the savings are found by</p>
+  <div class="section" id="optimization-of-reactor-design">
+<h1>Optimization of Reactor Design<a class="headerlink" href="#optimization-of-reactor-design" title="Permalink to this headline">¶</a></h1>
+<p>Much of reactor design uses optimization techniques to determine the
+best theoretical design before engineering considerations are then
+tackled. The optimization of a parallelpiped for the best shape is a
+very simple example of this, but is instructive.</p>
+<p>To prove that a cube is the best parallelpiped for minimal critical
+volume, we start knowing the buckling and the volume equations for the
+parallelpiped.</p>
 <div class="math">
-\[s=\frac{1}{B_{m}}\arctan\left[\frac{D_{c}B_{m}}{D_{r}\kappa}\tanh\left(\kappa\tau\right)\right]\]</div>
-<p>and can be used in conjunction with the critical dimension to find the
-difference in dimension.</p>
+\[V=abc\]</div>
+<div class="math">
+\[B^{2}=\left(\frac{\pi}{a}\right)^{2}+\left(\frac{\pi}{b}\right)^{2}+\left(\frac{\pi}{c}\right)^{2}\]</div>
+<p>Now, we want to pose the problem with a Lagrange multiplier,
+<span class="math">\(\lambda\)</span>.</p>
+<div class="math">
+\[V\left(a,b,c,\lambda\right)=abc+\lambda\left[B^{2}-\left(\frac{\pi}{a}\right)^{2}-\left(\frac{\pi}{b}\right)^{2}-\left(\frac{\pi}{c}\right)^{2}\right]\]</div>
+<p>This gives us an equation in four dimensions, where the minimum of that
+hyperplane is the location where the volume is minimized and the
+buckling criteria is satisfied. So, we take the derivatives and set them
+equal to zero</p>
+<div class="math">
+\[\begin{split}\begin{align*}
+\frac{\partial V}{\partial a}=0 &amp; =bc-\frac{2\pi^{2}\lambda}{a^{3}}\\
+\frac{\partial V}{\partial b}=0 &amp; =ac-\frac{2\pi^{2}\lambda}{b^{3}}\\
+\frac{\partial V}{\partial c}=0 &amp; =ab-\frac{2\pi^{2}\lambda}{c^{3}}
+\end{align*}\end{split}\]</div>
+<p>Manipulation of these three equations leads us to another set of
+equations</p>
+<div class="math">
+\[\begin{split}\begin{align*}
+abc &amp; =2\lambda\frac{\pi^{2}}{a^{2}}\\
+abc &amp; =2\lambda\frac{\pi^{2}}{b^{2}}\\
+abc &amp; =2\lambda\frac{\pi^{2}}{c^{2}}
+\end{align*}\end{split}\]</div>
+<p>for which the only solution (this can be solved with substitution if it
+is not apparent) is</p>
+<div class="math">
+\[a=b=c\]</div>
+<p>Which shows that the minimal volume for a parallelpiped critical reactor
+is a cube, and volume is</p>
+<div class="math">
+\[V=a^{3}\]</div>
+<p>and buckling is</p>
+<div class="math">
+\[B^{2}=3\left(\frac{\pi}{a}\right)^{2}\]</div>
 </div>
 
 
