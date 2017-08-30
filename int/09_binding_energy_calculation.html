@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Energy and momenta balances &#8212; PUNEQE  documentation</title>
+    <title>Binding Energy Calculation &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Binding Energy for Atoms and Nucleii" href="08_mass_defect_and_binding_energy.html" />
-    <link rel="prev" title="Energy and momenta balances" href="06_energy_momentum_balance.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Binding Energy for Atoms and Nucleii" href="08_mass_defect_and_binding_energy.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -183,9 +183,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="05_bethe_bloch.html">Bethe-Block stopping power</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_energy_momentum_balance.html">Energy and momenta balances</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Energy and momenta balances</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_decay_amount.html">Energy and momenta balances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mass_defect_and_binding_energy.html">Binding Energy for Atoms and Nucleii</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_binding_energy_calculation.html">Binding Energy Calculation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Binding Energy Calculation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Neutronics</span></p>
 <ul>
@@ -229,25 +229,34 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="energy-and-momenta-balances">
-<h1>Energy and momenta balances<a class="headerlink" href="#energy-and-momenta-balances" title="Permalink to this headline">¶</a></h1>
-<p>Understanding decay is instrumental to detection. This material is
-reasonably common and spread out, but I’m referencing [Knoll2000] and
-({Nastasi, et. al. 1996)</p>
+  <div class="section" id="binding-energy-calculation">
+<h1>Binding Energy Calculation<a class="headerlink" href="#binding-energy-calculation" title="Permalink to this headline">¶</a></h1>
+<p>As a followup to problem 8, calculation of binding energy is crucial for
+understanding levels and thresholds. This material is common, so I’ll
+use (Lamarsh, 2002) as expected.</p>
+<p>To calculate the binding energy of the last neutron in
+<span class="math">\(\ce{^{13}C}\)</span>, first we pose the nucleus as a product of the
+nucleus with one fewer neutrons and a neutron</p>
 <div class="math">
-\[\Delta t=24\unit{hr}\]</div>
+\[\ce{^{12}C}+n\rightarrow\ce{^{13}C}\]</div>
+<p>Then, we use the <span class="math">\(Q\)</span> value equation</p>
 <div class="math">
-\[N_{0}=\frac{1683\unit{counts}}{10\unit{min}}\]</div>
+\[\begin{split}\begin{align*}
+Q &amp; =\left\{ \left[M\left(\ce{^{12}C}\right)+M\left(n\right)\right]-\left[M\left(\ce{^{13}C}\right)\right]\right\} 931.5\unit{\nicefrac{MeV}{amu}}\\
+Q &amp; =\left\{ 12\unit{amu}+1.00866\unit{amu}-13.00335\unit{amu}\right\} 931.5\unit{\nicefrac{MeV}{amu}}\\
+Q &amp; =4.95\unit{MeV}
+\end{align*}\end{split}\]</div>
+<p>So any collision with less than <span class="math">\(4.95\unit{MeV}\)</span> cannot knock out
+the last neutron in <span class="math">\(\ce{^{13}C}\)</span>, and then we can calculate the
+binding energy per nucleon. The binding energy per nucleon is equal to
+the constituents masses summed less the total nucleus mass, and then
+dividied by the number of nucleons in the nucleus</p>
 <div class="math">
-\[N_{1}=\frac{1683\unit{counts}}{20\unit{min}}\]</div>
-<div class="math">
-\[\frac{N_{0}}{N_{1}}=\exp\left(-\lambda\Delta t\right)\]</div>
-<div class="math">
-\[\lambda=\frac{1}{\Delta t}\ln\left(\frac{N_{1}}{N_{0}}\right)\]</div>
-<div class="math">
-\[t_{\nicefrac{1}{2}}=\ln\left(2\right)\Delta t\frac{1}{\ln\left(N_{1}\right)-\ln\left(N_{1}\right)}\]</div>
-<div class="math">
-\[\sigma_{t_{\nicefrac{1}{2}}}=\sqrt{\cancelto{0}{\left(\frac{\partial t_{\nicefrac{1}{2}}}{\partial\Delta t}\right)^{2}\sigma_{\Delta t}}+\left(\frac{\partial t_{\nicefrac{1}{2}}}{\partial N_{1}}\right)^{2}\sigma_{N_{1}}+\left(\frac{\partial t_{\nicefrac{1}{2}}}{\partial N_{0}}\right)^{2}\sigma_{N_{0}}}\]</div>
+\[\begin{split}\begin{align*}
+\overline{BE} &amp; =\frac{\left[7M_{n}+6M_{p}-M_{C13}\right]931.5\unit{\nicefrac{MeV}{amu}}}{13}\\
+\overline{BE} &amp; =\frac{\left[7\left(1.00866\unit{amu}\right)+6\left(1.00728\unit{amu}\right)-\left(13.00335\unit{amu}\right)\right]931.5\unit{\nicefrac{MeV}{amu}}}{13}\\
+\overline{BE} &amp; =7.23\unit{MeV}
+\end{align*}\end{split}\]</div>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>

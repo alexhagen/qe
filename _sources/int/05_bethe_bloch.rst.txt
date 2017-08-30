@@ -38,7 +38,7 @@ is as usual.
 
     
     				<div class='pygfigure' name='stoppingpower' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
-    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='stoppingpower.svg?1667138510' />
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='stoppingpower.svg?436254527' />
     					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Electronic and nuclear stopping power as a function of $\varepsilon$</div>
     				</div>
     			

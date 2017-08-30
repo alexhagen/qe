@@ -1,0 +1,51 @@
+
+    
+
+Binding Energy Calculation
+==========================
+
+As a followup to problem 8, calculation of binding energy is crucial for
+understanding levels and thresholds. This material is common, so I'll
+use (Lamarsh, 2002) as expected.
+
+To calculate the binding energy of the last neutron in
+:math:`\ce{^{13}C}`, first we pose the nucleus as a product of the
+nucleus with one fewer neutrons and a neutron
+
+.. math:: \ce{^{12}C}+n\rightarrow\ce{^{13}C}
+
+Then, we use the :math:`Q` value equation
+
+.. math::
+
+   \begin{align*}
+   Q & =\left\{ \left[M\left(\ce{^{12}C}\right)+M\left(n\right)\right]-\left[M\left(\ce{^{13}C}\right)\right]\right\} 931.5\unit{\nicefrac{MeV}{amu}}\\
+   Q & =\left\{ 12\unit{amu}+1.00866\unit{amu}-13.00335\unit{amu}\right\} 931.5\unit{\nicefrac{MeV}{amu}}\\
+   Q & =4.95\unit{MeV}
+   \end{align*}
+
+So any collision with less than :math:`4.95\unit{MeV}` cannot knock out
+the last neutron in :math:`\ce{^{13}C}`, and then we can calculate the
+binding energy per nucleon. The binding energy per nucleon is equal to
+the constituents masses summed less the total nucleus mass, and then
+dividied by the number of nucleons in the nucleus
+
+.. math::
+
+   \begin{align*}
+   \overline{BE} & =\frac{\left[7M_{n}+6M_{p}-M_{C13}\right]931.5\unit{\nicefrac{MeV}{amu}}}{13}\\
+   \overline{BE} & =\frac{\left[7\left(1.00866\unit{amu}\right)+6\left(1.00728\unit{amu}\right)-\left(13.00335\unit{amu}\right)\right]931.5\unit{\nicefrac{MeV}{amu}}}{13}\\
+   \overline{BE} & =7.23\unit{MeV}
+   \end{align*}
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
