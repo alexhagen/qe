@@ -1,0 +1,73 @@
+
+    
+
+Nuclear Structure
+=================
+
+Understanding of nuclear structure is fundamental to all detection work,
+but there are a couple heuristics that can be used. This material is
+common, so I'll use
+
+.. raw:: html
+
+   <p>
+
+NameError: name 'bib' is not defined
+
+.. raw:: html
+
+   </p>
+
+as expected.
+
+Constant Density Nucleus
+------------------------
+
+A common estimate for the radius of a nucleus is
+
+.. math:: R\approx1.25\left[\unit{fm}\right]\cdot A^{\nicefrac{1}{3}}
+
+ which indicates constant density of nucleii. Also, it should be noted
+that the :math:`\left(\,\right)^{\nicefrac{1}{3}}` indicates a not very
+strong dependence on the number of nucleons, and thus all atoms with
+several shells are close to :math:`2\times10^{-10}\unit{m}`
+
+Nuclear Models
+--------------
+
+The Shell Model uses the Pauli exclusion principle that states that
+there are :math:`2j+1` possible states for substates with total momentum
+:math:`j`, That there are orbits, and that magic numbers correspond to
+closed shells in both :math:`N` and :math:`Z`.
+
+The liquid drop model states that nucleons are arranged like the
+molecules of a spherical liquid drop. This gives way to the expression
+for the mass being
+
+.. math::
+
+   \begin{multline*}
+   M=NM_{n}+ZM_{p}-\alpha A+\beta A^{\nicefrac{2}{3}}+\gamma\frac{Z^{2}}{A^{\nicefrac{1}{3}}}\\
+   +\xi\frac{\left(A-2Z\right)}{A}+\delta
+   \end{multline*}
+
+ where :math:`\alpha` is the total volumetric correction or the total
+energy of one bond, :math:`\beta` is the surface tension correction,
+:math:`\gamma` is the columbic term from potential energy, :math:`\xi`
+is the symmetry term, and stronger for :math:`Z=N`, and :math:`\delta`
+is a pairing term - indicating that the bond between :math:`n+n` or
+:math:`p+p` is stronger than :math:`n+p`.
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+
+
+    

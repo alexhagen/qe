@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>General Balance Equations and Continuity Equation &#8212; PUNEQE  documentation</title>
+    <title>Nuclear Structure &#8212; PUNEQE  documentation</title>
     
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Momentum Equation and Boussinesq Assumption" href="03_momentum_equation_and_boussinesq_assumption.html" />
-    <link rel="prev" title="Vector Operators" href="01_vector_operators.html" />
+    <link rel="next" title="Flux, Current, and Directional Current" href="../neu/01_flux_current.html" />
+    <link rel="prev" title="Binding Energy Calculation" href="09_binding_energy_calculation.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -117,31 +117,31 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Thermal Hydraulics</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_vector_operators.html">Vector Operators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../th/01_vector_operators.html">Vector Operators</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#gradient">Gradient (<span class="math">\(\nabla\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#divergence">Divergence (<span class="math">\(\nabla \cdot\)</span>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/01_vector_operators.html#laplacian">Laplacian (<span class="math">\(\nabla^{2}\)</span>)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">General Balance Equations and Continuity Equation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#general-balance-equation">General Balance Equation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#continuity-equation">Continuity Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html">General Balance Equations and Continuity Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html#general-balance-equation">General Balance Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/02_general_balance_equations_and_continuity_equation.html#continuity-equation">Continuity Equation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html">Momentum Equation and Boussinesq Assumption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html#momentum-equation">Momentum Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/03_momentum_equation_and_boussinesq_assumption.html#boussinesq-assumption">Boussinesq Assumption</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="04_energy_equations.html">Energy Equations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04_energy_equations.html#energy-equation">Energy equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/04_energy_equations.html">Energy Equations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/04_energy_equations.html#energy-equation">Energy equation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="22_prandtl_mixing_length.html">Prandtl’s Mixing Length</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="22_prandtl_mixing_length.html#eddy-viscosity">Eddy Viscosity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="22_prandtl_mixing_length.html#prandtl-s-mixing-length-model">Prandtl’s Mixing Length Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/05_non-dimensional_parameters.html">Non-Dimensional Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../th/22_prandtl_mixing_length.html">Prandtl’s Mixing Length</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../th/22_prandtl_mixing_length.html#eddy-viscosity">Eddy Viscosity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../th/22_prandtl_mixing_length.html#prandtl-s-mixing-length-model">Prandtl’s Mixing Length Model</a></li>
 </ul>
 </li>
 </ul>
@@ -165,30 +165,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../mat/05_dpa_calculation.html">DPA Calculations</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interactions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../int/01_decay.html">Radioactive Decay</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/02_binding_energy.html#binding-energy">Binding energy</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_decay.html">Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_binding_energy.html">Binding Energy and Mass Defect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_binding_energy.html#binding-energy">Binding energy</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_ec_vs_ic.html">Internal Conversion versus Electron Capture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#electron-capture">Electron Capture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_ec_vs_ic.html#internal-conversion">Internal Conversion</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/04_particle_wavelengths.html">Particle Wavelengths</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/04_particle_wavelengths.html#mass-bearing">Mass Bearing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/04_particle_wavelengths.html#non-mass-bearing">Non Mass Bearing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_particle_wavelengths.html">Particle Wavelengths</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_particle_wavelengths.html#mass-bearing">Mass Bearing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_particle_wavelengths.html#non-mass-bearing">Non Mass Bearing</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../int/05_bethe_bloch.html">Bethe-Block stopping power</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/06_energy_momentum_balance.html">Energy and momenta balances</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/07_decay_amount.html">Energy and momenta balances</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/08_mass_defect_and_binding_energy.html">Binding Energy for Atoms and Nucleii</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/09_binding_energy_calculation.html">Binding Energy Calculation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../int/10_nuclear_structure.html">Nuclear Structure</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../int/10_nuclear_structure.html#constant-density-nucleus">Constant Density Nucleus</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../int/10_nuclear_structure.html#nuclear-models">Nuclear Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_bethe_bloch.html">Bethe-Block stopping power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_energy_momentum_balance.html">Energy and momenta balances</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_decay_amount.html">Energy and momenta balances</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mass_defect_and_binding_energy.html">Binding Energy for Atoms and Nucleii</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_binding_energy_calculation.html">Binding Energy Calculation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Nuclear Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#constant-density-nucleus">Constant Density Nucleus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nuclear-models">Nuclear Models</a></li>
 </ul>
 </li>
 </ul>
@@ -234,76 +234,41 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="general-balance-equations-and-continuity-equation">
-<h1>General Balance Equations and Continuity Equation<a class="headerlink" href="#general-balance-equations-and-continuity-equation" title="Permalink to this headline">¶</a></h1>
-<p>Based on the derivation in (Bird, et. al. 2007).</p>
-<p>The general balance equations (GBE) are the main tennets of continuum
-mechanics. Proper derivation of these equations is absolutely essential
-to theral-hydraulics. They are also incredibly useful for other physical
-systems, and when coupled with the electronic charge conservation
-equation, could (ostensibly) solve any non-quantum mechanical problem.</p>
-<div class="section" id="general-balance-equation">
-<h2>General Balance Equation<a class="headerlink" href="#general-balance-equation" title="Permalink to this headline">¶</a></h2>
-<p>The general balance equation for any property is given by:</p>
+  <div class="section" id="nuclear-structure">
+<h1>Nuclear Structure<a class="headerlink" href="#nuclear-structure" title="Permalink to this headline">¶</a></h1>
+<p>Understanding of nuclear structure is fundamental to all detection work,
+but there are a couple heuristics that can be used. This material is
+common, so I’ll use</p>
+<p><p>NameError: name ‘bib’ is not defined</p>
+</p><p>as expected.</p>
+<div class="section" id="constant-density-nucleus">
+<h2>Constant Density Nucleus<a class="headerlink" href="#constant-density-nucleus" title="Permalink to this headline">¶</a></h2>
+<p>A common estimate for the radius of a nucleus is</p>
 <div class="math">
-\[\begin{split}\underbrace{\frac{D}{Dt}\intop_{V_{m}}\psi dV}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{in volume }V_{m}
-}
-}=-\underbrace{\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS}_{\substack{\text{influx of }\psi\text{ across}\\
-\text{surface }S_{m}
-}
-}+\underbrace{\int_{V_{m}}\dot{\psi_{g}}dV}_{\substack{\text{generation of }\psi\\
-\text{in volume }V_{m}
-}
-}\end{split}\]</div>
-<p>We can use Reynold’s Transport theorem, which states that
-<span class="math">\(\frac{D}{Dt}\int_{V_{m}}\psi dV=\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)\right]dV\)</span>
-and Greene Theorem, which thats
-<span class="math">\(\oint_{S_{m}}\mathbb{J}\cdot\vec{n}dS=\int_{V_{m}}\nabla\cdot\mathbb{J}dV\)</span>.
-Inputting these two expressions to first convert the material derivative
-to time and spatial derivative and to convert the surface integral to a
-volume integral, respectively. With these two changes and combining
-volume integrals, we then get</p>
-<div class="math">
-\[\int_{V_{m}}\left[\frac{\partial\psi}{\partial t}+\nabla\cdot\left(\psi\vec{v}\right)=-\nabla\cdot\mathbb{J}+\dot{\psi_{g}}\right]dV\]</div>
-<p>and after differentiating:</p>
-<div class="math">
-\[\begin{split}\underbrace{\frac{\partial\psi}{\partial t}}_{\substack{\text{change of }\psi\\
-\text{per unit time}\\
-\text{per unit volume}
-}
-}\underbrace{\nabla\cdot\left(\psi\vec{v}\right)}_{\substack{\text{convection by}\\
-\text{material motion}\\
-\text{per unit volume}
-}
-}=-\underbrace{\nabla\cdot\mathbb{J}}_{\substack{\text{influx of }\psi\text{ per}\\
-\text{surface }S_{m}\text{ per}\\
-\text{unit volume}
-}
-}+\underbrace{\dot{\psi_{g}}}_{\substack{\text{generation of }\psi\\
-\text{per unit volume}
-}
-}\end{split}\]</div>
+\[ \begin{align}\begin{aligned}R\approx1.25\left[\unit{fm}\right]\cdot A^{\nicefrac{1}{3}}\\which indicates constant density of nucleii. Also, it should be noted\end{aligned}\end{align} \]</div>
+<p>that the <span class="math">\(\left(\,\right)^{\nicefrac{1}{3}}\)</span> indicates a not very
+strong dependence on the number of nucleons, and thus all atoms with
+several shells are close to <span class="math">\(2\times10^{-10}\unit{m}\)</span></p>
 </div>
-<div class="section" id="continuity-equation">
-<h2>Continuity Equation<a class="headerlink" href="#continuity-equation" title="Permalink to this headline">¶</a></h2>
-<p>Apply the GBE, using <span class="math">\(\psi = \rho\)</span>, <span class="math">\(\mathbb{J} = 0\)</span>, and
-<span class="math">\(\dot{\psi_{g}} = 0\)</span>, we get</p>
+<div class="section" id="nuclear-models">
+<h2>Nuclear Models<a class="headerlink" href="#nuclear-models" title="Permalink to this headline">¶</a></h2>
+<p>The Shell Model uses the Pauli exclusion principle that states that
+there are <span class="math">\(2j+1\)</span> possible states for substates with total momentum
+<span class="math">\(j\)</span>, That there are orbits, and that magic numbers correspond to
+closed shells in both <span class="math">\(N\)</span> and <span class="math">\(Z\)</span>.</p>
+<p>The liquid drop model states that nucleons are arranged like the
+molecules of a spherical liquid drop. This gives way to the expression
+for the mass being</p>
 <div class="math">
-\[\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=0\]</div>
-<p>which is equivalent to (by FOIL):
-<span class="math">\(\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec{v}\right)=\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho+\rho\nabla\cdot\vec{v}\)</span>
-and using the material derivative’s definition:
-<span class="math">\(\frac{D\rho}{Dt}\equiv\frac{\partial\rho}{\partial t}+\vec{v}\cdot\nabla\rho\)</span>
-in the above equation, we get:</p>
-<div class="math">
-\[\frac{1}{\rho}\frac{D\rho}{Dt}=-\nabla\cdot\vec{v}\]</div>
-<p>and assuming incompressible: <span class="math">\(\frac{D\rho}{Dt}=0\)</span>, it is apparent
-that:</p>
-<div class="math">
-\[\nabla\cdot\vec{v}=0\]</div>
-<p>which is the continuity equation.</p>
+\[ \begin{align}\begin{aligned}\begin{split}  \begin{multline*}
+  M=NM_{n}+ZM_{p}-\alpha A+\beta A^{\nicefrac{2}{3}}+\gamma\frac{Z^{2}}{A^{\nicefrac{1}{3}}}\\
+  +\xi\frac{\left(A-2Z\right)}{A}+\delta
+  \end{multline*}\end{split}\\where :math:`\alpha` is the total volumetric correction or the total\end{aligned}\end{align} \]</div>
+<p>energy of one bond, <span class="math">\(\beta\)</span> is the surface tension correction,
+<span class="math">\(\gamma\)</span> is the columbic term from potential energy, <span class="math">\(\xi\)</span>
+is the symmetry term, and stronger for <span class="math">\(Z=N\)</span>, and <span class="math">\(\delta\)</span>
+is a pairing term - indicating that the bond between <span class="math">\(n+n\)</span> or
+<span class="math">\(p+p\)</span> is stronger than <span class="math">\(n+p\)</span>.</p>
 <h2>Bibliography</h2>
 <ol>
 </ol></div>
