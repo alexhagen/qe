@@ -1,0 +1,99 @@
+
+    
+
+Macroscopic Parameters in relation to Potential Well Shapes
+===========================================================
+
+One of the most difficult aspects of materials in general, and nuclear
+materials especially, is the connection between microscopic quantities
+and nuclear stucture and macroscopic quantities. There are several
+quantities physically that are **directly** correlated to the potential
+well shape, and they are important as is, but especially so as a
+template for understanding the micro-to-macro correlation. Most of this
+material is easily found in [Nastasi].
+
+Binding Energy
+--------------
+
+As can be guessed, the binding energy of a material or nucleus is
+defined directly by the *depth of the potential well* and can be
+expressed as
+
+.. math:: E_{b} \approx \Delta H_{s} \approx \frac{1}{2} n_{c}N_{A}\varepsilon_{b}
+
+Elastic Modulus
+---------------
+
+The elastic modulus corresponds to the second derivative of the
+potential at its minimum. This can physically be considered as the slope
+required to get out of the potential well, which corresponds to how much
+energy it takes to move the material.
+
+    
+
+
+
+.. raw:: html
+
+    
+    				<div class='pygfigure' name='elasticmodulus' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='elasticmodulus.svg?844112171' />
+    					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Shape of the Potential correlated to the Elastic Modulus</div>
+    				</div>
+    			
+
+
+Melting Temperature
+-------------------
+
+The melting temperature is proportational to the binding energy of the
+system.
+
+    
+
+
+
+.. raw:: html
+
+    
+    				<div class='pygfigure' name='melttemp' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='melttemp.svg?1595118776' />
+    					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 2:</b> Shape of the Potential correlated to the Elastic Modulus</div>
+    				</div>
+    			
+
+
+Coefficient of Thermal Expansion
+--------------------------------
+
+The coefficient of thermal expansion is inversely proportional to the
+elastic modulus. A diagram of the mean atom position inside the
+potential well can be useful to think about this, showing that with a
+lower elastic modulus, the mean atom position changes *more* for each
+unit energy.
+
+    
+
+
+
+.. raw:: html
+
+    
+    				<div class='pygfigure' name='highelowbeta' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='highelowbeta.svg?37331417' />
+    					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 3:</b> Shape of the Potential correlated to the Elastic Modulus</div>
+    				</div>
+    			
+
+
+    
+
+
+
+.. raw:: html
+
+    <h2>Bibliography</h2>
+    <ol>
+    </ol>
+
+

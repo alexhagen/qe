@@ -1,0 +1,59 @@
+
+    
+
+Xenon Concentration
+===================
+
+The Xenon buildup in fission fuel is an important parameter to consider
+during burnup of fuel. Xenon is a radioactive gas and causes many
+problems within the fuel cycle. Besides these issues, calculation of
+Xenon buildup is also an illustration of how to use the Bateman
+equations, which has many other uses in nuclear engineering.
+
+To start, we know that Xenon can be produced directly in the fission
+process, at the rate of :math:`\gamma_{Xe}`, and can also come from the
+decay of Iodine that was produced by fission (at the rate of
+:math:`\gamma_{I}`). Thus, we must define two equations
+
+.. math:: \frac{dN_{I}}{dt}=\underbrace{\gamma_{I}F\left(t\right)}_{\text{production}} -\underbrace{\overline{\lambda}_{I}N_{I}\left(t\right)}_{\text{loss}}
+
+.. math:: \frac{dN_{Xe}}{dt}=\underbrace{\gamma_{Xe}F\left(t\right)+\lambda_{I}N_{I}\left(t\right)}_{\text{production}} -\underbrace{\overline{\lambda}_{Xe}N_{Xe}\left(t\right)}_{\text{loss}}
+
+ with :math:`\sigma_{.}` the cross section for neutron absorption,
+:math:`\phi` the neutron flux, :math:`F\left( t \right)` the fission
+rate, and
+
+.. math:: \overline{\lambda}_{I}=\lambda_{I}+\sigma_{I}\phi\left(t\right)
+
+.. math:: \overline{\lambda}_{Xe}=\lambda_{Xe}+\sigma_{Xe}\phi\left(t\right)
+
+ with :math:`\lambda_{x}` the decay constant.
+
+Conceptually, both of these equations are simple: they both read that
+the change in the concentration of the atom is the production of that
+atom (whether directly from fission or from decay of Iodine in the case
+of xenon) less the loss of that atom. The loss of that atom is the sum
+of the natural decay and the neutron absorption probability (which will
+transmute the atom).
+
+To solve these equations, the integrating factor is used, and these
+steps are shown below
+
+.. math:: \frac{d}{dt}\left[N_{I}\left(t\right)e^{\overline{\lambda}_{I}t}\right]=\gamma_{I}Fe^{\overline{\lambda}_{I}t}
+
+.. math:: N_{I}\left(t\right)=N_{I}^{0}e^{\overline{\lambda}_{I}t}+\frac{\gamma_{I}F}{\lambda_{I}}\left(1-e^{\overline{\lambda}_{I}t}\right)
+
+.. math:: \frac{d}{dt}\left[N_{Xe}e^{\overline{\lambda}_{Xe}t}\right]=\left[\gamma_{Xe}F+\lambda_{I}N_{I}\left(t\right)\right]e^{\overline{\lambda}_{Xe}t}
+
+.. math::
+
+   \begin{multline*}
+   N_{Xe}\left(t\right)=N_{Xe}^{0}e^{\overline{\lambda}_{Xe}t}+\frac{\gamma_{Xe}F}{\lambda_{Xe}}\left(1-e^{-\overline{\lambda}_{Xe}t}\right)+\frac{\lambda_{I}N_{I}^{0}}{\overline{\lambda}_{Xe}-\overline{\lambda}_{I}}\left(e^{-\overline{\lambda}_{I}t}-e^{-\overline{\lambda}_{Xe}t}\right)\\
+   +\frac{\lambda_{I}\gamma_{I}F}{\overline{\lambda}_{I}}\left[\frac{1}{\overline{\lambda}_{Xe}}\left(1-e^{-\overline{\lambda}_{Xe}t}\right)-\frac{1}{\overline{\lambda}_{Xe}-\overline{\lambda}_{I}}\left(e^{-\overline{\lambda}_{I}t}-e^{-\overline{\lambda}_{Xe}t}\right)\right]
+   \end{multline*}
+
+It should be noted that this can be more easily solved in matrix form,
+and modern computing makes it almost trivial to solve. The program
+ORIGEN is often used for this purpose.
+
+    

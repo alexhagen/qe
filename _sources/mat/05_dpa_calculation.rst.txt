@@ -21,7 +21,7 @@ per ion.
 
     
     				<div class='pygfigure' name='dpa' style='text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;'>
-    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='dpa.svg?1690205603' />
+    					<img style='margin: auto; max-width:100%; width:1250.000000px; height: auto;' src='dpa.svg?202036723' />
     					<div style='margin: auto; text-align: center;' class='figurecaption'><b>Figure 1:</b> Rate of displatement generation versus energy of primary knock on (<a href="#Nastasi1996">{Nastasi,  et. al. 1996</a>)</div>
     				</div>
     			
@@ -67,7 +67,7 @@ sphere cross section
     <!-- This document was automatically generated with bibtex2html 1.98
          (see http://www.lri.fr/~filliatr/bibtex2html/),
          with the following command:
-         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmplnUPU3.bib  -->
+         /usr/bin/bibtex2html -nokeys -o - -s plain -nodoc -q /tmp/tmpIRe3RU.bib  -->
     
     
     
